@@ -24,7 +24,7 @@ function About() {
 		<div>
 			<div style={baseContainer}>
 				<div style={imgContainer}>
-					<img src={logo}></img>
+					<img src={logo} alt={"Connect MNG Logo"}></img>
 				</div>
 				<div style={textContainer}>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -34,7 +34,7 @@ function About() {
 				</div>
 			</div>
 			<div>
-				<MemberGallery person={{name: "Anuujin Ider", imageId: anunu}}></MemberGallery>
+				<MemberGallery></MemberGallery>
 			</div>
 			<div>
 				<h1>Organisational achievements, projects, and impact stories</h1>

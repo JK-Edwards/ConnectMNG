@@ -30,7 +30,7 @@ function Profile({person, size}) {
         <a href={person.linkedIn}>LinkedIn</a>
       </div>
     );
-}
+};
 
 export default function Gallery() {
     return (
@@ -55,4 +55,4 @@ export default function Gallery() {
         </div>
       </div>
     );
-}
+};

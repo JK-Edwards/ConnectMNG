@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../Images/logo.png";
+import BasicCarousel from '../components/Carousel';
 
 const baseContainer = {
 	"display": "flex",
@@ -23,7 +24,7 @@ const Home = () => {
 			<h1>Brief overview of your organisation's mission and impact.</h1>
 			<div style={baseContainer}>
 				<div style={imgContainer}>
-					<img src={logo}></img>
+					<img src={logo} alt={"Connect MNG Logo"}></img>
 				</div>
 				<div style={textContainer}>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -32,6 +33,7 @@ const Home = () => {
 						sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 			</div>
+			<BasicCarousel/>
 			<div>
 				<h1>Engaging Visuals and Multimedia Content</h1>
 			</div>
