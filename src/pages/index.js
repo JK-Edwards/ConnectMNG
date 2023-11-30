@@ -1,12 +1,12 @@
-import React from 'react';
-import logo from "../Images/logo.png";
 import BasicCarousel from '../components/Carousel';
+import logo from "../images/logo.png";
+import React from "react";
 
 const baseContainer = {
 	"display": "flex",
 	"justify-content": "space-around",
 	"background": "#0051F0"
-  };
+};
 
 const imgContainer = {
 	"display": "flex",
@@ -18,7 +18,7 @@ const textContainer = {
 	"align-items": "center"
 };
 
-const Home = () => {
+export default function Home() {
 	return (
 		<div>
 			<h1>Brief overview of your organisation's mission and impact.</h1>
@@ -43,5 +43,3 @@ const Home = () => {
 		</div>
 	);
 };
-
-export default Home;

@@ -1,11 +1,11 @@
-import React from 'react';
-import logo from "../Images/logo.png";
+import logo from "../images/logo.png";
+import React from "react";
 
 const baseContainer = {
 	"display": "flex",
 	"justify-content": "space-around",
 	"background": "#0051F0"
-  };
+};
 
 const imgContainer = {
 	"display": "flex",
@@ -17,13 +17,13 @@ const textContainer = {
 	"align-items": "center"
 };
 
-const Blogs = () => {
+export default function Blogs() {
 	return (
 		<div>
 			<h1>Regularly updated blog posts about your organization's activities, community issues, and relevant topics.</h1>
 			<div style={baseContainer}>
 				<div style={imgContainer}>
-					<img src={logo}></img>
+					<img src={logo} alt={"Connect MNG Logo"}></img>
 				</div>
 				<div style={textContainer}>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -38,5 +38,3 @@ const Blogs = () => {
 		</div>
 	);
 };
-
-export default Blogs;

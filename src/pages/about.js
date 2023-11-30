@@ -1,13 +1,12 @@
-import React from "react";
-import logo from "../Images/logo.png";
+import logo from "../images/logo.png";
 import MemberGallery from "../components/MemberGallery";
-import anunu from "../Images/anunu.jpeg";
+import React from "react";
 
 const baseContainer = {
 	"display": "flex",
 	"justify-content": "space-around",
 	"background": "#0051F0"
-  };
+};
 
 const imgContainer = {
 	"display": "flex",
@@ -19,7 +18,7 @@ const textContainer = {
 	"align-items": "center"
 };
 
-function About() {
+export default function About() {
 	return (
 		<div>
 			<div style={baseContainer}>
@@ -43,5 +42,3 @@ function About() {
 
 	);
 };
-
-export default About;

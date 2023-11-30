@@ -1,5 +1,5 @@
+import anunu from "../../images/anunu.jpeg";
 import React from "react";
-import anunu from "../../Images/anunu.jpeg";
 
 const gallery = {
 	"display": "flex",

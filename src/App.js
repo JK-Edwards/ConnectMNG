@@ -1,23 +1,28 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './pages/about';
-import Contact from './pages/contact';
-import Home from './pages';
-import Programs from './pages/programs';
-import Volunteer from './pages/volunteer';
-import Donate from './pages/donate';
-import Events from './pages/events';
-import Resources from './pages/resources';
-import Blogs from './pages/blogs';
-import instaLogo from "./Images/insta.avif";
+import About from "./pages/about";
+import Blogs from "./pages/blogs";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contact from "./pages/contact";
+import Donate from "./pages/donate";
+import Events from "./pages/events";
+import Home from "./pages";
+import instaLogo from "./images/insta.avif";
+import Navbar from "./components/Navbar";
+import Programs from "./pages/programs";
+import React from "react";
+import Resources from "./pages/resources";
+import Volunteer from "./pages/volunteer";
+
+import { footerStyle,
+		 mediaIconStyle,
+		 headerStyle }
+from "./AppStyle.js";
 
 function App() {
 	return (
 		<div>
-			<div>
-				<a href="https://www.instagram.com/">
-					<img src={instaLogo}/>
+			<div style={headerStyle}>
+				<a href="https://www.instagram.com/anuujinii" target={"_blank"} rel={"noreferrer"}>
+					<img src={instaLogo} style={mediaIconStyle} alt={"Instagram"}/>
 				</a>
 			</div>
 			<Router>
@@ -35,13 +40,13 @@ function App() {
 					<Route path='/contact' element={<Contact />} />
 				</Routes>
 			</Router>
-			<div>
-				<a href="https://www.instagram.com/">
-					<img src={instaLogo}/>
+			<div style={footerStyle}>
+				<a href="https://www.instagram.com/anuujinii" target={"_blank"} rel={"noreferrer"}>
+					<img src={instaLogo} style={mediaIconStyle} alt={"Instagram"}/>
 				</a>
 			</div>
 		</div>
 	);
-}
+};
 
 export default App;

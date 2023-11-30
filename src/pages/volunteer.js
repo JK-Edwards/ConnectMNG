@@ -1,11 +1,11 @@
+import logo from "../images/logo.png";
 import React from "react";
-import logo from "../Images/logo.png";
 
 const baseContainer = {
 	"display": "flex",
 	"justify-content": "space-around",
 	"background": "#0051F0"
-  };
+};
 
 const imgContainer = {
 	"display": "flex",
@@ -17,13 +17,13 @@ const textContainer = {
 	"align-items": "center"
 };
 
-const Volunteer = () => {
+export default function Volunteer() {
 	return (
 		<div>
 			<h1>Information on how individuals can volunteer or become a member.</h1>
 			<div style={baseContainer}>
 				<div style={imgContainer}>
-					<img src={logo}></img>
+					<img src={logo} alt={"Connect MNG Logo"}></img>
 				</div>
 				<div style={textContainer}>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -41,5 +41,3 @@ const Volunteer = () => {
 		</div>
 	);
 };
-
-export default Volunteer;

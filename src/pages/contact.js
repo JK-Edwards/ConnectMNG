@@ -1,13 +1,11 @@
-import React from 'react';
-import logo from "../Images/logo.png";
-import MemberGallery from "../components/MemberGallery";
-import anunu from "../Images/anunu.jpeg";
+import logo from "../images/logo.png";
+import React from "react";
 
 const baseContainer = {
 	"display": "flex",
 	"justify-content": "space-around",
 	"background": "#0051F0"
-  };
+};
 
 const imgContainer = {
 	"display": "flex",
@@ -19,13 +17,13 @@ const textContainer = {
 	"align-items": "center"
 };
 
-const Contact = () => {
+export default function Contact() {
 	return (
 		<div>
 			<h1>Contact form for general inquiries or feedback.</h1>
 			<div style={baseContainer}>
 				<div style={imgContainer}>
-					<img src={logo}></img>
+					<img src={logo} alt={"Connect MNG Logo"}></img>
 				</div>
 				<div style={textContainer}>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -43,5 +41,3 @@ const Contact = () => {
 		</div>
 	);
 };
-
-export default Contact;
