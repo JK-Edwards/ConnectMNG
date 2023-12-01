@@ -1,17 +1,17 @@
-import About from "./pages";
-import Blogs from "./pages";
+import About from "./pages/about";
+import Blogs from "./pages/blogs";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Contact from "./pages";
-import Donate from "./pages";
-import Events from "./pages";
+import Contact from "./pages/contact";
+import Donate from "./pages/donate";
+import Events from "./pages/events";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./pages";
+import Home from "./pages/index";
 import Navbar from "./components/Navbar";
-import Programs from "./pages";
+import Programs from "./pages/programs";
 import React from "react";
-import Resources from "./pages";
-import Volunteer from "./pages";
+import Resources from "./pages/resources";
+import Volunteer from "./pages/volunteer";
 
 function App() {
 	return (
