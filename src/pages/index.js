@@ -5,7 +5,7 @@ import React from "react";
 const baseContainer = {
 	"display": "flex",
 	"justify-content": "space-around",
-	"background": "#0051F0"
+	"background": "#C5EBC4"
 };
 
 const imgContainer = {
@@ -15,22 +15,18 @@ const imgContainer = {
 
 const textContainer = {
 	"display": "flex",
-	"align-items": "center"
+	"align-items": "center",
+	"font-family": "Palatino"
 };
 
 export default function Home() {
 	return (
 		<div>
-			<h1>Brief overview of your organisation's mission and impact.</h1>
+			{/* <h1>Brief overview of your organisation's mission and impact.</h1> */}
 			<div style={baseContainer}>
-				<div style={imgContainer}>
-					<img src={logo} alt={"Connect MNG Logo"}></img>
-				</div>
 				<div style={textContainer}>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-						sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Арабын Нэгдсэн Эмират Улсын Дубай хотноо зохион байгуулагдаж буй Уур амьсгалын өөрчлөлтийн асуудлаарх дэлхийн удирдагчдын дээд түвшний уулзалт гурав дахь өдрөө үргэлжилж  байна. БОАЖ-ын сайд Б.Бат-Эрдэнэ энэ хуралд оролцож байна.
+</p>
 				</div>
 			</div>
 			<BasicCarousel/>
