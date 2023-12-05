@@ -1,3 +1,8 @@
+.arrow {
+	max-height: 15px;
+	max-width: 15px;
+}
+
 .headerContainer {
 	display: flex;
 	flex-direction: row-reverse;
@@ -9,9 +14,24 @@
 	max-width: 50px;
 }
 
-.languageIcon {
+.engIcon {
 	padding-left: 7.36px;
 	padding-right: 7.36px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
+.languageButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 50px;
+	padding-right: 10px;
+}
+
+.mngIcon {
+	padding-left: 4.68px;
+	padding-right: 4.68px;
 	padding-top: 13px;
 	padding-bottom: 13px;
 };

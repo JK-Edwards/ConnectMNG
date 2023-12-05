@@ -9,9 +9,11 @@ import "./App.css";
 function App() {
 	const [activeIndex, setActiveIndex] = useState(0);
 
+	const [isEnglish, setIsEnglish] = useState(true);
+
 	return (
 		<div className={"app"}>
-			<Header/>
+			<Header isEnglish={isEnglish} onClick={setIsEnglish}/>
 			<Navigation activeIndex={activeIndex} onClick={setActiveIndex}/>
 			<PageRenderer activeIndex={activeIndex}/>
 			<Footer/>
