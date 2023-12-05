@@ -1,20 +1,11 @@
 import anunu from "../../images/anunu.jpeg";
 import React from "react";
 
-const gallery = {
-	"display": "flex",
-	"justify-content": "space-evenly"
-};
-
-const profile = {
-  "display": "flex",
-  "flex-direction": "column",
-  "align-items": "center"
-};
+import "./Gallery.css";
 
 function Profile({person, size}) {
     return (
-      <div style={profile}>
+      <div className={"profile"}>
         <img
             src={person.imageId}
             alt={person.name}
@@ -36,7 +27,7 @@ export default function Gallery() {
     return (
       <div>
         <h1>Board of Directors</h1>
-        <div style={gallery}>
+        <div className={"profileContainer"}>
           <Profile person={{name: "Anuujin Ider",
                             imageId: anunu,
                             description: "Description",

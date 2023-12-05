@@ -1,0 +1,9 @@
+.footerContainer {
+    display: flex;
+	flex-direction: row-reverse;
+}
+
+.icon {
+	max-height: 50px;
+	max-width: 50px;
+}

@@ -1,18 +1,16 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Navigation from "./components/Navigation";
-import PageRenderer from "./components/PageRenderer";
+import Footer from "./components/Footer/Footer.jsx";
+import Header from "./components/Header/Header.jsx";
+import Navigation from "./components/Navigation/Navigation.jsx";
+import PageRenderer from "./components/PageRenderer/PageRenderer.jsx";
 import React, { useState } from "react";
 
-const appStyle = {
-    "font-family": "Palatino"
-};
+import "./App.css";
 
 function App() {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	return (
-		<div style={appStyle}>
+		<div className={"app"}>
 			<Header/>
 			<Navigation activeIndex={activeIndex} onClick={setActiveIndex}/>
 			<PageRenderer activeIndex={activeIndex}/>

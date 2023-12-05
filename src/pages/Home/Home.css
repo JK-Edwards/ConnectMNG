@@ -1,0 +1,10 @@
+.infoContainer {
+	display: flex;
+	justify-content: space-around;
+	background: #C5EBC4;
+}
+
+.textContainer {
+	display: flex;
+	align-items: center;
+};

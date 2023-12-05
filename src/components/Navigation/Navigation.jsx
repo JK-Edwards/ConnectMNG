@@ -2,13 +2,13 @@ import classNames from "classnames"
 import logo from "../../images/logo.png";
 import React from "react";
 
-import "./index.css";
+import "./Navigation.css";
 
 export default function Navigation({activeIndex, onClick}) {
 	const contactButtonClasses = classNames("button", "contact");
 
 	return (
-		<div className={"container"}>
+		<div className={"navigationContainer"}>
 			<img src={logo} alt={"Connect MNG Logo"} className={"logo"} onClick={() => onClick(0)}/>
 			<Tab text={"Programs"} className={"button"} isActive={activeIndex === 1} onClick={() => onClick(1)}/>
 			<Tab text={"Get Involved"} className={"button"} isActive={activeIndex === 2} onClick={() => onClick(2)} />
@@ -21,7 +21,7 @@ export default function Navigation({activeIndex, onClick}) {
 };
 
 function Tab({text, isActive, onClick, className}) {
-	if (isActive) {
+	if (isActive && (className !== classNames("button", "contact"))) {
 		className = classNames(className, "active");
 	}
 
