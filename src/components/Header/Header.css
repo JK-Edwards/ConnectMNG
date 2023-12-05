@@ -1,9 +1,17 @@
 .headerContainer {
 	display: flex;
 	flex-direction: row-reverse;
+	align-items: center;
 }
 
 .icon {
 	max-height: 50px;
 	max-width: 50px;
+}
+
+.languageIcon {
+	padding-left: 7.36px;
+	padding-right: 7.36px;
+	padding-top: 13px;
+	padding-bottom: 13px;
 };
