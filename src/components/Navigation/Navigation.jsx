@@ -28,7 +28,7 @@ export default function Navigation() {
 
 function NavLink({to, text, isActive, className, onClick}) {
 	if (isActive && (className !== classNames("button", "contact"))) {
-		className = classNames(className, "active");
+		className = classNames(className, "isActive");
 	};
 
 	return (

@@ -6,17 +6,18 @@
 	color: black;
 }
 
-.navigationContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
 .contact {
     background: #7eb67c;
     height: 50px;
 	width: 170px;
+}
+
+.contact:hover {
+	background: #5b8259;
+}
+
+.isActive {
+	text-decoration: underline;
 }
 
 .logo {
@@ -24,6 +25,9 @@
 	width: 216px;
 }
 
-.active {
-	text-decoration: underline;
+.navigationContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
