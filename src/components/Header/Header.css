@@ -27,6 +27,7 @@
 	align-items: center;
 	max-height: 50px;
 	padding-right: 10px;
+	position: relative;
 }
 
 .mngIcon {
@@ -34,4 +35,15 @@
 	padding-right: 4.68px;
 	padding-top: 13px;
 	padding-bottom: 13px;
-};
+}
+
+.dropdown div {
+	cursor: pointer;
+	padding-left: 7px;
+	padding-bottom: 5px;
+}
+
+.languageContainer {
+	position: relative;
+	height: 50px;
+  }
