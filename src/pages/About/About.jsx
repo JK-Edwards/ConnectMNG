@@ -2,9 +2,13 @@ import logo from "../../images/logo.png";
 import Gallery from "../../components/Gallery/Gallery";
 import React from "react";
 
+import { useIntl } from "react-intl";
+
 import "./About.css";
 
 export default function About() {
+	const intl = useIntl();
+
 	return (
 		<div>
 			<div className={"infoContainer"}>
@@ -12,7 +16,9 @@ export default function About() {
 					<img src={logo} alt={"Connect MNG Logo"}></img>
 				</div>
 				<div className={"textContainer"}>
-					<h1>About Us</h1>
+					<h1>
+						{intl.formatMessage({id: "about"})}
+					</h1>
 				</div>
 			</div>
 			<div>
