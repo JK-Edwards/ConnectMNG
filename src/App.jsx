@@ -22,7 +22,7 @@ function App() {
 		<Router>
 			<div className={"app"}>
 				<Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
-				<Navigation />
+				<Navigation isEnglish={isEnglish}/>
 				<Routes>
 					<Route path="*" element={<Home />} />
 					<Route path="/programs" element={<Programs />} />
