@@ -21,7 +21,7 @@ function App() {
 	return (
 		<Router>
 			<div className={"app"}>
-				<Header isEnglish={isEnglish} onClick={setIsEnglish} />
+				<Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
 				<Navigation />
 				<Routes>
 					<Route path="*" element={<Home />} />

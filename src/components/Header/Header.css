@@ -3,6 +3,18 @@
 	max-width: 15px;
 }
 
+.dropdown div {
+	cursor: pointer;
+	padding-left: 7px;
+}
+
+.engIcon {
+	padding-left: 7.36px;
+	padding-right: 7.36px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
 .headerContainer {
 	display: flex;
 	flex-direction: row-reverse;
@@ -14,13 +26,6 @@
 	max-width: 50px;
 }
 
-.engIcon {
-	padding-left: 7.36px;
-	padding-right: 7.36px;
-	padding-top: 13px;
-	padding-bottom: 13px;
-}
-
 .languageButton {
 	display: flex;
 	justify-content: center;
@@ -30,20 +35,14 @@
 	position: relative;
 }
 
+.languageContainer {
+	position: relative;
+	height: 50px;
+}
+
 .mngIcon {
 	padding-left: 4.68px;
 	padding-right: 4.68px;
 	padding-top: 13px;
 	padding-bottom: 13px;
 }
-
-.dropdown div {
-	cursor: pointer;
-	padding-left: 7px;
-	padding-bottom: 5px;
-}
-
-.languageContainer {
-	position: relative;
-	height: 50px;
-  }
