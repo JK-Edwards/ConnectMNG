@@ -8,21 +8,21 @@ import { useState } from "react";
 import "./Header.css";
 
 export default function Header({isEnglish, setIsEnglish}) {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   function handleLanguageSelect(newStatus) {
     setIsEnglish(newStatus);
-    setShowDropdown(false);
+    setShowMenu(false);
   };
 
   return (
     <div className={"headerContainer"}>
       <div className="languageContainer">
-        <div className={"languageButton"} onClick={() => setShowDropdown(!showDropdown)}>
+        <div className={"languageButton"} onClick={() => setShowMenu(!showMenu)}>
           {isEnglish ? <div className="engIcon">ENG</div> : <div className="mngIcon">MNG</div>}
           <img src={arrow} className={"arrow"} alt={"Language Menu"} />
         </div>
-        {showDropdown ? <LanguageMenu isEnglish={isEnglish} onSelect={handleLanguageSelect} /> : null}
+        {showMenu ? <LanguageMenu isEnglish={isEnglish} onSelect={handleLanguageSelect} /> : null}
       </div>
       <a href="https://www.instagram.com/anuujinii" target={"_blank"} rel={"noreferrer"}>
         <img src={instaLogo} className={"icon"} alt={"Instagram"} />
