@@ -1,6 +1,6 @@
 import arrow from "../../images/arrow.png";
-import instaLogo from "../../images/insta.avif";
 import LanguageMenu from "../LanguageMenu/LanguageMenu.jsx";
+import SocialsBar from "../SocialsBar/SocialsBar.jsx";
 import React from "react";
 
 import { useState } from "react";
@@ -24,9 +24,10 @@ export default function Header({isEnglish, setIsEnglish}) {
         </div>
         {showMenu ? <LanguageMenu isEnglish={isEnglish} onSelect={handleLanguageSelect} /> : null}
       </div>
-      <a href="https://www.instagram.com/anuujinii" target={"_blank"} rel={"noreferrer"}>
+      {/* <a href="https://www.instagram.com/anuujinii" target={"_blank"} rel={"noreferrer"}>
         <img src={instaLogo} className={"icon"} alt={"Instagram"} />
-      </a>
+      </a> */}
+      <SocialsBar />
     </div>
   );
 };
