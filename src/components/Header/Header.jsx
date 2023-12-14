@@ -24,9 +24,6 @@ export default function Header({isEnglish, setIsEnglish}) {
         </div>
         {showMenu ? <LanguageMenu isEnglish={isEnglish} onSelect={handleLanguageSelect} /> : null}
       </div>
-      {/* <a href="https://www.instagram.com/anuujinii" target={"_blank"} rel={"noreferrer"}>
-        <img src={instaLogo} className={"icon"} alt={"Instagram"} />
-      </a> */}
       <SocialsBar />
     </div>
   );

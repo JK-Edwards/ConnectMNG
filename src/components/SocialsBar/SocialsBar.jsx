@@ -8,13 +8,13 @@ import "./SocialsBar.css";
 export default function SocialsBar() {
     return (
         <div>
-            <a href="https://www.instagram.com/anuujinii" target={"_blank"} rel={"noreferrer"}>
+            <a href="https://www.instagram.com/connect_mng/" target={"_blank"} rel={"noreferrer"}>
                 <img src={insta} className={"icon"} alt={"Instagram"} />
             </a>
-            <a href="https://www.linkedin.com/in/anuujini" target={"_blank"} rel={"noreferrer"}>
+            <a href="https://www.linkedin.com/company/connect-mng/" target={"_blank"} rel={"noreferrer"}>
                 <img src={linkedin} className={"icon"} alt={"LinkedIn"} />
             </a>
-            <a href="https://www.facebook.com/anuujini" target={"_blank"} rel={"noreferrer"}>
+            <a href="https://www.facebook.com/profile.php?id=61554736732199" target={"_blank"} rel={"noreferrer"}>
                 <img src={fb} className={"icon"} alt={"Facebook"} />
             </a>
         </div>
