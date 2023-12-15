@@ -21,9 +21,9 @@ function App() {
 	const [isEnglish, setIsEnglish] = useState(true);
 
 	return (
-		<IntlProvider locale={isEnglish ? "en" : "mn"} messages={translations[isEnglish ? "en" : "mn"]}>
-			<Router>
-				<div className={"app"}>
+		<div className={"app"}>
+			<IntlProvider locale={isEnglish ? "en" : "mn"} messages={translations[isEnglish ? "en" : "mn"]}>
+				<Router>
 					<Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
 					<Navigation />
 					<Routes>
@@ -36,9 +36,9 @@ function App() {
 						<Route path="/contact-us" element={<Contact />} />
 					</Routes>
 					<Footer />
-				</div>
-			</Router>
-		</IntlProvider>
+				</Router>
+			</IntlProvider>
+		</div>
 	);
 };
 
