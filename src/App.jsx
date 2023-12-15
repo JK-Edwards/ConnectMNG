@@ -17,7 +17,7 @@ import { useState } from "react";
 
 import "./App.css";
 
-function App() {
+export default function App() {
 	const [isEnglish, setIsEnglish] = useState(true);
 
 	return (
@@ -41,5 +41,3 @@ function App() {
 		</div>
 	);
 };
-
-export default App;
