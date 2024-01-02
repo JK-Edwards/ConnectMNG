@@ -1,3 +1,7 @@
+.homeContainer {
+	padding-top: 12rem;
+}
+
 .infoContainer {
 	display: flex;
 	justify-content: space-around;
@@ -7,4 +11,4 @@
 .textContainer {
 	display: flex;
 	align-items: center;
-};
+}

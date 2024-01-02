@@ -9,7 +9,7 @@ export default function Resources() {
 	const intl = useIntl();
 
 	return (
-		<div>
+		<div className={"resourcesContainer"}>
 			<div className={"infoContainer"}>
 				<div className={"imgContainer"}>
 					<img src={logo} alt={"Connect MNG Logo"}></img>

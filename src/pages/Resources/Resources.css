@@ -9,7 +9,11 @@
 	background: #C5EBC4;
 }
 
+.resourcesContainer {
+	padding-top: 12rem;
+}
+
 .textContainer {
 	display: flex;
 	align-items: center;
-};
+}

@@ -7,16 +7,28 @@ const translations = {
         about: "About Us",
         resources: "Resources",
         contact: "Contact Us",
-        home: "Home"
+        home: "Home",
+        careerDevelopment: "Career Development",
+        mentorship: "Mentorship",
+        networking: "Networking",
+        learnMore: "Learn More",
+        mission: "Our mission is empowering the Mongolian American college students & young professionals’ success by fostering a strong sense of community providing tailored resources for personal and professional growth, and cultivating an environment where individuals can connect, learn, and thrive together.",
+        missionAndImpact: "Mission & Impact"
     },
     mn: {
-        programs: "Төслүүд",
+        programs: "Хөтөлбөрүүд",
         volunteer: "Таны Оролцоо",
         blogs: "Блог",
         about: "Бидний Тухай",
         resources: "Нэмэлт Мэдээлэл",
         contact: "Бидэнтэй Холбогдох",
-        home: "Нүүр"
+        home: "Нүүр",
+        careerDevelopment: "Карьер Хөгжил",
+        mentorship: "Мэнторшип",
+        networking: "Нетворк",
+        learnMore: "Дэлгэрэнгүй",
+        mission: "Америк дахь Монгол оюутан залуус болон залуу мэргэжилтнүүдийг хувийн болон мэргэжлийн хөгжилд зориулсан мэдээллийн нөөцөөр хангаж, хувь хүмүүс хоорондоо холбогдож, суралцаж, хамтдаа хөгжих боломжтой орчныг бүрдүүлэх.",
+        missionAndImpact: "Зорилго & Нөлөө"
     },
 };
 

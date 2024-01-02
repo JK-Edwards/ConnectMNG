@@ -1,3 +1,7 @@
+.contactContainer {
+	padding-top: 12em;
+}
+
 .imgContainer {
 	display: flex;
 	justify-content: space-around;

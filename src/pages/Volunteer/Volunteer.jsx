@@ -9,7 +9,7 @@ export default function Volunteer() {
 	const intl = useIntl();
 
 	return (
-		<div>
+		<div className={"volunteerContainer"}>
 			<div className={"infoContainer"}>
 				<div className={"imgContainer"}>
 					<img src={logo} alt={"Connect MNG Logo"}></img>

@@ -1,3 +1,7 @@
+.blogContainer {
+	padding-top: 12rem;
+}
+
 .imgContainer {
 	display: flex;
 	justify-content: space-around;
@@ -12,4 +16,4 @@
 .textContainer {
 	display: flex;
 	align-items: center;
-};
+}

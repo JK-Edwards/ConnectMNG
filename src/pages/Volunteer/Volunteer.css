@@ -12,4 +12,8 @@
 .textContainer {
 	display: flex;
 	align-items: center;
-};
+}
+
+.volunteerContainer {
+	padding-top: 12rem;
+}

@@ -9,7 +9,7 @@ export default function Home() {
 	const intl = useIntl();
 
 	return (
-		<div>
+		<div className={"homeContainer"}>
 			<div className={"infoContainer"}>
 				<div className={"textContainer"}>
 					<h1>

@@ -24,8 +24,10 @@ export default function App() {
 		<div className={"app"}>
 			<IntlProvider locale={isEnglish ? "en" : "mn"} messages={translations[isEnglish ? "en" : "mn"]}>
 				<Router>
-					<Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
-					<Navigation />
+					<div className={"pinned"}>
+						<Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+						<Navigation />
+					</div>
 					<Routes>
 						<Route path="*" element={<Home />} />
 						<Route path="/programs" element={<Programs />} />

@@ -1,5 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import logo from "../../images/logo.png";
+import React from "react";
 
 import "./BasicCarousel.css";
 import "bootstrap/dist/css/bootstrap.min.css";

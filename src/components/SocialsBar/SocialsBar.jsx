@@ -1,7 +1,7 @@
-import discord from "../../images/discord.png";
-import fb from "../../images/fb.png";
-import insta from "../../images/insta.png";
-import linkedin from "../../images/linkedin.png";
+import discord from "../../images/socials/discord.png";
+import fb from "../../images/socials/fb.png";
+import insta from "../../images/socials/insta.png";
+import linkedin from "../../images/socials/linkedin.png";
 import React from "react";
 
 import "./SocialsBar.css";

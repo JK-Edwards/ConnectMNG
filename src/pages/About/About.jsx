@@ -10,7 +10,7 @@ export default function About() {
 	const intl = useIntl();
 
 	return (
-		<div>
+		<div className={"aboutContainer"}>
 			<div className={"infoContainer"}>
 				<div className={"imgContainer"}>
 					<img src={logo} alt={"Connect MNG Logo"}></img>
@@ -25,6 +25,5 @@ export default function About() {
 				<Gallery/>
 			</div>
 		</div>
-
 	);
 };

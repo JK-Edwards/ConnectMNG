@@ -9,7 +9,7 @@ export default function Contact() {
 	const intl = useIntl();
 
 	return (
-		<div>
+		<div className={"contactContainer"}>
 			<div className={"infoContainer"}>
 				<div className={"imgContainer"}>
 					<img src={logo} alt={"Connect MNG Logo"}></img>
