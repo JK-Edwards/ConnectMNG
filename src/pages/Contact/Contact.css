@@ -1,6 +1,8 @@
 .contactContainer {
 	padding-top: 12em;
-	background: #C5EBC4;
+	background-image: url("../../images/background.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 .imgContainer {

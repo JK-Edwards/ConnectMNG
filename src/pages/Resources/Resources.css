@@ -10,7 +10,9 @@
 
 .resourcesContainer {
 	padding-top: 12rem;
-	background: #C5EBC4;
+	background-image: url("../../images/background.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 .textContainer {
