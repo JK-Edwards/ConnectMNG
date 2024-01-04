@@ -1,0 +1,19 @@
+.linkedInLink {
+  text-decoration: underline;
+	color: #5b8259;
+	font-weight: bold;
+}
+
+.profileContainer {
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 5px;
+}
