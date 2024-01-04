@@ -1,3 +1,4 @@
+import blogs from "../../images/blogs.jpeg";
 import ItemCarousel from "../../components/Carousel/ItemCarousel";
 import React from "react";
 
@@ -8,30 +9,30 @@ import "./Home.css";
 export default function Home() {
 	const intl = useIntl();
 
-	const imageSlides = [
+	const blogSlides = [
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/400/300" alt="Slide 1" />
-			<p>Meow 1</p>
+			<img src={blogs} height={350} width={350} alt={"Slide 1"} />
+			<p>Blog 1</p>
 		</div>,
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/401/300" alt="Slide 2" />
-			<p>Meow 2</p>
+			<img src={blogs} height={350} width={350} alt={"Slide 2"} />
+			<p>Blog 2</p>
 		</div>,
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/403/300" alt="Slide 3" />
-			<p>Meow 3</p>
+			<img src="https://placekitten.com/403/300" height={350} alt="Slide 3" />
+			<p>Meow</p>
 		</div>,
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/404/300" alt="Slide 3" />
-			<p>Meow 4</p>
+			<img src="https://placekitten.com/404/300" height={350} alt="Slide 3" />
+			<p>Meow</p>
 		</div>,
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/405/300" alt="Slide 3" />
-			<p>Meow 5</p>
+			<img src="https://placekitten.com/405/300" height={350} alt="Slide 3" />
+			<p>Meow</p>
 		</div>,
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/406/300" alt="Slide 3" />
-			<p>Meow 6</p>
+			<img src="https://placekitten.com/406/300" height={350} alt="Slide 3" />
+			<p>Meow</p>
 		</div>
 	  ];
 
@@ -44,7 +45,7 @@ export default function Home() {
 					</h1>
 				</div>
 			</div>
-			<ItemCarousel slides={imageSlides} interval={2500}/>
+			<ItemCarousel slides={blogSlides} interval={2500}/>
 		</div>
 	);
 };
