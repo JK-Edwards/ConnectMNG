@@ -1,14 +1,22 @@
 .homeContainer {
 	padding-top: 12rem;
+	background: #C5EBC4;
 }
 
 .infoContainer {
 	display: flex;
 	justify-content: space-around;
-	background: #C5EBC4;
 }
 
 .textContainer {
 	display: flex;
 	align-items: center;
+}
+
+.carouselSlide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5%;
 }

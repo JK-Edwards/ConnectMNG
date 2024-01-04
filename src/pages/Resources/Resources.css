@@ -6,11 +6,11 @@
 .infoContainer {
 	display: flex;
 	justify-content: space-around;
-	background: #C5EBC4;
 }
 
 .resourcesContainer {
 	padding-top: 12rem;
+	background: #C5EBC4;
 }
 
 .textContainer {
