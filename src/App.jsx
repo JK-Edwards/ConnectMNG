@@ -1,10 +1,13 @@
 import About from "./pages/About/About.jsx";
 import Blogs from "./pages/Blogs/Blogs.jsx";
+import CareerDevelopment from "./pages/Programs/ProgramPages/CareerDevelopment/CareerDevelopment.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import Home from "./pages/Home/Home.jsx";
+import MentorshipProgram from "./pages/Programs/ProgramPages/Mentorship/Mentorship.jsx";
 import Navigation from "./components/Navigation/Navigation.jsx";
+import NetworkingProgram from "./pages/Programs/ProgramPages/Networking/Networking.jsx";
 import Programs from "./pages/Programs/Programs.jsx";
 import React from "react";
 import Resources from "./pages/Resources/Resources.jsx";
@@ -31,6 +34,9 @@ export default function App() {
 					<Routes>
 						<Route path="*" element={<Home />} />
 						<Route path="/programs" element={<Programs />} />
+						<Route path="/programs/career-development" element={<CareerDevelopment />} />
+						<Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
+						<Route path="/programs/networking-program" element={<NetworkingProgram />} />
 						<Route path="/get-involved" element={<Volunteer />} />
 						<Route path="/blogs" element={<Blogs />} />
 						<Route path="/about-us" element={<About />} />

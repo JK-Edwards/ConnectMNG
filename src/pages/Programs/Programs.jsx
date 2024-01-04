@@ -3,7 +3,9 @@ import prog2 from "../../images/programs/prog2.png";
 import prog3 from "../../images/programs/prog3.png";
 import React from "react";
 
+import { Link } from 'react-router-dom';
 import { useIntl } from "react-intl";
+
 
 import "./Programs.css";
 
@@ -22,17 +24,23 @@ export default function Programs() {
 					<div className="program">
 						<img className={"programImage"} src={prog1} alt={"Career Development Program"}></img>
 						<h3>{intl.formatMessage({id: "careerDevelopment"})}</h3>
-						<a className={"learnMoreLink"} href={"https://www.google.co.uk/"} target={"_blank"} rel={"noreferrer"}>{intl.formatMessage({id: "learnMore"})}</a>
+						<Link to="/programs/career-development" className={'learnMoreLink'}>
+              				{intl.formatMessage({ id: 'learnMore' })}
+            			</Link>
 					</div>
 					<div className="program">
 						<img className={"programImage"} src={prog2} alt={"Mentorship Program"}></img>
 						<h3>{intl.formatMessage({id: "mentorship"})}</h3>
-						<a className={"learnMoreLink"} href={"https://www.google.co.uk/"} target={"_blank"} rel={"noreferrer"}>{intl.formatMessage({id: "learnMore"})}</a>
+						<Link to="/programs/mentorship-program" className={'learnMoreLink'}>
+              				{intl.formatMessage({ id: 'learnMore' })}
+            			</Link>
 					</div>
 					<div className="program">
 						<img className={"programImage"} src={prog3} alt={"Networking Program"}></img>
 						<h3>{intl.formatMessage({id: "networking"})}</h3>
-						<a className={"learnMoreLink"} href={"https://www.google.co.uk/"} target={"_blank"} rel={"noreferrer"}>{intl.formatMessage({id: "learnMore"})}</a>
+						<Link to="/programs/networking-program" className={'learnMoreLink'}>
+              				{intl.formatMessage({ id: 'learnMore' })}
+            			</Link>
 					</div>
 				</div>
 			</div>
