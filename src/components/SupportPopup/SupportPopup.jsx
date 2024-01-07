@@ -4,11 +4,13 @@ import hand from "../../images/supportPopup/supportPopupImage.png";
 import React from "react";
 
 import { Link } from "react-router-dom";
+import { useIntl } from "react-intl";
 import { useState } from "react";
 
 import "./SupportPopup.css";
 
 export default function SupportPopup() {
+    const intl = useIntl();
     const [isOpen, setIsOpen] = useState(true);
 
     const togglePopup = () => {
@@ -37,7 +39,7 @@ export default function SupportPopup() {
                 <p>{text}</p>
                 <Link className={"supportPopupDonateLink"} to="/donate">
                     <p>
-                        Donate
+                        {intl.formatMessage({id: "donate"})}
                     </p>
                     <img className={"supportPopupDonateLinkArrow"} src={donateArrow} alt={"Donation link arrow"}/>
                 </Link>

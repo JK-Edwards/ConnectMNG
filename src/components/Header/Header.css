@@ -26,6 +26,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 	max-height: 50px;
 	padding-right: 10px;
 	position: relative;
