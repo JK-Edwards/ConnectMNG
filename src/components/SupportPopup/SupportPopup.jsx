@@ -30,11 +30,15 @@ export default function SupportPopup() {
             <div className={"supportPopupTextContainer" + (!isOpen ? " closed" : "")}>
                 <div className={"supportPopupTextTitleContainer"}>
                     <img className={"supportPopupImage"} src={hand} alt={"Helping Hand"}/>
-                    <h3>Support Connect MNG!</h3>
+                    <h3>
+                        Support Connect MNG!
+                    </h3>
                 </div>
                 <p>{text}</p>
                 <Link className={"supportPopupDonateLink"} to="/donate">
-                    <p>Donate</p>
+                    <p>
+                        Donate
+                    </p>
                     <img className={"supportPopupDonateLinkArrow"} src={donateArrow} alt={"Donation link arrow"}/>
                 </Link>
             </div>

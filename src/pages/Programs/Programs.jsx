@@ -1,9 +1,9 @@
+import LearnMoreLink from "../../components/LearnMoreLink/LearnMoreLink";
 import prog1 from "../../images/programs/prog1.png";
 import prog2 from "../../images/programs/prog2.png";
 import prog3 from "../../images/programs/prog3.png";
 import React from "react";
 
-import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
 
 
@@ -24,23 +24,17 @@ export default function Programs() {
 					<div className="program">
 						<img className={"programImage"} src={prog1} alt={"Career Development Program"}></img>
 						<h3>{intl.formatMessage({id: "careerDevelopment"})}</h3>
-						<Link to="/programs/career-development" className={'learnMoreLink'}>
-              				{intl.formatMessage({ id: 'learnMore' })}
-            			</Link>
+						<LearnMoreLink link={"/programs/career-development"}/>
 					</div>
 					<div className="program">
 						<img className={"programImage"} src={prog2} alt={"Mentorship Program"}></img>
 						<h3>{intl.formatMessage({id: "mentorship"})}</h3>
-						<Link to="/programs/mentorship-program" className={'learnMoreLink'}>
-              				{intl.formatMessage({ id: 'learnMore' })}
-            			</Link>
+						<LearnMoreLink link={"/programs/mentorship-program"}/>
 					</div>
 					<div className="program">
 						<img className={"programImage"} src={prog3} alt={"Networking Program"}></img>
 						<h3>{intl.formatMessage({id: "networking"})}</h3>
-						<Link to="/programs/networking-program" className={'learnMoreLink'}>
-              				{intl.formatMessage({ id: 'learnMore' })}
-            			</Link>
+						<LearnMoreLink link={"/programs/networking-program"}/>
 					</div>
 				</div>
 			</div>
