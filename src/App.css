@@ -2,8 +2,18 @@
     font-family: Palatino;
 }
 
-.pinned {
+.pinnedHeader {
     position: fixed;
     width: 100%;
+    z-index: 1000;
+}
+
+.pinnedSupportPopup {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    background: #7eb67c;
+    padding: 1rem;
+    border-radius: 15px;
     z-index: 1000;
 }

@@ -23,7 +23,7 @@ export default function Navigation() {
 			<NavLink to={"/blogs"} text={intl.formatMessage({id: "blogs"})} className={"button"} isActive={activeIndex === 3} onClick={() => setActiveIndex(3)}/>
 			<NavLink to={"/about-us"} text={intl.formatMessage({id: "about"})} className={"button"} isActive={activeIndex === 4} onClick={() => setActiveIndex(4)}/>
 			<NavLink to={"/resources"} text={intl.formatMessage({id: "resources"})} className={"button"} isActive={activeIndex === 5} onClick={() => setActiveIndex(5)}/>
-			<NavLink to={"/contact-us"} text={intl.formatMessage({id: "contact"})} className={contactButtonClasses} isActive={activeIndex === 6} onClick={() => setActiveIndex(6)}/>
+			<NavLink to={"/donate"} text={intl.formatMessage({id: "Donate"})} className={contactButtonClasses} isActive={activeIndex === 6} onClick={() => setActiveIndex(6)}/>
     	</div>
 	);
 };

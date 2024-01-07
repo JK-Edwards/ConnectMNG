@@ -2,6 +2,7 @@ import About from "./pages/About/About.jsx";
 import Blogs from "./pages/Blogs/Blogs.jsx";
 import CareerDevelopment from "./pages/Programs/ProgramPages/CareerDevelopment/CareerDevelopment.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
+import Donate from "./pages/Donate/Donate.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import Home from "./pages/Home/Home.jsx";
@@ -11,6 +12,7 @@ import NetworkingProgram from "./pages/Programs/ProgramPages/Networking/Networki
 import Programs from "./pages/Programs/Programs.jsx";
 import React from "react";
 import Resources from "./pages/Resources/Resources.jsx";
+import SupportPopup from "./components/SupportPopup/SupportPopup.jsx";
 import translations from "./translations.jsx";
 import Volunteer from "./pages/Volunteer/Volunteer.jsx";
 
@@ -27,7 +29,7 @@ export default function App() {
 		<div className={"app"}>
 			<IntlProvider locale={isEnglish ? "en" : "mn"} messages={translations[isEnglish ? "en" : "mn"]}>
 				<Router>
-					<div className={"pinned"}>
+					<div className={"pinnedHeader"}>
 						<Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
 						<Navigation />
 					</div>
@@ -42,7 +44,11 @@ export default function App() {
 						<Route path="/about-us" element={<About />} />
 						<Route path="/resources" element={<Resources />} />
 						<Route path="/contact-us" element={<Contact />} />
+						<Route path="/donate" element={<Donate />} />
 					</Routes>
+					<div className={"pinnedSupportPopup"}>
+						<SupportPopup />
+					</div>
 					<Footer />
 				</Router>
 			</IntlProvider>

@@ -1,15 +1,9 @@
-.imgContainer {
+.donateContainer {
+	padding-top: 12rem;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-image: url("../../images/background.jpg");
+	background-size: cover;
+	background-position: center;
 }
-
-.infoContainer {
-	display: flex;
-	justify-content: space-around;
-	background: #C5EBC4;
-}
-
-.textContainer {
-	display: flex;
-	align-items: center;
-};
