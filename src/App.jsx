@@ -12,6 +12,7 @@ import NetworkingProgram from "./pages/Programs/ProgramPages/Networking/Networki
 import Programs from "./pages/Programs/Programs.jsx";
 import React from "react";
 import Resources from "./pages/Resources/Resources.jsx";
+import ResumeBlog from "./pages/Blogs/IndividualBlogs/ResumeBlog/ResumeBlog.jsx";
 import SupportPopup from "./components/SupportPopup/SupportPopup.jsx";
 import translations from "./translations.jsx";
 import Volunteer from "./pages/Volunteer/Volunteer.jsx";
@@ -41,6 +42,7 @@ export default function App() {
 						<Route path="/programs/networking-program" element={<NetworkingProgram />} />
 						<Route path="/get-involved" element={<Volunteer />} />
 						<Route path="/blogs" element={<Blogs />} />
+						<Route path="/blogs/resume-blog" element={<ResumeBlog />} />
 						<Route path="/about-us" element={<About />} />
 						<Route path="/resources" element={<Resources />} />
 						<Route path="/contact-us" element={<Contact />} />

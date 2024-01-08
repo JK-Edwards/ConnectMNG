@@ -1,4 +1,4 @@
-import LearnMoreLink from "../../components/LearnMoreLink/LearnMoreLink";
+import StyledLink from "../../components/StyledLink/StyledLink";
 import prog1 from "../../images/programs/prog1.png";
 import prog2 from "../../images/programs/prog2.png";
 import prog3 from "../../images/programs/prog3.png";
@@ -24,17 +24,17 @@ export default function Programs() {
 					<div className="program">
 						<img className={"programImage"} src={prog1} alt={"Career Development Program"}></img>
 						<h3>{intl.formatMessage({id: "careerDevelopment"})}</h3>
-						<LearnMoreLink link={"/programs/career-development"}/>
+						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs/career-development"}/>
 					</div>
 					<div className="program">
 						<img className={"programImage"} src={prog2} alt={"Mentorship Program"}></img>
 						<h3>{intl.formatMessage({id: "mentorship"})}</h3>
-						<LearnMoreLink link={"/programs/mentorship-program"}/>
+						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs/mentorship-program"}/>
 					</div>
 					<div className="program">
 						<img className={"programImage"} src={prog3} alt={"Networking Program"}></img>
 						<h3>{intl.formatMessage({id: "networking"})}</h3>
-						<LearnMoreLink link={"/programs/networking-program"}/>
+						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs/networking-program"}/>
 					</div>
 				</div>
 			</div>

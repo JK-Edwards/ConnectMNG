@@ -1,0 +1,9 @@
+.resumeBlogContainer {
+	padding-top: 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-image: url("../../../../images/background.jpg");
+	background-size: cover;
+	background-position: center;
+}
