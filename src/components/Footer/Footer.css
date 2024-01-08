@@ -1,5 +1,4 @@
 .footerContainer {
     display: flex;
 	flex-direction: row-reverse;
-	background: #7eb67c;
 }

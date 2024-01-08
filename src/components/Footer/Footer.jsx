@@ -6,7 +6,7 @@ import "./Footer.css";
 export default function Footer() {
     return (
         <div className={"footerContainer"}>
-            <SocialsBar />
+            <SocialsBar isInHeader={false}/>
 		</div>
     );
 };

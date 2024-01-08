@@ -24,7 +24,7 @@ export default function Header({isEnglish, setIsEnglish}) {
         </div>
         {showMenu ? <LanguageMenu isEnglish={isEnglish} onSelect={handleLanguageSelect} /> : null}
       </div>
-      <SocialsBar />
+      <SocialsBar isInHeader={true}/>
     </div>
   );
 };
