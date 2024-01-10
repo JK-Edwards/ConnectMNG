@@ -1,0 +1,20 @@
+.subscriptionContainer {
+    padding-top: 0.35rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.emailInput {
+    width: 25rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 2px solid #7eb67c;
+}
+
+.subscribeButton {
+    text-align: center;
+    border-radius: 1rem;
+    background: #7eb67c;
+    border: 2px solid #7eb67c;
+    color: #FFFFFF;
+}

@@ -19,24 +19,19 @@ export default function Home() {
 		</Link>
 		,
 		<div className={"carouselSlide"}>
-			<img src={blogs} height={350} width={350} alt={"Slide 2"} />
-			<p>Blog 2</p>
+			<img src={blogs} height={375} width={350} alt={"Slide 2"} />
 		</div>,
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/403/300" height={350} alt="Slide 3" />
-			<p>Meow</p>
+			<img src="https://placekitten.com/403/300" height={375} alt="Slide 3" />
 		</div>,
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/404/300" height={350} alt="Slide 3" />
-			<p>Meow</p>
+			<img src="https://placekitten.com/404/300" height={375} alt="Slide 3" />
 		</div>,
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/405/300" height={350} alt="Slide 3" />
-			<p>Meow</p>
+			<img src="https://placekitten.com/405/300" height={375} alt="Slide 3" />
 		</div>,
 		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/406/300" height={350} alt="Slide 3" />
-			<p>Meow</p>
+			<img src="https://placekitten.com/406/300" height={375} alt="Slide 3" />
 		</div>
 	  ];
 

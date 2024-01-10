@@ -9,6 +9,18 @@
 	background-position: center;
 }
 
+.resumeBlogWrapper {
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 75%;
+	margin-bottom: 5rem;
+	margin-top: 4rem;
+	border-radius: 5rem;
+}
+
 .resumeBlogContainer h1 {
 	padding: 1rem;
 	font-weight: bold;
@@ -22,6 +34,6 @@
 
 .resumeBlogContainer p {
 	padding-top: 2rem;
-	padding-left: 5rem;
-	padding-right: 5rem;
+	padding-left: 20rem;
+	padding-right: 20rem;
 }
