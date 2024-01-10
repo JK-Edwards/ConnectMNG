@@ -19,7 +19,7 @@ export default function SocialsBar({ isInHeader }) {
     const instaLogo = isInHeader ? insta1 : insta2;
     const linkedinLogo = isInHeader ? linkedin1 : linkedin2;
     return (
-        <div>
+        <div className={"socialsBarContainer"}>
             <a href="https://discord.gg/EPMFfUVtXX" target={"_blank"} rel={"noreferrer"}>
                 <img src={discordLogo} className={"icon"} alt={"Discord"} />
             </a>

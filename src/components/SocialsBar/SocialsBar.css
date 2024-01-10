@@ -1,3 +1,8 @@
+.socialsBarContainer {
+	display: flex;
+	justify-content: space-evenly;
+}
+
 .icon {
 	max-height: 40px;
 	max-width: 40px;

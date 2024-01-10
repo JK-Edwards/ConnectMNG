@@ -12,7 +12,7 @@ export default function ResumeBlog() {
                 <h1>
                     Resume 101
                 </h1>
-                <img src={resumeBlog1} width={"55%"}/>
+                <img src={resumeBlog1} width={"55%"} alt={""}/>
                 <h3>
                     Understanding the Basics
                 </h3>
@@ -41,7 +41,7 @@ export default function ResumeBlog() {
                     resume their system might not have the font and accept the format
                     that you submitted.
                 </p>
-                <img src={resumeBlog2} width={"50%"}/>
+                <img src={resumeBlog2} width={"50%"} alt={"Resume exmaple"}/>
                 <h3>
                     How to tailor your resume to the job you are applying for
                 </h3>
@@ -54,7 +54,7 @@ export default function ResumeBlog() {
                     resume's words to the most mentioned keywords in the job
                     description.
                 </p>
-                <img src={resumeBlog3} width={"20%"}/>
+                <img src={resumeBlog3} width={"20%"} alt={""}/>
                 <p>
                 One of the biggest reasons why you need to tailor your resume is
                 over 98.8% of Fortune 500 companies, 66% of large companies and
