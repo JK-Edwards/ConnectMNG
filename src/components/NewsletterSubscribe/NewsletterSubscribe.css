@@ -1,14 +1,15 @@
 .emailInput {
     width: 25rem;
-    border-radius: 1rem;
+    border-radius: 1rem 0 0 1rem;
     text-align: center;
-    border: 2px solid #7eb67c;
+    border: 2px solid lightgray;
+    background: lightgray;
 }
 
 .subscribeButton {
     text-align: center;
-    border-radius: 1rem;
-    background: #7eb67c;
-    border: 2px solid #7eb67c;
+    border-radius: 0 1rem 1rem 0;
+    background: orange;
+    border: 2px solid orange;
     color: #FFFFFF;
 }
