@@ -1,9 +1,10 @@
 import blogs from "../../images/blogs.jpeg";
 import ItemCarousel from "../../components/Carousel/ItemCarousel.jsx";
-import StyledLink from "../../components/StyledLink/StyledLink.jsx";
 import React from "react";
 
+import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
+
 
 import "./Home.css";
 
@@ -11,11 +12,12 @@ export default function Home() {
 	const intl = useIntl();
 
 	const blogSlides = [
-		<div className={"carouselSlide"}>
-			<img src={blogs} height={350} width={350} alt={"Slide 1"} />
-			<p>Blog 1</p>
-			<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/blogs/resume-blog"} />
-		</div>,
+		<Link to={"/blogs/resume-blog"}>
+			<div className={"carouselSlide"}>
+				<img src={blogs} height={375} width={375} alt={"Slide 1"} />
+			</div>
+		</Link>
+		,
 		<div className={"carouselSlide"}>
 			<img src={blogs} height={350} width={350} alt={"Slide 2"} />
 			<p>Blog 2</p>
