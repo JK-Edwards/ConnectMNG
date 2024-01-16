@@ -11,7 +11,7 @@ import "./Navigation.css";
 export default function Navigation() {
 	const intl = useIntl();
 	const [activeIndex, setActiveIndex] = useState(0);
-	const contactButtonClasses = classNames("button", "contact");
+	const donateButtonClasses = classNames("button", "donate");
 
 	return (
 		<div className={"navigationContainer"}>
@@ -23,13 +23,13 @@ export default function Navigation() {
 			<NavLink to={"/blogs"} text={intl.formatMessage({id: "blogs"})} className={"button"} isActive={activeIndex === 3} onClick={() => setActiveIndex(3)}/>
 			<NavLink to={"/about-us"} text={intl.formatMessage({id: "about"})} className={"button"} isActive={activeIndex === 4} onClick={() => setActiveIndex(4)}/>
 			<NavLink to={"/resources"} text={intl.formatMessage({id: "resources"})} className={"button"} isActive={activeIndex === 5} onClick={() => setActiveIndex(5)}/>
-			<NavLink to={"/donate"} text={intl.formatMessage({id: "donate"})} className={contactButtonClasses} isActive={activeIndex === 6} onClick={() => setActiveIndex(6)}/>
+			<NavLink to={"/donate"} text={intl.formatMessage({id: "donate"})} className={donateButtonClasses} isActive={activeIndex === 6} onClick={() => setActiveIndex(6)}/>
     	</div>
 	);
 };
 
 function NavLink({to, text, isActive, className, onClick}) {
-	if (isActive && (className !== classNames("button", "contact"))) {
+	if (isActive && (className !== classNames("button", "donate"))) {
 		className = classNames(className, "isActive");
 	};
 

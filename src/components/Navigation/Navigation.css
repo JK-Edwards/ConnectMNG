@@ -4,17 +4,17 @@
 	justify-content: center;
 	text-decoration: none;
 	color: black;
-	font-size: large;
+	font-size: calc(0.25rem + 1vw);
 }
 
-.contact {
+.donate {
     background: #7eb67c;
-    height: 50px;
-	width: 200px;
-	border-radius: 15px;
+    height: 3vw;
+	width: 12vw;
+	border-radius: 1vw;
 }
 
-.contact:hover {
+.donate:hover {
 	background: #5b8259;
 }
 
@@ -23,8 +23,8 @@
 }
 
 .logo {
-	height: 130px;
-	width: 216px;
+	height: 9vw;
+  	width: 15vw;
 }
 
 .navigationContainer {
