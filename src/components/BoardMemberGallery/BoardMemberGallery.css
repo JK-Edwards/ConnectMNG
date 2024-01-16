@@ -11,9 +11,27 @@
 }
 
 .profile {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 0 calc(25% - 10px);
+  flex: 0 0 calc(25vw - 10px);
   margin: 5px;
+}
+
+.profile h3 {
+  font-size: calc(0.1rem + 1.75vw);
+}
+
+.profile p {
+  font-size: calc(0.1rem + 1.1vw);
+}
+
+.profile a {
+  font-size: calc(0.1rem + 1vw);
+}
+
+.profile img {
+  height: calc(14vw);
+  width: calc(14vw);
 }
