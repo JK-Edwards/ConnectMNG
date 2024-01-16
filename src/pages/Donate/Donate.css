@@ -1,5 +1,5 @@
 .donateContainer {
-	padding-top: 12rem;
+	padding-top: calc(1rem + 12vw);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;

@@ -23,7 +23,7 @@ function Profile({person }) {
 
 export default function BoardMemberGallery() {
     return (
-      <div>
+      <div className={"galleryContainer"}>
         <h1>Board of Directors</h1>
         <div className={"profileContainer"}>
           <Profile person={{name: "Anuujin Ider",
