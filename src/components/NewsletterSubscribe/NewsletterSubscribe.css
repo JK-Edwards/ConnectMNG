@@ -1,15 +1,22 @@
 .emailInput {
-    width: 25rem;
-    border-radius: 1rem 0 0 1rem;
+    width: 29vw;
+    border-radius: 1vw 0 0 1vw;
     text-align: center;
-    border: 2px solid lightgray;
+    border: 0.2vw solid lightgray;
     background: lightgray;
+    font-size: calc(0.3rem + 0.5vw + 0.5vh);
 }
 
 .subscribeButton {
     text-align: center;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 1vw 1vw 0;
     background: orange;
-    border: 2px solid orange;
+    border: 0.2vw solid orange;
     color: #FFFFFF;
+    font-size: calc(0.3rem + 0.5vw + 0.5vh);
+    width: 6vw;
+}
+
+.subscriptionContainer {
+    overflow: hidden;
 }

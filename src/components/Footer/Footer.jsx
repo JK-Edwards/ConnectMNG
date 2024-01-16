@@ -12,20 +12,20 @@ export default function Footer() {
             <div className={"footerPageLinksContainer"}>
                 <div className={"footerLinkContainer"}>
                     <h3>EXPLORE</h3>
-                    <Link>HOME</Link>
-                    <Link>BLOG</Link>
+                    <Link to={"/"}>HOME</Link>
+                    <Link to={"/blogs"}>BLOGS</Link>
                     <Link>PODCAST</Link>
                 </div>
                 <div className={"footerLinkContainer"}>
-                    <h3>GET INVOLVED</h3>
+                    <h3>ENGAGE</h3>
                     <Link>MEMBERSHIP</Link>
-                    <Link>VOLUNTEER</Link>
-                    <Link>DONATE</Link>
+                    <Link to={"/get-involved"}>VOLUNTEER</Link>
+                    <Link to={"/donate"}>DONATE</Link>
                 </div>
                 <div className={"footerLinkContainer"}>
                     <h3>ABOUT US</h3>
-                    <Link>OUR STORY</Link>
-                    <Link>OUR TEAM</Link>
+                    <Link to={"about-us"}>OUR STORY</Link>
+                    <Link to={"about-us"}>OUR TEAM</Link>
                 </div>
             </div>
             <div className={"footerSocialsLinksContainer"}>

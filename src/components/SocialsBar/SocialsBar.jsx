@@ -18,22 +18,23 @@ export default function SocialsBar({ isInHeader }) {
     const fbLogo = isInHeader ? fb1 : fb2;
     const instaLogo = isInHeader ? insta1 : insta2;
     const linkedinLogo = isInHeader ? linkedin1 : linkedin2;
+    const iconStyle = isInHeader ? "icon" : "iconFooter";
     return (
         <div className={"socialsBarContainer"}>
             <a href="https://discord.gg/EPMFfUVtXX" target={"_blank"} rel={"noreferrer"}>
-                <img src={discordLogo} className={"icon"} alt={"Discord"} />
+                <img src={discordLogo} className={iconStyle} alt={"Discord"} />
             </a>
             <a href="mailto:connectmongol.mng@gmail.com" target={"_blank"} rel={"noreferrer"}>
-                <img src={emailLogo} className={"icon"} alt={"Email"} />
+                <img src={emailLogo} className={iconStyle} alt={"Email"} />
             </a>
             <a href="https://www.facebook.com/profile.php?id=61554736732199" target={"_blank"} rel={"noreferrer"}>
-                <img src={fbLogo} className={"icon"} alt={"Facebook"} />
+                <img src={fbLogo} className={iconStyle} alt={"Facebook"} />
             </a>
             <a href="https://www.instagram.com/connect_mng/" target={"_blank"} rel={"noreferrer"}>
-                <img src={instaLogo} className={"icon"} alt={"Instagram"} />
+                <img src={instaLogo} className={iconStyle} alt={"Instagram"} />
             </a>
             <a href="https://www.linkedin.com/company/connect-mng/" target={"_blank"} rel={"noreferrer"}>
-                <img src={linkedinLogo} className={"icon"} alt={"LinkedIn"} />
+                <img src={linkedinLogo} className={iconStyle} alt={"LinkedIn"} />
             </a>
         </div>
     );
