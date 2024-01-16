@@ -1,5 +1,5 @@
 .aboutContainer {
-    padding-top: 12rem;
+    padding-top: calc(1rem + 12vw);
 	background-image: url("../../images/background.jpg");
 	background-size: cover;
 	background-position: center;
