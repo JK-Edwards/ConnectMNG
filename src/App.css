@@ -10,10 +10,10 @@
 
 .pinnedSupportPopup {
     position: fixed;
-    bottom: 3rem;
-    right: 1rem;
+    bottom: 3vw;
+    right: 1vw;
     background: #7eb67c;
-    padding: 1rem;
-    border-radius: 15px;
+    padding: 1vw;
+    border-radius: 1.5vw;
     z-index: 1000;
 }
