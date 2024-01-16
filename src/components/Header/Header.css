@@ -1,18 +1,18 @@
 .arrow {
-	max-height: 15px;
-	max-width: 15px;
+	max-height: 1.25vw;
+	max-width: 1.25vw;
 }
 
 .dropdown div {
 	cursor: pointer;
-	padding-left: 7px;
+	padding-left: 0.7vw;;
 }
 
 .engIcon {
-	padding-left: 7.36px;
-	padding-right: 7.36px;
-	padding-top: 13px;
-	padding-bottom: 13px;
+	padding-left: 0.736vw;
+	padding-right: 0.736vw;
+	padding-top: 0.65vw;
+	padding-bottom: 0.55vw;
 }
 
 .headerContainer {
@@ -27,19 +27,20 @@
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	max-height: 50px;
-	padding-right: 10px;
+	max-height: 5vw;
+	padding-right: 1vw;
 	position: relative;
+	font-size: calc(0.2rem + 1vw);
 }
 
 .languageContainer {
 	position: relative;
-	height: 50px;
+	height: 3vw;
 }
 
 .mngIcon {
-	padding-left: 4.68px;
-	padding-right: 4.68px;
-	padding-top: 13px;
-	padding-bottom: 13px;
+	padding-left: 0.468vw;
+	padding-right: 0.468vw;
+	padding-top: 0.65vw;
+	padding-bottom: 0.55vw;
 }
