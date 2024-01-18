@@ -18,11 +18,13 @@ export default function Navigation() {
 	function handleVolunteerSelect() {
 		setActiveIndex(2)
 		setShowActivities(!showActivities);
+		setShowResources(false);
 	};
 
 	function handleResourcesSelect() {
 		setActiveIndex(5)
 		setShowResources(!showResources);
+		setShowActivities(false);
 	};
 
 	return (
