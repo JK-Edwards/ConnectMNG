@@ -1,5 +1,5 @@
 import arrow from "../../images/arrow.png";
-import LanguageMenu from "../LanguageMenu/LanguageMenu.jsx";
+import LanguageMenu from "../Dropdowns/LanguageMenu/LanguageMenu.jsx";
 import SocialsBar from "../SocialsBar/SocialsBar.jsx";
 import React from "react";
 

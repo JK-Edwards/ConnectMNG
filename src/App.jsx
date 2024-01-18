@@ -3,6 +3,7 @@ import Blogs from "./pages/Blogs/Blogs.jsx";
 import CareerDevelopment from "./pages/Programs/ProgramPages/CareerDevelopment/CareerDevelopment.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Donate from "./pages/Donate/Donate.jsx";
+import Events from "./pages/Events/Events.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import Home from "./pages/Home/Home.jsx";
@@ -41,6 +42,7 @@ export default function App() {
 						<Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
 						<Route path="/programs/networking-program" element={<NetworkingProgram />} />
 						<Route path="/get-involved" element={<Volunteer />} />
+						<Route path="/events" element={<Events />} />
 						<Route path="/blogs" element={<Blogs />} />
 						<Route path="/blogs/resume-blog" element={<ResumeBlog />} />
 						<Route path="/about-us" element={<About />} />
