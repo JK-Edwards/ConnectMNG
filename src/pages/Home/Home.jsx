@@ -1,4 +1,5 @@
-import blogs from "../../images/blogs.jpeg";
+import welcomeBlogThumbnail from "../../images/blogs/welcomeBlog/welcomeBlogThumbnail.jpg";
+import resumeBlogThumbnail from "../../images/blogs/resumeBlog/resumeBlogThumbnail.jpg";
 import ItemCarousel from "../../components/Carousel/ItemCarousel.jsx";
 import React from "react";
 
@@ -14,12 +15,12 @@ export default function Home() {
 	const blogSlides = [
 		<Link to={"/blogs/resume-blog"}>
 			<div className={"carouselSlide"}>
-				<img src={blogs} height={375} width={375} alt={"Slide 1"} />
+				<img src={welcomeBlogThumbnail} height={375} width={375} alt={"Slide 1"} />
 			</div>
 		</Link>
 		,
 		<div className={"carouselSlide"}>
-			<img src={blogs} height={375} width={350} alt={"Slide 2"} />
+			<img src={resumeBlogThumbnail} height={375} width={350} alt={"Slide 2"} />
 		</div>,
 		<div className={"carouselSlide"}>
 			<img src="https://placekitten.com/403/300" height={375} alt="Slide 3" />
