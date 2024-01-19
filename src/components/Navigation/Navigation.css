@@ -5,6 +5,7 @@
 	text-decoration: none;
 	color: black;
 	font-size: calc(0.25rem + 1vw);
+	cursor: pointer;
 }
 
 .donate {

@@ -16,16 +16,26 @@ export default function Navigation() {
 	const [showActivities, setShowActivities] = useState(false);
 
 	function handleVolunteerSelect() {
-		setActiveIndex(2)
 		setShowActivities(!showActivities);
 		setShowResources(false);
 	};
 
 	function handleResourcesSelect() {
-		setActiveIndex(5)
 		setShowResources(!showResources);
 		setShowActivities(false);
 	};
+
+	function handleNavLinkSelect(activeIndex) {
+		setActiveIndex(activeIndex);
+		setShowActivities(false);
+		setShowResources(false);
+	};
+
+	function handleDropdownSelect() {
+		setShowActivities(false);
+		setShowResources(false);
+		setActiveIndex(0);
+	}
 
 	return (
 		<div className={"navigationContainer"}>
@@ -35,33 +45,31 @@ export default function Navigation() {
 				</Link>
 			</div>
 			<div>
-				<NavLink to={"/programs"} text={intl.formatMessage({id: "programs"})} className={"button"} isActive={activeIndex === 1} onClick={() => setActiveIndex(1)}/>
+				<NavLink to={"/programs"} text={intl.formatMessage({id: "programs"})} className={"button"} isActive={activeIndex === 1} onClick={() => handleNavLinkSelect(1)}/>
 			</div>
 			<div>
-				<NavLink to={"/get-involved"} text={intl.formatMessage({id: "volunteer"})} className={"button volunteer"} isActive={activeIndex === 2} onClick={handleVolunteerSelect}/>
-				{showActivities ? <NavDropdown onSelect={() => setShowActivities(false)} options={["Membership", "Volunteer", "Donate"]} links={["/", "/get-involved", "/donate"]}/> : null}
+				<div className={"button volunteer"} onClick={handleVolunteerSelect}>{intl.formatMessage({id: "volunteer"})}</div>
+				{showActivities ? <NavDropdown onSelect={() => handleDropdownSelect()} options={["Membership", "Volunteer", intl.formatMessage({id: "donate"})]} links={["/", "/get-involved", "/donate"]}/> : null}
 			</div>
 			<div>
-				<NavLink to={"/events"} text={intl.formatMessage({id: "Events"})} className={"button"} isActive={activeIndex === 3} onClick={() => setActiveIndex(3)}/>
+				<NavLink to={"/events"} text={intl.formatMessage({id: "Events"})} className={"button"} isActive={activeIndex === 3} onClick={() => handleNavLinkSelect(3)}/>
 			</div>
 			<div>
-				<NavLink to={"/about-us"} text={intl.formatMessage({id: "about"})} className={"button"} isActive={activeIndex === 4} onClick={() => setActiveIndex(4)}/>
+				<NavLink to={"/about-us"} text={intl.formatMessage({id: "about"})} className={"button"} isActive={activeIndex === 4} onClick={() => handleNavLinkSelect(4)}/>
 			</div>
 			<div>
-				<NavLink to={"/resources"} text={intl.formatMessage({id: "resources"})} className={"button resources"} isActive={activeIndex === 5} onClick={handleResourcesSelect}/>
-				{showResources ? <NavDropdown onSelect={() => setShowResources(false)} options={["Blogs", "Podcasts"]} links={["/blogs", "/"]} /> : null}
+				<div className={"button resources"} onClick={handleResourcesSelect}>{intl.formatMessage({id: "resources"})}</div>
+				{showResources ? <NavDropdown onSelect={() => handleDropdownSelect()} options={[intl.formatMessage({id: "blogs"}), "Podcasts"]} links={["/blogs", "/"]} /> : null}
 			</div>
 			<div>
-				<NavLink to={"/donate"} text={intl.formatMessage({id: "donate"})} className={"button donate"} isActive={activeIndex === 6} onClick={() => setActiveIndex(6)}/>
+				<NavLink to={"/donate"} text={intl.formatMessage({id: "donate"})} className={"button donate"} isActive={activeIndex === 6} onClick={() => handleNavLinkSelect(6)}/>
 			</div>
     	</div>
 	);
 };
 
 function NavLink({to, text, isActive, className, onClick}) {
-	if (isActive && (className !== classNames("button", "donate"))
-				 && (className !== classNames("button", "volunteer"))
-				 && (className !== classNames("button", "resources"))) {
+	if (isActive && (className !== classNames("button", "donate"))) {
 		className = classNames(className, "isActive");
 	};
 
