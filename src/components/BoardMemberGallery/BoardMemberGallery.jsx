@@ -3,7 +3,7 @@ import React from "react";
 
 import "./BoardMemberGallery.css";
 
-function Profile({person }) {
+function Profile({person}) {
     return (
       <div className={"profile"}>
         <img
