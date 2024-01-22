@@ -39,5 +39,32 @@
 .galleryContainer h1 {
   text-align: center;
   font-size: calc(0.5rem + 2vw);
-  padding-left: 3vw;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 767px) {
+  .profile {
+    flex: 1 1 calc(100% - 10px);
+  }
+
+  .profile h3 {
+    font-size: calc(0.5rem + 3vw);
+  }
+
+  .profile p {
+    font-size: calc(0.5rem + 2vw);
+  }
+
+  .profile a {
+    font-size: calc(0.5rem + 1vw);
+  }
+
+  .profile img {
+    height: 20vw;
+    width: 20vw;
+  }
+
+  .galleryContainer h1 {
+    font-size: calc(0.5rem + 4vw);
+  }
 }
