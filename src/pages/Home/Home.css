@@ -5,14 +5,13 @@
 	background-position: center;
 }
 
-.infoContainer {
-	display: flex;
-	justify-content: space-around;
-}
-
 .textContainer {
 	display: flex;
 	align-items: center;
+	font-size: calc(0.5rem + 2vw);
+	margin-bottom: 1vw;
+	padding-left: 3vw;
+	padding-top: 1vw;
 }
 
 .carouselSlide {
@@ -21,4 +20,61 @@
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 5vw;
+}
+
+.imgContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.missionTextContainer {
+	max-width: 45vw;
+	padding-top: 1vw;
+	padding-left: 3vw;
+}
+
+.missionTextContainer h1 {
+	font-size: calc(0.5rem + 2vw);
+	margin-bottom: 1vw;
+}
+
+.missionTextContainer p {
+	font-size: 1.2vw
+}
+
+.program {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+}
+
+.program h3 {
+	font-size: calc(0.25rem + 2vw);
+}
+
+.programContainer {
+	padding-top: calc(1rem + 12vw);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-image: url("../../images/background.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.programGallery {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.programGalleryContainer {
+	padding-left: 3vw;
+	padding-bottom: 2vw;
+}
+
+.programImage {
+	max-width: 7vw;
+	max-height: 7vw;
 }

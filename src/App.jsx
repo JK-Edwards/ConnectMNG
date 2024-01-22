@@ -38,7 +38,7 @@ export default function App() {
 					<Routes>
 						<Route path="*" element={<Home />} />
 						<Route path="/programs" element={<Programs />} />
-						<Route path="/programs/career-development" element={<CareerDevelopment />} />
+						<Route path="/programs/career-development-program" element={<CareerDevelopment />} />
 						<Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
 						<Route path="/programs/networking-program" element={<NetworkingProgram />} />
 						<Route path="/get-involved" element={<Volunteer />} />

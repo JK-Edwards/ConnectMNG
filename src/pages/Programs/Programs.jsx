@@ -1,7 +1,7 @@
-import StyledLink from "../../components/StyledLink/StyledLink";
 import prog1 from "../../images/programs/prog1.png";
 import prog2 from "../../images/programs/prog2.png";
 import prog3 from "../../images/programs/prog3.png";
+import StyledLink from "../../components/StyledLink/StyledLink";
 import React from "react";
 
 import { useIntl } from "react-intl";
@@ -9,35 +9,35 @@ import { useIntl } from "react-intl";
 
 import "./Programs.css";
 
+const desc1 = "The Career Development Program is designed to empower early career professionals, students, and individuals seeking comprehensive "
+			+ "support for their career growth. We offer:";
+
+
+function Program({name, image, description, pageLink}) {
+	return (
+		<div className={"indivProgramContainer"}>
+			<img className={"programImage"} src={image} alt={name + " Program"}/>
+			<h1>
+				{name}
+			</h1>
+			<p>
+				{description}
+			</p>
+			<StyledLink text={"Get Started"} link={pageLink} />
+		</div>
+	);
+}
+
 export default function Programs() {
 	const intl = useIntl();
 
 	return (
-		<div className={"programContainer"}>
-			<div className={"missionTextContainer"}>
-				<h1>{intl.formatMessage({id: "missionAndImpact"})}</h1>
-				<p>{intl.formatMessage({id: "mission"})}</p>
-			</div>
-			<div className={"programGalleryContainer"}>
-				<h1>{intl.formatMessage({id: "programs"})}</h1>
-				<div className={"programGallery"}>
-					<div className="program">
-						<img className={"programImage"} src={prog1} alt={"Career Development Program"}></img>
-						<h3>{intl.formatMessage({id: "careerDevelopment"})}</h3>
-						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs/career-development"}/>
-					</div>
-					<div className="program">
-						<img className={"programImage"} src={prog2} alt={"Mentorship Program"}></img>
-						<h3>{intl.formatMessage({id: "mentorship"})}</h3>
-						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs/mentorship-program"}/>
-					</div>
-					<div className="program">
-						<img className={"programImage"} src={prog3} alt={"Networking Program"}></img>
-						<h3>{intl.formatMessage({id: "networking"})}</h3>
-						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs/networking-program"}/>
-					</div>
-				</div>
-			</div>
+		<div className={"programsContainer"}>
+			<Program name={"Career Development"} image={prog1} description={desc1} pageLink={"/programs/career-development-program"}/>
+			<div className={"verticalLine"}/>
+			<Program className={"middleProgram"} name={"Mentorship"} image={prog2} description={desc1} pageLink={"/programs/mentorship-program"} />
+			<div className={"verticalLine"} />
+			<Program name={"Networking"} image={prog3} description={desc1} pageLink={"/programs/networking-program"} />
 		</div>
 	);
 };

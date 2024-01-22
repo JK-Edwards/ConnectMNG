@@ -1,4 +1,4 @@
-import classNames from "classnames"
+import classNames from "classnames";
 import logo from "../../images/logo.png";
 import React from "react";
 import NavDropdown from "../Dropdowns/NavDropdown/NavDropdown";
