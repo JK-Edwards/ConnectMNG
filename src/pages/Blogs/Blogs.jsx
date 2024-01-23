@@ -37,11 +37,11 @@ export default function Blogs() {
 			<BlogCard image={welcomeBlogThumbnail}
 						title={"Connect MNG - Where Your Journey is Our Journey"}
 						desc={desc1}
-						link={"/blogs/welcome-blog"}/>
+						link={"/resources/blogs/welcome-blog"}/>
 			<BlogCard image={resumeBlogThumbnail}
 						title={"All the basics you need to know about resume"}
 						desc={desc2}
-						link={"/blogs/resume-blog"}/>
+						link={"/resources/blogs/resume-blog"}/>
 		</div>
 	);
 };

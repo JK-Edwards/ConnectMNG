@@ -8,7 +8,12 @@ export default function NavDropdown({onSelect, options, links}) {
     return (
         <div className={"resourcesMenu"}>
             {options.map((option, index) =>
-                <Link to={links[index]} className={"resourceOption"} onClick={() => onSelect()}>{option}</Link>)}
+                <Link key={index}
+                      to={links[index]}
+                      className={"resourceOption"}
+                      onClick={() => onSelect(index)}>
+                        {option}
+                </Link>)}
         </div>
     );
 };

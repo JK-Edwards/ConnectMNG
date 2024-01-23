@@ -1,4 +1,3 @@
-import logo from "../../images/logo.png";
 import React from "react";
 
 import { useIntl } from "react-intl";
@@ -10,16 +9,7 @@ export default function Volunteer() {
 
 	return (
 		<div className={"volunteerContainer"}>
-			<div className={"infoContainer"}>
-				<div className={"imgContainer"}>
-					<img src={logo} alt={"Connect MNG Logo"}></img>
-				</div>
-				<div className={"textContainer"}>
-					<h1>
-						{intl.formatMessage({id: "volunteer"})}
-					</h1>
-				</div>
-			</div>
+			<h1>This is the Volunteer page!</h1>
 		</div>
 	);
 };

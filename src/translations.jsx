@@ -14,7 +14,8 @@ const translations = {
         learnMore: "Learn More",
         mission: "Our mission is empowering the Mongolian American college students & young professionals’ success by fostering a strong sense of community providing tailored resources for personal and professional growth, and cultivating an environment where individuals can connect, learn, and thrive together.",
         missionAndImpact: "Mission & Impact",
-        donate: "Donate"
+        donate: "Donate",
+        events: "Events"
     },
     mn: {
         programs: "Хөтөлбөрүүд",
@@ -30,7 +31,8 @@ const translations = {
         learnMore: "Дэлгэрэнгүй",
         mission: "Америк дахь Монгол оюутан залуус болон залуу мэргэжилтнүүдийг хувийн болон мэргэжлийн хөгжилд зориулсан мэдээллийн нөөцөөр хангаж, хувь хүмүүс хоорондоо холбогдож, суралцаж, хамтдаа хөгжих боломжтой орчныг бүрдүүлэх.",
         missionAndImpact: "Зорилго & Нөлөө",
-        donate: "Хандив"
+        donate: "Хандив",
+        events: "Үйл ажиллагаа"
     },
 };
 

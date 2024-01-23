@@ -17,7 +17,7 @@ export default function Home() {
 	const intl = useIntl();
 
 	const blogSlides = [
-		<Link to={"/blogs/resume-blog"}>
+		<Link to={"/resources/blogs/resume-blog"}>
 			<div className={"carouselSlide"}>
 				<img src={welcomeBlogThumbnail} height={375} width={375} alt={"Slide 1"} />
 			</div>
