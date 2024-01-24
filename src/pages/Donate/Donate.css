@@ -24,6 +24,7 @@
 .donateContainer h3 {
 	font-size: calc(0.25rem + 2vw);
 	margin-top: 5vw;
+	margin-bottom: 3vw;
 	color: #10885a;
 }
 
