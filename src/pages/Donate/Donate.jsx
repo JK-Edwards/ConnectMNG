@@ -1,10 +1,12 @@
 import React from "react";
 
+import { useIntl } from "react-intl";
 import { useState } from "react";
 
 import "./Donate.css";
 
 export default function Donate() {
+	const intl = useIntl();
 	const cashAmounts = ["$10", "$20", "$50", "$100", "$250", "$500"];
 	const [donateAmount, updateDonateAmount] = useState("");
 
@@ -41,7 +43,7 @@ export default function Donate() {
 				   onChange={handleInputChange}
 				   value={donateAmount}
 			/>
-			<button className={"donateButton"} onClick={handleDonateButtonClick}>DONATE</button>
+			<button className={"donateButton"} onClick={handleDonateButtonClick}>{intl.formatMessage({id: "donate"})}</button>
 		</div>
 	);
 };
