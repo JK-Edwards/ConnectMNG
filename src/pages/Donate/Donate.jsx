@@ -10,7 +10,15 @@ export default function Donate() {
 
 	const handleInputChange = (event) => {
 		updateDonateAmount(event.target.value);
-	  };
+	};
+
+	function handleDonateButtonClick() {
+		if (donateAmount !== "") {
+			alert("You have donated: " + donateAmount);
+		} else {
+			alert("Please enter a valid donation amount");
+		}
+	}
 
 	return (
 		<div className={"donateContainer"}>
@@ -33,7 +41,7 @@ export default function Donate() {
 				   onChange={handleInputChange}
 				   value={donateAmount}
 			/>
-			<button className={"donateButton"}>DONATE</button>
+			<button className={"donateButton"} onClick={handleDonateButtonClick}>DONATE</button>
 		</div>
 	);
 };

@@ -1,5 +1,5 @@
 .donateContainer {
-	padding-top: calc(1rem + 16vw);
+	padding-top: 18vw;
 	padding-bottom: 5vw;
 	display: flex;
 	flex-direction: column;
@@ -11,14 +11,18 @@
 }
 
 .donateContainer h1 {
+	font-size: calc(0.25rem + 2vw);
+	padding-top: 1rem;
 	color: #10885a;
 }
 
 .donateContainer h2 {
+	font-size: calc(0.15rem + 1.5vw);
 	margin-top: 2vw;
 }
 
 .donateContainer h3 {
+	font-size: calc(0.25rem + 2vw);
 	margin-top: 5vw;
 	color: #10885a;
 }
@@ -39,7 +43,7 @@
 	border: none;
 	width: 20vw;
 	height: 5vw;
-	font-size: calc(0.5rem + 2.5vw);
+	font-size: 2.75vw;
 	text-align: center;
 }
 
@@ -55,6 +59,7 @@
 	border-radius: 0.5vw;
 	height: 2.5vw;
 	width: 65vw;
+	font-size: 1.75vw;
 }
 
 .donateButton:hover {
@@ -66,4 +71,5 @@
 	padding-left: 1vw;
 	height: 2.5vw;
 	width: 65vw;
+	font-size: 1.75vw;
 }
