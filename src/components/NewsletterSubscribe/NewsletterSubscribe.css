@@ -1,10 +1,10 @@
 .emailInput {
     width: 31vw;
     border-radius: 1vw 0 0 1vw;
-    text-align: center;
     border: 0.2vw solid lightgray;
     background: lightgray;
     font-size: calc(0.3rem + 0.5vw + 0.5vh);
+    padding-left: 0.6vw;
 }
 
 .subscribeButton {
