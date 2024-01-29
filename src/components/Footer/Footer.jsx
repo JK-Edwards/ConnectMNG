@@ -13,13 +13,13 @@ export default function Footer() {
                 <div className={"footerLinkContainer"}>
                     <h3>EXPLORE</h3>
                     <Link to={"/"}>HOME</Link>
-                    <Link to={"/blogs"}>BLOGS</Link>
-                    <Link>PODCAST</Link>
+                    <Link to={"/resources/blogs"}>BLOGS</Link>
+                    <Link to={"/resources/podcasts"}>PODCASTS</Link>
                 </div>
                 <div className={"footerLinkContainer"}>
                     <h3>ENGAGE</h3>
-                    <Link>MEMBERSHIP</Link>
-                    <Link to={"/get-involved"}>VOLUNTEER</Link>
+                    <Link to={"/get-involved/membership"}>MEMBERSHIP</Link>
+                    <Link to={"/get-involved/volunteer"}>VOLUNTEER</Link>
                     <Link to={"/donate"}>DONATE</Link>
                 </div>
                 <div className={"footerLinkContainer"}>
