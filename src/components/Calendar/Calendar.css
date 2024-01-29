@@ -1,0 +1,35 @@
+.calendarContainer {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+
+.eventTable {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.eventDayTitleContainer {
+    color: white;
+    background-color: #7eb67c;
+    padding-left: 0.5vw;
+    padding-top: 0.25vw;
+}
+
+.columnContainer p {
+    padding-left: 0.5vw;
+    border-bottom: 0.1vw solid #d4d4d4;
+}
+
+.columnContainer {
+    flex-grow: 1;
+}
+
+.eventDayContainer {
+    width: 80vw;
+    border-radius: 1vw;
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+    background: white;
+    padding: 0.5vw;
+}
