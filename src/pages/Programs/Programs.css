@@ -1,5 +1,4 @@
 .programsContainer {
-	padding-top: calc(1rem + 12vw);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;

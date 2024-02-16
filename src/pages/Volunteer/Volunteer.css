@@ -14,7 +14,7 @@
 }
 
 .volunteerContainer {
-	padding-top: calc(1rem + 16vw);
+	padding-top: 5vw;
 	background-image: url("../../images/background.jpg");
 	background-size: cover;
 	background-position: center;

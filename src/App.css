@@ -2,6 +2,10 @@
     font-family: Palatino;
 }
 
+.pageContainer {
+    padding-top: calc(0.05rem + 12vw);
+}
+
 .pinnedHeader {
     position: fixed;
     width: 100%;
