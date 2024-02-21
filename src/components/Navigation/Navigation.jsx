@@ -14,6 +14,7 @@ export default function Navigation() {
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [showResources, setShowResources] = useState(false);
 	const [showActivities, setShowActivities] = useState(false);
+	const [showCareerDev, setShowCareerDev] = useState(false);
 	const [showSubNav, setShowSubNav] = useState(false);
 	const [subNavOptions, setSubNavOptions] = useState([]);
 	const [subNavLinks, setSubNavLinks] = useState([]);
@@ -21,11 +22,19 @@ export default function Navigation() {
 	function handleVolunteerSelect() {
 		setShowActivities(!showActivities);
 		setShowResources(false);
+		setShowCareerDev(false);
 	};
 
 	function handleResourcesSelect() {
 		setShowResources(!showResources);
 		setShowActivities(false);
+		setShowCareerDev(false);
+	};
+
+	function handleCareerDevSelect() {
+		setShowCareerDev(!showCareerDev);
+		setShowActivities(false);
+		setShowResources(false);
 	};
 
 	function handleNavLinkSelect(activeIndex) {
@@ -38,6 +47,7 @@ export default function Navigation() {
 	function handleDropdownSelect(options, links, selectedIndex) {
 		setShowActivities(false);
 		setShowResources(false);
+		setShowCareerDev(false);
 		setActiveIndex(selectedIndex + 7)
 		setSubNavOptions(options);
 		setSubNavLinks(links);
@@ -53,26 +63,26 @@ export default function Navigation() {
 					</Link>
 				</div>
 				<div>
+					<div className={"button careerDev"} onClick={handleCareerDevSelect}>
+						{intl.formatMessage({id: "careerDevelopment"})}
+					</div>
+					{showCareerDev ?
+						<NavDropdown onSelect={(selectedIndex) =>
+										handleDropdownSelect(
+											[intl.formatMessage({id: "Resume Review"}), "Job Search"],
+											["/career-development/resume-review", "/career-development/job-search"], selectedIndex)}
+									 options={[intl.formatMessage({id: "Resume Review"}), "Job Search"]}
+									 links={["career-development/resume-review", "/career-development/job-search"]}
+						/>
+					: null}
+				</div>
+				<div>
 					<NavLink to={"/programs"}
 							 text={intl.formatMessage({id: "programs"})}
 							 className={"button"}
 							 isActive={activeIndex === 1}
 							 onClick={() => handleNavLinkSelect(1)}
 					/>
-				</div>
-				<div>
-					<div className={"button volunteer"} onClick={handleVolunteerSelect}>
-						{intl.formatMessage({id: "volunteer"})}
-					</div>
-					{showActivities ?
-						<NavDropdown onSelect={(selectedIndex) =>
-										handleDropdownSelect(
-											["Membership", "Volunteer", intl.formatMessage({id: "donate"})],
-											["/get-involved/membership", "/get-involved/volunteer", "/donate"], selectedIndex)}
-									 options={["Membership", "Volunteer", intl.formatMessage({id: "donate"})]}
-									 links={["/get-involved/membership", "/get-involved/volunteer", "/donate"]}
-						/>
-					: null}
 				</div>
 				<div>
 					<NavLink to={"/events"}
@@ -91,7 +101,7 @@ export default function Navigation() {
 					/>
 				</div>
 				<div>
-					<div className={"button resources"} onClick={handleResourcesSelect}>
+					<div className={"button"} onClick={handleResourcesSelect}>
 						{intl.formatMessage({id: "resources"})}
 					</div>
 					{showResources ?
@@ -105,9 +115,23 @@ export default function Navigation() {
 					: null}
 				</div>
 				<div>
+					<div className={"button"} onClick={handleVolunteerSelect}>
+						{intl.formatMessage({id: "volunteer"})}
+					</div>
+					{showActivities ?
+						<NavDropdown onSelect={(selectedIndex) =>
+										handleDropdownSelect(
+											["Membership", "Volunteer", intl.formatMessage({id: "donate"})],
+											["/get-involved/membership", "/get-involved/volunteer", "/donate"], selectedIndex)}
+									 options={["Membership", "Volunteer", intl.formatMessage({id: "donate"})]}
+									 links={["/get-involved/membership", "/get-involved/volunteer", "/donate"]}
+						/>
+					: null}
+				</div>
+				<div>
 					<NavLink to={"/donate"}
-							 text={intl.formatMessage({id: "donate"})}
-							 className={"button donate"}
+							 text={intl.formatMessage({id: "Contact Us"}).toUpperCase()}
+							 className={"button contact"}
 							 isActive={activeIndex === 6}
 							 onClick={() => handleNavLinkSelect(6)}
 					/>
@@ -143,7 +167,7 @@ function SubNav({options, links, activeIndex, setActiveIndex})  {
 };
 
 function NavLink({to, text, isActive, className, onClick}) {
-	if (isActive && (className !== classNames("button", "donate"))) {
+	if (isActive && (className !== classNames("button", "contact"))) {
 		className = classNames(className, "isActive");
 	};
 

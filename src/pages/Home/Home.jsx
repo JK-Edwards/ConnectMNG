@@ -42,18 +42,16 @@ export default function Home() {
 
 	return (
 		<div className={"homeContainer"}>
-			<div className={"textContainer"}>
-				<h1>
-					{intl.formatMessage({id: "blogs"})}
-				</h1>
-			</div>
+			<h1 className={"carouselTitle"}>
+				{intl.formatMessage({id: "blogs"}).toUpperCase()}
+			</h1>
 			<ItemCarousel slides={blogSlides} interval={2500}/>
 			<div className={"missionTextContainer"}>
-				<h1>{intl.formatMessage({id: "missionAndImpact"})}</h1>
+				<h1>{intl.formatMessage({id: "missionAndImpact"}).toUpperCase()}</h1>
 				<p>{intl.formatMessage({id: "mission"})}</p>
 			</div>
 			<div className={"programGalleryContainer"}>
-				<h1>{intl.formatMessage({id: "programs"})}</h1>
+				<h1>{intl.formatMessage({id: "What We Offer"}).toUpperCase()}</h1>
 				<div className={"programGallery"}>
 					<div className="program">
 						<img className={"programImage"} src={prog1} alt={"Career Development Program"}></img>
@@ -62,13 +60,13 @@ export default function Home() {
 					</div>
 					<div className="program">
 						<img className={"programImage"} src={prog2} alt={"Mentorship Program"}></img>
-						<h3>{intl.formatMessage({id: "mentorship"})}</h3>
+						<h3>{intl.formatMessage({id: "programs"})}</h3>
 						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs"}/>
 					</div>
 					<div className="program">
-						<img className={"programImage"} src={prog3} alt={"Networking Program"}></img>
-						<h3>{intl.formatMessage({id: "networking"})}</h3>
-						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs"}/>
+						<img className={"programImage"} src={prog3} alt={"Events"}></img>
+						<h3>{intl.formatMessage({id: "events"})}</h3>
+						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/events"}/>
 					</div>
 				</div>
 			</div>

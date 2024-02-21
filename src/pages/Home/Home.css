@@ -4,13 +4,11 @@
 	background-position: center;
 }
 
-.textContainer {
-	display: flex;
-	align-items: center;
+.carouselTitle {
 	font-size: calc(0.5rem + 2vw);
-	margin-bottom: 1vw;
-	padding-left: 3vw;
+	font-weight: bold;
 	padding-top: 1vw;
+	padding-left: 3vw;
 }
 
 .carouselSlide {
@@ -30,11 +28,13 @@
 	max-width: 45vw;
 	padding-top: 1vw;
 	padding-left: 3vw;
+	padding-bottom: 5vw;
 }
 
 .missionTextContainer h1 {
 	font-size: calc(0.5rem + 2vw);
 	margin-bottom: 1vw;
+	font-weight: bold;
 }
 
 .missionTextContainer p {
@@ -70,6 +70,12 @@
 
 .programGalleryContainer {
 	padding-left: 3vw;
+	padding-bottom: 2vw;
+}
+
+.programGalleryContainer h1 {
+	font-size: calc(0.5rem + 2vw);
+	font-weight: bold;
 	padding-bottom: 2vw;
 }
 
