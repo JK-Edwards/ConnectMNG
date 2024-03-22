@@ -129,7 +129,7 @@ export default function Navigation() {
 					: null}
 				</div>
 				<div>
-					<NavLink to={"/donate"}
+					<NavLink to={"/contact-us"}
 							 text={intl.formatMessage({id: "Contact Us"}).toUpperCase()}
 							 className={"button contact"}
 							 isActive={activeIndex === 6}

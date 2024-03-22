@@ -10,16 +10,17 @@ export default function Contact() {
 
 	return (
 		<div className={"contactContainer"}>
-			<div className={"infoContainer"}>
-				<div className={"imgContainer"}>
-					<img src={logo} alt={"Connect MNG Logo"}></img>
-				</div>
-				<div className={"textContainer"}>
-					<h1>
-						{intl.formatMessage({id: "contact"})}
-					</h1>
-				</div>
+			<h1>Contact Us</h1>
+			<p>
+				Have questions about our programs or Connect MNG in general? Please submit the form below and we'll be in touch shortly!
+			</p>
+			<h3>Your Name</h3>
+			<div>
+				<h3>Email</h3>
+				<h3>Subject</h3>
 			</div>
+			<h3>Message</h3>
+			<button>Get in touch!</button>
 		</div>
 	);
 };
