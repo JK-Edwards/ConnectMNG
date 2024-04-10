@@ -1,7 +1,7 @@
 .programsContainer {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	background-image: url("../../images/background.jpg");
 	background-size: cover;
 	background-position: center;
@@ -10,11 +10,12 @@
 
 .indivProgramContainer {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	flex: 1;
 	padding-left: 2vw;
 	padding-right: 2vw;
+	padding-top: 1.5vw;
 }
 
 .indivProgramContainer h1 {
@@ -26,11 +27,30 @@
 	font-size: 1.2vw;
 }
 
-.middle {
-	border-left: 0.5vw solid #fbfbfb;
+.programsHeader {
+	padding-left: 2vw;
+	padding-top: 2vw;
 }
 
-.verticalLine {
-	width: 0.25vw;
-	background-color: #84bbbb;
+.programsHeader h1 {
+	font-size: calc(0.25rem + 2vw);
+	font-weight: bold;
+}
+
+.programHeader p {
+	font-size: 1.2vw;
+}
+
+.indivProgramContainer {
+	display: flex;
+	align-items: center;
+}
+
+.indivProgramTextContainer p {
+	max-width: 50vw;
+}
+
+.contactUsBoxContainer {
+	padding-top: 2vw;
+	padding-right: 10vw;
 }

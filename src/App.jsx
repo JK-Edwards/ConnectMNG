@@ -1,7 +1,7 @@
 import About from "./pages/About/About.jsx";
 import Blogs from "./pages/Blogs/Blogs.jsx";
-import CareerDevelopment from "./pages/Programs/ProgramPages/CareerDevelopment/CareerDevelopment.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
+import CulturalCompassProgram from "./pages/Programs/ProgramPages/CulturalCompass/CulturalCompass.jsx";
 import Donate from "./pages/Donate/Donate.jsx";
 import Events from "./pages/Events/Events.jsx";
 import Footer from "./components/Footer/Footer.jsx";
@@ -10,12 +10,12 @@ import Home from "./pages/Home/Home.jsx";
 import Membership from "./pages/Membership/Membership.jsx";
 import MentorshipProgram from "./pages/Programs/ProgramPages/Mentorship/Mentorship.jsx";
 import Navigation from "./components/Navigation/Navigation.jsx";
-import NetworkingProgram from "./pages/Programs/ProgramPages/Networking/Networking.jsx";
 import Podcasts from "./pages/Podcasts/Podcasts.jsx";
 import Programs from "./pages/Programs/Programs.jsx";
 import React from "react";
 import Resources from "./pages/Resources/Resources.jsx";
 import ResumeBlog from "./pages/Blogs/IndividualBlogs/ResumeBlog/ResumeBlog.jsx";
+import ResumeBoostProgram from "./pages/Programs/ProgramPages/ResumeBoost/ResumeBoost.jsx";
 import SupportPopup from "./components/SupportPopup/SupportPopup.jsx";
 import translations from "./translations.jsx";
 import Volunteer from "./pages/Volunteer/Volunteer.jsx";
@@ -25,6 +25,7 @@ import { IntlProvider } from "react-intl";
 import { useState } from "react";
 
 import "./App.css";
+
 
 export default function App() {
 	const [isEnglish, setIsEnglish] = useState(true);
@@ -41,9 +42,9 @@ export default function App() {
 						<Routes>
 							<Route path="*" element={<Home />} />
 							<Route path="/programs" element={<Programs />} />
-							<Route path="/programs/career-development-program" element={<CareerDevelopment />} />
+							<Route path="/programs/cultural-compass-program" element={<CulturalCompassProgram />} />
 							<Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
-							<Route path="/programs/networking-program" element={<NetworkingProgram />} />
+							<Route path="/programs/resume-boost-program" element={<ResumeBoostProgram />} />
 							<Route path="/get-involved/volunteer" element={<Volunteer />} />
 							<Route path="/get-involved/membership" element={<Membership />} />
 							<Route path="/resources/podcasts" element={<Podcasts />} />

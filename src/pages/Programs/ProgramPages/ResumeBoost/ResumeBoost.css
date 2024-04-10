@@ -1,4 +1,4 @@
-.mentorshipContainer {
+.resumeBoostContainer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -8,22 +8,22 @@
 	padding-bottom: 2vw;
 }
 
-.mentorshipContentContainer {
+.resumeBoostContentContainer {
 	padding-left: 2vw;
 	padding-top: 1vw;
 }
 
-.mentorshipContentContainer div {
+.resumeBoostContentContainer div {
 	padding-top: 1vw;
 }
 
-.mentorshipContentContainer h1 {
+.resumeBoostContentContainer h1 {
     padding-bottom: 1vw;
     font-weight: bold;
     font-size: calc(0.25rem + 2vw);
 }
 
-.mentorshipContentContainer h3 {
+.resumeBoostContentContainer h3 {
     font-weight: bold;
     font-size: calc(1.55vw)
 }

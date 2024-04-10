@@ -2,4 +2,46 @@
 	background-image: url("../../images/background.jpg");
 	background-size: cover;
 	background-position: center;
+	padding: 2vw;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.contactContainer h1 {
+	font-weight: 750;
+}
+
+.contactContainer p {
+	width: 575px;
+	font-size: 20px;
+}
+
+.inputContainer {
+	display: flex;
+	gap: 20px;
+}
+
+.submitButton {
+	text-align: center;
+    border-radius: 10px;
+    background: #f2af60;
+    border: 0.2vw solid #f2af60;
+    font-size: calc(0.3rem + 0.5vw + 0.5vh);
+    width: 8vw;
+}
+
+.submitButton:hover {
+	background: orange
+}
+
+input, textarea{
+	border: none;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+textarea {
+	height: 100px;
+	width: 390px;
 }

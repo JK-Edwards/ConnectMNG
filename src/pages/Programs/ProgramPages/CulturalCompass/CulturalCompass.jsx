@@ -1,14 +1,14 @@
 import React from "react";
 import ContactUsBox from "../../../../components/ContactUsBox/ContactUsBox";
-import "./Mentorship.css";
+import "./CulturalCompass.css";
 
-export default function MentorshipProgram() {
+export default function CulturalCompassProgram() {
     return (
-        <div className={"mentorshipContainer"}>
-            <div className={"mentorshipContentContainer"}>
+        <div className={"culturalCompassContainer"}>
+            <div className={"culturalCompassContentContainer"}>
                 <div>
                     <h1>
-                        Mentorship
+                        Cultural Compass
                     </h1>
                     <p>
                         Description

@@ -1,14 +1,14 @@
 import React from "react";
 import ContactUsBox from "../../../../components/ContactUsBox/ContactUsBox";
-import "./Mentorship.css";
+import "./ResumeBoost.css";
 
-export default function MentorshipProgram() {
+export default function ResumeBoostProgram() {
     return (
-        <div className={"mentorshipContainer"}>
-            <div className={"mentorshipContentContainer"}>
+        <div className={"resumeBoostContainer"}>
+            <div className={"resumeBoostContentContainer"}>
                 <div>
                     <h1>
-                        Mentorship
+                        ResumeBoost
                     </h1>
                     <p>
                         Description

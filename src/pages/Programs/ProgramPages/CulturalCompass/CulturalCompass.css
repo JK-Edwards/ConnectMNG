@@ -1,4 +1,4 @@
-.mentorshipContainer {
+.culturalCompassContainer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -8,22 +8,22 @@
 	padding-bottom: 2vw;
 }
 
-.mentorshipContentContainer {
+.culturalCompassContentContainer {
 	padding-left: 2vw;
 	padding-top: 1vw;
 }
 
-.mentorshipContentContainer div {
+.culturalCompassContentContainer div {
 	padding-top: 1vw;
 }
 
-.mentorshipContentContainer h1 {
+.culturalCompassContentContainer h1 {
     padding-bottom: 1vw;
     font-weight: bold;
     font-size: calc(0.25rem + 2vw);
 }
 
-.mentorshipContentContainer h3 {
+.culturalCompassContentContainer h3 {
     font-weight: bold;
     font-size: calc(1.55vw)
 }
