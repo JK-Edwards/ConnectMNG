@@ -4,10 +4,8 @@
 	background-position: center;
 }
 
-.carouselTitle {
-	font-size: calc(0.5rem + 2vw);
-	font-weight: bold;
-	padding-top: 1vw;
+.carouselContainer {
+	padding-top: 2vw;
 	padding-left: 3vw;
 }
 

@@ -6,6 +6,8 @@ import prog1 from "../../images/programs/prog1.png";
 import prog2 from "../../images/programs/prog2.png";
 import prog3 from "../../images/programs/prog3.png";
 import React from "react";
+import slide1 from "../../images/homeCarousel/slide1.jpg";
+import slide2 from "../../images/homeCarousel/slide2.jpg";
 
 import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
@@ -19,33 +21,20 @@ export default function Home() {
 	const blogSlides = [
 		<Link to={"/resources/blogs/resume-blog"}>
 			<div className={"carouselSlide"}>
-				<img src={welcomeBlogThumbnail} height={375} width={375} alt={"Slide 1"} />
+				<img src={slide1} height={425} width={850} alt={"Slide 1"} />
 			</div>
 		</Link>
 		,
 		<div className={"carouselSlide"}>
-			<img src={resumeBlogThumbnail} height={375} width={350} alt={"Slide 2"} />
+			<img src={slide2} height={425} width={850} alt={"Slide 2"} />
 		</div>,
-		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/403/300" height={375} alt="Slide 3" />
-		</div>,
-		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/404/300" height={375} alt="Slide 3" />
-		</div>,
-		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/405/300" height={375} alt="Slide 3" />
-		</div>,
-		<div className={"carouselSlide"}>
-			<img src="https://placekitten.com/406/300" height={375} alt="Slide 3" />
-		</div>
 	  ];
 
 	return (
 		<div className={"homeContainer"}>
-			<h1 className={"carouselTitle"}>
-				{intl.formatMessage({id: "blogs"}).toUpperCase()}
-			</h1>
-			<ItemCarousel slides={blogSlides} interval={2500}/>
+			<div className={"carouselContainer"}>
+				<ItemCarousel slides={blogSlides} interval={2500}/>
+			</div>
 			<div className={"missionTextContainer"}>
 				<h1>{intl.formatMessage({id: "missionAndImpact"}).toUpperCase()}</h1>
 				<p>{intl.formatMessage({id: "mission"})}</p>

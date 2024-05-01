@@ -1,28 +1,26 @@
 import StyledLink from "../../components/StyledLink/StyledLink";
 import ContactUsBox from "../../components/ContactUsBox/ContactUsBox";
 import React from "react";
+import { MENTORSHIP_PROGRAM_DESC } from "../../constants";
 
 import { useIntl } from "react-intl";
 
-
 import "./Programs.css";
-
-const desc1 = "The Career Development Program is designed to empower early career professionals, students, and individuals seeking comprehensive "
-			+ "support for their career growth. We offer:";
-
 
 function Program({name, description, pageLink}) {
 	return (
 		<div className={"indivProgramContainer"}>
 			<div className={"indivProgramTextContainer"}>
-				<h1>
-					{name}
-				</h1>
-				<p>
+				<div className={'programTitleContainer'}>
+					<h1>
+						{name}
+					</h1>
+					<StyledLink text={"Get Started"} link={pageLink} />
+				</div>
+				<p className={'programDescription'}>
 					{description}
 				</p>
 			</div>
-			<StyledLink text={"Get Started"} link={pageLink} />
 		</div>
 	);
 }
@@ -41,9 +39,9 @@ export default function Programs() {
 						Description
 					</p>
 				</div>
-				<Program name={"Cultural Compass"} description={desc1} pageLink={"/programs/cultural-compass-program"}/>
-				<Program name={"Mentorship"} description={desc1} pageLink={"/programs/mentorship-program"} />
-				<Program name={"Resume Boost"} description={desc1} pageLink={"/programs/resume-boost-program"} />
+				<Program name={"Cultural Compass"} description={''} pageLink={"/programs/cultural-compass-program"}/>
+				<Program name={"Mentorship"} description={MENTORSHIP_PROGRAM_DESC} pageLink={"/programs/mentorship-program"} />
+				<Program name={"Resume Boost"} description={''} pageLink={"/programs/resume-boost-program"} />
 			</div>
 			<div className={"contactUsBoxContainer"}>
 				<ContactUsBox />

@@ -1,0 +1,8 @@
+export const MENTORSHIP_PROGRAM_DESC = "The Mentorship Program is a dynamic platform designed to guide individuals on their paths to success. "
+                                     + "Our program is founded on the belief that mentorship is a catalyst for personal and professional growth."
+                                     + "We offer three distinct types of mentorships to cater to diverse needs: Career Mentorship, providing"
+                                     + "targeted guidance for professional advancement; Personal Development Mentorship, nurturing holistic"
+                                     + "growth beyond the workplace; and University/Education Mentorship, offering support throughout the "
+                                     + "academic journey. Our community of dedicated mentors is committed to sharing their expertise, insights, "
+                                     + "and experiences, creating a collaborative environment where mentorship becomes a powerful tool for "
+                                     + "unlocking potential."

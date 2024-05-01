@@ -63,20 +63,6 @@ export default function Navigation() {
 					</Link>
 				</div>
 				<div>
-					<div className={"button careerDev"} onClick={handleCareerDevSelect}>
-						{intl.formatMessage({id: "careerDevelopment"})}
-					</div>
-					{showCareerDev ?
-						<NavDropdown onSelect={(selectedIndex) =>
-										handleDropdownSelect(
-											[intl.formatMessage({id: "Resume Review"}), "Job Search"],
-											["/career-development/resume-review", "/career-development/job-search"], selectedIndex)}
-									 options={[intl.formatMessage({id: "Resume Review"}), "Job Search"]}
-									 links={["career-development/resume-review", "/career-development/job-search"]}
-						/>
-					: null}
-				</div>
-				<div>
 					<NavLink to={"/programs"}
 							 text={intl.formatMessage({id: "programs"})}
 							 className={"button"}
