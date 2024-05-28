@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
 .app {
-    font-family: Palatino;
+    font-family: "Inter";
 }
 
 .pageContainer {

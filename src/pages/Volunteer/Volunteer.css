@@ -1,21 +1,56 @@
-.imgContainer {
-	display: flex;
-	justify-content: space-around;
-}
-
-.infoContainer {
-	display: flex;
-	justify-content: space-around;
-}
-
-.textContainer {
-	display: flex;
-	align-items: center;
-}
-
 .volunteerContainer {
-	padding-top: 5vw;
 	background-image: url("../../images/background.jpg");
 	background-size: cover;
 	background-position: center;
+	padding: 5vw 5vw 0vw 5vw
+}
+
+.volunteerContainer h1 {
+	color: #1F363D;
+	font-weight: 900;
+	padding-bottom: 2vw;
+}
+
+.volunteerContainer p {
+	padding-bottom: 4vw;
+	width: 40vw;
+}
+
+.volunteerCardContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.volunteerCard {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70vw;
+	height: 20vw;
+	background: white;
+	margin-bottom: 3vw;
+}
+
+.volunteerCardContent {
+	height: 20vw;
+	width: 35vw;
+	padding: 25px 0px 0px 25px
+}
+
+.volunteerCardContent h1 {
+	color: #3F798C;
+	font-weight: bolder;
+}
+
+.volunteerCardImage {
+	border: 1px solid black;
+	height: 20vw;
+	width: 35vw;
+}
+
+.volunteerCardImageStyle {
+	height: 20vw;
+	width: 35vw;
 }

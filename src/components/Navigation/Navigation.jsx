@@ -48,7 +48,7 @@ export default function Navigation() {
 		setShowActivities(false);
 		setShowResources(false);
 		setShowCareerDev(false);
-		setActiveIndex(selectedIndex + 7)
+		setActiveIndex(selectedIndex + 6)
 		setSubNavOptions(options);
 		setSubNavLinks(links);
 		setShowSubNav(true);
@@ -107,10 +107,10 @@ export default function Navigation() {
 					{showActivities ?
 						<NavDropdown onSelect={(selectedIndex) =>
 										handleDropdownSelect(
-											["Membership", "Volunteer", intl.formatMessage({id: "donate"})],
+											["Volunteer", intl.formatMessage({id: "donate"})],
 											["/get-involved/membership", "/get-involved/volunteer", "/donate"], selectedIndex)}
-									 options={["Membership", "Volunteer", intl.formatMessage({id: "donate"})]}
-									 links={["/get-involved/membership", "/get-involved/volunteer", "/donate"]}
+									 options={["Volunteer", intl.formatMessage({id: "donate"})]}
+									 links={["/get-involved/volunteer", "/donate"]}
 						/>
 					: null}
 				</div>

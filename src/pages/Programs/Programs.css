@@ -16,6 +16,7 @@
 	padding-left: 2vw;
 	padding-right: 2vw;
 	padding-top: 1.5vw;
+	width: 50vw;
 }
 
 .indivProgramContainer h1 {
@@ -41,18 +42,13 @@
 	font-size: 1.2vw;
 }
 
-.indivProgramContainer {
-	display: flex;
-	align-items: center;
-}
-
 .contactUsBoxContainer {
 	padding-top: 2vw;
 	padding-right: 10vw;
 }
 
 .programDescription {
-	width: 40vw;
+	width: 50vw;
 	text-align: justify;
 }
 
