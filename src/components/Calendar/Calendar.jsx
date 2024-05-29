@@ -18,32 +18,58 @@ function EventDay({date, events}) {
     return (
         <div className={"eventDayContainer"}>
             <h1>{date}</h1>
+            <div className={'eventDayTitleContainer'}>
+                <div className={"eventDayTitle"}>
+                    Time
+                </div>
+                <div className={"eventDayTitle"}>
+                    Event
+                </div>
+                <div className={"eventDayTitle"}>
+                    Location
+                </div>
+            </div>
             <div className={"eventTable"}>
                 <div className={"columnContainer"}>
-                    <div className={"eventDayTitleContainer"}>
-                        <h3>Time</h3>
-                    </div>
                     {events.map((event, index) =>
-                        <p key={index}>{event.time}</p>
+                        <div className={"eventDayContentContainer"} key={index}>{event.time}</div>
                     )}
                 </div>
                 <div className={"columnContainer"}>
-                    <div className={"eventDayTitleContainer"}>
-                        <h3>Event</h3>
-                    </div>
                     {events.map((event, index) =>
-                        <p key={index}>{event.event}</p>
+                        <div className={"eventDayContentContainer"} key={index}>{event.event}</div>
                     )}
                 </div>
                 <div className={"columnContainer"}>
-                    <div className={"eventDayTitleContainer"}>
-                        <h3>Location</h3>
-                    </div>
                     {events.map((event, index) =>
-                        <p key={index}>{event.location}</p>
+                        <div className={"eventDayContentContainer"} key={index}>{event.location}</div>
                     )}
                 </div>
             </div>
         </div>
     );
 };
+
+// function EventDay({date, events}) {
+//     return (
+//         <div className={"eventDayContainer"}>
+//             <h1>Date</h1>
+//             <div>
+//                 <div className={'eventDayTitleContainer'}>
+//                     <div className={"eventDayTitle"}>
+//                         Time
+//                     </div>
+//                     <div className={"eventDayTitle"}>
+//                         Event
+//                     </div>
+//                     <div className={"eventDayTitle"}>
+//                         Location
+//                     </div>
+//                 </div>
+//                 <div>
+//                     rows
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };

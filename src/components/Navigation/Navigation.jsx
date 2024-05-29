@@ -14,44 +14,27 @@ export default function Navigation() {
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [showResources, setShowResources] = useState(false);
 	const [showActivities, setShowActivities] = useState(false);
-	const [showCareerDev, setShowCareerDev] = useState(false);
-	const [showSubNav, setShowSubNav] = useState(false);
-	const [subNavOptions, setSubNavOptions] = useState([]);
-	const [subNavLinks, setSubNavLinks] = useState([]);
 
 	function handleVolunteerSelect() {
 		setShowActivities(!showActivities);
 		setShowResources(false);
-		setShowCareerDev(false);
 	};
 
 	function handleResourcesSelect() {
 		setShowResources(!showResources);
 		setShowActivities(false);
-		setShowCareerDev(false);
-	};
-
-	function handleCareerDevSelect() {
-		setShowCareerDev(!showCareerDev);
-		setShowActivities(false);
-		setShowResources(false);
 	};
 
 	function handleNavLinkSelect(activeIndex) {
 		setActiveIndex(activeIndex);
 		setShowActivities(false);
 		setShowResources(false);
-		setShowSubNav(false);
 	};
 
-	function handleDropdownSelect(options, links, selectedIndex) {
+	function handleDropdownSelect(selectedIndex) {
 		setShowActivities(false);
 		setShowResources(false);
-		setShowCareerDev(false);
 		setActiveIndex(selectedIndex + 6)
-		setSubNavOptions(options);
-		setSubNavLinks(links);
-		setShowSubNav(true);
 	}
 
 	return (
@@ -123,32 +106,7 @@ export default function Navigation() {
 					/>
 				</div>
 			</div>
-			<div>
-				{showSubNav ?
-					<SubNav options={subNavOptions}
-							links={subNavLinks}
-							activeIndex={activeIndex}
-							setActiveIndex={setActiveIndex}
-					/>
-				: null}
-			</div>
 	</div>
-	);
-};
-
-function SubNav({options, links, activeIndex, setActiveIndex})  {
-	return (
-		<div className={"subNavContainer"}>
-			{options.map((option, index) =>
-                <NavLink key={index}
-						 to={links[index]}
-						 text={option}
-						 className={"subNavButton"}
-						 isActive={activeIndex === index + 7}
-						 onClick={() => setActiveIndex(index + 7)}
-				/>)
-			}
-		</div>
 	);
 };
 

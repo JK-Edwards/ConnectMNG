@@ -1,4 +1,5 @@
 .eventsContainer {
+	padding-top: 1.5vw;
 	background-image: url("../../images/background.jpg");
 	background-size: cover;
 	background-position: center;

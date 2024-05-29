@@ -1,34 +1,43 @@
-.calendarContainer {
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+.eventDayContainer {
+    width: 90vw;
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
 }
-
 
 .eventTable {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.eventDayTitleContainer {
-    background-color: #9EC1A3;
-    padding-left: 0.5vw;
-    padding-top: 0.25vw;
-}
-
-.columnContainer p {
-    padding-left: 0.5vw;
-    border-bottom: 0.1vw solid #d4d4d4;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .columnContainer {
-    flex-grow: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.eventDayContainer {
-    width: 80vw;
-    border-radius: 1vw;
-    margin-top: 0.75vw;
-    margin-bottom: 0.75vw;
-    background: white;
-    padding: 0.5vw;
+.eventDayContentContainer {
+    padding-left: 0.5vw;
+    height: 3vw;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.eventDayContentContainer:not(:first-child) {
+    border-top: 0.1vw solid #d4d4d4;
+}
+
+.eventDayTitleContainer {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #9EC1A3;
+}
+
+.eventDayTitle {
+    flex: 1;
+    text-align: left;
+    padding-left: 0.5vw;
+    font-size: 30px;
 }
