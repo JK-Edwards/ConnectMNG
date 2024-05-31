@@ -7,16 +7,19 @@ function Profile({person}) {
     return (
       <div className={"profile"}>
         <img
+            className={"profileImage"}
             src={person.imageId}
             alt={person.name}
         />
         <h3>
-          {person.name}
+          <a className={"linkedInLink"} href={person.linkedIn} target={"_blank"} rel={"noreferrer"}>{person.name}</a>
         </h3>
-        <p>
+        <div>
+          {person.position}
+        </div>
+        <div>
           {person.description}
-        </p>
-        <a className={"linkedInLink"} href={person.linkedIn} target={"_blank"} rel={"noreferrer"}>LinkedIn</a>
+        </div>
       </div>
     );
 };
@@ -24,35 +27,47 @@ function Profile({person}) {
 export default function BoardMemberGallery() {
     return (
       <div className={"galleryContainer"}>
-        <h1>Board of Directors</h1>
+        <div className={"galleryHeader"}>
+          <h1>About Us</h1>
+          <div>desc</div>
+        </div >
+        <div className={"galleryHeader"}>
+          <h1>Our Values</h1>
+          <div>desc</div>
+        </div>
+        <div className={"galleryHeader"}>
+          <h1>Meet the Board</h1>
+        </div>
         <div className={"profileContainer"}>
           <Profile person={{name: "Anuujin Ider",
                             imageId: anunu,
-                            description: "President",
+                            position: "President",
+                            description: "Desc",
                             linkedIn: "https://www.linkedin.com/in/anuujini/"}} />
           <Profile person={{name: "Saruul-Erdene Ganbayar",
                             imageId: anunu,
-                            description: "Vice President",
+                            position: "Vice President",
+                            description: "Desc",
                             linkedIn: "https://www.linkedin.com/in/saruul-erdene/"}} />
           <Profile person={{name: "Selenge Ulam-Urnukh",
                             imageId: anunu,
-                            description: "Program Director",
+                            position: "Program Director",
+                            description: "Desc",
                             linkedIn: "https://www.linkedin.com/in/selengeuo/"}} />
           <Profile person={{name: "Badmaarag Batjargal",
                             imageId: anunu,
-                            description: "Marketing Director",
+                            position: "Marketing Director",
+                            description: "Desc",
                             linkedIn: "https://www.linkedin.com/in/badmaarag-batjargal-72a747174/"}} />
           <Profile person={{name: "Nomundelger Amarbat",
                             imageId: anunu,
-                            description: "Program Director",
+                            position: "Program Director",
+                            description: "Desc",
                             linkedIn: "https://www.linkedin.com/in/anomuka/"}} />
-          <Profile person={{name: "Khureltulga Tsolmon",
-                            imageId: anunu,
-                            description: "Professional Development Director",
-                            linkedIn: "https://www.linkedin.com/in/at3/"}} />
           <Profile person={{name: "James Kitticha Edwards",
                             imageId: anunu,
-                            description: "Website Dude",
+                            position: "Web Developer",
+                            description: "Desc",
                             linkedIn: "https://www.linkedin.com/in/jkedwards8/"}} />
         </div>
       </div>

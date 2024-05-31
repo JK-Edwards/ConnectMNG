@@ -14,26 +14,37 @@ export default function Navigation() {
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [showResources, setShowResources] = useState(false);
 	const [showActivities, setShowActivities] = useState(false);
+	const [showAbout, setShowAbout] = useState(false);
 
 	function handleVolunteerSelect() {
 		setShowActivities(!showActivities);
 		setShowResources(false);
+		setShowAbout(false);
 	};
 
 	function handleResourcesSelect() {
 		setShowResources(!showResources);
 		setShowActivities(false);
+		setShowAbout(false);
 	};
+
+	const handleAboutSelect = () => {
+		setShowAbout(!showAbout);
+		setShowActivities(false);
+		setShowResources(false);
+	}
 
 	function handleNavLinkSelect(activeIndex) {
 		setActiveIndex(activeIndex);
 		setShowActivities(false);
 		setShowResources(false);
+		setShowAbout(false);
 	};
 
 	function handleDropdownSelect(selectedIndex) {
 		setShowActivities(false);
 		setShowResources(false);
+		setShowAbout(false);
 		setActiveIndex(selectedIndex + 6)
 	}
 
@@ -62,38 +73,38 @@ export default function Navigation() {
 					/>
 				</div>
 				<div>
-					<NavLink to={"/about-us"}
-							 text={intl.formatMessage({id: "about"})}
-							 className={"button"}
-							 isActive={activeIndex === 4}
-							 onClick={() => handleNavLinkSelect(4)}
-					/>
+					<div className={"button"} onClick={handleAboutSelect}>
+							{intl.formatMessage({id: "about"})}
+					</div>
+					{showAbout ?
+						<NavDropdown
+								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+								options={[intl.formatMessage({id: "ourStory"}), "ourTeam"]}
+								links={["/about-us/our-story", "/about-us/our-team"]}
+						/>
+					: null}
 				</div>
 				<div>
 					<div className={"button"} onClick={handleResourcesSelect}>
 						{intl.formatMessage({id: "resources"})}
 					</div>
 					{showResources ?
-						<NavDropdown onSelect={(selectedIndex) =>
-										handleDropdownSelect(
-											[intl.formatMessage({id: "blogs"}), "Podcasts"],
-											["/resources/blogs", "/resources/podcasts"], selectedIndex)}
-									 options={[intl.formatMessage({id: "blogs"}), "Podcasts"]}
-									 links={["/resources/blogs", "/resources/podcasts"]}
+						<NavDropdown
+								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+								options={[intl.formatMessage({id: "blogs"}), "Podcasts"]}
+								links={["/resources/blogs", "/resources/podcasts"]}
 						/>
 					: null}
 				</div>
 				<div>
 					<div className={"button"} onClick={handleVolunteerSelect}>
-						{intl.formatMessage({id: "volunteer"})}
+						{intl.formatMessage({id: "getInvolved"})}
 					</div>
 					{showActivities ?
-						<NavDropdown onSelect={(selectedIndex) =>
-										handleDropdownSelect(
-											["Volunteer", intl.formatMessage({id: "donate"})],
-											["/get-involved/membership", "/get-involved/volunteer", "/donate"], selectedIndex)}
-									 options={["Volunteer", intl.formatMessage({id: "donate"})]}
-									 links={["/get-involved/volunteer", "/donate"]}
+						<NavDropdown
+							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+							options={[intl.formatMessage({id: "volunteer"}), intl.formatMessage({id: "donate"})]}
+							links={["/get-involved/volunteer", "/donate"]}
 						/>
 					: null}
 				</div>

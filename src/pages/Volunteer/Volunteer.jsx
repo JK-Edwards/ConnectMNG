@@ -23,7 +23,7 @@ export default function Volunteer() {
 	return (
 		<div className={"volunteerContainer"}>
 			<div className={'volunteerTitleContainer'}>
-				<h1>Volunteer</h1>
+				<h1>{intl.formatMessage({id: "volunteer"})}</h1>
 			</div>
 			<div className={'volunteerDescriptionContainer'}>
 				<p>Body copy for encouraging people/professionals to volunteer</p>

@@ -19,15 +19,17 @@ export default function Home() {
 	const intl = useIntl();
 
 	const blogSlides = [
-		<Link to={"/resources/blogs/resume-blog"}>
+		<Link to={"/resources/blogs"}>
 			<div className={"carouselSlide"}>
 				<img src={slide1} height={425} width={850} alt={"Slide 1"} />
 			</div>
 		</Link>
 		,
-		<div className={"carouselSlide"}>
-			<img src={slide2} height={425} width={850} alt={"Slide 2"} />
-		</div>,
+		<Link to={"/resources/podcasts"}>
+			<div className={"carouselSlide"}>
+				<img src={slide2} height={425} width={850} alt={"Slide 2"} />
+			</div>
+		</Link>
 	  ];
 
 	return (
@@ -43,12 +45,12 @@ export default function Home() {
 				<h1>{intl.formatMessage({id: "What We Offer"}).toUpperCase()}</h1>
 				<div className={"programGallery"}>
 					<div className="program">
-						<img className={"programImage"} src={prog1} alt={"Career Development Program"}></img>
-						<h3>{intl.formatMessage({id: "careerDevelopment"})}</h3>
-						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs"}/>
+						<img className={"programImage"} src={prog1} alt={"Resources"}></img>
+						<h3>{intl.formatMessage({id: "resources"})}</h3>
+						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/resources/blogs"}/>
 					</div>
 					<div className="program">
-						<img className={"programImage"} src={prog2} alt={"Mentorship Program"}></img>
+						<img className={"programImage"} src={prog2} alt={"Programs"}></img>
 						<h3>{intl.formatMessage({id: "programs"})}</h3>
 						<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs"}/>
 					</div>

@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background-image: url("../../../../images/background.jpg");
+	background-image: url("../../../../images/background_white.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -11,13 +11,11 @@
 .resumeBlogWrapper {
 	display: flex;
 	flex-direction: column;
-	background: #fbfbfb;
 	justify-content: space-evenly;
 	align-items: center;
 	width: 75vw;
 	margin-bottom: 5vw;
 	margin-top: 4vw;
-	border-radius: 5vw;
 }
 
 .resumeBlogContainer h1 {

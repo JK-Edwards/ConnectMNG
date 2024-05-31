@@ -1,4 +1,4 @@
-import About from "./pages/About/About.jsx";
+import OurTeam from "./pages/About/OurTeam/OurTeam.jsx";
 import Blogs from "./pages/Blogs/Blogs.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import CulturalCompassProgram from "./pages/Programs/ProgramPages/CulturalCompass/CulturalCompass.jsx";
@@ -51,7 +51,7 @@ export default function App() {
 							<Route path="/events" element={<Events />} />
 							<Route path="/resources/blogs" element={<Blogs />} />
 							<Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
-							<Route path="/about-us" element={<About />} />
+							<Route path="/about-us/our-team" element={<OurTeam />} />
 							<Route path="/resources" element={<Resources />} />
 							<Route path="/contact-us" element={<Contact />} />
 							<Route path="/donate" element={<Donate />} />

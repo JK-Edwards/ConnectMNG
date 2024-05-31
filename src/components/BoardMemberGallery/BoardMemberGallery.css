@@ -1,6 +1,6 @@
 .linkedInLink {
-  text-decoration: underline;
-	color: #5b8259;
+  text-decoration: none;
+	color: black;
 	font-weight: bold;
 }
 
@@ -8,6 +8,7 @@
 	display: flex;
   flex-wrap: wrap;
 	justify-content: space-evenly;
+  width: 75vw;
 }
 
 .profile {
@@ -17,27 +18,29 @@
   align-items: center;
   flex: 0 0 calc(25vw - 10px);
   margin: 5px;
+  margin-bottom: 5vw;
 }
 
-.profile h3 {
-  font-size: calc(0.1rem + 1.75vw);
-}
-
-.profile p {
+.profile div {
   font-size: calc(0.1rem + 1.1vw);
 }
 
 .profile a {
-  font-size: calc(0.1rem + 1vw);
+  font-size: calc(0.1rem + 1.25vw);
 }
 
-.profile img {
+.profileImage {
   height: calc(14vw);
   width: calc(14vw);
+  margin-bottom: 1vw;
 }
 
-.galleryContainer h1 {
-  text-align: center;
+.galleryHeader {
+  padding-left: 5.5vw;
+  padding-bottom: 2vw;
+}
+
+.galleryHeader h1 {
   font-size: calc(0.5rem + 2vw);
 }
 
@@ -47,24 +50,7 @@
     flex: 1 1 calc(100% - 10px);
   }
 
-  .profile h3 {
-    font-size: calc(0.5rem + 3vw);
-  }
-
-  .profile p {
-    font-size: calc(0.5rem + 2vw);
-  }
-
-  .profile a {
-    font-size: calc(0.5rem + 1vw);
-  }
-
-  .profile img {
-    height: 20vw;
-    width: 20vw;
-  }
-
-  .galleryContainer h1 {
-    font-size: calc(0.5rem + 4vw);
+  .galleryHeader h1 {
+    text-align: center;
   }
 }

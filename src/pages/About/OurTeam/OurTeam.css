@@ -1,8 +1,10 @@
 .aboutContainer {
-	background-image: url("../../images/background.jpg");
+	background-image: url("../../../images/background_white.jpg");
 	background-size: cover;
 	background-position: center;
 	padding-top: 1.5vw;
+	display: flex;
+	justify-content: center;
 }
 
 .imgContainer {
