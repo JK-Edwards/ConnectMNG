@@ -91,8 +91,8 @@ export default function Navigation() {
 					{showResources ?
 						<NavDropdown
 								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-								options={[intl.formatMessage({id: "blogs"}), "Podcasts"]}
-								links={["/resources/blogs", "/resources/podcasts"]}
+								options={[intl.formatMessage({id: "blogs"})]}
+								links={["/resources/blogs"]}
 						/>
 					: null}
 				</div>
@@ -103,8 +103,8 @@ export default function Navigation() {
 					{showActivities ?
 						<NavDropdown
 							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-							options={[intl.formatMessage({id: "volunteer"}), intl.formatMessage({id: "donate"})]}
-							links={["/get-involved/volunteer", "/donate"]}
+							options={[intl.formatMessage({id: "donate"}), intl.formatMessage({id: "internships"}), intl.formatMessage({id: "volunteer"})]}
+							links={["/get-involved/donate", "get-involved/internships", "/get-involved/volunteer"]}
 						/>
 					: null}
 				</div>

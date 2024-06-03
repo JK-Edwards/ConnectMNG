@@ -37,7 +37,7 @@ export default function SupportPopup() {
                     </h3>
                 </div>
                 <p>{text}</p>
-                <Link className={"supportPopupDonateLink"} to="/donate">
+                <Link className={"supportPopupDonateLink"} to="/get-involved/donate">
                     <p>
                         {intl.formatMessage({id: "donate"})}
                     </p>

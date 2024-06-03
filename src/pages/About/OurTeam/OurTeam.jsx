@@ -5,7 +5,7 @@ import React from "react";
 
 import "./OurTeam.css";
 
-export default function About() {
+export default function OurTeam() {
 	// const intl = useIntl();
 
 	return (

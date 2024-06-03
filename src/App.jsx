@@ -1,4 +1,5 @@
 import OurTeam from "./pages/About/OurTeam/OurTeam.jsx";
+import OurStory from "./pages/About/OurStory/OurStory.jsx";
 import Blogs from "./pages/Blogs/Blogs.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import CulturalCompassProgram from "./pages/Programs/ProgramPages/CulturalCompass/CulturalCompass.jsx";
@@ -7,7 +8,7 @@ import Events from "./pages/Events/Events.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import Home from "./pages/Home/Home.jsx";
-import Membership from "./pages/Membership/Membership.jsx";
+import Internships from "./pages/Internships/Internships.jsx";
 import MentorshipProgram from "./pages/Programs/ProgramPages/Mentorship/Mentorship.jsx";
 import Navigation from "./components/Navigation/Navigation.jsx";
 import Podcasts from "./pages/Podcasts/Podcasts.jsx";
@@ -46,15 +47,16 @@ export default function App() {
 							<Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
 							<Route path="/programs/resume-boost-program" element={<ResumeBoostProgram />} />
 							<Route path="/get-involved/volunteer" element={<Volunteer />} />
-							<Route path="/get-involved/membership" element={<Membership />} />
+							<Route path="/get-involved/internships" element={<Internships />} />
 							<Route path="/resources/podcasts" element={<Podcasts />} />
 							<Route path="/events" element={<Events />} />
 							<Route path="/resources/blogs" element={<Blogs />} />
 							<Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
 							<Route path="/about-us/our-team" element={<OurTeam />} />
+							<Route path="/about-us/our-story" element={<OurStory />} />
 							<Route path="/resources" element={<Resources />} />
 							<Route path="/contact-us" element={<Contact />} />
-							<Route path="/donate" element={<Donate />} />
+							<Route path="/get-involved/donate" element={<Donate />} />
 						</Routes>
 					</div>
 					<div className={"pinnedSupportPopup"}>

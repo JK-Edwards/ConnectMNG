@@ -1,0 +1,56 @@
+.internshipsContainer {
+	background-image: url("../../images/background_green.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 1.5vw 5vw 0vw 5vw
+}
+
+.internshipsContainer h1 {
+	color: #1F363D;
+	font-weight: 900;
+	padding-bottom: 2vw;
+}
+
+.internshipsContainer p {
+	padding-bottom: 4vw;
+	width: 40vw;
+}
+
+.internshipsCardContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.internshipsCard {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70vw;
+	height: 20vw;
+	background: white;
+	margin-bottom: 3vw;
+}
+
+.internshipsCardContent {
+	height: 20vw;
+	width: 35vw;
+	padding: 25px 0px 0px 25px
+}
+
+.internshipsCardContent h1 {
+	color: #3F798C;
+	font-weight: bolder;
+}
+
+.internshipsCardImage {
+	border: 1px solid black;
+	height: 20vw;
+	width: 35vw;
+}
+
+.internshipsCardImageStyle {
+	height: 20vw;
+	width: 35vw;
+}

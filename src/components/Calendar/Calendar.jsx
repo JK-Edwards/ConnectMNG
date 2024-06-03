@@ -49,27 +49,3 @@ function EventDay({date, events}) {
         </div>
     );
 };
-
-// function EventDay({date, events}) {
-//     return (
-//         <div className={"eventDayContainer"}>
-//             <h1>Date</h1>
-//             <div>
-//                 <div className={'eventDayTitleContainer'}>
-//                     <div className={"eventDayTitle"}>
-//                         Time
-//                     </div>
-//                     <div className={"eventDayTitle"}>
-//                         Event
-//                     </div>
-//                     <div className={"eventDayTitle"}>
-//                         Location
-//                     </div>
-//                 </div>
-//                 <div>
-//                     rows
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };

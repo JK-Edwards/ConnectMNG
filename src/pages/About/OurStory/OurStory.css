@@ -1,0 +1,25 @@
+.ourStoryPage {
+	background-image: url("../../../images/background_white.jpg");
+	background-size: cover;
+	background-position: center;
+	padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourStoryContent {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 25vw;
+}
+
+.ourStoryTitle {
+    font-size: calc(5px + 3vw);
+    padding-bottom: 40px;
+}
+
+.ourStoryDesc {
+    font-size: calc(5px + 1vw);
+}

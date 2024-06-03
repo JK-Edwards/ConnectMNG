@@ -16,7 +16,8 @@ const translations = {
         missionAndImpact: "Mission & Impact",
         donate: "Donate",
         events: "Events",
-        volunteer: "Volunteer"
+        volunteer: "Volunteer",
+        internships: "Internships"
     },
     mn: {
         programs: "Хөтөлбөрүүд",
@@ -34,7 +35,8 @@ const translations = {
         missionAndImpact: "Зорилго & Нөлөө",
         donate: "Хандив",
         events: "Үйл ажиллагаа",
-        volunteer: "Сайн Дурын Ажил"
+        volunteer: "Сайн Дурын Ажил",
+        internships: 'temp'
     },
 };
 

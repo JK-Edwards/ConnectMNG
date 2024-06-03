@@ -44,7 +44,6 @@ export default function Programs() {
 					</p>
 				</div>
 				<Program name={"Cultural Compass"} description={CULTURAL_COMPASS_PROGRAM_DESC} pageLink={"/programs/cultural-compass-program"}/>
-				<Program name={"Mentorship"} description={MENTORSHIP_PROGRAM_DESC} pageLink={"/programs/mentorship-program"} />
 				<Program name={"Resume Boost"} description={RESUME_BOOST_PROGRAM_DESC} pageLink={"/programs/resume-boost-program"} />
 			</div>
 			<div className={"contactUsBoxContainer"}>

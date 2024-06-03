@@ -7,7 +7,7 @@
 .eventTable {
     display: flex;
     background-color: white;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 1vw 1vw;
 }
 
 .columnContainer {
@@ -19,7 +19,7 @@
 .eventDayContentContainer {
     padding-left: 0.5vw;
     height: 3vw;
-    font-size: 17px;
+    font-size: calc(1vw);
     display: flex;
     align-items: center;
 }
@@ -31,7 +31,7 @@
 .eventDayTitleContainer {
     display: flex;
     justify-content: space-evenly;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 1vw 1vw 0px 0px;
     background-color: #70A9A1;
 }
 
@@ -39,5 +39,16 @@
     flex: 1;
     text-align: left;
     padding-left: 0.5vw;
-    font-size: 30px;
+    font-size: calc(5px + 1.5vw);
+}
+
+.calendarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.eventDayContainer h1 {
+    font-size: calc(5px + 2vw);
 }

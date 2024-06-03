@@ -16,7 +16,7 @@
 
 .pinnedSupportPopup {
     position: fixed;
-    bottom: 3vw;
+    top: 30vw;
     right: 1vw;
     background: #9EC1A3;
     padding: 1vw;

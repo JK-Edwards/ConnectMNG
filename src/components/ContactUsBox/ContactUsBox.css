@@ -1,19 +1,14 @@
-.header h1 {
-    text-decoration: solid underline #9EC1A3 5px;
+.header div {
+    font-size: calc(0.25rem + 2vw);
+    font-weight: bolder;
+    text-decoration: solid underline #3e798c 10px;
 }
 
-.contactUsBox h1 {
-    color: #40798C;
-    font-weight: bold;
+.contactInfo div {
+    font-weight: bolder;
     font-size: calc(0.25rem + 2vw);
 }
 
 .contactInfo {
     padding-top: 1vw;
-}
-
-.contactUsBox {
-    background-color: rgb(112, 169, 161, 0.75);
-    padding: 20px;
-    border-radius: 20px;
 }

@@ -6,20 +6,20 @@ export default function ContactUsBox() {
     return (
         <div className={"contactUsBox"}>
             <div className={"header"}>
-                <h1>
+                <div>
                     CONTACT US
-                </h1>
+                </div>
             </div>
             <div className={"contactInfo"}>
-                <h1>
+                <div>
                     Email
-                </h1>
+                </div>
                 <p>
                     connectmongol.mng@gmail.com
                 </p>
-                <h1>
+                <div>
                     Phone
-                </h1>
+                </div>
                 <p>
                     206.123.4567
                 </p>

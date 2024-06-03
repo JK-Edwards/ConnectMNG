@@ -14,18 +14,17 @@ export default function Footer() {
                     <h3>EXPLORE</h3>
                     <Link to={"/"}>HOME</Link>
                     <Link to={"/resources/blogs"}>BLOGS</Link>
-                    <Link to={"/resources/podcasts"}>PODCASTS</Link>
                 </div>
                 <div className={"footerLinkContainer"}>
                     <h3>ENGAGE</h3>
-                    <Link to={"/get-involved/membership"}>MEMBERSHIP</Link>
+                    <Link to={"/get-involved/donate"}>DONATE</Link>
+                    <Link to={"/get-involved/internships"}>INTERNSHIPS</Link>
                     <Link to={"/get-involved/volunteer"}>VOLUNTEER</Link>
-                    <Link to={"/donate"}>DONATE</Link>
                 </div>
                 <div className={"footerLinkContainer"}>
                     <h3>ABOUT US</h3>
-                    <Link to={"about-us"}>OUR STORY</Link>
-                    <Link to={"about-us"}>OUR TEAM</Link>
+                    <Link to={"about-us/our-story"}>OUR STORY</Link>
+                    <Link to={"about-us/our-team"}>OUR TEAM</Link>
                 </div>
             </div>
             <div className={"footerSocialsLinksContainer"}>
@@ -39,7 +38,7 @@ export default function Footer() {
                 <div className={"officialLinksContainer"}>
                     <Link>Terms of Use</Link>
                     <Link>Private Policy</Link>
-                    <Link>©2024 Connect MNG</Link>
+                    <div>©2024 Connect MNG</div>
                 </div>
             </div>
 		</div>
