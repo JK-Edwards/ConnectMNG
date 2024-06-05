@@ -2,6 +2,7 @@ import React from "react";
 
 import { useIntl } from "react-intl";
 import { VolunteerCard } from "../Volunteer/utils";
+import StyledFormLink from "../../components/StyledFormLink/StyledFormLink";
 import websiteImage from "../../images/volunteer/Website.jpg"
 
 import "./Internships.css";
@@ -19,6 +20,12 @@ export default function Internships() {
 			</div>
 			<div className={'internshipsCardContainer'}>
 				<VolunteerCard flip={true} title={"Website"} desc={"Help us with our website..."} link={websiteImage}/>
+			</div>
+			<div>
+				Small paragraph about the internship process
+			</div>
+			<div className={'internshipFormContainer'}>
+				<StyledFormLink text={'Become an intern!'}/>
 			</div>
 		</div>
 	);

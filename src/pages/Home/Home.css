@@ -2,11 +2,16 @@
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .carouselContainer {
-	padding-top: 2vw;
-	padding-left: 3vw;
+	padding-top: 20px;
+	max-width: 80vw;
+	margin-bottom: 6vw;
 }
 
 .carouselSlide {
@@ -23,10 +28,10 @@
 }
 
 .missionTextContainer {
-	max-width: 45vw;
 	padding-top: 1vw;
 	padding-left: 3vw;
 	padding-bottom: 5vw;
+	width: 90vw;
 }
 
 .missionTextContainer h1 {
@@ -36,7 +41,8 @@
 }
 
 .missionTextContainer p {
-	font-size: 1.2vw
+	font-size: 1.2vw;
+	width: 45vw;
 }
 
 .program {
