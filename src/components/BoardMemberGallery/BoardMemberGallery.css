@@ -36,12 +36,15 @@
 }
 
 .galleryHeader {
-  padding-left: 5.5vw;
   padding-bottom: 2vw;
 }
 
 .galleryHeader h1 {
-  font-size: calc(0.5rem + 2vw);
+  font-size: calc(10px + 1.75vw);
+}
+
+.galleryHeader div {
+  font-size: calc(1px + 1.75vw);
 }
 
 /* Adjustments for smaller screens */
@@ -51,6 +54,10 @@
   }
 
   .galleryHeader h1 {
+    text-align: center;
+  }
+
+  .galleryHeader div {
     text-align: center;
   }
 }

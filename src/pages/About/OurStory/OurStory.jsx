@@ -9,13 +9,11 @@ export default function OurStory() {
 
 	return (
 		<div className={"ourStoryPage"}>
-            <div className={"ourStoryContent"}>
-                <div className={"ourStoryTitle"}>
-                    Our Story
-                </div>
-                <div className={"ourStoryDesc"}>
-                    Short paragraph...
-                </div>
+            <div className={"ourStoryTitle"}>
+                Our Story
+            </div>
+            <div className={"ourStoryDesc"}>
+                Short paragraph...
             </div>
 		</div>
 	);
