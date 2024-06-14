@@ -7,3 +7,7 @@
 	flex-direction: column;
 	justify-content: center;
 }
+
+.eventsContainer > h1 {
+	font-size: calc(15px + 1.75vw);
+}
