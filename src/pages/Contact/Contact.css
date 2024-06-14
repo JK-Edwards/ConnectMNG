@@ -10,11 +10,16 @@
 
 .contactContainer h1 {
 	font-weight: 750;
+	font-size: calc(10px + 1.75vw);
+}
+
+.contactContainer h3 {
+	font-size: calc(5px + 1.75vw);
 }
 
 .contactContainer p {
-	width: 575px;
-	font-size: 20px;
+	width: 57.5vw;
+	font-size: calc(1px + 1.25vw);
 }
 
 .inputContainer {
@@ -27,21 +32,23 @@
     border-radius: 10px;
     background: #f2af60;
     border: 0.2vw solid #f2af60;
-    font-size: calc(0.3rem + 0.5vw + 0.5vh);
-    width: 8vw;
+    font-size: calc(1vw);
+    width: 10vw;
 }
 
 .submitButton:hover {
 	background: orange
 }
 
-input, textarea{
+input, textarea {
 	border: none;
 	border-radius: 10px;
 	padding-left: 10px;
+	width: calc(19.5vw);
+	font-size: calc(1px + 1.25vw) !important
 }
 
 textarea {
 	height: 100px;
-	width: 390px;
+	width: calc(40vw);
 }
