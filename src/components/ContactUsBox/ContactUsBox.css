@@ -1,14 +1,22 @@
 .header div {
-    font-size: calc(0.25rem + 2vw);
     font-weight: bolder;
     text-decoration: solid underline #3e798c 10px;
+    font-size: calc(5px + 1.75vw);
+	margin: 0;
 }
 
 .contactInfo div {
     font-weight: bolder;
-    font-size: calc(0.25rem + 2vw);
+    font-size: calc(2.5px + 1.2vw);
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+
+.contactInfo p {
+    font-size: calc(1px + 1.2vw);
+    margin: 0;
 }
 
 .contactInfo {
-    padding-top: 1vw;
+    padding-top: 10px;
 }
