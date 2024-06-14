@@ -2,7 +2,7 @@
 	background-image: url("../../../images/background_white.jpg");
 	background-size: cover;
 	background-position: center;
-	padding-top: 20px;
+	padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;

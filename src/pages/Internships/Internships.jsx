@@ -21,7 +21,7 @@ export default function Internships() {
 			<div className={'internshipsCardContainer'}>
 				<VolunteerCard flip={true} title={"Website"} desc={"Help us with our website..."} link={websiteImage}/>
 			</div>
-			<div>
+			<div className={'internshipFormTitleContainer'}>
 				Small paragraph about the internship process
 			</div>
 			<div className={'internshipFormContainer'}>

@@ -30,7 +30,7 @@ export default function Volunteer() {
 				<VolunteerCard flip={true} title={FUNDRAISING_CARD_TITLE} desc={FUNDRAISING_CARD_DESC} link={fundraisingImage}/>
 				<VolunteerCard flip={false} title={EVENTS_CARD_TITLE} desc={EVENTS_CARD_DESC} link={eventsImage}/>
 			</div>
-			<div>
+			<div className={'volunteerFormTitleContainer'}>
 				Small paragraph about the volunteer process
 			</div>
 			<div className={'volunteerFormContainer'}>

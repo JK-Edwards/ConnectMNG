@@ -6,10 +6,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 20px;
 }
 
 .carouselContainer {
-	padding-top: 20px;
 	max-width: 80vw;
 	margin-bottom: 6vw;
 }
@@ -29,7 +29,6 @@
 
 .missionTextContainer {
 	padding-top: 1vw;
-	padding-left: 3vw;
 	padding-bottom: 5vw;
 	width: 90vw;
 }
@@ -73,7 +72,6 @@
 }
 
 .programGalleryContainer {
-	padding-left: 3vw;
 	padding-bottom: 2vw;
 }
 

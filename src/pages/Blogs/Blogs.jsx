@@ -34,14 +34,16 @@ export default function Blogs() {
 	return (
 		<div className={"blogContainer"}>
 			<h1 className={'blogTitleContainer'}>{intl.formatMessage({id: "blogs"})}</h1>
-			<BlogCard image={welcomeBlogThumbnail}
-						title={"Connect MNG - Where Your Journey is Our Journey"}
-						desc={desc1}
-						link={"/resources/blogs/welcome-blog"}/>
-			<BlogCard image={resumeBlogThumbnail}
-						title={"All the basics you need to know about resume"}
-						desc={desc2}
-						link={"/resources/blogs/resume-blog"}/>
+			<div className={'blogCardsContainer'}>
+				<BlogCard image={welcomeBlogThumbnail}
+							title={"Connect MNG - Where Your Journey is Our Journey"}
+							desc={desc1}
+							link={"/resources/blogs/welcome-blog"}/>
+				<BlogCard image={resumeBlogThumbnail}
+							title={"All the basics you need to know about resume"}
+							desc={desc2}
+							link={"/resources/blogs/resume-blog"}/>
+			</div>
 		</div>
 	);
 };

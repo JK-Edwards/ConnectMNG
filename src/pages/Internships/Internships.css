@@ -2,7 +2,7 @@
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 1.5vw 5vw 0vw 5vw
+	padding: 20px;
 }
 
 .internshipsContainer h1 {
@@ -21,6 +21,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 30px;
 }
 
 .internshipsCard {
@@ -30,7 +31,6 @@
 	width: 70vw;
 	height: 20vw;
 	background: white;
-	margin-bottom: 3vw;
 }
 
 .internshipsCardContent {
@@ -57,5 +57,9 @@
 
 .internshipFormContainer {
 	padding-top: 2vw;
-	padding-bottom: 4vw;
+	padding-bottom: 2vw;
+}
+
+.internshipFormTitleContainer {
+	padding-top: 2vw;
 }
