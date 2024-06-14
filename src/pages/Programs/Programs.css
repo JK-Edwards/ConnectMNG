@@ -18,21 +18,22 @@
 }
 
 .indivProgramContainer h1 {
-	font-size: calc(0.25rem + 2vw);
+	font-size: calc(5px + 1.75vw);
 	font-weight: bold;
+	margin: 0;
 }
 
 .indivProgramContainer p {
-	font-size: 1.2vw;
+	font-size: calc(1px + 1.2vw);
 }
 
 .programsHeader h1 {
-	font-size: calc(0.25rem + 2vw);
+	font-size: calc(5px + 1.75vw);
 	font-weight: bold;
 }
 
-.programHeader p {
-	font-size: 1.2vw;
+.programsHeader p {
+	font-size: calc(1px + 1.2vw);
 }
 
 .contactUsBoxContainer {
