@@ -5,16 +5,7 @@
 	background-image: url("../../../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding-bottom: 2vw;
-}
-
-.culturalCompassContentContainer {
-	padding-left: 2vw;
-	padding-top: 1vw;
-}
-
-.culturalCompassContentContainer div {
-	padding-top: 1vw;
+	padding: 20px;
 }
 
 .culturalCompassContentContainer h1 {
