@@ -33,7 +33,7 @@ export default function Blogs() {
 
 	return (
 		<div className={"blogContainer"}>
-			<h1>{intl.formatMessage({id: "blogs"})}</h1>
+			<h1 className={'blogTitleContainer'}>{intl.formatMessage({id: "blogs"})}</h1>
 			<BlogCard image={welcomeBlogThumbnail}
 						title={"Connect MNG - Where Your Journey is Our Journey"}
 						desc={desc1}
