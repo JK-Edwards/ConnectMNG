@@ -21,7 +21,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 50px;
+	gap: 5vw;
 }
 
 .volunteerCard {
@@ -36,12 +36,17 @@
 .volunteerCardContent {
 	height: 20vw;
 	width: 35vw;
-	padding: 25px 0px 0px 25px
+	padding: 2.5vw 0px 0px 2.5vw
 }
 
 .volunteerCardContent h1 {
 	color: #3F798C;
 	font-weight: bolder;
+	font-size: calc(10px + 1.75vw);
+}
+
+.volunteerCardContent p {
+	font-size: calc(1px + 1.75vw);
 }
 
 .volunteerCardImage {
@@ -60,6 +65,15 @@
 	padding-bottom: 2vw;
 }
 
+.volunteerTitleContainer h1 {
+	font-size: calc(10px + 1.75vw);
+}
+
+.volunteerDescriptionContainer p {
+	font-size: calc(1px + 1.75vw);
+}
+
 .volunteerFormTitleContainer {
+	font-size: calc(1px + 1.75vw);
 	padding-top: 2vw;
 }
