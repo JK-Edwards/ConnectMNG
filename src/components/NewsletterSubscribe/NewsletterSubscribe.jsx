@@ -24,11 +24,11 @@ export default function NewsletterSubscribe() {
     return (
         <div className="subscriptionContainer">
             <input
-            className={"emailInput"}
-            type="email"
-            placeholder="Enter your email to receive our newsletters!"
-            value={email}
-            onChange={handleEmailChange}
+                className={"emailInput"}
+                type="email"
+                placeholder="Enter your email to receive our newsletters!"
+                value={email}
+                onChange={handleEmailChange}
             />
             <button onClick={handleSubscribe} className={"subscribeButton"}>Subscribe</button>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useIntl } from "react-intl";
 
 import "./Calendar.css";
 
@@ -15,18 +16,19 @@ export default function Calendar({events}) {
 };
 
 function EventDay({date, events}) {
+    const intl = useIntl();
     return (
         <div className={"eventDayContainer"}>
             <h1>{date}</h1>
             <div className={'eventDayTitleContainer'}>
                 <div className={"eventDayTitle"}>
-                    Time
+                {intl.formatMessage({id: "time"})}
                 </div>
                 <div className={"eventDayTitle"}>
-                    Event
+                {intl.formatMessage({id: "event"})}
                 </div>
                 <div className={"eventDayTitle"}>
-                    Location
+                {intl.formatMessage({id: "location"})}
                 </div>
             </div>
             <div className={"eventTable"}>

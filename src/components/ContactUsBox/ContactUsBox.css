@@ -1,6 +1,6 @@
 .header div {
     font-weight: bolder;
-    text-decoration: solid underline #3e798c 10px;
+    text-decoration: solid underline #3e798c 0.75vw;
     font-size: calc(5px + 1.75vw);
 	margin: 0;
 }

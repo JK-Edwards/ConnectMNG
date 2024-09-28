@@ -16,34 +16,34 @@ export default function Contact() {
 
 	return (
 		<div className={"contactContainer"}>
-			<h1>Contact Us</h1>
+			<h1>{intl.formatMessage({id: "contactUs"})}</h1>
 			<p>
-				Have questions about our programs or Connect MNG in general? Please submit the form below and we'll be in touch shortly!
+				{intl.formatMessage({id: "contactDesc"})}
 			</p>
-			<h3>YOUR NAME</h3>
+			<h3>{intl.formatMessage({id: "yourName"}).toUpperCase()}</h3>
 			<div className={"inputContainer"}>
-				<input value={firstName} placeholder={"First name"} onChange={(event) => setFirstName(event.target.value)}/>
-				<input value={lastName} placeholder={"Last name"} onChange={(event) => setLastName(event.target.value)}/>
+				<input value={firstName} placeholder={intl.formatMessage({id: "firstName"})} onChange={(event) => setFirstName(event.target.value)}/>
+				<input value={lastName} placeholder={intl.formatMessage({id: "lastName"})} onChange={(event) => setLastName(event.target.value)}/>
 			</div>
 			<div className={"inputContainer"}>
 				<div>
-					<h3>EMAIL</h3>
-					<input value={email} placeholder={"Email address"} onChange={(event) => setEmail(event.target.value)}/>
+					<h3>{intl.formatMessage({id: "email"}).toUpperCase()}</h3>
+					<input value={email} placeholder={intl.formatMessage({id: "emailAddress"})} onChange={(event) => setEmail(event.target.value)}/>
 				</div>
 				<div>
-					<h3>SUBJECT</h3>
-					<input value={subject} placeholder={"Email subject"} onChange={(event) => setSubject(event.target.value)}/>
+					<h3>{intl.formatMessage({id: "subject"}).toUpperCase()}</h3>
+					<input value={subject} placeholder={intl.formatMessage({id: "emailSubject"})} onChange={(event) => setSubject(event.target.value)}/>
 				</div>
 			</div>
 			<div>
-				<h3>MESSAGE</h3>
+				<h3>{intl.formatMessage({id: "message"}).toUpperCase()}</h3>
 				<div className={"textArea"}>
-					<textarea value={message} placeholder={"Your message"} onChange={(event) => setMessage(event.target.value)}/>
+					<textarea value={message} placeholder={intl.formatMessage({id: "yourMessage"})} onChange={(event) => setMessage(event.target.value)}/>
 				</div>
 			</div>
 			<div>
 				<button className={"submitButton"}>
-					Get in touch!
+					{intl.formatMessage({id: "getInTouch"}).toUpperCase()}
 				</button>
 			</div>
 		</div>

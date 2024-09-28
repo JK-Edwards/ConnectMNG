@@ -79,7 +79,7 @@ export default function Navigation() {
 					{showAbout ?
 						<NavDropdown
 								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-								options={[intl.formatMessage({id: "Our Story"}), "Our Team"]}
+								options={[intl.formatMessage({id: "ourStory"}), intl.formatMessage({id: "ourTeam"})]}
 								links={["/about-us/our-story", "/about-us/our-team"]}
 						/>
 					: null}
