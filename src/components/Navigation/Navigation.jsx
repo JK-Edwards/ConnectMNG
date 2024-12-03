@@ -110,7 +110,7 @@ export default function Navigation() {
 				</div>
 				<div>
 					<NavLink to={"/contact-us"}
-							 text={intl.formatMessage({id: "Contact Us"}).toUpperCase()}
+							 text={intl.formatMessage({id: "contactUs"}).toUpperCase()}
 							 className={"button contact"}
 							 isActive={activeIndex === 6}
 							 onClick={() => handleNavLinkSelect(6)}

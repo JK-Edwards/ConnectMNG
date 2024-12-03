@@ -24,17 +24,17 @@ export default function Volunteer() {
 				<h1>{intl.formatMessage({id: "volunteer"})}</h1>
 			</div>
 			<div className={'volunteerDescriptionContainer'}>
-				<p>Body copy for encouraging people/professionals to volunteer</p>
+				<p>{intl.formatMessage({id: "volunteerDesc"})}</p>
 			</div>
 			<div className={'volunteerCardContainer'}>
-				<VolunteerCard flip={true} title={FUNDRAISING_CARD_TITLE} desc={FUNDRAISING_CARD_DESC} link={fundraisingImage}/>
-				<VolunteerCard flip={false} title={EVENTS_CARD_TITLE} desc={EVENTS_CARD_DESC} link={eventsImage}/>
+				<VolunteerCard flip={true} title={intl.formatMessage({id: "fundraising"})} desc={FUNDRAISING_CARD_DESC} link={fundraisingImage}/>
+				<VolunteerCard flip={false} title={intl.formatMessage({id: "events"})} desc={EVENTS_CARD_DESC} link={eventsImage}/>
 			</div>
 			<div className={'volunteerFormTitleContainer'}>
 				Small paragraph about the volunteer process
 			</div>
 			<div className={'volunteerFormContainer'}>
-				<StyledFormLink text={'Become a volunteer!'}/>
+				<StyledFormLink text={intl.formatMessage({id: "becomeVolunteer"})}/>
 			</div>
 		</div>
 	);

@@ -16,7 +16,7 @@ export default function Donate() {
 
 	function handleDonateButtonClick() {
 		if (donateAmount !== "") {
-			alert("You have donated: " + donateAmount);
+			alert("Donations are currently unavailable, please contact us for more information.");
 		} else {
 			alert("Please enter a valid donation amount");
 		}

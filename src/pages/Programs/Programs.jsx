@@ -43,8 +43,8 @@ export default function Programs() {
 						Description
 					</p>
 				</div>
-				<Program name={"Cultural Compass"} description={CULTURAL_COMPASS_PROGRAM_DESC} pageLink={"/programs/cultural-compass-program"}/>
-				<Program name={"Resume Boost"} description={RESUME_BOOST_PROGRAM_DESC} pageLink={"/programs/resume-boost-program"} />
+				<Program name={"Cultural Compass"} description={intl.formatMessage({id: "culturalCompassDesc"})} pageLink={"/programs/cultural-compass-program"}/>
+				<Program name={"Resume Boost"} description={intl.formatMessage({id: "resumeBoostDesc"})} pageLink={"/programs/resume-boost-program"} />
 			</div>
 			<div className={"contactUsBoxContainer"}>
 				<ContactUsBox />

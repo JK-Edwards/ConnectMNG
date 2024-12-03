@@ -1,18 +1,20 @@
 import React from "react";
+import { useIntl } from "react-intl";
 
 import "./ContactUsBox.css";
 
 export default function ContactUsBox() {
+    const intl = useIntl();
     return (
         <div className={"contactUsBox"}>
             <div className={"header"}>
                 <div>
-                    CONTACT US
+                    {intl.formatMessage({id: "contactUs"}).toUpperCase()}
                 </div>
             </div>
             <div className={"contactInfo"}>
                 <div>
-                    Email
+                    {intl.formatMessage({id: "email"})}
                 </div>
                 <p>
                     connectmongol.mng@gmail.com

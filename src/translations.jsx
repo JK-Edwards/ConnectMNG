@@ -1,3 +1,4 @@
+import { CULTURAL_COMPASS_PROGRAM_DESC, RESUME_BOOST_PROGRAM_DESC } from "./constants";
 
 const translations = {
     en: {
@@ -34,7 +35,13 @@ const translations = {
         lastName: "Last name",
         emailAddress: "email address",
         emailSubject: "email subject",
-        contactUs: "contact us"
+        contactUs: "contact us",
+        culturalCompassDesc: CULTURAL_COMPASS_PROGRAM_DESC,
+        resumeBoostDesc: RESUME_BOOST_PROGRAM_DESC,
+        fundraising: "Fundraising",
+        website: "Website",
+        volunteerDesc: "Connect MNG offers various ways for passionate individuals to contribute and make a difference in our community. Whether you're looking to lend a helping hand, raise awareness, or offer your expertise, there's a place for you here. Explore the following avenues to get involved:",
+        becomeVolunteer: "Become a volunteer!"
     },
     mn: {
         programs: "Хөтөлбөрүүд",
@@ -70,7 +77,13 @@ const translations = {
         lastName: "Овог",
         emailAddress: "Имэйл хаяг",
         emailSubject: "Имэйл гарчиг",
-        contactUs: "Холбогдох"
+        contactUs: "Холбогдох",
+        culturalCompassDesc: "Cultural Compass хөтөлбөр нь Америкт сурч боловсорч байгаа Монгол болон Монгол Америк оюутан залууст зориулсан хөтөлбөр юм. Энэхүү хөтөлбөрөөр оюутан залуус хамтдаа харилцан бие биеэ дэмжин тусалж, соёлын ялгааг даван туулах орчныг бүрдүүлэх нь бидний зорилго юм.",
+        resumeBoostDesc: "Resume Boost хөтөлбөр нь хоёр долоо хоногийн ажлын салбарт шинээр гарч буй залууст болон оюутан сурагчдад зориулсан хөтөлбөр юм. Оролцогчид өнөөгийн өрсөлдөөнт хөдөлмөрийн зах зээлд амжилтад хүрэхийн тулд ажлын анкетуудаа оновчтой болгож тухайн салбарын мэргэжилтнүүдээс зөвлөгөө болон санал хүсэлт авах боломжтой.",
+        fundraising: "Хандив",
+        website: "Вэб Хаяг",
+        volunteerDesc: "Connect MNG-тэй хамтран ажиллах болон өөрийн оролцоогоороо Вашингтон мужид байгаа Монголчуудад зорилсан хөтөлбөрүүдийг дэмжих хүсэлтэй бол та дараах байдлаар өөрийн оролцоог нэмэх боломжтой юм:",
+        becomeVolunteer: "САЙН ДУРЫН АЖИЛТАН БОЛОХ"
     },
 };
 
