@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useIntl } from "react-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./Donate.css";
 
@@ -13,6 +13,40 @@ export default function Donate() {
 	const handleInputChange = (event) => {
 		updateDonateAmount(event.target.value);
 	};
+
+	useEffect(() => {
+        const paypalScript = document.createElement("script");
+        paypalScript.src = "https://www.paypal.com/sdk/js?client-id=ATMg6l2UNbTrMPc99AbNMe_eT8PJ2QfJ1lRGzeZPh4wl8BampZl2YutnUid-3xgU57FOZFq1rjZwUIru&currency=USD"; // Replace YOUR_CLIENT_ID
+        paypalScript.async = true;
+        paypalScript.onload = () => {
+            if (window.paypal) {
+                window.paypal.Buttons({
+                    createOrder: (data, actions) => {
+						const sanitizedAmount = donateAmount.replace("$", "");
+						if (!sanitizedAmount || isNaN(sanitizedAmount)) {
+							alert("Please select a valid donation amount.");
+							return;
+						}
+						return actions.order.create({
+							purchase_units: [
+								{
+									amount: {
+										value: sanitizedAmount || "10", // Default to $10 if no amount is selected
+									},
+								},
+							],
+						});
+					},
+                    onApprove: (data, actions) => {
+                        return actions.order.capture().then((details) => {
+                            alert(`Thank you for your donation, ${details.payer.name.given_name}!`);
+                        });
+                    },
+                }).render("#paypal-donate-button-container");
+            }
+        };
+        document.body.appendChild(paypalScript);
+    }, [donateAmount]); // Re-render PayPal button when amount changes
 
 	function handleDonateButtonClick() {
 		if (donateAmount !== "") {
@@ -43,7 +77,8 @@ export default function Donate() {
 				   onChange={handleInputChange}
 				   value={donateAmount}
 			/>
-			<button className={"donateButton"} onClick={handleDonateButtonClick}>{intl.formatMessage({id: "donate"})}</button>
+			{/* <button className={"donateButton"} onClick={handleDonateButtonClick}>{intl.formatMessage({id: "donate"})}</button> */}
+			<div id="paypal-donate-button-container" style={{ marginTop: "20px"}}></div>
 		</div>
 	);
 };
