@@ -1,5 +1,6 @@
 import React from "react";
 
+import Swal from "sweetalert2";
 import { useIntl } from "react-intl";
 import { useEffect, useState } from "react";
 
@@ -24,7 +25,11 @@ export default function Donate() {
                     createOrder: (data, actions) => {
 						const sanitizedAmount = donateAmount.replace("$", "");
 						if (!sanitizedAmount || isNaN(sanitizedAmount)) {
-							alert("Please select a valid donation amount.");
+							Swal.fire({
+								icon: "error",
+								title: "Invalid Amount",
+								text: "Please select a valid donation amount.",
+							});
 							return;
 						}
 						return actions.order.create({
@@ -39,7 +44,11 @@ export default function Donate() {
 					},
                     onApprove: (data, actions) => {
                         return actions.order.capture().then((details) => {
-                            alert(`Thank you for your donation, ${details.payer.name.given_name}!`);
+                            Swal.fire({
+								icon: "success",
+								title: "Donation Successful",
+								text: `Thank you for your donation, ${details.payer.name.given_name}!`,
+							});
                         });
                     },
                 }).render("#paypal-donate-button-container");
