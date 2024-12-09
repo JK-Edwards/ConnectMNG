@@ -17,7 +17,7 @@ export default function Donate() {
 
 	useEffect(() => {
         const paypalScript = document.createElement("script");
-        paypalScript.src = "https://www.paypal.com/sdk/js?client-id=ATMg6l2UNbTrMPc99AbNMe_eT8PJ2QfJ1lRGzeZPh4wl8BampZl2YutnUid-3xgU57FOZFq1rjZwUIru&currency=USD"; // Replace YOUR_CLIENT_ID
+        paypalScript.src = "https://www.paypal.com/sdk/js?client-id=Af-06IqdQXS5jMsHYPPkrftpMBt_FjXjt1tqRAmv7igstLdxn4DLMVgPua1Wa3EE3Pd2p1y-b6tFMeon&currency=USD"; // Replace YOUR_CLIENT_ID
         paypalScript.async = true;
         paypalScript.onload = () => {
             if (window.paypal) {
