@@ -17,7 +17,8 @@ export default function Donate() {
 
 	useEffect(() => {
         const paypalScript = document.createElement("script");
-        paypalScript.src = "https://www.paypal.com/sdk/js?client-id=Af-06IqdQXS5jMsHYPPkrftpMBt_FjXjt1tqRAmv7igstLdxn4DLMVgPua1Wa3EE3Pd2p1y-b6tFMeon&currency=USD"; // Replace YOUR_CLIENT_ID
+		const clientId = process.env.REACT_APP_PAYPAL_CLIENT_ID; // To access the environment variable
+		paypalScript.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=USD`;
         paypalScript.async = true;
         paypalScript.onload = () => {
             if (window.paypal) {
