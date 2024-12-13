@@ -17,7 +17,6 @@ export default function NewsletterSubscribe() {
     };
 
 
-
     function handleSubscribe() {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         // Change to database when moving to production
