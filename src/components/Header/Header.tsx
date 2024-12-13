@@ -1,16 +1,21 @@
 import arrow from "../../images/arrow.png";
 import LanguageMenu from "../Dropdowns/LanguageMenu/LanguageMenu.jsx";
-import SocialsBar from "../SocialsBar/SocialsBar.jsx";
+import SocialsBar from "../SocialsBar/SocialsBar.tsx";
 import React from "react";
 
 import { useState } from "react";
 
 import "./Header.css";
 
-export default function Header({isEnglish, setIsEnglish}) {
-  const [showMenu, setShowMenu] = useState(false);
+interface HeaderProps {
+  isEnglish: boolean;
+  setIsEnglish: (newStatus: boolean) => void;
+}
 
-  function handleLanguageSelect(newStatus) {
+export default function Header({isEnglish, setIsEnglish}: HeaderProps): JSX.Element {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+
+  function handleLanguageSelect(newStatus: boolean): void {
     setIsEnglish(newStatus);
     setShowMenu(false);
   };

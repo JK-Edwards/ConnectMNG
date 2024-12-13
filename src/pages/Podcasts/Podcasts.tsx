@@ -5,7 +5,14 @@ import { useIntl } from "react-intl";
 
 import "./Podcasts.css";
 
-function PodcastCard ({image, title, desc, link}) {
+interface PodcastCardProps {
+	image: string;
+	title: string;
+	desc: string;
+	link: string;
+}
+
+const PodcastCard: React.FC<PodcastCardProps> = ({image, title, desc, link}) => {
 	const intl = useIntl();
 
 	return (

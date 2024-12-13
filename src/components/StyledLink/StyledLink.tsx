@@ -5,7 +5,12 @@ import { Link } from "react-router-dom";
 
 import "./StyledLink.css";
 
-export default function StyledLink({ text, link }) {
+interface StyledLinkProps{
+    text: string;
+    link: string;
+}
+
+const StyledLink: React.FC<StyledLinkProps> = ({ text, link }) => {
 
     return (
         <Link to={link} className={"learnMoreLink"}>
@@ -16,3 +21,5 @@ export default function StyledLink({ text, link }) {
         </Link>
     );
 };
+
+export default StyledLink; 

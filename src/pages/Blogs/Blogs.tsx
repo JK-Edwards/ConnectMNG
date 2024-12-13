@@ -1,5 +1,5 @@
 import resumeBlogThumbnail from "../../images/blogs/resumeBlog/resumeBlogThumbnail.jpg";
-import StyledLink from "../../components/StyledLink/StyledLink.jsx";
+import StyledLink from "../../components/StyledLink/StyledLink.tsx";
 import welcomeBlogThumbnail from "../../images/blogs/welcomeBlog/welcomeBlogThumbnail.jpg";
 import React from "react";
 
@@ -13,7 +13,14 @@ const desc1 = "This blog is more than just a virtual space; it's a cozy coerner 
 const desc2 = "As the first impression is always important, your resume is the first impression you can make at the companies when appying "
 			+ "for a job. According to the Ladders study, on average, recruiters spend 7.4 seconds on the initial screeming of a resume...";
 
-function BlogCard ({image, title, desc, link}) {
+interface BlogCardProps{
+	image: string;
+	title: string;
+	desc: string;
+	link: string;
+}
+
+const BlogCard: React.FC<BlogCardProps> = ({image, title, desc, link}) => {
 	const intl = useIntl();
 
 	return (

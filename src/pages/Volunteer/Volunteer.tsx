@@ -34,7 +34,7 @@ export default function Volunteer() {
 				Small paragraph about the volunteer process
 			</div>
 			<div className={'volunteerFormContainer'}>
-				<StyledFormLink text={intl.formatMessage({id: "becomeVolunteer"})}/>
+				<StyledFormLink text={intl.formatMessage({id: "becomeVolunteer"})} link="placeholder"/>
 			</div>
 		</div>
 	);

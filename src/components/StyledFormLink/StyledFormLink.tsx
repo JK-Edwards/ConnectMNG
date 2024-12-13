@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom';
 
 import './StyledFormLink.css';
 
-export default function StyledFormLink({ text, link }) {
+interface StyledFormLinkProps{
+    text: string;
+    link: string;
+}
+
+const StyledFormLink: React.FC<StyledFormLinkProps> =({ text, link }) =>{
 
     return (
         <Link to={link} className={'formLink'} target='_blank' rel='noopener noreferrer'>
@@ -15,3 +20,5 @@ export default function StyledFormLink({ text, link }) {
         </Link>
     );
 };
+
+export default StyledFormLink;

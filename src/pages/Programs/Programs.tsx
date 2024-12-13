@@ -11,7 +11,13 @@ import { useIntl } from "react-intl";
 
 import "./Programs.css";
 
-function Program({name, description, pageLink}) {
+interface ProgramProps{
+	name: string;
+	description: string;
+	pageLink: string;
+}
+
+const Program: React.FC<ProgramProps> = ({name, description, pageLink}) => {
 	return (
 		<div className={"indivProgramContainer"}>
 			<div className={"indivProgramTextContainer"}>

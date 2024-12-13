@@ -2,10 +2,11 @@ import React from "react";
 
 import { useIntl } from "react-intl";
 import { VolunteerCard } from "../Volunteer/utils";
-import StyledFormLink from "../../components/StyledFormLink/StyledFormLink";
+import StyledFormLink from "../../components/StyledFormLink/StyledFormLink.tsx";
 import websiteImage from "../../images/volunteer/Website.jpg"
 
 import "./Internships.css";
+
 
 export default function Internships() {
 	const intl = useIntl();
@@ -25,7 +26,7 @@ export default function Internships() {
 				Small paragraph about the internship process
 			</div>
 			<div className={'internshipFormContainer'}>
-				<StyledFormLink text={'Become an intern!'}/>
+				<StyledFormLink text={'Become an intern!'} link={'/placeholder-link'}/>
 			</div>
 		</div>
 	);

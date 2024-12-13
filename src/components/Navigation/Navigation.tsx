@@ -9,12 +9,23 @@ import { useState } from "react";
 
 import "./Navigation.css";
 
+interface NavLinkProps {
+	to: string;
+	text: string;
+	isActive: boolean;
+	className: string; 
+	onClick: () => void; 
+}
+
+
+
 export default function Navigation() {
 	const intl = useIntl();
-	const [activeIndex, setActiveIndex] = useState(0);
-	const [showResources, setShowResources] = useState(false);
-	const [showActivities, setShowActivities] = useState(false);
-	const [showAbout, setShowAbout] = useState(false);
+	const [activeIndex, setActiveIndex] = useState<number>(0);
+	const [showResources, setShowResources] = useState<boolean>(false);
+	const [showActivities, setShowActivities] = useState<boolean>(false);
+	const [showAbout, setShowAbout] = useState<boolean>(false);
+
 
 	function handleVolunteerSelect() {
 		setShowActivities(!showActivities);
@@ -34,14 +45,14 @@ export default function Navigation() {
 		setShowResources(false);
 	}
 
-	function handleNavLinkSelect(activeIndex) {
+	function handleNavLinkSelect(activeIndex: number): void {
 		setActiveIndex(activeIndex);
 		setShowActivities(false);
 		setShowResources(false);
 		setShowAbout(false);
 	};
 
-	function handleDropdownSelect(selectedIndex) {
+	function handleDropdownSelect(selectedIndex: number): void {
 		setShowActivities(false);
 		setShowResources(false);
 		setShowAbout(false);
@@ -78,7 +89,7 @@ export default function Navigation() {
 					</div>
 					{showAbout ?
 						<NavDropdown
-								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+								onSelect={(selectedIndex: number) => handleDropdownSelect(selectedIndex)}
 								options={[intl.formatMessage({id: "ourStory"}), intl.formatMessage({id: "ourTeam"})]}
 								links={["/about-us/our-story", "/about-us/our-team"]}
 						/>
@@ -90,7 +101,7 @@ export default function Navigation() {
 					</div>
 					{showResources ?
 						<NavDropdown
-								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+								onSelect={(selectedIndex: number) => handleDropdownSelect(selectedIndex)}
 								options={[intl.formatMessage({id: "blogs"})]}
 								links={["/resources/blogs"]}
 						/>
@@ -102,7 +113,7 @@ export default function Navigation() {
 					</div>
 					{showActivities ?
 						<NavDropdown
-							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+							onSelect={(selectedIndex: number) => handleDropdownSelect(selectedIndex)}
 							options={[intl.formatMessage({id: "donate"}), intl.formatMessage({id: "internships"}), intl.formatMessage({id: "volunteer"})]}
 							links={["/get-involved/donate", "get-involved/internships", "/get-involved/volunteer"]}
 						/>
@@ -121,14 +132,16 @@ export default function Navigation() {
 	);
 };
 
-function NavLink({to, text, isActive, className, onClick}) {
-	if (isActive && (className !== classNames("button", "contact"))) {
-		className = classNames(className, "isActive");
-	};
-
+const NavLink: React.FC<NavLinkProps> = ({ to, text, isActive, className, onClick }) => {
+	
+	if (isActive && className !== classNames("button", "contact")) {
+	  className = classNames(className, "isActive");
+	}
+  
 	return (
-		<Link to={to} className={className} onClick={onClick}>
-			{text}
-		</Link>
+	  <Link to={to} className={className} onClick={onClick}>
+		{text}
+	  </Link>
 	);
-};
+  };
+  

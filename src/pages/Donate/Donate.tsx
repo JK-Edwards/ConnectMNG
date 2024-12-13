@@ -1,16 +1,21 @@
 import React from "react";
-
 import { useIntl } from "react-intl";
 import { useState } from "react";
 
 import "./Donate.css";
+
+interface MoneyButtonProps{
+	text: string;
+	onClick: () => void;
+
+}
 
 export default function Donate() {
 	const intl = useIntl();
 	const cashAmounts = ["$10", "$20", "$50", "$100", "$250", "$500"];
 	const [donateAmount, updateDonateAmount] = useState("");
 
-	const handleInputChange = (event) => {
+	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		updateDonateAmount(event.target.value);
 	};
 
@@ -48,7 +53,7 @@ export default function Donate() {
 	);
 };
 
-function MoneyButton({text, onClick}) {
+const MoneyButton: React.FC<MoneyButtonProps> = ({text, onClick}) => {
 	return (
 		<button className={"moneyButton"} onClick={onClick}>
 			{text}

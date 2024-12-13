@@ -12,7 +12,11 @@ import React from "react";
 
 import "./SocialsBar.css";
 
-export default function SocialsBar({ isInHeader }) {
+interface SocialsBarProps{
+    isInHeader: boolean; 
+}
+
+const SocialsBar: React.FC<SocialsBarProps> =({ isInHeader }) =>{
     const discordLogo = isInHeader ? discord1 : discord2;
     const emailLogo = isInHeader ? email1 : email2;
     const fbLogo = isInHeader ? fb1 : fb2;
@@ -38,3 +42,5 @@ export default function SocialsBar({ isInHeader }) {
         </div>
     );
 };
+
+export default SocialsBar;

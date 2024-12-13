@@ -38,8 +38,9 @@ export default function Footer() {
                 </div>
                 <NewsletterSubscribe />
                 <div className={"officialLinksContainer"}>
-                    <Link>Terms of Use</Link>
-                    <Link>Private Policy</Link>
+                    
+                    <Link to="#">Terms of Use</Link>
+                    <Link to="#">Private Policy</Link>
                     <div>©2024 Connect MNG</div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ import "./NewsletterSubscribe.css";
 export default function NewsletterSubscribe() {
     const [email, setEmail] = useState("");
 
-    const handleEmailChange = (e) => {
+    const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
     };
 
