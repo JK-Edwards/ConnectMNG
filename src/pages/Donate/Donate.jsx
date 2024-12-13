@@ -1,8 +1,8 @@
 import React from "react";
-
-import Swal from "sweetalert2";
 import { useIntl } from "react-intl";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import PaypalButton from "./PaypalButton";
+
 
 import "./Donate.css";
 
@@ -14,57 +14,6 @@ export default function Donate() {
 	const handleInputChange = (event) => {
 		updateDonateAmount(event.target.value);
 	};
-
-	useEffect(() => {
-        const paypalScript = document.createElement("script");
-		const clientId = process.env.REACT_APP_PAYPAL_CLIENT_ID; // To access the environment variable
-		paypalScript.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=USD`;
-        paypalScript.async = true;
-        paypalScript.onload = () => {
-            if (window.paypal) {
-                window.paypal.Buttons({
-                    createOrder: (data, actions) => {
-						const sanitizedAmount = donateAmount.replace("$", "");
-						if (!sanitizedAmount || isNaN(sanitizedAmount)) {
-							Swal.fire({
-								icon: "error",
-								title: "Invalid Amount",
-								text: "Please select a valid donation amount.",
-							});
-							return;
-						}
-						return actions.order.create({
-							purchase_units: [
-								{
-									amount: {
-										value: sanitizedAmount || "10", // Default to $10 if no amount is selected
-									},
-								},
-							],
-						});
-					},
-                    onApprove: (data, actions) => {
-                        return actions.order.capture().then((details) => {
-                            Swal.fire({
-								icon: "success",
-								title: "Donation Successful",
-								text: `Thank you for your donation, ${details.payer.name.given_name}!`,
-							});
-                        });
-                    },
-                }).render("#paypal-donate-button-container");
-            }
-        };
-        document.body.appendChild(paypalScript);
-    }, [donateAmount]); // Re-render PayPal button when amount changes
-
-	function handleDonateButtonClick() {
-		if (donateAmount !== "") {
-			alert("Donations are currently unavailable, please contact us for more information.");
-		} else {
-			alert("Please enter a valid donation amount");
-		}
-	}
 
 	return (
 		<div className={"donateContainer"}>
@@ -87,8 +36,7 @@ export default function Donate() {
 				   onChange={handleInputChange}
 				   value={donateAmount}
 			/>
-			{/* <button className={"donateButton"} onClick={handleDonateButtonClick}>{intl.formatMessage({id: "donate"})}</button> */}
-			<div id="paypal-donate-button-container" style={{ marginTop: "20px"}}></div>
+			{donateAmount !== "" && <PaypalButton donateAmount={donateAmount} />}
 		</div>
 	);
 };
