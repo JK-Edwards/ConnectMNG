@@ -1,0 +1,28 @@
+Questions for 1:1:
+
+I am trying to code the backend but I don't have a lot of experience with it and it is sort of confusing to me. How do I complete this task with the front-end only? I tried many different methods (Direct Mail, SMPT, AWS SES) but sending an email to itself and storing it in the inbox/text file seems to only work with backend AWS SES email sending with Node.js. 
+	However, your guidance told me to perform logic in the frontend. I am sort of confused as to how to approach this. Can you explain it further?
+
+content of email: email and day/time that they clicked the subscribe button
+create a new email to send 
+send Jason  message - can you link me the documentation to the email third party you are using?
+- front end stuff
+
+- validate inputs (regex), make sure the notifications are all good (eric has a library), design of notification (talk to badmarg)
+- how to make an api call for sending an email
+- tweak code for our use case
+- there are examples in the code base
+
+What I did:
+2. Since I'm new to this, my brother helped me a bit. We created a new backend project file called email-server with Node.js to assist in the server-side logic. How do I make sure that the server doesn't crash either from incorrect format or malicious input?
+
+Roadblocks:
+3. How do I save the email in a text file along with all other emails? Do we have an email that is verified with AWS SES? Can you walk me through this? Can I maybe work with someone experienced and that has finished their project?
+
+4. Send the email a confirmation email using AWS SES or some other library.
+
+	- I tried to make sense of web development by searching up some intro videos and I sort of understand how everything works, but I am still trying to learn more about it - I am still pretty beginner with all of this. I want to learn more on the internship.
+Can you explain the logic that I implemented, does it make sense? I am unsure on how to test it and connect the error to the frontend.
+
+
+5. What is the timeline of the project so that I can properly schedule my month ahead?

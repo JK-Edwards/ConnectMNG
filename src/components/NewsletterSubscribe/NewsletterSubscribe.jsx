@@ -4,6 +4,11 @@ import { useState } from "react";
 
 import "./NewsletterSubscribe.css";
 
+import emailjs from "emailjs-com";
+
+import Swal from "sweetalert2";
+
+
 export default function NewsletterSubscribe() {
     const [email, setEmail] = useState("");
 
@@ -11,15 +16,36 @@ export default function NewsletterSubscribe() {
         setEmail(e.target.value);
     };
 
-    const handleSubscribe = () => {
+
+
+    function handleSubscribe() {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         // Change to database when moving to production
-        if (email === "") {
+        if (email === "" || !emailRegex) {
             alert("Please enter a valid email");
             return;
         }
+
         localStorage.setItem("subscribedEmail", email);
-        alert("Subscribed with email: " + email);
-    };
+        Swal.fire({
+            title: "Good job!",
+            text: "Subscribed with email: " + email,
+            icon: "success"
+          });
+        //   alert("Subscribed with email: " + email);
+
+
+            emailjs.send('service_ykb70ma', 'template_97jazd7', templateParams)
+                .then(function(response) {
+                  console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                console.log('FAILED...', error);
+             });
+        
+    }  
+    
+    
+    
 
     return (
         <div className="subscriptionContainer">
