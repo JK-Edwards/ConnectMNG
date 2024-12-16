@@ -17,7 +17,7 @@ export default function NewsletterSubscribe() {
     };
 
 
-    function handleSubscribe() {
+    const handleSubscribe = (e) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         // Change to database when moving to production
         if (email === "" || !emailRegex) {
@@ -27,7 +27,7 @@ export default function NewsletterSubscribe() {
 
         const handleSubmit = (e) => {
             const form = {
-                Email: e.target.email.value
+                Email: email
             }
             console.log(form);
     
@@ -45,6 +45,9 @@ export default function NewsletterSubscribe() {
                 console.log("ERROR \n " + JSON.stringify(error));
             })
         }
+
+        handleSubmit(e)
+
 
         localStorage.setItem("subscribedEmail", email);
         Swal.fire({
