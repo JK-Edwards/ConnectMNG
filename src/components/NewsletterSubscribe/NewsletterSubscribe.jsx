@@ -20,7 +20,7 @@ export default function NewsletterSubscribe() {
     const handleSubscribe = (e) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         // Change to database when moving to production
-        if (email === "" || !emailRegex) {
+        if (email === "" || !emailRegex.test(email)) {
             alert("Please enter a valid email");
             return;
         }
