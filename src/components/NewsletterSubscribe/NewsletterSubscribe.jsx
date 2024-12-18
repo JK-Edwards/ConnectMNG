@@ -27,22 +27,24 @@ export default function NewsletterSubscribe() {
 
         const handleSubmit = (e) => {
             const form = {
+                to_name:"ConnectMNG",
+                from_email: email,
                 Email: email
             }
             console.log(form);
     
-            emailjs.send('service_ykb70ma', 'template_97jazd7', form, 'xAIFrT-0HrsUOzt1d')
+            emailjs.send('service_hics0er', 'template_64tdg3l', form, 'xAIFrT-0HrsUOzt1d')
             .then(res => {
                 return res
             })
             .then(data => {
                 console.log("data from response", JSON.stringify(data));
                 if(data.status <299){
-                    e.target.email.value = "";
+                    e.target.reset();
                 }
             })
             .catch(error => {
-                console.log("ERROR \n " + JSON.stringify(error));
+                console.error("Error:", error);
             })
         }
 
