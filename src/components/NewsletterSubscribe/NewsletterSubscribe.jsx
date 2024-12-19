@@ -33,7 +33,7 @@ export default function NewsletterSubscribe() {
             }
             console.log(form);
     
-            emailjs.send('service_hics0er', 'template_64tdg3l', form, 'xAIFrT-0HrsUOzt1d')
+            emailjs.send('service_g082yv8', 'template_bh9ivpm', form, 'O6pJDJsUT4I2tB8Xs')
             .then(res => {
                 return res
             })
