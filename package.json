@@ -12,7 +12,8 @@
     "react-router-dom": "^6.21.1",
     "react-slick": "^0.30.2",
     "serve": "^14.2.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.15.2"
   },
   "scripts": {
     "start": "react-scripts start",

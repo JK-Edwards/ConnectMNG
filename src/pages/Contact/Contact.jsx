@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import { useIntl } from "react-intl";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 import "./Contact.css";
 
 export default function Contact() {
@@ -33,11 +34,19 @@ export default function Contact() {
 
     const handleSubmit = () => {
         if (!email || emailError) {
-            alert(intl.formatMessage({ id: "Invalid Email Message" }));
+            Swal.fire({
+                icon: "error",
+                title: intl.formatMessage({ id: "Invalid Email" }),
+                text: intl.formatMessage({ id: "Invalid Email Message" }),
+            });
             return;
         }
         if (!firstName || !lastName || !message) {
-            alert(intl.formatMessage({ id: "Fill Required Fields" }));
+            Swal.fire({
+                icon: "error",
+                title: intl.formatMessage({ id: "Fill Required Fields" }),
+                text: intl.formatMessage({ id: "Please Fill All Fields" }),
+            });
             return;
         }
 
@@ -60,7 +69,11 @@ export default function Contact() {
             .then(
                 (response) => {
                     console.log("SUCCESS!", response.status, response.text);
-                    alert(intl.formatMessage({ id: "Email Sent Success" }));
+                    Swal.fire({
+                        icon: "success",
+                        title: intl.formatMessage({ id: "Email Sent Success"}),
+                        text: intl.formatMessage({ id: "We Will Get In Touch" }),
+                    });
                     // Reset form fields
                     setFirstName("");
                     setLastName("");
@@ -70,7 +83,11 @@ export default function Contact() {
                 },
                 (error) => {
                     console.log("FAILED...", error);
-                    alert(intl.formatMessage({ id: "emailSentError" }));
+                    Swal.fire({
+                        icon: "error",
+                        title: intl.formatMessage({ id: "Email Sent Error"}),
+                        text: intl.formatMessage({ id: "Please Try Again" }),
+                    });
                 }
             );
     };
