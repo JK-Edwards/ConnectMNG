@@ -1,4 +1,4 @@
-import Calendar from "../../components/Calendar/Calendar.jsx";
+import Calendar from "../../components/Calendar/Calendar.tsx";
 import React from "react";
 
 import "./Events.css";

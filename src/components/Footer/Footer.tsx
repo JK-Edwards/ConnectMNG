@@ -1,5 +1,5 @@
-import NewsletterSubscribe from "../NewsletterSubscribe/NewsletterSubscribe.jsx";
-import SocialsBar from "../SocialsBar/SocialsBar.jsx";
+import NewsletterSubscribe from "../NewsletterSubscribe/NewsletterSubscribe.tsx";
+import SocialsBar from "../SocialsBar/SocialsBar.tsx";
 import React from "react";
 import { useIntl } from "react-intl";
 

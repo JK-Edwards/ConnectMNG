@@ -1,6 +1,6 @@
 import welcomeBlogThumbnail from "../../images/blogs/welcomeBlog/welcomeBlogThumbnail.jpg";
 import resumeBlogThumbnail from "../../images/blogs/resumeBlog/resumeBlogThumbnail.jpg";
-import ItemCarousel from "../../components/Carousel/ItemCarousel.jsx";
+import ItemCarousel from "../../components/Carousel/ItemCarousel.tsx";
 import StyledLink from "../../components/StyledLink/StyledLink";
 import prog1 from "../../images/programs/prog1.png";
 import prog2 from "../../images/programs/prog2.png";
@@ -8,13 +8,10 @@ import prog3 from "../../images/programs/prog3.png";
 import React from "react";
 import slide1 from "../../images/homeCarousel/slide1.jpg";
 import slide2 from "../../images/homeCarousel/slide2.jpg";
-
 import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
-
-
 import "./Home.css";
-import SimpleSlider from "../../components/Carousel/ReactSlickCarousel.jsx";
+import SimpleSlider from "../../components/Carousel/ReactSlickCarousel.tsx";
 
 export default function Home() {
 	const intl = useIntl();

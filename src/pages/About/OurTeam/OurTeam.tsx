@@ -1,4 +1,4 @@
-import BoardMemberGallery from "../../../components/BoardMemberGallery/BoardMemberGallery.jsx";
+import BoardMemberGallery from "../../../components/BoardMemberGallery/BoardMemberGallery.tsx";
 import React from "react";
 
 // import { useIntl } from "react-intl";

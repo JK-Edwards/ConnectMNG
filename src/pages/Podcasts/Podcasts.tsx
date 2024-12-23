@@ -1,4 +1,4 @@
-import StyledLink from "../../components/StyledLink/StyledLink.jsx";
+import StyledLink from "../../components/StyledLink/StyledLink.tsx";
 import React from "react";
 
 import { useIntl } from "react-intl";

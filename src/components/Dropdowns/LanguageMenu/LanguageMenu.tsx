@@ -1,11 +1,17 @@
 import React from "react";
+import "./LanguageMenu.css";
 
-import "./LanguageMenu.css"
+interface LanguageMenuProps {
+  isEnglish: boolean;
+  onSelect: (isEnglish: boolean) => void;
+}
 
-export default function LanguageMenu({isEnglish, onSelect}) {
-    return (
-        <div className={"dropdown"}>
-            {isEnglish ? <div onClick={() => onSelect(false)}>MNG</div> : <div onClick={() => onSelect(true)}>ENG</div>}
-        </div>
-    );
-  };
+const LanguageMenu: React.FC<LanguageMenuProps> = ({ isEnglish, onSelect }) => {
+  return (
+    <div className="dropdown">
+      {isEnglish ? <div onClick={() => onSelect(false)}>MNG</div> : <div onClick={() => onSelect(true)}>ENG</div>}
+    </div>
+  );
+};
+
+export default LanguageMenu;

@@ -1,7 +1,7 @@
 import arrow from "../../images/arrow.png";
-import LanguageMenu from "../Dropdowns/LanguageMenu/LanguageMenu.jsx";
+import LanguageMenu from "../Dropdowns/LanguageMenu/LanguageMenu.tsx";
 import SocialsBar from "../SocialsBar/SocialsBar.tsx";
-import React from "react";
+import React, { JSX } from "react";
 
 import { useState } from "react";
 
