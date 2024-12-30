@@ -7,8 +7,7 @@ export default function PaypalButton({ donateAmount }) {
             if (!document.querySelector("#paypal-sdk")) {
                 const paypalScript = document.createElement("script");
                 paypalScript.id = "paypal-sdk";
-                const clientId = process.env.REACT_APP_PAYPAL_CLIENT_ID;
-                paypalScript.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=USD`;
+                paypalScript.src = `https://www.paypal.com/sdk/js?client-id=Af-06IqdQXS5jMsHYPPkrftpMBt_FjXjt1tqRAmv7igstLdxn4DLMVgPua1Wa3EE3Pd2p1y-b6tFMeon&currency=USD`;
                 paypalScript.async = true;
 
                 paypalScript.onload = () => renderPaypalButton();
