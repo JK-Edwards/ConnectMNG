@@ -31,14 +31,12 @@ export default function NewsletterSubscribe() {
                 from_email: email,
                 Email: email
             }
-            console.log(form);
     
             emailjs.send('service_g082yv8', 'template_bh9ivpm', form, 'O6pJDJsUT4I2tB8Xs')
             .then(res => {
                 return res
             })
             .then(data => {
-                console.log("data from response", JSON.stringify(data));
                 if(data.status <299){
                     e.target.reset();
                 }
@@ -57,15 +55,6 @@ export default function NewsletterSubscribe() {
             text: "Subscribed with email: " + email,
             icon: "success"
           });
-        //   alert("Subscribed with email: " + email);
-
-
-            // emailjs.send('service_ykb70ma', 'template_97jazd7', templateParams)
-            //     .then(function(response) {
-            //       console.log('SUCCESS!', response.status, response.text);
-            //     }, function(error) {
-            //     console.log('FAILED...', error);
-            //  });
         
     }  
     
