@@ -61,14 +61,12 @@ export default function Contact() {
 
         emailjs
             .send(
-                "service_g082yv8", // Replace with your EmailJS Service ID
-                "template_jhe281c", // Replace with your EmailJS Template ID
+                "service_g082yv8", // EmailJS Service ID
+                "template_jhe281c", // EmailJS Template ID
                 templateParams,
-                "O6pJDJsUT4I2tB8Xs" // Replace with your EmailJS Public Key
+                "O6pJDJsUT4I2tB8Xs" // EmailJS Public Key
             )
-            .then(
-                (response) => {
-                    console.log("SUCCESS!", response.status, response.text);
+            .then(() => {
                     Swal.fire({
                         icon: "success",
                         title: intl.formatMessage({ id: "Email Sent Success"}),
@@ -80,17 +78,16 @@ export default function Contact() {
                     setEmail("");
                     setSubject("");
                     setMessage("");
-                },
-                (error) => {
-                    console.log("FAILED...", error);
+                })
+                .catch(() => {
                     Swal.fire({
                         icon: "error",
                         title: intl.formatMessage({ id: "Email Sent Error"}),
                         text: intl.formatMessage({ id: "Please Try Again" }),
                     });
-                }
-            );
-    };
+                });
+            };
+    
 
 	
 return (
