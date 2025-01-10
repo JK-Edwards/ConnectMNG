@@ -27,22 +27,40 @@ export default function NewsletterSubscribe() {
 
         const handleSubmit = (e) => {
             const form = {
+<<<<<<< HEAD
                 to_name:"ConnectMNG",
                 from_email: email,
                 Email: email
             }
     
             emailjs.send('service_g082yv8', 'template_bh9ivpm', form, 'O6pJDJsUT4I2tB8Xs')
+=======
+                Email: email
+            }
+            console.log(form);
+    
+            emailjs.send('service_ykb70ma', 'template_97jazd7', form, 'xAIFrT-0HrsUOzt1d')
+>>>>>>> main
             .then(res => {
                 return res
             })
             .then(data => {
+<<<<<<< HEAD
                 if(data.status <299){
                     e.target.reset();
                 }
             })
             .catch(error => {
                 console.error("Error:", error);
+=======
+                console.log("data from response", JSON.stringify(data));
+                if(data.status <299){
+                    e.target.email.value = "";
+                }
+            })
+            .catch(error => {
+                console.log("ERROR \n " + JSON.stringify(error));
+>>>>>>> main
             })
         }
 
@@ -55,6 +73,18 @@ export default function NewsletterSubscribe() {
             text: "Subscribed with email: " + email,
             icon: "success"
           });
+<<<<<<< HEAD
+=======
+        //   alert("Subscribed with email: " + email);
+
+
+            // emailjs.send('service_ykb70ma', 'template_97jazd7', templateParams)
+            //     .then(function(response) {
+            //       console.log('SUCCESS!', response.status, response.text);
+            //     }, function(error) {
+            //     console.log('FAILED...', error);
+            //  });
+>>>>>>> main
         
     }  
     
