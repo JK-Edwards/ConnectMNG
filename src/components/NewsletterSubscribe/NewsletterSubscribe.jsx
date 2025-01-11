@@ -30,16 +30,6 @@ export default function NewsletterSubscribe() {
             text: "Subscribed with email: " + email,
             icon: "success"
           });
-        //   alert("Subscribed with email: " + email);
-
-
-            // emailjs.send('service_ykb70ma', 'template_97jazd7', templateParams)
-            //     .then(function(response) {
-            //       console.log('SUCCESS!', response.status, response.text);
-            //     }, function(error) {
-            //     console.log('FAILED...', error);
-            //  });
-
     }  
 
     
