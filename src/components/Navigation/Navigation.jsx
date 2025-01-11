@@ -51,7 +51,12 @@ export default function Navigation() {
 	}
 
 	function navDropDown() {
-
+		const navContainer = document.querySelector('.navigationContainer');
+		if (navContainer.style.display === "flex") {
+		  navContainer.style.display = "none"; // Hide the menu
+		} else {
+		  navContainer.style.display = "flex"; // Show the menu
+		}
 	}
 
 	return (

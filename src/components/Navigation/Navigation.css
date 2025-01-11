@@ -89,7 +89,17 @@
 		height: 500px;
 		font-size: 1.5rem;
 		height: 550px;
+		z-index: 1001;
 	}
+	.navigationContainer .logo-container {
+		display: none;
+	}
+
+	.contact {
+		height: 45px;
+		width: 100px;
+		font-size: 12px;
+    }
 }
 
 .navigationContainer > div {
