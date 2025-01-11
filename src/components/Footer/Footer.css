@@ -80,3 +80,21 @@
     color: black;
     min-width: 10.5vw;
 }
+
+@media (max-width: 700px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+    } 
+    .footerPageLinksContainer {
+        width: 100%;
+    }
+    .footerSocialsLinksContainer {
+        width: 100%;
+        padding: 0px;
+        align-items: center;
+    }
+    .footerSocialsBarContainer {
+        width: 30vh!;
+    }
+}
