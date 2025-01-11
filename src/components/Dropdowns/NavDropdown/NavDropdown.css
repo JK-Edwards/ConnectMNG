@@ -8,6 +8,7 @@
     width: 100%;
     top: 100%;
     border-top: 0.2vw solid #043c26;
+    z-index: 900;
 }
 
 .resourceOption {
