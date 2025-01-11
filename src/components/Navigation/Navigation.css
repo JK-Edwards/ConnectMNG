@@ -20,7 +20,8 @@
   	align-items: center;
 	flex-direction: column;
   	width: 100%;
-  	padding: 1vw; /* Adjust padding based on screen size */
+  	padding-right: 1vw; /* Adjust padding based on screen size */
+	padding-left: 1vw; /* Adjust padding based on screen size */
 }
 .mobile-nav-container .mobile-nav-no-dropdown {
 	display: flex;
@@ -47,6 +48,9 @@
 		background-color: white;
 		width: 100%; /* Ensure full-width of the navbar */
 		padding: 0.5vh;
+	}
+	.logo {
+		height: 8vw;
 	}
 
 	
