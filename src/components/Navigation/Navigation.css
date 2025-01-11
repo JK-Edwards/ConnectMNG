@@ -17,10 +17,17 @@
 /* Mobile navigation container */
 .mobile-nav-container {
 	display: none; /* Hidden on larger screens */
-	justify-content: space-between; /* Space between logo and button */
   	align-items: center;
+	flex-direction: column;
   	width: 100%;
   	padding: 1vw; /* Adjust padding based on screen size */
+}
+.mobile-nav-container .mobile-nav-no-dropdown {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 1vw; 
 }
 @media (max-width: 768px) { /* Adjust max-width as needed for your breakpoint */
 	.button {
@@ -40,10 +47,15 @@
 		width: 100%; /* Ensure full-width of the navbar */
 		padding: 0.5vh;
 	}
-	.mobile-nav-container .button {
-		justify-content: flex-end;
-	}
+
 	
+	.mobileNavigationContainer > div {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		flex: 1;
+	}
+
 
 }
 
@@ -82,6 +94,9 @@
 
 @media (max-width: 768px) { /* Adjust max-width as needed for your breakpoint */
 	.navigationContainer {
+		display: none;
+	}
+	.mobile-nav-container .mobileNavigationContainer {
 		display: none; /* for now */
 		flex-direction: column; /* Switch to column layout */
 		padding-left: 1vw; /* Optional: Adjust padding for smaller screens */
@@ -91,9 +106,7 @@
 		height: 550px;
 		z-index: 1001;
 	}
-	.navigationContainer .logo-container {
-		display: none;
-	}
+
 
 	.contact {
 		height: 45px;
