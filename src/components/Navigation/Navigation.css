@@ -7,6 +7,45 @@
 	font-size: calc(0.2rem + 1vw);
 	cursor: pointer;
 }
+.nav-dropdown {
+	border: none;
+	background-color: white;
+	font-size: larger;
+	display: none;
+}
+
+/* Mobile navigation container */
+.mobile-nav-container {
+	display: none; /* Hidden on larger screens */
+	justify-content: space-between; /* Space between logo and button */
+  	align-items: center;
+  	width: 100%;
+  	padding: 1vw; /* Adjust padding based on screen size */
+}
+@media (max-width: 768px) { /* Adjust max-width as needed for your breakpoint */
+	.button {
+		font-size:large;
+	}
+	.nav-dropdown {
+		display: flex;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		justify-content: flex-end; /* Align items to the right */
+	}
+
+	/* Show the hamburger button on mobile */
+	.mobile-nav-container {
+		display: flex; /* Display the hamburger button on mobile */
+		background-color: white;
+		width: 100%; /* Ensure full-width of the navbar */
+		padding: 0.5vh;
+	}
+	.mobile-nav-container .button {
+		justify-content: flex-end;
+	}
+	
+
+}
 
 .contact {
     background: #70A9A1;
@@ -30,6 +69,7 @@
   	width: 15vw;
 }
 
+
 .navigationContainer {
 	display: flex;
 	flex-direction: row;
@@ -39,11 +79,16 @@
 	padding-left: 3vw;
 	padding-right: 3vw;
 }
+
 @media (max-width: 768px) { /* Adjust max-width as needed for your breakpoint */
 	.navigationContainer {
+		display: none; /* for now */
 		flex-direction: column; /* Switch to column layout */
 		padding-left: 1vw; /* Optional: Adjust padding for smaller screens */
 		padding-right: 1vw;
+		height: 500px;
+		font-size: 1.5rem;
+		height: 550px;
 	}
 }
 
