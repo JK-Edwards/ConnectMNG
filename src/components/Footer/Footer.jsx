@@ -43,7 +43,7 @@ export default function Footer() {
 
                     </div>
                     <div>
-                        <Link>Private Policy</Link>
+                        <Link>Privacy Policy</Link>
                     </div>
                     <div>©2024 Connect MNG</div>
                 </div>
