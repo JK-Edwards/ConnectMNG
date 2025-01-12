@@ -110,6 +110,7 @@
     }
     .footerSocialsLinksContainer div {
         padding-bottom: 8px;
+        padding-right: 5px;
     }
     .footerSocialsBarContainer h3 {
         font-size: 3vw;
