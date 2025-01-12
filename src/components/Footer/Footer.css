@@ -88,13 +88,46 @@
     } 
     .footerPageLinksContainer {
         width: 100%;
+        margin-bottom: 20px;
     }
+    .footerPageLinksContainer .footerLinkContainer h3 {
+        font-size: 3vw;
+    }
+    .footerPageLinksContainer .footerLinkContainer a {
+        font-size: 2vw;
+    }
+    
+    .footerSocialsBarContainer {
+        width: 50vw;
+    }
+
+
+    /* Footer socials link for newsletter start from here :) */
     .footerSocialsLinksContainer {
         width: 100%;
         padding: 0px;
         align-items: center;
     }
-    .footerSocialsBarContainer {
-        width: 30vh!;
+    .footerSocialsLinksContainer div {
+        padding-bottom: 8px;
+    }
+    .footerSocialsBarContainer h3 {
+        font-size: 3vw;
+    }
+    .subscriptionContainer .emailInput {
+        height: 7vw;
+        font-size: calc(0.2rem + 1.5vw) !important;
+    }
+    .subscriptionContainer button {
+        height: 7vw;
+        font-size: calc(0.2rem + 1.5vw) !important;
+        width: 12vw;
+    }
+    .officialLinksContainer div {
+        font-size: calc(0.2rem + 1vw) !important;
+        justify-content: center;
+    }
+    .officialLinksContainer a {
+        font-size: calc(0.2rem + 1vw) !important;
     }
 }
