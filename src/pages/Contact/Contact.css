@@ -1,54 +1,140 @@
+/* General Container Styling */
 .contactContainer {
-	background-image: url("../../images/background_green.jpg");
-	background-size: cover;
-	background-position: center;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+    background-image: url("../../images/background_green.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
+/* Headings */
 .contactContainer h1 {
-	font-weight: 750;
-	font-size: calc(10px + 1.75vw);
+    font-weight: 750;
+    font-size: calc(16px + 1.75vw); /* Scales with screen size */
+    text-align: center;
 }
 
 .contactContainer h3 {
-	font-size: calc(5px + 1.75vw);
+    font-size: calc(14px + 1.25vw);
+    margin-bottom: 15px;
 }
 
 .contactContainer p {
-	width: 57.5vw;
-	font-size: calc(1px + 1.25vw);
+    width: 60%; /* Centers and limits the width for readability */
+    font-size: calc(12px + 1vw);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%; /* Suitable width for desktop screens */
+    max-width: 800px;
+}
+
+/* Input Fields */
 .inputContainer {
-	display: flex;
-	gap: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between; /* Align inputs evenly on larger screens */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    width: 100%
 }
 
-.submitButton {
-	text-align: center;
+.inputContainer input,
+textarea {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 200px;
+    width: 100%;
+    max-width: 380px; /* Limits width for desktop */
+    border: 1px solid #ccc;
     border-radius: 10px;
-    background: #f2af60;
-    border: 0.2vw solid #f2af60;
-    font-size: calc(1vw);
-    width: 10vw;
-}
-
-.submitButton:hover {
-	background: orange
-}
-
-input, textarea {
-	border: none;
-	border-radius: 10px;
-	padding-left: 10px;
-	width: calc(19.5vw);
-	font-size: calc(1px + 1.25vw) !important
+    padding: 10px;
+    font-size: calc(14px + 0.25vw);
+    box-sizing: border-box;
 }
 
 textarea {
-	height: 100px;
-	width: calc(40vw);
+    flex: 1 1 100%;
+    height: 130px;
+    max-width: 100%; 
 }
+
+/* Error Text */
+.errorText {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Submit Button */
+.submitButton {
+    align-self: center; /* Centers the button */
+    border-radius: 10px;
+    background: #f2af60;
+    border: 2px solid #f2af60;
+    font-size: calc(14px + 0.5vw);
+    width: 200px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submitButton:hover {
+    background: orange;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Responsive Design for Tablets (Below 768px) */
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%; /* Adjust form width for smaller screens */
+    }
+
+    .inputContainer {
+        gap: 15px;
+    }
+
+    input,
+    textarea {
+        font-size: calc(12px + 0.5vw);
+    }
+
+    .submitButton {
+        width: 100%; /* Full-width button for smaller screens */
+        font-size: 14px;
+    }
+}
+
+/* Responsive Design for Mobile (Below 480px) */
+@media screen and (max-width: 480px) {
+    .contactContainer {
+        padding: 20px;
+    }
+
+    .contactContainer h1 {
+        font-size: 20px;
+    }
+
+    .contactContainer p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    .submitButton {
+        font-size: 14px;
+    }
+}
+
