@@ -7,15 +7,11 @@ import "./ResumeBlog.css";
 
 export default function ResumeBlog() {
     return (
-        <div className={"resumeBlogContainer"}>
+        <div className="resumeBlogContainer">
             <div className="resumeBlogWrapper">
-                <h1>
-                    Resume 101
-                </h1>
-                <img src={resumeBlog1} width={"55%"} alt={""}/>
-                <h3>
-                    Understanding the Basics
-                </h3>
+                <h1>Resume 101</h1>
+                <img src={resumeBlog1} className="resumeImage" alt="Decorative header image for resume tips" />
+                <h3>Understanding the Basics</h3>
                 <p>
                     As the first impression is always important, your resume is the first
                     impression you can make at the companies when applying for a job.
@@ -41,10 +37,8 @@ export default function ResumeBlog() {
                     resume their system might not have the font and accept the format
                     that you submitted.
                 </p>
-                <img src={resumeBlog2} width={"50%"} alt={"Resume exmaple"}/>
-                <h3>
-                    How to tailor your resume to the job you are applying for
-                </h3>
+                <img src={resumeBlog2} className="resumeImage" alt="Example of a clean and effective resume" />
+                <h3>How to tailor your resume to the job you are applying for</h3>
                 <p>
                     Creating just one excellent resume and using it for countless job
                     applications might not yield the positive results you expect.
@@ -54,18 +48,18 @@ export default function ResumeBlog() {
                     resume's words to the most mentioned keywords in the job
                     description.
                 </p>
-                <img src={resumeBlog3} width={"20%"} alt={""}/>
+                <img src={resumeBlog3} className="resumeImage small" alt="Infographic showing ATS keywords" />
                 <p>
-                One of the biggest reasons why you need to tailor your resume is
-                over 98.8% of Fortune 500 companies, 66% of large companies and
-                35% of small organizations use Applicant Tracking System (ATS)
-                software. ATS identifies specific keywords and assesses a
-                candidate's skills and strengths. The ATS typically reviews your
-                resume before it reaches a recruiter, Therefore, it is important to
-                ensure that your resume's language aligns with the job description
-                to highlight your skills effectively.
+                    One of the biggest reasons why you need to tailor your resume is
+                    over 98.8% of Fortune 500 companies, 66% of large companies and
+                    35% of small organizations use Applicant Tracking System (ATS)
+                    software. ATS identifies specific keywords and assesses a
+                    candidate's skills and strengths. The ATS typically reviews your
+                    resume before it reaches a recruiter. Therefore, it is important to
+                    ensure that your resume's language aligns with the job description
+                    to highlight your skills effectively.
                 </p>
             </div>
         </div>
     );
-};
+}
