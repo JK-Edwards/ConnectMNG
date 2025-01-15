@@ -79,6 +79,28 @@
     min-width: 10.5vw;
 }
 
+.mobile-officialLinksContainer {
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 37vw;
+}
+
+.mobile-officialLinksContainer a {
+    font-size: calc(0.2rem + 0.8vw);
+    text-decoration: none;
+    color: black;
+    min-width: 10.5vw;
+}
+
+.mobile-officialLinksContainer div {
+    font-size: calc(0.2rem + 0.8vw);
+    text-decoration: none;
+    color: black;
+    min-width: 10.5vw;
+}
+
 @media (max-width: 750px) {
     .footerContainer {
         display: flex;
@@ -103,6 +125,7 @@
         padding: 0px;
         align-items: flex-start;
         margin-left: 25px;
+        margin-top:25px
     }
     .footerSocialsLinksContainer div {
         padding-bottom: 8px;
@@ -112,20 +135,39 @@
         font-size: 5vw;
     }
     .subscriptionContainer .emailInput {
-        height: 10vw;
-        font-size: calc(0.2rem + 3vw) !important;
-        width: 45vw;
+        height: 6vw;
+        font-size: calc(0.2rem + 1.5vw) !important;
+        width: 50vw;
     }
     .subscriptionContainer button {
-        height: 10vw;
-        font-size: calc(0.2rem + 3vw) !important;
-        width: 25vw;
+        height: 6vw;
+        font-size: calc(0.2rem + 1.5vw) !important;
+        width: 15vw;
+    }
+    .officialLinksContainer {
+        width: 80%;
+        margin-top: 10px;
+        padding: 0px;
+        display: none;
     }
     .officialLinksContainer div {
-        font-size: calc(0.2rem + 1vw) !important;
+        font-size: calc(0.2rem + 2vw) !important;
         justify-content: center;
+        margin-right: 15px;
     }
     .officialLinksContainer a {
-        font-size: calc(0.2rem + 1vw) !important;
+        font-size: calc(0.2rem + 2vw) !important;
+    }
+    .mobile-officialLinksContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        width: 100%;
+    }
+    .mobile-officialLinksContainer a {
+        font-size: calc(0.2rem + 2vw) !important;
+    }
+    .mobile-officialLinksContainer div {
+        font-size: calc(0.2rem + 2vw) !important;
     }
 }

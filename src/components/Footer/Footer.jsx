@@ -11,6 +11,15 @@ export default function Footer() {
     const intl = useIntl();
     return (
         <div className={"footerContainer"}>
+            <div className={"mobile-officialLinksContainer"}>
+                <div>
+                    <Link>Terms of Use</Link>
+                </div>
+                <div>
+                    <Link>Privacy Policy</Link>
+                </div>
+                <div>©2024 Connect MNG</div>
+            </div>
             <div className={"footerPageLinksContainer"}>
                 <div className={"footerLinkContainer"}>
                     <h3>EXPLORE</h3>
