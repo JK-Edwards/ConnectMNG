@@ -40,7 +40,6 @@ export default function Footer() {
                 <div className={"officialLinksContainer"}>
                     <div>
                         <Link>Terms of Use</Link>
-
                     </div>
                     <div>
                         <Link>Privacy Policy</Link>
