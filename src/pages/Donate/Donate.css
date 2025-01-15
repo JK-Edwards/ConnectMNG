@@ -76,6 +76,6 @@
 }
 #paypal-donate-button-container {
     margin-top: 20px;
-    width: 600px; /* Adjust this value as needed */
+    width: 50%; /* Adjust this value as needed */
     max-width: 100%; /* Ensure the width doesn't exceed the container's size */
 }
