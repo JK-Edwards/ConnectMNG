@@ -18,9 +18,11 @@ function BlogCard ({image, title, desc, link}) {
 
 	return (
 		<div className={"blogCardContainer"}>
-			<img className={"blogThumbnail"} src={image} alt={title}/>
-			<div className={"blogCardTextContainer"}>
+			<div className={"blogCardHeader"}>
 				<h3>{title}</h3>
+			</div>
+				<img className={"blogThumbnail"} src={image} alt={title}/>
+				<div className={"blogCardTextContainer"}>
 				<p>{desc}</p>
 				<StyledLink text={intl.formatMessage({id: "learnMore"})} link={link} />
 			</div>
@@ -34,6 +36,7 @@ export default function Blogs() {
 	return (
 		<div className={"blogContainer"}>
 			<h1 className={'blogTitleContainer'}>{intl.formatMessage({id: "blogs"})}</h1>
+			{/* <h2 className="resourcesHeader">Resources</h2> */}
 			<div className={'blogCardsContainer'}>
 				<BlogCard image={welcomeBlogThumbnail}
 							title={"Connect MNG - Where Your Journey is Our Journey"}

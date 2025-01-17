@@ -3,7 +3,6 @@
 	background-size: cover;
 	background-position: center;
 	padding: 20px;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -18,19 +17,42 @@
 	border-radius: 1vw;
 	padding: 1vw;
 	width: 60vw;
-	height: 20vw;
+	height: 20vw; 
 }
+
+.blogCardHeader h3 {
+	font-weight: bold; 
+	font-size: calc(0.6rem + 3vw); 
+	text-align: left; 
+	margin-bottom: 10px;
+ }
 
 .blogThumbnail {
 	width: 15vw;
 	height: 15vw;
+	border-radius: 5%;
+	
 }
+
+/*
+.resourcesHeader {
+    font-size: calc(0.8rem + 2vw); 
+    font-weight: bold; 
+    text-align: left; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+    color: #333; 
+    width: 100%; 
+}
+*/
 
 .blogCardTextContainer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding-left: 1vw;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	height: 15vw;
 	width: 45vw;
 }
@@ -47,7 +69,7 @@
 .blogTitleContainer {
 	text-align: left;
 	width: 96vw;
-	font-size: calc(5px + 2.5vw)
+	font-size: calc(5px + 2.5vw);
 }
 
 .blogCardsContainer {
@@ -55,3 +77,41 @@
 	flex-direction: column;
 	gap: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+	.blogCardContainer {
+		flex-direction: column;
+		width: 90vw; 
+		height: auto; 
+		padding: 5vw; 
+	}
+
+	.blogThumbnail {
+		width: 80vw; 
+		height: 80vw; 
+	}
+
+	.blogCardTextContainer {
+		width: 80vw; 
+		padding-left: 3vw; 
+		height: auto; 
+	}
+
+	.blogCardTextContainer h3 {
+		font-size: calc(0.1rem + 4vw); 
+	}
+
+	.blogCardTextContainer p {
+		font-size: calc(5vw); 
+	}
+
+	.blogTitleContainer {
+		font-size: calc(10px + 5vw); 
+	}
+
+	.blogCardsContainer {
+		gap: 10px; 
+	}
+}
+
+	
