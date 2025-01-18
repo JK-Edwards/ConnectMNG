@@ -19,6 +19,8 @@
     z-index: 1000;
 }
 
+/* Support popup style within page */
+
 .pinnedSupportPopup {
     position: fixed;
     top: 30vw;
@@ -27,4 +29,9 @@
     padding: 1vw;
     border-radius: 1.5vw;
     z-index: 900;
+}
+@media screen and (max-width: 750px) {
+    .pinnedSupportPopup {
+        top: 55vw;
+    }
 }

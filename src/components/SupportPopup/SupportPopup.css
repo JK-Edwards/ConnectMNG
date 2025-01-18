@@ -98,6 +98,7 @@
     }
     .supportPopupImage {
         max-width: 6vw;
+        max-height: 7vw;
     }
 
     .supportPopupTextContainer.closed {
