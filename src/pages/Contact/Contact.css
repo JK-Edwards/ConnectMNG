@@ -93,7 +93,7 @@ textarea {
 }
 
 /* Responsive Design for Tablets (Below 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     form {
         width: 90%; /* Adjust form width for smaller screens */
     }
@@ -110,6 +110,9 @@ textarea {
     .submitButton {
         width: 100%; /* Full-width button for smaller screens */
         font-size: 14px;
+    }
+    .supportPopupButtonImage {
+        max-width: 4vw !important;
     }
 }
 

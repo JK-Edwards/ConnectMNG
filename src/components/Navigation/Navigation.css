@@ -31,7 +31,7 @@
 	padding-right: 1vw; 
 	padding-left: 1vw; 
 }
-@media (max-width: 768px) { /* Adjust max-width as needed for your breakpoint */
+@media (max-width: 750px) { /* Adjust max-width as needed for your breakpoint */
 	.button {
 		font-size:large;
 	}

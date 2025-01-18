@@ -53,7 +53,7 @@ export default function Navigation() {
 	}
 
 	function navDropDown() {
-		if (window.innerWidth < 768) {
+		if (window.innerWidth < 750) {
 			const navContainer = document.querySelector('.mobileNavigationContainer');
 			if (navContainer.style.display === "flex") {
 				navContainer.style.display = "none"; // Hide the menu
