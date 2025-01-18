@@ -18,20 +18,21 @@
 	padding: 1vw;
 	width: 60vw;
 	height: 20vw; 
+	
 }
 
 .blogCardHeader h3 {
 	font-weight: bold; 
-	font-size: calc(0.6rem + 3vw); 
-	text-align: left; 
+	font-size: calc(0.2rem + 1vw); 
+	text-align: center; 
 	margin-bottom: 10px;
  }
 
+ /* image */
 .blogThumbnail {
-	width: 15vw;
-	height: 15vw;
+	width: 18vw;
+	height: 18vw;
 	border-radius: 5%;
-	
 }
 
 /*
@@ -57,11 +58,13 @@
 	width: 45vw;
 }
 
+/* connectMNG desc */
 .blogCardTextContainer h3 {
 	font-size: calc(0.1rem + 1.4vw);
 	font-weight: bold;
 }
 
+/* description */
 .blogCardTextContainer p {
 	font-size: calc(1.1vw);
 }
@@ -90,6 +93,13 @@
 		width: 80vw; 
 		height: 80vw; 
 	}
+
+	.blogCardHeader h3 {
+		font-weight: bold; 
+		font-size: calc(0.6rem + 3vw); 
+		text-align: left; 
+		margin-bottom: 10px;
+	 }
 
 	.blogCardTextContainer {
 		width: 80vw; 
