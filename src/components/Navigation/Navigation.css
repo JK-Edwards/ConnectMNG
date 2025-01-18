@@ -97,7 +97,7 @@
 	padding-right: 3vw;
 }
 
-@media (max-width: 768px) { /* Adjust max-width as needed for your breakpoint */
+@media (max-width: 750px) { /* Adjust max-width as needed for your breakpoint */
 	.navigationContainer {
 		display: none;
 	}
