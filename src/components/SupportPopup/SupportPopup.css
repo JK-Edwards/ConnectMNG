@@ -82,5 +82,25 @@
 }
 
 @media screen and (max-width: 750px) {
+    .supportPopupContainer {
+        justify-content: center;
+        align-items: center;
+    }
+    .supportPopupTextContainer {
+        width: 30vw;
+        height: 30vw;
+    }
+    .supportPopupTextContainer p {
+        font-size: 2vw;
+    }
+    .supportPopupTextContainer h3 {
+        font-size: 2vw;
+    }
+    .supportPopupImage {
+        max-width: 6vw;
+    }
 
+    .supportPopupTextContainer.closed {
+        max-height: 30vw;
+    }
 }

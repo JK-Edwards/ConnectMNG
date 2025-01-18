@@ -18,8 +18,6 @@ import Resources from "./pages/Resources/Resources.jsx";
 import ResumeBlog from "./pages/Blogs/IndividualBlogs/ResumeBlog/ResumeBlog.jsx";
 import ResumeBoostProgram from "./pages/Programs/ProgramPages/ResumeBoost/ResumeBoost.jsx";
 import SupportPopup from "./components/SupportPopup/SupportPopup.jsx";
-import SupportPopupMobile from "./components/SupportPopupMobile/SupportPopupMobile.jsx";
-
 import translations from "./translations.jsx";
 import Volunteer from "./pages/Volunteer/Volunteer.jsx";
 
@@ -63,9 +61,6 @@ export default function App() {
 					</div>
 					<div className={"pinnedSupportPopup"}>
 						<SupportPopup />
-					</div>
-					<div className={"pinnedSupportPopupMobile"}>
-						<SupportPopupMobile />
 					</div>
 					<Footer />
 				</Router>
