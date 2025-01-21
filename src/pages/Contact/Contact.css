@@ -1,86 +1,81 @@
-/* General Container Styling */
-.contactContainer {
+/* Background Styling */
+body {
     background-image: url("../../images/background_green.jpg");
     background-size: cover;
     background-position: center;
-    padding: 40px;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 25px;
+    min-height: 100vh;
+    margin: 0;
 }
-
-/* Headings */
-.contactContainer h1 {
-    font-weight: 750;
-    font-size: calc(16px + 1.75vw); /* Scales with screen size */
-    text-align: center;
-}
-
-.contactContainer h3 {
-    font-size: calc(14px + 1.25vw);
-    margin-bottom: 15px;
-}
-
-.contactContainer p {
-    width: 60%; /* Centers and limits the width for readability */
-    font-size: calc(12px + 1vw);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Form Styling */
-form {
+/* General Form Container */
+.formContainer {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 60%; /* Suitable width for desktop screens */
-    max-width: 800px;
+    align-items: center; /* Center aligns all inputContainers */
+    width: 100%;
+    max-width: 800px; /* Limit form width */
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+/* Input Containers */
+.inputContainer {
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+    gap: 10px;
+    width: 100%;
+    max-width: 500px; /* Restricts width for consistency */
 }
 
 /* Input Fields */
-.inputContainer {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between; /* Align inputs evenly on larger screens */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    width: 100%
-}
-
 .inputContainer input,
-textarea {
-    flex: 1 1 calc(50% - 20px);
-    min-width: 200px;
-    width: 100%;
-    max-width: 380px; /* Limits width for desktop */
+.inputContainer textarea {
+    width: 100%; /* Ensures uniform width */
+    height: 45px; /* Standard height for text inputs */
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
-    font-size: calc(14px + 0.25vw);
+    font-size: 16px;
     box-sizing: border-box;
 }
 
-textarea {
-    flex: 1 1 100%;
-    height: 130px;
-    max-width: 100%; 
+/* Message Text Container (Textarea) */
+.inputContainer textarea {
+    height: 150px; /* Adjust height for textarea */
+    resize: vertical; /* Allow user resizing */
+    padding: 12px; /* Consistent padding */
+    line-height: 1.5; /* Improves text readability */
+    font-size: 16px;
+    width: 100%; /* Ensure it aligns properly */
 }
 
 /* Error Text */
 .errorText {
     color: red;
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 5px;
     text-align: left;
 }
 
 /* Submit Button */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
 .submitButton {
-    align-self: center; /* Centers the button */
     border-radius: 10px;
     background: #f2af60;
     border: 2px solid #f2af60;
-    font-size: calc(14px + 0.5vw);
+    font-size: 16px;
     width: 200px;
     padding: 12px;
     cursor: pointer;
@@ -89,47 +84,37 @@ textarea {
 
 .submitButton:hover {
     background: orange;
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    transform: scale(1.05);
 }
 
 /* Responsive Design for Tablets (Below 768px) */
 @media screen and (max-width: 768px) {
-    form {
-        width: 90%; /* Adjust form width for smaller screens */
+    .formContainer {
+        width: 90%;
     }
 
     .inputContainer {
-        gap: 15px;
-    }
-
-    input,
-    textarea {
-        font-size: calc(12px + 0.5vw);
+        max-width: 90%;
     }
 
     .submitButton {
-        width: 100%; /* Full-width button for smaller screens */
+        width: 100%; /* Full-width button for better usability */
         font-size: 14px;
     }
 }
 
 /* Responsive Design for Mobile (Below 480px) */
 @media screen and (max-width: 480px) {
-    .contactContainer {
-        padding: 20px;
+    .formContainer {
+        padding: 15px;
     }
 
-    .contactContainer h1 {
-        font-size: 20px;
-    }
-
-    .contactContainer p {
+    .inputContainer {
         width: 100%;
-        font-size: 14px;
     }
 
-    input,
-    textarea {
+    .inputContainer input,
+    .inputContainer textarea {
         font-size: 14px;
     }
 
@@ -137,4 +122,3 @@ textarea {
         font-size: 14px;
     }
 }
-
