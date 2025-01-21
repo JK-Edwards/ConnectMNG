@@ -77,3 +77,86 @@
 	font-size: calc(1px + 1.75vw);
 	padding-top: 2vw;
 }
+
+@media (max-width: 750px) {
+	.only-mobile {
+		display: block;
+	}
+	.only-desktop {
+		display:none;
+	}
+	
+	.volunteerContainer {
+		background-image:none;
+		background-color:white;
+	}
+	.volunteerGetInvolved h1 {
+		font-size: calc(.7rem + 2vw);
+		color: #033C26;
+		margin-bottom: -.1rem;
+	}
+	.volunteerTitleContainer h1 {
+		font-size: calc(.6rem + 2vw);
+		color: #3F798C;
+		margin-bottom: 1rem;
+	}
+	.volunteerDescriptionContainer p {
+		width: 100%;
+		font-size: calc(1.2rem + 1vw);
+		color: black;
+	}
+	.thinSeparator {
+		width: 100%;
+		height: 1px;
+		background-color: #ddd;
+	  }
+
+	.volunteerCardContainer {
+		align-items: flex-start;
+		gap: 20px;
+	  }
+	
+	.volunteerCard {
+		width: 100%;
+		height: auto; /* Adjust card height for mobile */
+		flex-direction:column;
+		align-items: start;
+		
+	  }
+	
+	.volunteerCard {
+		width: 100%;
+		padding: 0px,10px;
+	  }
+	
+	.volunteerCard h1 {
+		font-size: calc(1rem + 1.5vw);
+		color: black;
+		padding-top: 2vw;
+	  }
+	
+	.volunteerCardImage {
+		width: 100%;
+		height: auto; /* Adjust image height for aspect ratio */
+		margin-top: 10px;
+	  }
+	
+	.volunteerCardImageStyle {
+		width: 100%;
+		height: auto;
+	  }
+	.volunteerCard p{
+		width: 100%;
+		font-size: calc(1rem + 1.5vw);
+		color: black;
+	  }
+	.volunteerFormTitleContainer {
+		font-size: calc(1rem + 1.5vw);
+		padding: 0px,20px;
+	}
+	.volunteerFormContainer {
+		padding:0px, 20px ;
+	}
+	
+		
+}
