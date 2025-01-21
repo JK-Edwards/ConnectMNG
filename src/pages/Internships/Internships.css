@@ -72,3 +72,92 @@
 	font-size: calc(1px + 1.75vw);
 	padding-top: 2vw;
 }
+.only-mobile {
+	display: none;
+}
+.only-desktop {
+	display:block;
+}
+
+@media (max-width: 750px) {
+	.only-mobile {
+		display: block;
+	}
+	.only-desktop {
+		display:none;
+	}
+	
+	.internshipsContainer {
+		background-image:none;
+		background-color:white;
+	}
+	.internshipsGetInvolved h1 {
+		font-size: calc(.7rem + 2vw);
+		color: #033C26;
+		margin-bottom: -.1rem;
+	}
+	.internshipsTitleContainer h1 {
+		font-size: calc(.6rem + 2vw);
+		color: #3F798C;
+		margin-bottom: 1rem;
+	}
+	.internshipsDescriptionContainer p {
+		width: 100%;
+		font-size: calc(1.2rem + 1vw);
+		color: black;
+	}
+	.thinSeparator {
+		width: 100%;
+		height: 1px;
+		background-color: #ddd;
+	  }
+
+	.internshipsCardContainer {
+		align-items: flex-start;
+		gap: 20px;
+	  }
+	
+	.internshipsCard {
+		width: 100%;
+		height: auto; /* Adjust card height for mobile */
+		flex-direction:column;
+		align-items: start;
+		
+	  }
+	
+	.internshipsCard {
+		width: 100%;
+		padding: 0px,10px;
+	  }
+	
+	.internshipsCard h1 {
+		font-size: calc(1rem + 1.5vw);
+		color: black;
+		padding-top: 2vw;
+	  }
+	
+	.internshipsCardImage {
+		width: 100%;
+		height: auto; /* Adjust image height for aspect ratio */
+		margin-top: 10px;
+	  }
+	
+	.internshipsCardImageStyle {
+		width: 100%;
+		height: auto;
+	  }
+	.internshipsCard p{
+		width: 100%;
+		font-size: calc(1rem + 1.5vw);
+		color: black;
+	  }
+	.internshipFormTitleContainer {
+		font-size: calc(1rem + 1.5vw);
+		padding: 0px,20px;
+	}
+	.internshipFormContainer {
+		padding:0px, 20px ;
+	}
+	
+		
+}
