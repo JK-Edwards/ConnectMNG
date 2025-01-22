@@ -92,6 +92,12 @@ textarea {
     transform: scale(1.05); /* Slightly enlarges the button on hover */
 }
 
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
+}
+
 /* Responsive Design for Tablets (Below 768px) */
 @media screen and (max-width: 750px) {
     form {
