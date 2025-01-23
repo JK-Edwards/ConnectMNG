@@ -91,70 +91,76 @@ export default function Contact() {
 
     
 return (
-    <div className="contactContainer">
-            <h1>{intl.formatMessage({ id: "contactUs" })}</h1>
-            <p>{intl.formatMessage({ id: "contactDesc" })}</p>
-            <form onSubmit={handleSubmit}>
-                <div className="inputContainer">
-                    <div>
-                        <label htmlFor="firstName">{intl.formatMessage({ id: "firstName" })}</label>
-                        <input
-                            id="firstName"
-                            type="text"
-                            value={firstName}
-                            placeholder={intl.formatMessage({ id: "firstName" })}
-                            onChange={(event) => setFirstName(event.target.value)}
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="lastName">{intl.formatMessage({ id: "lastName" })}</label>
-                        <input
-                            id="lastName"
-                            type="text"
-                            value={lastName}
-                            placeholder={intl.formatMessage({ id: "lastName" })}
-                            onChange={(event) => setLastName(event.target.value)}
-                        />
-                    </div>
-                </div>
-                <div className="inputContainer">
-                    <div>
-                        <label htmlFor="email">{intl.formatMessage({ id: "email" })}</label>
-                        <input
-                            id="email"
-                            type="email"
-                            value={email}
-                            placeholder={intl.formatMessage({ id: "Email Address" })}
-                            onChange={handleEmailChange}
-                        />
-                        {emailError && <p className="errorText">{emailError}</p>}
-                    </div>
-                    <div>
-                        <label htmlFor="subject">{intl.formatMessage({ id: "subject" })}</label>
-                        <input
-                            id="subject"
-                            type="text"
-                            value={subject}
-                            placeholder={intl.formatMessage({ id: "Email Subject" })}
-                            onChange={(event) => setSubject(event.target.value)}
-                        />
-                    </div>
-                </div>
-                <div>
-                    <label htmlFor="message">{intl.formatMessage({ id: "message" })}</label>
-                    <textarea
-                        id="message"
-                        value={message}
-                        placeholder={intl.formatMessage({ id: "Your Message" })}
-                        onChange={(event) => setMessage(event.target.value)}
-                    />
-                </div>
-                <div>
-                    <button className={"submitButton"} type="button" onClick={handleSubmit}>
-                        {intl.formatMessage({ id: "getInTouch" })}
-                    </button>
-                </div>
-            </form>
-        </div>
+    <form className="formContainer" onSubmit={handleSubmit}>
+        <h1>{intl.formatMessage({ id: "contactUs" })}</h1>
+        <p>{intl.formatMessage({ id: "contactDesc" })}</p>
+            {/* First Name Input */}
+            <div className="inputContainer">
+                <label htmlFor="firstName">First Name</label>
+                <input
+                    id="firstName"
+                    type="text"
+                    value={firstName}
+                    placeholder="First Name"
+                    onChange={(e) => setFirstName(e.target.value)}
+                />
+            </div>
+
+            {/* Last Name Input */}
+            <div className="inputContainer">
+                <label htmlFor="lastName">Last Name</label>
+                <input
+                    id="lastName"
+                    type="text"
+                    value={lastName}
+                    placeholder="Last Name"
+                    onChange={(e) => setLastName(e.target.value)}
+                />
+            </div>
+
+            {/* Email Input */}
+            <div className="inputContainer">
+                <label htmlFor="email">Email</label>
+                <input
+                    id="email"
+                    type="email"
+                    value={email}
+                    placeholder="Email Address"
+                    onChange={handleEmailChange}
+                />
+                {emailError && <p className="errorText">{emailError}</p>}
+            </div>
+
+            {/* Subject Input */}
+            <div className="inputContainer">
+                <label htmlFor="subject">Subject</label>
+                <input
+                    id="subject"
+                    type="text"
+                    value={subject}
+                    placeholder="Subject"
+                    onChange={(e) => setSubject(e.target.value)}
+                />
+            </div>
+
+            {/* Message Text Container (Textarea) */}
+            <div className="inputContainer">
+                <label htmlFor="message">Message</label>
+                <textarea
+                    id="message"
+                    value={message}
+                    placeholder="Your Message"
+                    onChange={(e) => setMessage(e.target.value)}
+                />
+            </div>
+
+            {/* Submit Button */}
+            <div className="buttonContainer">
+            <button className="submitButton" type="button" onClick={handleSubmit}>
+            {intl.formatMessage({ id: "getInTouch" })}
+            </button>
+            </div>
+        </form>
     );
 };
+
