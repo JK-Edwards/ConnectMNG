@@ -87,10 +87,27 @@ body {
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
+}
+
 /* Responsive Design for Tablets (Below 768px) */
 @media screen and (max-width: 768px) {
     .formContainer {
         width: 90%;
+    }
+}
+@media screen and (max-width: 750px) {
+    form {
+        width: 90%; /* Adjust form width for smaller screens */
     }
 
     .inputContainer {
@@ -100,6 +117,9 @@ body {
     .submitButton {
         width: 100%; /* Full-width button for better usability */
         font-size: 14px;
+    }
+    .supportPopupButtonImage {
+        max-width: 4vw !important;
     }
 }
 
