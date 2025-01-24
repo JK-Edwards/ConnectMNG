@@ -7,7 +7,6 @@
 
 .internshipsContainer h1 {
 	color: #1F363D;
-	font-weight: 900;
 	padding-bottom: 2vw;
 }
 
@@ -55,33 +54,35 @@
 	width: 35vw;
 }
 
-.internshipFormContainer {
+.internshipsFormContainer {
 	padding-top: 2vw;
 	padding-bottom: 2vw;
 }
 
-.internshipTitleContainer h1 {
+.internshipsTitleContainer h1 {
 	font-size: calc(10px + 1.75vw);
+	font-weight: 900;
 }
 
 .internshipsDescriptionContainer p {
-	font-size: calc(1px + 1.75vw);
+    font-size: calc(1px + 1.75vw);
 }
 
-.internshipFormTitleContainer {
+.internshipsFormTitleContainer {
 	font-size: calc(1px + 1.75vw);
 	padding-top: 2vw;
 }
+
 .only-mobile {
 	display: none;
 }
 .only-desktop {
-	display:block;
+	display:flex;
 }
 
 @media (max-width: 750px) {
 	.only-mobile {
-		display: block;
+		display: flex;
 	}
 	.only-desktop {
 		display:none;
@@ -91,15 +92,24 @@
 		background-image:none;
 		background-color:white;
 	}
+	.internshipsGetInvolved {
+		display: flex;
+		flex-direction: row;
+	}
 	.internshipsGetInvolved h1 {
 		font-size: calc(.7rem + 2vw);
 		color: #033C26;
 		margin-bottom: -.1rem;
+		font-weight: 700;
+	}
+	.internshipsGetInvolved img {
+		height: fit-content;
 	}
 	.internshipsTitleContainer h1 {
 		font-size: calc(.6rem + 2vw);
 		color: #3F798C;
 		margin-bottom: 1rem;
+		font-weight: 700;
 	}
 	.internshipsDescriptionContainer p {
 		width: 100%;
@@ -108,9 +118,21 @@
 	}
 	.thinSeparator {
 		width: 100%;
+		padding: none;
 		height: 1px;
 		background-color: #ddd;
 	  }
+
+	  .volunteerCardContainerMobile {
+		display:block;
+		width: 100%;
+		align-items: flex-start;
+		gap: 20px;
+	  }
+	
+	  .internshipsContainer p{
+		width: 100%;
+	}
 
 	.internshipsCardContainer {
 		align-items: flex-start;
@@ -151,11 +173,11 @@
 		font-size: calc(1rem + 1.5vw);
 		color: black;
 	  }
-	.internshipFormTitleContainer {
+	.internshipsFormTitleContainer {
 		font-size: calc(1rem + 1.5vw);
 		padding: 0px,20px;
 	}
-	.internshipFormContainer {
+	.internshipsFormContainer {
 		padding:0px, 20px ;
 	}
 	

@@ -1,7 +1,6 @@
 import React from "react";
 
 import { useIntl } from "react-intl";
-import { VolunteerCard } from "./utils";
 import {
 	EVENTS_CARD_TITLE,
 	EVENTS_CARD_DESC,
@@ -11,8 +10,10 @@ import {
 
 import eventsImage from "../../images/volunteer/Events.jpg"
 import fundraisingImage from "../../images/volunteer/Fundraising.jpg"
+import homeIcon from "../../images/homeIcon.png"
 
 import "./Volunteer.css";
+import { VolunteerCard, VolunteerCardMobile } from "./Card.jsx";
 import StyledFormLink from "../../components/StyledFormLink/StyledFormLink";
 
 export default function Volunteer() {
@@ -21,7 +22,8 @@ export default function Volunteer() {
 	return (
 		<div className={"volunteerContainer"}>
 			<div className={"volunteerGetInvolved only-mobile"}>
-				<h1>/ Get involved</h1>
+				<img className={"homeIcon"} src={homeIcon} alt="home icon"/>
+				<h1>&nbsp;/&nbsp;Get involved</h1>
 			</div>
 			<div className={'volunteerTitleContainer'}>
 				<h1>{intl.formatMessage({id: "volunteer"})}</h1>
@@ -36,31 +38,13 @@ export default function Volunteer() {
 
 			<div className="thinSeparator only-mobile"></div>
 
-			<div className={'volunteerCardContainer only-mobile'}>
-				<div className="volunteerCard">
-					<h1>Website</h1>
-					<img
-						src={fundraisingImage}
-						alt="Website"
-						className="volunteerCardImageStyle"
-					/>
-					<p><i>Intern role description and responsibilities</i></p>
-					<div className="thinSeparator"></div>
-				</div>
-			</div>
+			<div className={'volunteerCardContainerMobile only-mobile'}>
+				 <VolunteerCardMobile flip={true} title={"Fundraising"} desc={"Help us with fundrasing..."} link={fundraisingImage}/>
+				 <div className="thinSeparator only-mobile"></div>
+				 <VolunteerCardMobile flip={true} title={"Events"} desc={"Help us with organizing events..."} link={eventsImage}/>
+ 			</div>
 
-			<div className={'volunteerCardContainer only-mobile'}>
-				<div className="volunteerCard">
-					<h1>Program</h1>
-					<img
-						src={eventsImage}
-						alt="Website"
-						className="volunteerCardImageStyle"
-					/>
-					<p><i>Intern role description and responsibilities</i></p>
-					<div className="thinSeparator"></div>
-				</div>
-			</div>
+			 <div className="thinSeparator only-mobile"></div>
 
 			<div className={'volunteerFormTitleContainer'}>
 				Small paragraph about the volunteer process
