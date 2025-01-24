@@ -41,6 +41,7 @@ export default function Navigation() {
 		setShowActivities(false);
 		setShowResources(false);
 		setShowAbout(false);
+
 	};
 
 	function handleDropdownSelect(selectedIndex) {
