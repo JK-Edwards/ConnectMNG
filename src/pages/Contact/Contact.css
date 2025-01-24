@@ -1,16 +1,4 @@
-/* Background Styling */
-body {
-    background-image: url("../../images/background_green.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
+
 /* General Form Container */
 .formContainer {
     display: flex;
