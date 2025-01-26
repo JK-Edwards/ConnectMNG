@@ -11,22 +11,31 @@ export default function Footer() {
     const intl = useIntl();
     return (
         <div className={"footerContainer"}>
+            <div className={"mobile-officialLinksContainer"}>
+                <div>
+                    <Link>Terms of Use</Link>
+                </div>
+                <div>
+                    <Link>Privacy Policy</Link>
+                </div>
+                <div>©2024 Connect MNG</div>
+            </div>
             <div className={"footerPageLinksContainer"}>
                 <div className={"footerLinkContainer"}>
                     <h3>EXPLORE</h3>
-                    <Link to={"/"}>{intl.formatMessage({id: "home"}).toUpperCase()}</Link>
-                    <Link to={"/resources/blogs"}>{intl.formatMessage({id: "blogs"}).toUpperCase()}</Link>
+                    <Link to={"/"}>{intl.formatMessage({ id: "home" }).toUpperCase()}</Link>
+                    <Link to={"/resources/blogs"}>{intl.formatMessage({ id: "blogs" }).toUpperCase()}</Link>
                 </div>
                 <div className={"footerLinkContainer"}>
                     <h3>ENGAGE</h3>
-                    <Link to={"/get-involved/donate"}>{intl.formatMessage({id: "donate"}).toUpperCase()}</Link>
-                    <Link to={"/get-involved/internships"}>{intl.formatMessage({id: "internships"}).toUpperCase()}</Link>
-                    <Link to={"/get-involved/volunteer"}>{intl.formatMessage({id: "volunteer"}).toUpperCase()}</Link>
+                    <Link to={"/get-involved/donate"}>{intl.formatMessage({ id: "donate" }).toUpperCase()}</Link>
+                    <Link to={"/get-involved/internships"}>{intl.formatMessage({ id: "internships" }).toUpperCase()}</Link>
+                    <Link to={"/get-involved/volunteer"}>{intl.formatMessage({ id: "volunteer" }).toUpperCase()}</Link>
                 </div>
                 <div className={"footerLinkContainer"}>
-                    <h3>{intl.formatMessage({id: "about"}).toUpperCase()}</h3>
-                    <Link to={"about-us/our-story"}>{intl.formatMessage({id: "ourStory"}).toUpperCase()}</Link>
-                    <Link to={"about-us/our-team"}>{intl.formatMessage({id: "ourTeam"}).toUpperCase()}</Link>
+                    <h3>{intl.formatMessage({ id: "about" }).toUpperCase()}</h3>
+                    <Link to={"about-us/our-story"}>{intl.formatMessage({ id: "ourStory" }).toUpperCase()}</Link>
+                    <Link to={"about-us/our-team"}>{intl.formatMessage({ id: "ourTeam" }).toUpperCase()}</Link>
                 </div>
             </div>
             <div className={"footerSocialsLinksContainer"}>
@@ -34,16 +43,25 @@ export default function Footer() {
                     <h3>
                         CONNECT WITH US
                     </h3>
-                    <SocialsBar isInHeader={false}/>
+                    <SocialsBar isInHeader={false} />
                 </div>
                 <NewsletterSubscribe />
                 <div className={"officialLinksContainer"}>
+<<<<<<< HEAD:src/components/Footer/Footer.tsx
                     
                     <Link to="#">Terms of Use</Link>
                     <Link to="#">Private Policy</Link>
+=======
+                    <div>
+                        <Link>Terms of Use</Link>
+                    </div>
+                    <div>
+                        <Link>Privacy Policy</Link>
+                    </div>
+>>>>>>> 54d766005edf96c887027b64fdabc4230e3cdb62:src/components/Footer/Footer.jsx
                     <div>©2024 Connect MNG</div>
                 </div>
             </div>
-		</div>
+        </div>
     );
 };

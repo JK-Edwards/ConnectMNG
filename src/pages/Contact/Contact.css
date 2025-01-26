@@ -1,54 +1,144 @@
-.contactContainer {
-	background-image: url("../../images/background_green.jpg");
-	background-size: cover;
-	background-position: center;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+/* Background Styling */
+body {
+    background-image: url("../../images/background_green.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+/* General Form Container */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center aligns all inputContainers */
+    width: 100%;
+    max-width: 800px; /* Limit form width */
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
 }
 
-.contactContainer h1 {
-	font-weight: 750;
-	font-size: calc(10px + 1.75vw);
-}
-
-.contactContainer h3 {
-	font-size: calc(5px + 1.75vw);
-}
-
-.contactContainer p {
-	width: 57.5vw;
-	font-size: calc(1px + 1.25vw);
-}
-
+/* Input Containers */
 .inputContainer {
-	display: flex;
-	gap: 20px;
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+    gap: 10px;
+    width: 100%;
+    max-width: 500px; /* Restricts width for consistency */
+}
+
+/* Input Fields */
+.inputContainer input,
+.inputContainer textarea {
+    width: 100%; /* Ensures uniform width */
+    height: 45px; /* Standard height for text inputs */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Message Text Container (Textarea) */
+.inputContainer textarea {
+    height: 150px; /* Adjust height for textarea */
+    resize: vertical; /* Allow user resizing */
+    padding: 12px; /* Consistent padding */
+    line-height: 1.5; /* Improves text readability */
+    font-size: 16px;
+    width: 100%; /* Ensure it aligns properly */
+}
+
+/* Error Text */
+.errorText {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Submit Button */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .submitButton {
-	text-align: center;
     border-radius: 10px;
     background: #f2af60;
-    border: 0.2vw solid #f2af60;
-    font-size: calc(1vw);
-    width: 10vw;
+    border: 2px solid #f2af60;
+    font-size: 16px;
+    width: 200px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .submitButton:hover {
-	background: orange
+    background: orange;
+    transform: scale(1.05);
 }
 
-input, textarea {
-	border: none;
-	border-radius: 10px;
-	padding-left: 10px;
-	width: calc(19.5vw);
-	font-size: calc(1px + 1.25vw) !important
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
 }
 
-textarea {
-	height: 100px;
-	width: calc(40vw);
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
+}
+
+/* Responsive Design for Tablets (Below 768px) */
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 750px) {
+    form {
+        width: 90%; /* Adjust form width for smaller screens */
+    }
+
+    .inputContainer {
+        max-width: 90%;
+    }
+
+    .submitButton {
+        width: 100%; /* Full-width button for better usability */
+        font-size: 14px;
+    }
+    .supportPopupButtonImage {
+        max-width: 4vw !important;
+    }
+}
+
+/* Responsive Design for Mobile (Below 480px) */
+@media screen and (max-width: 480px) {
+    .formContainer {
+        padding: 15px;
+    }
+
+    .inputContainer {
+        width: 100%;
+    }
+
+    .inputContainer input,
+    .inputContainer textarea {
+        font-size: 14px;
+    }
+
+    .submitButton {
+        font-size: 14px;
+    }
 }

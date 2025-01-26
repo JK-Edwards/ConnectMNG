@@ -7,7 +7,9 @@ import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
 import { useState } from "react";
 
+
 import "./Navigation.css";
+import { DropdownMenu } from "react-bootstrap";
 
 interface NavLinkProps {
 	to: string;
@@ -50,6 +52,8 @@ export default function Navigation() {
 		setShowActivities(false);
 		setShowResources(false);
 		setShowAbout(false);
+		const navContainer = document.querySelector('.mobileNavigationContainer');
+		navContainer.style.display = "none"; // Hide the menu
 	};
 
 	function handleDropdownSelect(selectedIndex: number): void {
@@ -59,85 +63,197 @@ export default function Navigation() {
 		setActiveIndex(selectedIndex + 6)
 	}
 
+	function navDropDown() {
+		if (window.innerWidth < 750) {
+			const navContainer = document.querySelector('.mobileNavigationContainer');
+			if (navContainer.style.display === "flex") {
+				navContainer.style.display = "none"; // Hide the menu
+			} else {
+				navContainer.style.display = "flex"; // Show the menu
+			}
+		}
+	}
+
 	return (
 		<div className={"overallNavigationContainer"}>
+			<div className="mobile-nav-container">
+				<div className="mobile-nav-no-dropdown">
+					<div className="mobile-logo-container">
+						<Link to="/" onClick={() => handleNavLinkSelect(0)}>
+							<img src={logo} alt={"Connect MNG Logo"} className={"logo"} />
+						</Link>
+					</div>
+					<div className="nav-dropdown-container">
+						<button className={"nav-dropdown"} onClick={navDropDown}>
+							<i className="fas fa-bars"></i>
+						</button>
+					</div>
+				</div>
+				<div className={"mobileNavigationContainer"}>
+					<div>
+						<NavLink to={"/programs"}
+							text={intl.formatMessage({ id: "programs" })}
+							className={"button"}
+							isActive={activeIndex === 1}
+							onClick={() => handleNavLinkSelect(1)}
+						/>
+					</div>
+					<div>
+						<NavLink to={"/events"}
+							text={intl.formatMessage({ id: "events" })}
+							className={"button"}
+							isActive={activeIndex === 3}
+							onClick={() => handleNavLinkSelect(3)}
+						/>
+					</div>
+					<div>
+						<div className={"button"} onClick={handleAboutSelect}>
+							{intl.formatMessage({ id: "about" })}
+						</div>
+						{showAbout ?
+							<NavDropdown
+								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+								options={[intl.formatMessage({ id: "ourStory" }), intl.formatMessage({ id: "ourTeam" })]}
+								links={["/about-us/our-story", "/about-us/our-team"]}
+							/>
+							: null}
+					</div>
+					<div>
+						<div className={"button"} onClick={handleResourcesSelect}>
+							{intl.formatMessage({ id: "resources" })}
+						</div>
+						{showResources ?
+							<NavDropdown
+								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+								options={[intl.formatMessage({ id: "blogs" })]}
+								links={["/resources/blogs"]}
+							/>
+							: null}
+					</div>
+					<div>
+						<div className={"button"} onClick={handleVolunteerSelect}>
+							{intl.formatMessage({ id: "getInvolved" })}
+						</div>
+						{showActivities ?
+							<NavDropdown
+								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+								options={[intl.formatMessage({ id: "donate" }), intl.formatMessage({ id: "internships" }), intl.formatMessage({ id: "volunteer" })]}
+								links={["/get-involved/donate", "get-involved/internships", "/get-involved/volunteer"]}
+							/>
+							: null}
+					</div>
+					<div>
+						<NavLink to={"/contact-us"}
+							text={intl.formatMessage({ id: "contactUs" }).toUpperCase()}
+							className={"button contact"}
+							isActive={activeIndex === 6}
+							onClick={() => handleNavLinkSelect(6)}
+						/>
+					</div>
+				</div>
+			</div>
 			<div className={"navigationContainer"}>
-				<div>
+				<div className="logo-container">
 					<Link to="/" onClick={() => handleNavLinkSelect(0)}>
 						<img src={logo} alt={"Connect MNG Logo"} className={"logo"} />
 					</Link>
 				</div>
 				<div>
 					<NavLink to={"/programs"}
-							 text={intl.formatMessage({id: "programs"})}
-							 className={"button"}
-							 isActive={activeIndex === 1}
-							 onClick={() => handleNavLinkSelect(1)}
+						text={intl.formatMessage({ id: "programs" })}
+						className={"button"}
+						isActive={activeIndex === 1}
+						onClick={() => handleNavLinkSelect(1)}
 					/>
 				</div>
 				<div>
 					<NavLink to={"/events"}
-							 text={intl.formatMessage({id: "events"})}
-							 className={"button"}
-							 isActive={activeIndex === 3}
-							 onClick={() => handleNavLinkSelect(3)}
+						text={intl.formatMessage({ id: "events" })}
+						className={"button"}
+						isActive={activeIndex === 3}
+						onClick={() => handleNavLinkSelect(3)}
 					/>
 				</div>
 				<div>
 					<div className={"button"} onClick={handleAboutSelect}>
-							{intl.formatMessage({id: "about"})}
+						{intl.formatMessage({ id: "about" })}
 					</div>
 					{showAbout ?
 						<NavDropdown
+<<<<<<< HEAD:src/components/Navigation/Navigation.tsx
 								onSelect={(selectedIndex: number) => handleDropdownSelect(selectedIndex)}
 								options={[intl.formatMessage({id: "ourStory"}), intl.formatMessage({id: "ourTeam"})]}
 								links={["/about-us/our-story", "/about-us/our-team"]}
+=======
+							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+							options={[intl.formatMessage({ id: "ourStory" }), intl.formatMessage({ id: "ourTeam" })]}
+							links={["/about-us/our-story", "/about-us/our-team"]}
+>>>>>>> 54d766005edf96c887027b64fdabc4230e3cdb62:src/components/Navigation/Navigation.jsx
 						/>
-					: null}
+						: null}
 				</div>
 				<div>
 					<div className={"button"} onClick={handleResourcesSelect}>
-						{intl.formatMessage({id: "resources"})}
+						{intl.formatMessage({ id: "resources" })}
 					</div>
 					{showResources ?
 						<NavDropdown
+<<<<<<< HEAD:src/components/Navigation/Navigation.tsx
 								onSelect={(selectedIndex: number) => handleDropdownSelect(selectedIndex)}
 								options={[intl.formatMessage({id: "blogs"})]}
 								links={["/resources/blogs"]}
+=======
+							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+							options={[intl.formatMessage({ id: "blogs" })]}
+							links={["/resources/blogs"]}
+>>>>>>> 54d766005edf96c887027b64fdabc4230e3cdb62:src/components/Navigation/Navigation.jsx
 						/>
-					: null}
+						: null}
 				</div>
 				<div>
 					<div className={"button"} onClick={handleVolunteerSelect}>
-						{intl.formatMessage({id: "getInvolved"})}
+						{intl.formatMessage({ id: "getInvolved" })}
 					</div>
 					{showActivities ?
 						<NavDropdown
+<<<<<<< HEAD:src/components/Navigation/Navigation.tsx
 							onSelect={(selectedIndex: number) => handleDropdownSelect(selectedIndex)}
 							options={[intl.formatMessage({id: "donate"}), intl.formatMessage({id: "internships"}), intl.formatMessage({id: "volunteer"})]}
+=======
+							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+							options={[intl.formatMessage({ id: "donate" }), intl.formatMessage({ id: "internships" }), intl.formatMessage({ id: "volunteer" })]}
+>>>>>>> 54d766005edf96c887027b64fdabc4230e3cdb62:src/components/Navigation/Navigation.jsx
 							links={["/get-involved/donate", "get-involved/internships", "/get-involved/volunteer"]}
 						/>
-					: null}
+						: null}
 				</div>
 				<div>
 					<NavLink to={"/contact-us"}
-							 text={intl.formatMessage({id: "contactUs"}).toUpperCase()}
-							 className={"button contact"}
-							 isActive={activeIndex === 6}
-							 onClick={() => handleNavLinkSelect(6)}
+						text={intl.formatMessage({ id: "contactUs" }).toUpperCase()}
+						className={"button contact"}
+						isActive={activeIndex === 6}
+						onClick={() => handleNavLinkSelect(6)}
 					/>
 				</div>
 			</div>
-	</div>
+		</div>
 	);
 };
 
+<<<<<<< HEAD:src/components/Navigation/Navigation.tsx
 const NavLink: React.FC<NavLinkProps> = ({ to, text, isActive, className, onClick }) => {
 	
 	if (isActive && className !== classNames("button", "contact")) {
 	  className = classNames(className, "isActive");
 	}
   
+=======
+function NavLink({ to, text, isActive, className, onClick }) {
+	if (isActive && (className !== classNames("button", "contact"))) {
+		className = classNames(className, "isActive");
+	};
+
+>>>>>>> 54d766005edf96c887027b64fdabc4230e3cdb62:src/components/Navigation/Navigation.jsx
 	return (
 	  <Link to={to} className={className} onClick={onClick}>
 		{text}
