@@ -1,23 +1,12 @@
-/* Background Styling */
-body {
-    background-image: url("../../images/background_green.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
 /* General Form Container */
 .formContainer {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center aligns all inputContainers */
+    align-items: center;
+    /* Center aligns all inputContainers */
     width: 100%;
-    max-width: 800px; /* Limit form width */
+    max-width: 800px;
+    /* Limit form width */
     margin: 0 auto;
     padding: 20px;
     background: #ffffff;
@@ -27,17 +16,21 @@ body {
 /* Input Containers */
 .inputContainer {
     display: flex;
-    flex-direction: column; /* Stack label and input */
+    flex-direction: column;
+    /* Stack label and input */
     gap: 10px;
     width: 100%;
-    max-width: 500px; /* Restricts width for consistency */
+    max-width: 500px;
+    /* Restricts width for consistency */
 }
 
 /* Input Fields */
 .inputContainer input,
 .inputContainer textarea {
-    width: 100%; /* Ensures uniform width */
-    height: 45px; /* Standard height for text inputs */
+    width: 100%;
+    /* Ensures uniform width */
+    height: 45px;
+    /* Standard height for text inputs */
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
@@ -47,12 +40,17 @@ body {
 
 /* Message Text Container (Textarea) */
 .inputContainer textarea {
-    height: 150px; /* Adjust height for textarea */
-    resize: vertical; /* Allow user resizing */
-    padding: 12px; /* Consistent padding */
-    line-height: 1.5; /* Improves text readability */
+    height: 150px;
+    /* Adjust height for textarea */
+    resize: vertical;
+    /* Allow user resizing */
+    padding: 12px;
+    /* Consistent padding */
+    line-height: 1.5;
+    /* Improves text readability */
     font-size: 16px;
-    width: 100%; /* Ensure it aligns properly */
+    width: 100%;
+    /* Ensure it aligns properly */
 }
 
 /* Error Text */
@@ -105,9 +103,11 @@ body {
         width: 90%;
     }
 }
+
 @media screen and (max-width: 750px) {
     form {
-        width: 90%; /* Adjust form width for smaller screens */
+        width: 90%;
+        /* Adjust form width for smaller screens */
     }
 
     .inputContainer {
@@ -115,9 +115,11 @@ body {
     }
 
     .submitButton {
-        width: 100%; /* Full-width button for better usability */
+        width: 100%;
+        /* Full-width button for better usability */
         font-size: 14px;
     }
+
     .supportPopupButtonImage {
         max-width: 4vw !important;
     }
