@@ -5,14 +5,16 @@
 }
 
 .pageContainer {
-    padding-top: calc(0.05rem + 12vw);
+    padding-top: 125px;
 }
+
 @media screen and (max-width: 500px) {
     .pageContainer {
         padding-top: calc(0.05rem + 15vw);
     }
-    
+
 }
+
 .pinnedHeader {
     position: fixed;
     width: 100%;
@@ -30,6 +32,7 @@
     border-radius: 1.5vw;
     z-index: 900;
 }
+
 @media screen and (max-width: 750px) {
     .pinnedSupportPopup {
         top: 55vw;

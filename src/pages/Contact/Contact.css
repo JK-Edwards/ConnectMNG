@@ -8,7 +8,9 @@
     max-width: 800px;
     /* Limit form width */
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 95px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: #ffffff;
     border-radius: 10px;
 }

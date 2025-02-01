@@ -2,7 +2,9 @@
 	background-image: url("../../../images/background_white.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 20px;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
 	display: flex;
 	justify-content: center;
 }
