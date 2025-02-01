@@ -79,3 +79,9 @@
 	font-size: calc(1px + 1.75vw);
 	padding-top: 2vw;
 }
+
+@media (max-width: 750px) {
+	.volunteerContainer {
+		padding-top: 35px;
+	}
+}

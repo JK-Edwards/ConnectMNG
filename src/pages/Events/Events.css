@@ -13,3 +13,9 @@
 .eventsContainer>h1 {
 	font-size: calc(15px + 1.75vw);
 }
+
+@media (max-width: 750px) {
+	.eventsContainer {
+		padding-top: 35px;
+	}
+}

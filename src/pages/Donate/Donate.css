@@ -84,3 +84,9 @@
 	max-width: 100%;
 	/* Ensure the width doesn't exceed the container's size */
 }
+
+@media (max-width: 750px) {
+	.donateContainer {
+		padding-top: 35px;
+	}
+}

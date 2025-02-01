@@ -19,3 +19,9 @@
 .ourStoryDesc {
     font-size: calc(5px + 1vw);
 }
+
+@media (max-width: 750px) {
+    .ourStoryPage {
+        padding-top: 35px;
+    }
+}

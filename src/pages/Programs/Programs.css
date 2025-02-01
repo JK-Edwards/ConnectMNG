@@ -60,3 +60,9 @@
 	gap: 10px;
 	padding-bottom: 10px;
 }
+
+@media (max-width: 750px) {
+	.programsContainer {
+		padding-top: 35px;
+	}
+}

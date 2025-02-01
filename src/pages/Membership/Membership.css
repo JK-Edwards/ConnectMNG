@@ -9,3 +9,9 @@
 	background-size: cover;
 	background-position: center;
 }
+
+@media (max-width: 750px) {
+	.membershipContainer {
+		padding-top: 35px;
+	}
+}

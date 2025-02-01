@@ -31,3 +31,9 @@
 .mentorshipContentContainer div {
 	padding-bottom: 1.5vw
 }
+
+@media (max-width: 750px) {
+	.membershipContainer {
+		padding-top: 35px;
+	}
+}

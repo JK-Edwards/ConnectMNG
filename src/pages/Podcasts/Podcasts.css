@@ -46,3 +46,9 @@
 .podcastCardTextContainer p {
 	font-size: calc(1.1vw);
 }
+
+@media (max-width: 750px) {
+	.podcastContainer {
+		padding-top: 35px;
+	}
+}

@@ -23,3 +23,9 @@
 	display: flex;
 	align-items: center;
 }
+
+@media (max-width: 750px) {
+	.aboutContainer {
+		padding-top: 35px;
+	}
+}

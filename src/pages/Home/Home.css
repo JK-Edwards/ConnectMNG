@@ -90,3 +90,9 @@
 	max-width: 7vw;
 	max-height: 7vw;
 }
+
+@media (max-width: 750px) {
+	.homeContainer {
+		padding-top: 35px;
+	}
+}
