@@ -33,11 +33,7 @@ export default function NewsletterSubscribe() {
             text: "Subscribed with email: " + email,
             icon: "success"
           });
-<<<<<<< HEAD
     }
-=======
-    }  
->>>>>>> 34a9eb7045657e18bf76b6732e79599518ff4459
 
     
     
