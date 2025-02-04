@@ -2,7 +2,9 @@
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 20px;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .internshipsContainer h1 {
@@ -91,6 +93,7 @@
 	.internshipsContainer {
 		background-image:none;
 		background-color:white;
+    padding-top: 35px;
 	}
 	.internshipsGetInvolved {
 		display: flex;

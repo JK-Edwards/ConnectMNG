@@ -1,5 +1,7 @@
 .eventsContainer {
-	padding: 20px;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
@@ -8,6 +10,12 @@
 	justify-content: center;
 }
 
-.eventsContainer > h1 {
+.eventsContainer>h1 {
 	font-size: calc(15px + 1.75vw);
+}
+
+@media (max-width: 750px) {
+	.eventsContainer {
+		padding-top: 35px;
+	}
 }
