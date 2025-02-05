@@ -5,13 +5,13 @@ import {
 	MENTORSHIP_PROGRAM_DESC,
 	RESUME_BOOST_PROGRAM_DESC,
 	CULTURAL_COMPASS_PROGRAM_DESC
- } from "../../constants";
+} from "../../constants";
 
 import { useIntl } from "react-intl";
 
 import "./Programs.css";
 
-function Program({name, description, pageLink}) {
+function Program({ name, description, pageLink }) {
 	return (
 		<div className={"indivProgramContainer"}>
 			<div className={"indivProgramTextContainer"}>
@@ -40,11 +40,11 @@ export default function Programs() {
 						Our Programs
 					</h1>
 					<p>
-						Description
+						At Connect MNG, we’re here to support Mongolian students and young professionals as they take the next step in their careers. Through resume reviews and monthly workshops on essential career skills, we provide practical guidance to help you grow with confidence.
 					</p>
 				</div>
-				<Program name={"Cultural Compass"} description={intl.formatMessage({id: "culturalCompassDesc"})} pageLink={"/programs/cultural-compass-program"}/>
-				<Program name={"Resume Boost"} description={intl.formatMessage({id: "resumeBoostDesc"})} pageLink={"/programs/resume-boost-program"} />
+				<Program name={"Resume Boost"} description={intl.formatMessage({ id: "resumeBoostDesc" })} pageLink={"/programs/resume-boost-program"} />
+				<Program name={"Workshop"} description={intl.formatMessage({ id: "workshopDesc" })} pageLink={"/programs/cultural-compass-program"} />
 			</div>
 			<div className={"contactUsBoxContainer"}>
 				<ContactUsBox />

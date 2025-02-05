@@ -1,5 +1,7 @@
 .donateContainer {
-	padding: 20px;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-bottom: 50px;
 	display: flex;
 	flex-direction: column;
@@ -74,8 +76,17 @@
 	width: 65vw;
 	font-size: 1.75vw;
 }
+
 #paypal-donate-button-container {
-    margin-top: 20px;
-    width: 600px; /* Adjust this value as needed */
-    max-width: 100%; /* Ensure the width doesn't exceed the container's size */
+	margin-top: 20px;
+	width: 50%;
+	/* Adjust this value as needed */
+	max-width: 100%;
+	/* Ensure the width doesn't exceed the container's size */
+}
+
+@media (max-width: 750px) {
+	.donateContainer {
+		padding-top: 35px;
+	}
 }

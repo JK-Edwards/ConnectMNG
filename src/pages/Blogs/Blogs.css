@@ -155,7 +155,7 @@
 	  }
 
 	  .icon {
-		transform: scale(1.8);
+		transform: scale(1);
   		transform-origin: center;
 		margin: 0;
 	}
