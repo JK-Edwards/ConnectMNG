@@ -25,3 +25,14 @@
         padding-top: 35px;
     }
 }
+
+/*Mobile responsive our story*/
+@media screen and (max-width: 750px) {
+    .ourStoryTitle {
+        font-size: calc(5px + 8vw);
+    }
+
+    .ourStoryDesc {
+        font-size: calc(5px + 2vw);
+    }
+}
