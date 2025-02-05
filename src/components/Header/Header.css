@@ -44,3 +44,51 @@
 	padding-top: 0.65vw;
 	padding-bottom: 0.55vw;
 }
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+    .arrow {
+        max-height: 5vw;
+        max-width: 5vw;
+    }
+
+	.dropdown div {
+		cursor: pointer;
+		padding-left: 6vw;
+		font-size: calc(0.5rem + 2vw); /* Make the text larger with responsive scaling */
+		padding-top: 0.2rem; /* Add padding to top for better vertical alignment */
+		padding-bottom: 0.2rem; /* Add padding to bottom for better vertical alignment */
+	}
+
+    .engIcon, .mngIcon {
+        font-size: calc(0.5rem + 3.5vw);
+        padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+    }
+
+    .headerContainer {
+        flex-direction: row-reverse;
+        align-items: center;
+		width: 100%;
+        padding: 5px;
+    }
+
+	.languageButton {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		float: right;
+		max-height: 10vw;
+		padding: 0.5rem 1rem;
+		padding-right: 2vw;
+		position: relative;
+		font-size: calc(1rem + 5vw);
+	}
+
+	.languageContainer {
+		position: relative;
+		height: 12vw;
+	}
+	
+}
