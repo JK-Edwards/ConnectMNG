@@ -1,5 +1,7 @@
 .donateContainer {
-	padding: 20px;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-bottom: 50px;
 	display: flex;
 	flex-direction: column;
@@ -76,40 +78,17 @@
 	width: 65vw;
 	font-size: 1.75vw;
 }
+
 #paypal-donate-button-container {
-    margin-top: 20px;
-    width: 50%; /* Adjust this value as needed */
-    max-width: 100%; /* Ensure the width doesn't exceed the container's size */
+	margin-top: 20px;
+	width: 50%;
+	/* Adjust this value as needed */
+	max-width: 100%;
+	/* Ensure the width doesn't exceed the container's size */
 }
 
-@media screen and (max-width: 500px) {
-	.donateContainer h1 {
-		font-size: calc(0.25rem + 4vw);
-		
-	}
-
-	.donateContainer h2 {
-		font-size: calc(0.15rem + 2.5vw);
-	}
-
-	.donateContainer h3 {
-		font-size: calc(0.25rem + 4vw);
-	}
-
-	.moneyButtonContainer {
-		width: 100%;
-		height: 20vw;
-	}
-
-	.moneyButton {
-		width: 28vw;
-		height: 7vw;
-		font-size: 4vw;
-	}
-	
-	.donateInput {
-		width: 95%;
-		height: 6vw;
-		font-size: calc(0.25rem + 4vw);
+@media (max-width: 750px) {
+	.donateContainer {
+		padding-top: 35px;
 	}
 }

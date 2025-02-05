@@ -8,7 +8,9 @@
     max-width: 800px;
     /* Limit form width */
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 95px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: #ffffff;
     border-radius: 10px;
 }
@@ -126,9 +128,9 @@
 }
 
 /* Responsive Design for Mobile (Below 480px) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 750px) {
     .formContainer {
-        padding: 15px;
+        padding-top: 35px;
     }
 
     .inputContainer {

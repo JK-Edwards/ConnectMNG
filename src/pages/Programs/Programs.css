@@ -5,7 +5,15 @@
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 20px;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.indivProgramTextContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
 .indivProgramContainer {
@@ -13,7 +21,7 @@
 	flex-direction: row;
 	align-items: center;
 	flex: 1;
-	padding-top: 1.5vw;
+	padding-top: 35px;
 	width: 50vw;
 }
 
@@ -51,4 +59,10 @@
 	justify-content: space-between;
 	gap: 10px;
 	padding-bottom: 10px;
+}
+
+@media (max-width: 750px) {
+	.programsContainer {
+		padding-top: 35px;
+	}
 }
