@@ -1,0 +1,45 @@
+.happy-hour-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #033C26;
+}
+
+.event-date,
+.event-location {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    margin: 10px 0;
+}
+
+.event-description {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #333;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    background: #70A9A2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background: #5b8c85;
+}

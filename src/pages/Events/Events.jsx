@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Events.css";
 
 export default function Events() {
@@ -6,17 +7,11 @@ export default function Events() {
         {
             date: "Monday 29th January 2024",
             sessions: [
-                { time: "3pm", name: "Resume help", location: "Capital One Cafe" },
-                { time: "4pm", name: "Happy hour", location: "Bangrak" },
+                { time: "3pm", name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
+                { time: "4pm", name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
             ],
         },
-        {
-            date: "Monday 29th January 2024",
-            sessions: [
-                { time: "3pm", name: "Resume help", location: "Capital One Cafe" },
-                { time: "4pm", name: "Happy hour", location: "Bangrak" },
-            ],
-        },
+        
     ];
 
     return (
@@ -38,7 +33,11 @@ export default function Events() {
                             {event.sessions.map((session, i) => (
                                 <tr key={i}>
                                     <td>{session.time}</td>
-                                    <td><strong>{session.name}</strong></td>
+                                    <td>
+                                        <Link to={session.link} className="event-link">
+                                            {session.name}
+                                        </Link>
+                                    </td>
                                     <td>{session.location}</td>
                                 </tr>
                             ))}
