@@ -109,10 +109,6 @@
     position: relative;
 }
 
-/* .mobileNavLink:active {
-    background-color: black;
-}  */
-
 .mobileNavLink:hover {
     color: #9EC1A3;
     text-decoration: underline;
