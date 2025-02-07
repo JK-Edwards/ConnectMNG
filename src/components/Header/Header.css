@@ -3,6 +3,11 @@
 	max-width: 1.25vw;
 }
 
+.dropdown {
+	background-color: white;
+	z-index: 990;
+}
+
 .dropdown div {
 	cursor: pointer;
 	padding-left: 0.7vw;;
