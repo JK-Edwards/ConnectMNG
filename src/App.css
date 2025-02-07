@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
 .app {
     font-family: "Inter";
 }
 
 .pageContainer {
-    padding-top: calc(0.05rem + 12vw);
+    padding-top: 125px;
 }
+
 @media screen and (max-width: 500px) {
     .pageContainer {
-        padding-top: calc(0.05rem + 25vw);
+        padding-top: calc(0.05rem + 15vw);
     }
     
 }

@@ -40,7 +40,7 @@ export default function Mobile() {
                     </Link>
                 </div> 
                 <button onClick={handleClick}>
-                    <Hamburger direction="left" size={20} area={10} color="black" duration={0.4}/>
+                    <Hamburger toggled={showMenu} direction="left" size={20} area={10} color="black" duration={0.4}/>
                 </button>
                 
                 
