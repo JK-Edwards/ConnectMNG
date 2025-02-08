@@ -19,8 +19,9 @@ body, html {
     .pageContainer {
         padding-top: calc(0.05rem + 15vw);
     }
-    
+
 }
+
 .pinnedHeader {
     position: fixed;
     width: 100%;
@@ -38,6 +39,7 @@ body, html {
     border-radius: 1.5vw;
     z-index: 900;
 }
+
 @media screen and (max-width: 750px) {
     .pinnedSupportPopup {
         top: 55vw;

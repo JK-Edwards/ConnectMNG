@@ -8,6 +8,7 @@ import { useIntl } from "react-intl";
 import { useState, useEffect } from "react";
 
 import "./Navigation.css";
+import { DropdownMenu } from "react-bootstrap";
 import Mobile from "../Mobile/Mobile.jsx";
 import NavLink from "./NavLink.jsx";
 
@@ -59,6 +60,7 @@ export default function Navigation() {
 		setShowActivities(false);
 		setShowResources(false);
 		setShowAbout(false);
+
 	};
 
 	function handleDropdownSelect(selectedIndex) {
@@ -67,6 +69,7 @@ export default function Navigation() {
 		setShowAbout(false);
 		setActiveIndex(selectedIndex + 6)
 	}
+
 
 	return (
 		<div className={"overallNavigationContainer"}>
@@ -100,7 +103,7 @@ export default function Navigation() {
 					</div>
 					<div>
 						<NavLink className={"button"} onClick={handleAboutSelect}
-							// {intl.formatMessage({ id: "about" })}
+							text={intl.formatMessage({ id: "about" })}
 						/>
 						{showAbout ? (
 							<NavDropdown

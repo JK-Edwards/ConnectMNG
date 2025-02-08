@@ -1,7 +1,8 @@
 import React from "react";
-
 import { useIntl } from "react-intl";
 import { useState } from "react";
+import PaypalButton from "./PaypalButton";
+
 
 import "./Donate.css";
 
@@ -13,14 +14,6 @@ export default function Donate() {
 	const handleInputChange = (event) => {
 		updateDonateAmount(event.target.value);
 	};
-
-	function handleDonateButtonClick() {
-		if (donateAmount !== "") {
-			alert("Donations are currently unavailable, please contact us for more information.");
-		} else {
-			alert("Please enter a valid donation amount");
-		}
-	}
 
 	return (
 		<div className={"donateContainer"}>
@@ -43,7 +36,7 @@ export default function Donate() {
 				   onChange={handleInputChange}
 				   value={donateAmount}
 			/>
-			<button className={"donateButton"} onClick={handleDonateButtonClick}>{intl.formatMessage({id: "donate"})}</button>
+			{donateAmount !== "" && <PaypalButton donateAmount={donateAmount} />}
 		</div>
 	);
 };

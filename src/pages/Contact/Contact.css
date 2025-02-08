@@ -1,54 +1,83 @@
 .contactContainer {
-	background-image: url("../../images/background_green.jpg");
-	background-size: cover;
-	background-position: center;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+    background-image: url("../../images/background_green.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .contactContainer h1 {
-	font-weight: 750;
-	font-size: calc(10px + 1.75vw);
-}
-
-.contactContainer h3 {
-	font-size: calc(5px + 1.75vw);
+    font-weight: 750;
 }
 
 .contactContainer p {
-	width: 57.5vw;
-	font-size: calc(1px + 1.25vw);
+    width: 575px;
+    font-size: 20px;
 }
 
 .inputContainer {
-	display: flex;
-	gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .submitButton {
-	text-align: center;
+    text-align: center;
     border-radius: 10px;
     background: #f2af60;
     border: 0.2vw solid #f2af60;
-    font-size: calc(1vw);
-    width: 10vw;
+    font-size: calc(0.3rem + 0.5vw + 0.5vh);
+    width: 8vw;
 }
 
 .submitButton:hover {
-	background: orange
+    background: orange
 }
 
-input, textarea {
-	border: none;
-	border-radius: 10px;
-	padding-left: 10px;
-	width: calc(19.5vw);
-	font-size: calc(1px + 1.25vw) !important
+input, textarea{
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
 }
 
 textarea {
-	height: 100px;
-	width: calc(40vw);
+    height: 100px;
+    width: 390px;
+}
+
+@media screen and (max-width: 768px){
+    
+    input{
+        width: 100%;  
+        gap: 10px;
+    }
+
+    .contactContainer h1 {
+        width: 222px;
+        height: 20px;
+        top: 194px;
+        left: 24px;
+        font-size: 20px;
+    }
+
+    .contactContainer p {
+        width: 334px;
+        height: 96px;
+        top: 3349px;
+        left: -3863px;
+        font-size: 18px;
+    }
+
+
+    .submitButton {
+        width: 141px; 
+        height: 41px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }

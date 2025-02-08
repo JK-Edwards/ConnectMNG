@@ -34,7 +34,6 @@
 .supportPopupButton {
     background-color: transparent;
     border: none;
-    padding-right: 0.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,4 +78,55 @@
     margin-left: 0.8vw;
     padding-right: 0.5vw;
     font-size: 1.5vw;
+}
+
+@media screen and (max-width: 750px) {
+    .supportPopupContainer {
+        justify-content: center;
+        align-items: center;
+    }
+    .supportPopupTextContainer {
+        width: 30vw;
+        height: 30vw;
+    }
+    .supportPopupTextContainer p {
+        font-size: 2vw;
+    }
+    .supportPopupTextContainer h3 {
+        font-size: 2vw;
+    }
+    .supportPopupImage {
+        max-width: 6vw;
+        max-height: 7vw;
+    }
+
+    .supportPopupTextContainer.closed {
+        max-height: 30vw;
+    }
+}
+
+/*For mobile screens*/
+@media screen and (max-width: 500px) {
+    .supportPopupContainer {
+        justify-content: center;
+        align-items: center;
+    }
+    .supportPopupTextContainer {
+        width: 40vw;
+        height: 40vw;
+    }
+    .supportPopupTextContainer p {
+        font-size: 2.7vw;
+    }
+    .supportPopupTextContainer h3 {
+        font-size: 2.7vw;
+    }
+    .supportPopupImage {
+        max-width: 8vw;
+        max-height: 9vw;
+    }
+
+    .supportPopupTextContainer.closed {
+        max-height: 40vw;
+    }
 }
