@@ -11,7 +11,11 @@ export default function NewsletterSubscribe() {
     const handleSubscribe = (e) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (email === "" || !emailRegex.test(email)) {
-            alert("Please enter a valid email");
+                Swal.fire({
+                    title: "Your email is invalid",
+                    text: "Please enter a valid email",
+                    icon: "error"
+                });
             return;
         }
         const handleSubmit = (e) => {
@@ -29,7 +33,7 @@ export default function NewsletterSubscribe() {
             text: "Subscribed with email: " + email,
             icon: "success"
           });
-    }  
+    }
 
     
     
