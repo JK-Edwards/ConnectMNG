@@ -4,7 +4,7 @@ import { useIntl } from "react-intl";
 import { useState, useEffect } from "react";
 import MobileDropdown from './MobileDropdown';
 import logo from "../../images/logo.png";
-import Hamburger from 'hamburger-react'; 
+import Hamburger from 'hamburger-react';
 
 export default function Mobile() {
     const [showMenu, setShowMenu] = useState(false);
@@ -19,18 +19,18 @@ export default function Mobile() {
     }, [location]);
 
     const intl = useIntl();
-	const [activeIndex, setActiveIndex] = useState(0);
-	const [showResources, setShowResources] = useState(false);
-	const [showActivities, setShowActivities] = useState(false);
-	const [showAbout, setShowAbout] = useState(false);
-    
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [showResources, setShowResources] = useState(false);
+    const [showActivities, setShowActivities] = useState(false);
+    const [showAbout, setShowAbout] = useState(false);
+
 
     function handleNavLinkSelect(activeIndex) {
-		setActiveIndex(activeIndex);
-		setShowActivities(false);
-		setShowResources(false);
-		setShowAbout(false);
-	};
+        setActiveIndex(activeIndex);
+        setShowActivities(false);
+        setShowResources(false);
+        setShowAbout(false);
+    };
     return (
         <>
             <div className="menuButton">
@@ -38,12 +38,12 @@ export default function Mobile() {
                     <Link to="/" onClick={() => handleNavLinkSelect(0)}>
                         <img src={logo} alt={"Connect MNG Logo"} className={"logo"} />
                     </Link>
-                </div> 
+                </div>
                 <button onClick={handleClick}>
-                    <Hamburger toggled={showMenu} direction="left" size={20} area={10} color="black" duration={0.4}/>
+                    <Hamburger toggled={showMenu} direction="left" size={20} area={10} color="black" duration={0.4} />
                 </button>
-                
-                
+
+
             </div>
             {showMenu && <MobileDropdown />}
         </>
