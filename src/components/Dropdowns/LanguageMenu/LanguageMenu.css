@@ -3,3 +3,8 @@
 	padding: 0.7vw;
 	font-size: calc(0.2rem + 1vw);
 }
+@media screen and (max-width: 750px) {
+	.dropdown div {
+		font-size: calc(0.4rem + 1vw);
+	}
+}

@@ -66,7 +66,7 @@ export default function Home() {
 
 	return (
 		<div className={"homeContainer"}>
-			<div className="only-desktop">
+			<div>
 				<div className={"missionTextContainer"}>
 					<h1>{intl.formatMessage({ id: "missionAndImpact" }).toUpperCase()}</h1>
 					<p>{intl.formatMessage({ id: "mission" })}</p>
@@ -92,37 +92,6 @@ export default function Home() {
 							<img className={"programImage"} src={prog3} alt={"Events"}></img>
 							<h3>{intl.formatMessage({ id: "events" })}</h3>
 							<StyledLink text={intl.formatMessage({ id: "learnMore" })} link={"/events"} />
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className={"homeContainer only-mobile"}>
-				<div className={"carouselContainer"}>
-						{/* <ItemCarousel slides={blogSlides} interval={2500}/> */}
-						<SimpleSlider slides={blogSlides} />
-				</div>
-				<div className={"missionTextContainer"}>
-					<h1>{intl.formatMessage({ id: "missionAndImpact" }).toUpperCase()}</h1>
-					<p>{intl.formatMessage({ id: "mission" })}</p>
-				</div>
-				<div className={"programGalleryContainer"}>
-					<h1>{intl.formatMessage({ id: "What We Offer" }).toUpperCase()}</h1>
-					<div className={"programGallery"}>
-						<div className="program">
-							<img className={"programImage"} src={prog1} alt={"Resources"}></img>
-							<h3>{intl.formatMessage({ id: "resources" })}</h3>
-							<StyledLink text={intl.formatMessage({ id: "learnMore" })} link={"/resources/blogs"} />
-						</div>
-						<div className="program">
-							<img className={"programImage"} src={prog2} alt={"Programs"}></img>
-							<h3>{intl.formatMessage({ id: "programs" })}</h3>
-							<StyledLink text={intl.formatMessage({ id: "learnMore" })} link={"/programs"} />
-						</div>
-						<div className="program">
-							<img className={"programImage"} src={prog3} alt={"Events"}></img>
-							<h3>{intl.formatMessage({ id: "events" })}</h3>
-							<StyledLink className={"link"} text={intl.formatMessage({ id: "learnMore" })} link={"/events"} />
 						</div>
 					</div>
 				</div>

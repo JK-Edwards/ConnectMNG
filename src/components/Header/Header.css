@@ -44,3 +44,24 @@
 	padding-top: 0.65vw;
 	padding-bottom: 0.55vw;
 }
+
+@media screen and (max-width: 750px) {
+	.arrow {
+		max-height: 2vw;
+		max-width: 2vw;
+	}
+	.engIcon {
+		padding-top: 0%;
+	}
+	.headerContainer {
+		padding: 1vw;
+	}
+
+	.languageButton {
+		font-size: calc(0.6rem + 1vw);
+	}
+	.languageContainer {
+		height: 4vw;
+	}
+	
+}
