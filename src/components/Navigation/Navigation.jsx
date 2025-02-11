@@ -8,7 +8,6 @@ import { useIntl } from "react-intl";
 import { useState, useEffect } from "react";
 
 import "./Navigation.css";
-import { DropdownMenu } from "react-bootstrap";
 import Mobile from "../Mobile/Mobile.jsx";
 import NavLink from "./NavLink.jsx";
 
@@ -21,20 +20,20 @@ export default function Navigation() {
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 	useEffect(() => {
-        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+		const handleResize = () => setIsMobile(window.innerWidth <= 768);
 
-        window.addEventListener("resize", handleResize);
+		window.addEventListener("resize", handleResize);
 
-        return () => window.removeEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 
 	const [showMobileMenu, setShowMobileMenu] = useState(window.innerWidth <= 768);
 	useEffect(() => {
-        const handleResize = () => setShowMobileMenu(window.innerWidth <= 768);
+		const handleResize = () => setShowMobileMenu(window.innerWidth <= 768);
 
-        window.addEventListener("resize", handleResize);
+		window.addEventListener("resize", handleResize);
 
-        return () => window.removeEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 
 	function handleVolunteerSelect() {
@@ -73,7 +72,6 @@ export default function Navigation() {
 
 	return (
 		<div className={"overallNavigationContainer"}>
-			{/* Conditionally render MobileNavBar or navigationContainer */}
 			{isMobile ? (
 				<Mobile />
 			) : (
@@ -157,13 +155,9 @@ export default function Navigation() {
 							onClick={() => handleNavLinkSelect(6)}
 						/>
 					</div>
-					{/* <div>
-						{showMobileMenu && <Mobile />}
-					</div> */}
-
 				</div>
 			)}
 		</div>
 	);
-	
+
 }
