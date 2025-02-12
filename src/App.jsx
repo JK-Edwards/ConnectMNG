@@ -5,6 +5,8 @@ import Contact from "./pages/Contact/Contact.jsx";
 import CulturalCompassProgram from "./pages/Programs/ProgramPages/CulturalCompass/CulturalCompass.jsx";
 import Donate from "./pages/Donate/Donate.jsx";
 import Events from "./pages/Events/Events.jsx";
+import ResumeHelp from "./pages/Events/EventsPages/ResumeHelp/Resumehelp.jsx";
+import HappyHour from "./pages/Events/EventsPages/HappyHour/HappyHour.jsx"
 import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import Home from "./pages/Home/Home.jsx";
@@ -50,6 +52,8 @@ export default function App() {
 							<Route path="/get-involved/internships" element={<Internships />} />
 							<Route path="/resources/podcasts" element={<Podcasts />} />
 							<Route path="/events" element={<Events />} />
+							<Route path="/events/resume-help" element={<ResumeHelp />} />
+							<Route path="/events/happy-hour" element={<HappyHour />} />
 							<Route path="/resources/blogs" element={<Blogs />} />
 							<Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
 							<Route path="/about-us/our-team" element={<OurTeam />} />
