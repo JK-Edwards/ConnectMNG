@@ -1,57 +1,50 @@
-import Calendar from "../../components/Calendar/Calendar.jsx";
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./Events.css";
 
-const events = [
-	{
-	  	date: "Saturday 8th June 2024",
-	  	events: [
-			{
-		  		time: "11:30am",
-		  		event: "Networking Workshop",
-		  		location: "Capitol 1 Cafe, Meeting Room 4, 333 Westlake Ave N"
-			}
-		]
-	},
-	{
-		date: "Saturday 22nd June 2024",
-		events: [
-			{
-				time: "11:30am",
-				event: "Leadership Workshop",
-				location: "Capitol 1 Cafe, Meeting Room 4, 333 Westlake Ave N"
-			}
-	  	]
-	  },
-	  {
-		date: "Saturday 13th July 2024",
-		events: [
-			{
-				time: "11:30am",
-				event: "LinkedIn Workshop",
-				location: "Capitol 1 Cafe, Meeting Room 4, 333 Westlake Ave N"
-			}
-	  	]
-	  },
-	  {
-		date: "Saturday 27th July 2024",
-		events: [
-			{
-				time: "11:30am",
-				event: "Interview Workshop",
-				location: "Capitol 1 Cafe, Meeting Room 4, 333 Westlake Ave N"
-			}
-	  	]
-	  }
-	// Add more objects for other dates as needed
-  ];
-
 export default function Events() {
-	return (
-		<div className={"eventsContainer"}>
-			<h1>Calendar</h1>
-			<Calendar events={events}/>
-		</div>
-	);
-};
+    const events = [
+        {
+            date: "Monday 29th January 2024",
+            sessions: [
+                { time: "3pm", name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
+                { time: "4pm", name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
+            ],
+        },
+        
+    ];
+
+    return (
+        <div className="eventsContainer">
+            <h1>Calendar</h1>
+
+            {events.map((event, index) => (
+                <div key={index} className="event-section">
+                    <h2 className="event-header">{event.date}</h2>
+                    <table className="event-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Event</th>
+                                <th>Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {event.sessions.map((session, i) => (
+                                <tr key={i}>
+                                    <td>{session.time}</td>
+                                    <td>
+                                        <Link to={session.link} className="event-link">
+                                            {session.name}
+                                        </Link>
+                                    </td>
+                                    <td>{session.location}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            ))}
+        </div>
+    );
+}

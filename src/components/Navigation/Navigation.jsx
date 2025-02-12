@@ -1,15 +1,16 @@
-import classNames from "classnames";
+//import classNames from "classnames";
 import logo from "../../images/logo.png";
 import React from "react";
 import NavDropdown from "../Dropdowns/NavDropdown/NavDropdown";
 
 import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 
 import "./Navigation.css";
 import { DropdownMenu } from "react-bootstrap";
+import Mobile from "../Mobile/Mobile.jsx";
+import NavLink from "./NavLink.jsx";
 
 export default function Navigation() {
 	const intl = useIntl();
@@ -17,6 +18,24 @@ export default function Navigation() {
 	const [showResources, setShowResources] = useState(false);
 	const [showActivities, setShowActivities] = useState(false);
 	const [showAbout, setShowAbout] = useState(false);
+
+	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+	useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
+	const [showMobileMenu, setShowMobileMenu] = useState(window.innerWidth <= 768);
+	useEffect(() => {
+        const handleResize = () => setShowMobileMenu(window.innerWidth <= 768);
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+	}, []);
 
 	function handleVolunteerSelect() {
 		setShowActivities(!showActivities);
@@ -41,8 +60,7 @@ export default function Navigation() {
 		setShowActivities(false);
 		setShowResources(false);
 		setShowAbout(false);
-		const navContainer = document.querySelector('.mobileNavigationContainer');
-		navContainer.style.display = "none"; // Hide the menu
+
 	};
 
 	function handleDropdownSelect(selectedIndex) {
@@ -52,35 +70,22 @@ export default function Navigation() {
 		setActiveIndex(selectedIndex + 6)
 	}
 
-	function navDropDown() {
-		if (window.innerWidth < 750) {
-			const navContainer = document.querySelector('.mobileNavigationContainer');
-			if (navContainer.style.display === "flex") {
-				navContainer.style.display = "none"; // Hide the menu
-			} else {
-				navContainer.style.display = "flex"; // Show the menu
-			}
-		}
-	}
 
 	return (
 		<div className={"overallNavigationContainer"}>
-			<div className="mobile-nav-container">
-				<div className="mobile-nav-no-dropdown">
-					<div className="mobile-logo-container">
+			{/* Conditionally render MobileNavBar or navigationContainer */}
+			{isMobile ? (
+				<Mobile />
+			) : (
+				<div className={"navigationContainer"}>
+					<div>
 						<Link to="/" onClick={() => handleNavLinkSelect(0)}>
 							<img src={logo} alt={"Connect MNG Logo"} className={"logo"} />
 						</Link>
 					</div>
-					<div className="nav-dropdown-container">
-						<button className={"nav-dropdown"} onClick={navDropDown}>
-							<i className="fas fa-bars"></i>
-						</button>
-					</div>
-				</div>
-				<div className={"mobileNavigationContainer"}>
 					<div>
-						<NavLink to={"/programs"}
+						<NavLink
+							to={"/programs"}
 							text={intl.formatMessage({ id: "programs" })}
 							className={"button"}
 							isActive={activeIndex === 1}
@@ -88,7 +93,8 @@ export default function Navigation() {
 						/>
 					</div>
 					<div>
-						<NavLink to={"/events"}
+						<NavLink
+							to={"/events"}
 							text={intl.formatMessage({ id: "events" })}
 							className={"button"}
 							isActive={activeIndex === 3}
@@ -96,130 +102,88 @@ export default function Navigation() {
 						/>
 					</div>
 					<div>
-						<div className={"button"} onClick={handleAboutSelect}>
-							{intl.formatMessage({ id: "about" })}
-						</div>
-						{showAbout ?
+						<NavLink className={"button"} onClick={handleAboutSelect}
+							text={intl.formatMessage({ id: "about" })}
+						/>
+						{showAbout ? (
 							<NavDropdown
 								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-								options={[intl.formatMessage({ id: "ourStory" }), intl.formatMessage({ id: "ourTeam" })]}
+								options={[
+									intl.formatMessage({ id: "ourStory" }),
+									intl.formatMessage({ id: "ourTeam" }),
+								]}
 								links={["/about-us/our-story", "/about-us/our-team"]}
 							/>
-							: null}
+						) : null}
 					</div>
 					<div>
 						<div className={"button"} onClick={handleResourcesSelect}>
 							{intl.formatMessage({ id: "resources" })}
 						</div>
-						{showResources ?
+						{showResources ? (
 							<NavDropdown
 								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
 								options={[intl.formatMessage({ id: "blogs" })]}
 								links={["/resources/blogs"]}
 							/>
-							: null}
+						) : null}
 					</div>
 					<div>
 						<div className={"button"} onClick={handleVolunteerSelect}>
 							{intl.formatMessage({ id: "getInvolved" })}
 						</div>
-						{showActivities ?
+						{showActivities ? (
 							<NavDropdown
 								onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-								options={[intl.formatMessage({ id: "donate" }), intl.formatMessage({ id: "internships" }), intl.formatMessage({ id: "volunteer" })]}
-								links={["/get-involved/donate", "get-involved/internships", "/get-involved/volunteer"]}
+								options={[
+									intl.formatMessage({ id: "donate" }),
+									intl.formatMessage({ id: "internships" }),
+									intl.formatMessage({ id: "volunteer" }),
+								]}
+								links={[
+									"/get-involved/donate",
+									"/get-involved/internships",
+									"/get-involved/volunteer",
+								]}
 							/>
-							: null}
+						) : null}
 					</div>
 					<div>
-						<NavLink to={"/contact-us"}
+						<NavLink
+							to={"/contact-us"}
 							text={intl.formatMessage({ id: "contactUs" }).toUpperCase()}
 							className={"button contact"}
 							isActive={activeIndex === 6}
 							onClick={() => handleNavLinkSelect(6)}
 						/>
 					</div>
+					{/* <div>
+						{showMobileMenu && <Mobile />}
+					</div> */}
+
 				</div>
-			</div>
-			<div className={"navigationContainer"}>
-				<div className="logo-container">
-					<Link to="/" onClick={() => handleNavLinkSelect(0)}>
-						<img src={logo} alt={"Connect MNG Logo"} className={"logo"} />
-					</Link>
-				</div>
-				<div>
-					<NavLink to={"/programs"}
-						text={intl.formatMessage({ id: "programs" })}
-						className={"button"}
-						isActive={activeIndex === 1}
-						onClick={() => handleNavLinkSelect(1)}
-					/>
-				</div>
-				<div>
-					<NavLink to={"/events"}
-						text={intl.formatMessage({ id: "events" })}
-						className={"button"}
-						isActive={activeIndex === 3}
-						onClick={() => handleNavLinkSelect(3)}
-					/>
-				</div>
-				<div>
-					<div className={"button"} onClick={handleAboutSelect}>
-						{intl.formatMessage({ id: "about" })}
-					</div>
-					{showAbout ?
-						<NavDropdown
-							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-							options={[intl.formatMessage({ id: "ourStory" }), intl.formatMessage({ id: "ourTeam" })]}
-							links={["/about-us/our-story", "/about-us/our-team"]}
-						/>
-						: null}
-				</div>
-				<div>
-					<div className={"button"} onClick={handleResourcesSelect}>
-						{intl.formatMessage({ id: "resources" })}
-					</div>
-					{showResources ?
-						<NavDropdown
-							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-							options={[intl.formatMessage({ id: "blogs" })]}
-							links={["/resources/blogs"]}
-						/>
-						: null}
-				</div>
-				<div>
-					<div className={"button"} onClick={handleVolunteerSelect}>
-						{intl.formatMessage({ id: "getInvolved" })}
-					</div>
-					{showActivities ?
-						<NavDropdown
-							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-							options={[intl.formatMessage({ id: "donate" }), intl.formatMessage({ id: "internships" }), intl.formatMessage({ id: "volunteer" })]}
-							links={["/get-involved/donate", "get-involved/internships", "/get-involved/volunteer"]}
-						/>
-						: null}
-				</div>
-				<div>
-					<NavLink to={"/contact-us"}
-						text={intl.formatMessage({ id: "contactUs" }).toUpperCase()}
-						className={"button contact"}
-						isActive={activeIndex === 6}
-						onClick={() => handleNavLinkSelect(6)}
-					/>
-				</div>
-			</div>
+			)}
 		</div>
 	);
-};
+	
 
-function NavLink({ to, text, isActive, className, onClick }) {
-	if (isActive && (className !== classNames("button", "contact"))) {
-		className = classNames(className, "isActive");
-	};
+// export function NavLink({to, text, isActive, className, onClick, homeButton}) {
+// 	if (isActive && (className !== classNames("button", "contact"))) {
+// 		className = classNames(className, "isActive");
+// 	};
 
-	return (
-		<Link to={to} className={className} onClick={onClick}>
-			{text}
-		</Link>
-	);
-};
+// 	//if this is the home button, render an image tag
+// 	// if (!homeButton) {
+// 	// 	return (
+// 	// 		<IoHome />
+			
+			
+// 	// 	);
+// 	// }
+// 	return (
+// 		<Link to={to} className={className} onClick={onClick}>
+// 			{homeButton &&<IoHome />}{text}
+// 		</Link>
+// 	);
+// };
+}

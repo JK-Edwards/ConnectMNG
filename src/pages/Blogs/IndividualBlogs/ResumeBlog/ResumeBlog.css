@@ -1,39 +1,82 @@
+/* Mobile-first base styles */
 .resumeBlogContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	background-image: url("../../../../images/background_white.jpg");
-	background-size: cover;
-	background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../../../../images/background_white.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 16px;
 }
 
 .resumeBlogWrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	width: 75vw;
-	margin-bottom: 5vw;
-	margin-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%; /* Fit the container to the screen width */
+    max-width: 390px; /* Ensure it fits iPhone screen width */
+    margin: 0 auto;
 }
 
 .resumeBlogContainer h1 {
-	font-size: calc(0.5rem + 2vw);
-	padding: 1vw;
-	font-weight: bold;
+    font-size: 1.5rem; /* Scaled for smaller screens */
+    padding: 8px 0;
+    font-weight: bold;
+    text-align: center;
 }
 
-
 .resumeBlogContainer h3 {
-	font-size: calc(0.15rem + 2vw);
-	padding-top: 2vw;
-	font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 12px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .resumeBlogContainer p {
-	padding-top: 2vw;
-	padding-left: 5vw;
-	padding-right: 5vw;
-	font-size: 1.2vw;
+    padding-top: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 0.9rem; /* Reduced for mobile screens */
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.resumeImage {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 16px 0;
+    border-radius: 8px;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .resumeBlogWrapper {
+        max-width: 600px;
+    }
+
+    .resumeBlogContainer h1 {
+        font-size: 2rem;
+    }
+
+    .resumeBlogContainer h3 {
+        font-size: 1.5rem;
+    }
+
+    .resumeBlogContainer p {
+        font-size: 1rem;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .resumeBlogWrapper {
+        max-width: 800px;
+    }
+
+    .resumeBlogContainer p {
+        font-size: 1.1rem;
+    }
 }
