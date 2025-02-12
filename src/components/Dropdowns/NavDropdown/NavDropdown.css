@@ -1,4 +1,4 @@
-.resourcesMenu {
+.subDropdownMenu {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -11,7 +11,7 @@
     z-index: 900;
 }
 
-.resourceOption {
+.subDropdownOption {
     color: black;
     text-decoration: none;
     text-align: center;

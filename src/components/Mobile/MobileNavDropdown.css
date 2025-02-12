@@ -165,8 +165,8 @@ button {
     text-align: left;
     background-color: #FFFFFF;
     border-bottom: 1px solid #DDD;
-    padding-left: 2em;
-    position: relative;
+    /* padding-left: 2em;
+    position: relative; */
 }
 
 .resourceOption {

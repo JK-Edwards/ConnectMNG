@@ -13,11 +13,11 @@ export default function NavDropdown({onSelect, options, links}) {
         onSelect(index); // Trigger the provided onSelect callback
       };
     return (
-        <div className={"resourcesMenu"}>
+        <div className={"subDropdownMenu"}>
             {options.map((option, index) =>
                 <Link key={index}
                       to={links[index]}
-                      className={"resourceOption"}
+                      className={"subDropdownOption"}
                       onClick={() => handleOptionClick(index)}>
                         {option}
                 </Link>)}
