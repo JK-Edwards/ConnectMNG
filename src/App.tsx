@@ -63,6 +63,7 @@ const App: React.FC = () => {
           <Footer />
         </Router>
       </IntlProvider>
+      
     </div>
   );
 };
