@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@formatjs/intl-numberformat": "^8.15.1",
-    "@formatjs/intl-relativetimeformat": "^11.4.8",
+    "@emailjs/browser": "^4.4.1",
+    "aws-sdk": "^2.1692.0",
     "bootstrap": "^5.3.2",
-    "react": "^18.3.1",
+    "emailjs-com": "^3.2.0",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.3.1",
     "react-intl": "^7.0.4",
@@ -14,7 +15,8 @@
     "react-slick": "^0.30.2",
     "serve": "^14.2.3",
     "slick-carousel": "^1.8.1",
-    "typescript": "^5.7.2"
+    "swal": "^0.1.0",
+    "sweetalert2": "^11.14.5"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
