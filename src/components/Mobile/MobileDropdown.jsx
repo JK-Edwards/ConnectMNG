@@ -11,43 +11,42 @@ import { useState, useEffect } from "react";
 export default function MobileDropdown() {
 
     const intl = useIntl();
-	const [activeIndex, setActiveIndex] = useState(0);
-	const [showResources, setShowResources] = useState(false);
-	const [showActivities, setShowActivities] = useState(false);
-	const [showAbout, setShowAbout] = useState(false);
-    
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [showResources, setShowResources] = useState(false);
+    const [showActivities, setShowActivities] = useState(false);
+    const [showAbout, setShowAbout] = useState(false);
 
     function handleNavLinkSelect(activeIndex) {
-		setActiveIndex(activeIndex);
-		setShowActivities(false);
-		setShowResources(false);
-		setShowAbout(false);
-	};
+        setActiveIndex(activeIndex);
+        setShowActivities(false);
+        setShowResources(false);
+        setShowAbout(false);
+    };
 
     function handleVolunteerSelect() {
-		setShowActivities(!showActivities);
-		setShowResources(false);
-		setShowAbout(false);
-	};
+        setShowActivities(!showActivities);
+        setShowResources(false);
+        setShowAbout(false);
+    };
 
     const handleAboutSelect = () => {
-		setShowAbout(!showAbout);
-		setShowActivities(false);
-		setShowResources(false);
-	}
+        setShowAbout(!showAbout);
+        setShowActivities(false);
+        setShowResources(false);
+    }
 
     function handleResourcesSelect() {
-		setShowResources(!showResources);
-		setShowActivities(false);
-		setShowAbout(false);
-	};
+        setShowResources(!showResources);
+        setShowActivities(false);
+        setShowAbout(false);
+    };
 
     function handleDropdownSelect(selectedIndex) {
-		setShowActivities(false);
-		setShowResources(false);
-		setShowAbout(false);
-		setActiveIndex(selectedIndex + 6)
-	}
+        setShowActivities(false);
+        setShowResources(false);
+        setShowAbout(false);
+        setActiveIndex(selectedIndex + 6)
+    }
 
     return (
         <div className="mobileNavBarContainer">
@@ -110,5 +109,5 @@ export default function MobileDropdown() {
         </div>
     )
 
-    
+
 }
