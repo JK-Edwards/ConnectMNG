@@ -52,10 +52,9 @@ export default function MobileDropdown() {
     return (
         <div className="mobileNavBarContainer">
             <div className="mobileNavLinks"> 
-                    <NavLink text="             Home" homeButton={true} to="/" className="homeButton" >Home</NavLink>
-                    <Link to="/programs" className="mobileNavLink">Programs</Link>
-                    <Link to="/events" className="mobileNavLink">Events</Link>
-                    {/* <Link to="/about-us/our-story" className="mobileNavLink">About Us</Link> */}
+                    <NavLink text={intl.formatMessage({ id: "home" })} homeButton={true} to="/" className="homeButton" >Home</NavLink>
+                    <Link to="/programs" className="mobileNavLink">{intl.formatMessage({ id: "programs" })}</Link>
+                    <Link to="/events" className="mobileNavLink">{intl.formatMessage({ id: "events" })}</Link>
                     <div className={"mobileNavLink"} onClick={handleAboutSelect}>
 						{intl.formatMessage({ id: "about" })}
                         <GoTriangleDown />
@@ -72,7 +71,6 @@ export default function MobileDropdown() {
 					    />
                     ) : null}
                     
-                    {/* <Link to="/resources/blogs" className="mobileNavLink">Resources</Link> */}
                     <div className={"mobileNavLink"} onClick={handleResourcesSelect}>
 						{intl.formatMessage({ id: "resources" })}
                         <GoTriangleDown />
@@ -107,7 +105,7 @@ export default function MobileDropdown() {
                         />
                     ) : null}
 					
-                    <Link to="/contact-us" className="mobileNavLink">Contact Us</Link>
+                    <Link to="/contact-us" className="mobileNavLink">{intl.formatMessage({ id: "contactUs" }).toUpperCase()}</Link>
             </div>
         </div>
     )
