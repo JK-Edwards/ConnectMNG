@@ -54,6 +54,7 @@ textarea {
     }
 
     .contactContainer h1 {
+        padding: 15px;
         width: 222px;
         height: 20px;
         top: 194px;
