@@ -166,24 +166,4 @@ export default function Navigation() {
 		</div>
 	);
 	
-
-// export function NavLink({to, text, isActive, className, onClick, homeButton}) {
-// 	if (isActive && (className !== classNames("button", "contact"))) {
-// 		className = classNames(className, "isActive");
-// 	};
-
-// 	//if this is the home button, render an image tag
-// 	// if (!homeButton) {
-// 	// 	return (
-// 	// 		<IoHome />
-			
-			
-// 	// 	);
-// 	// }
-// 	return (
-// 		<Link to={to} className={className} onClick={onClick}>
-// 			{homeButton &&<IoHome />}{text}
-// 		</Link>
-// 	);
-// };
 }
