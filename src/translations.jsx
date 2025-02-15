@@ -53,6 +53,9 @@ const translations = {
         supportConnect: "Support Connect MNG!",
         yourContributionText: "Your contribution will help to inspire, educate, and equip Mongolian students with skills to navigate through today's world and give back to the community.",
 
+        // our story page translations
+        ourStory: "Our Story",
+        ourStoryText: "Short Paragprah about our story",
 
 
     },
@@ -110,6 +113,10 @@ const translations = {
         supportConnect: "Connect MNG-г дэмжих!",
         yourContributionText: "Таны оролцоо нь Монгол оюутнуудын сонирхол, сургалт, боловсролын ур чадварыг хөгжүүлэх, ур чадваруудыг эзэмших зорилготой болно.",
 
+
+        // our story page translations
+        ourStory: "Бидний түүх",
+        ourStoryText: "Бидний түүхийн товч тайлбар",
     },
 };
 
