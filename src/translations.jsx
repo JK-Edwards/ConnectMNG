@@ -57,6 +57,13 @@ const translations = {
         ourStory: "Our Story",
         ourStoryText: "Short Paragprah about our story",
 
+        // our team page translations
+        aboutUs: "About Us",
+        aboutUsDesc: "Description",
+        ourValues: "Our Values",
+        ourValuesDesc: "Description",
+        meetBoard: "Meet the Board",
+
 
     },
     mn: {
@@ -117,6 +124,13 @@ const translations = {
         // our story page translations
         ourStory: "Бидний түүх",
         ourStoryText: "Бидний түүхийн товч тайлбар",
+
+        // our team page translations
+        aboutUs: "Бидний тухай",
+        aboutUsDesc: "Тайлбар",
+        ourValues: "Бидний Зорилго",
+        ourValuesDesc: "Тайлбар",
+        meetBoard: "Багийн гишүүд",
     },
 };
 

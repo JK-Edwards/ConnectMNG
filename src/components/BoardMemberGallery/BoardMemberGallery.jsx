@@ -1,5 +1,6 @@
 import anunu from "../../images/anunu.jpeg";
 import React from "react";
+import { useIntl } from "react-intl";
 
 import "./BoardMemberGallery.css";
 
@@ -25,18 +26,26 @@ function Profile({person}) {
 };
 
 export default function BoardMemberGallery() {
+  const intl = useIntl();
+
     return (
       <div className={"galleryContainer"}>
         <div className={"galleryHeader"}>
-          <h1>About Us</h1>
-          <div>desc</div>
+          <h1>         
+            {intl.formatMessage({ id: "aboutUs" }).toUpperCase()}
+          </h1>
+          <div>            
+            {intl.formatMessage({ id: "aboutUsDesc" })}
+          </div>
         </div >
         <div className={"galleryHeader"}>
-          <h1>Our Values</h1>
-          <div>desc</div>
+          <h1>
+            {intl.formatMessage({id: "ourValues"})}
+          </h1>
+          <div>{intl.formatMessage({id: "ourValuesDesc"})}</div>
         </div>
         <div className={"galleryHeader"}>
-          <h1>Meet the Board</h1>
+          <h1>{intl.formatMessage({id: "meetBoard"})}</h1>
         </div>
         <div className={"profileContainer"}>
           <Profile person={{name: "Anuujin Ider",
