@@ -49,6 +49,10 @@ const translations = {
         onetimeDonation: "Make a one-time gift",
         customAmount: "Custom Amount",
 
+        // support popup translations
+        supportConnect: "Support Connect MNG!",
+        yourContributionText: "Your contribution will help to inspire, educate, and equip Mongolian students with skills to navigate through today's world and give back to the community.",
+
 
 
     },
@@ -102,7 +106,9 @@ const translations = {
         onetimeDonation: "Нэг удаагийн хандив өгөх",
         customAmount: "Тохируулсан Дүн",
 
-
+        // support popup translations
+        supportConnect: "Connect MNG-г дэмжих!",
+        yourContributionText: "Таны оролцоо нь Монгол оюутнуудын сонирхол, сургалт, боловсролын ур чадварыг хөгжүүлэх, ур чадваруудыг эзэмших зорилготой болно.",
 
     },
 };

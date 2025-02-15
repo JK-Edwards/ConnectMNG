@@ -17,8 +17,7 @@ export default function SupportPopup() {
         setIsOpen(!isOpen);
     };
 
-    const text = "Your contribution will help to inspire, educate, and equip Mongolian students with skills to navigate through today's world."
-               + " and give back to the communnity.";
+    const text = intl.formatMessage({id: "yourContributionText"});
 
     return (
         <div className={"supportPopupContainer"}>
@@ -33,7 +32,7 @@ export default function SupportPopup() {
                 <div className={"supportPopupTextTitleContainer"}>
                     <img className={"supportPopupImage"} src={hand} alt={"Helping Hand"}/>
                     <h3>
-                        Support Connect MNG!
+                        {intl.formatMessage({id: "supportConnect"})}
                     </h3>
                 </div>
                 <p>{text}</p>
