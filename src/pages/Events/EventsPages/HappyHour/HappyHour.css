@@ -1,11 +1,14 @@
 .happy-hour-container {
+    background-image: url("../../../../images/background_white.jpg");
+    background-size: cover;
+    background-position: center;
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    
 }
 
 h1 {
