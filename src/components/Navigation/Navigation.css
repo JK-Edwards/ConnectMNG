@@ -25,6 +25,45 @@
 	padding-left: 1vw;
 }
 
+@media (max-width: 750px) {
+
+	/* Adjust max-width as needed for your breakpoint */
+	.button {
+		font-size: large;
+	}
+
+	.nav-dropdown {
+		display: flex;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		justify-content: flex-end;
+		/* Align items to the right */
+	}
+
+	/* Show the hamburger button on mobile */
+	.mobile-nav-container {
+		display: flex;
+		/* Display the hamburger button on mobile */
+		background-color: white;
+		width: 100%;
+		/* Ensure full-width of the navbar */
+		padding: 0.5vh;
+	}
+
+	.logo {
+		height: 8vw;
+	}
+
+
+	.mobileNavigationContainer>div {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		flex: 1;
+	}
+
+
+}
 
 .contact {
 	background: #70A9A1;
@@ -44,7 +83,7 @@
 }
 
 .logo {
-	height: 5vw;
+	height: 10vw;
 	width: auto;
 }
 
