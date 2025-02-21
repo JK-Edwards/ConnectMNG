@@ -41,7 +41,30 @@ const translations = {
         fundraising: "Fundraising",
         website: "Website",
         volunteerDesc: "Connect MNG offers various ways for passionate individuals to contribute and make a difference in our community. Whether you're looking to lend a helping hand, raise awareness, or offer your expertise, there's a place for you here. Explore the following avenues to get involved:",
-        becomeVolunteer: "Become a volunteer!"
+        becomeVolunteer: "Become a volunteer!",
+
+        // Donation page translations
+        empowerYoungMongolians: "Empower young Mongolian professionals",
+        donateConnectMNG: "Donate to Connect MNG",
+        onetimeDonation: "Make a one-time gift",
+        customAmount: "Custom Amount",
+
+        // support popup translations
+        supportConnect: "Support Connect MNG!",
+        yourContributionText: "Your contribution will help to inspire, educate, and equip Mongolian students with skills to navigate through today's world and give back to the community.",
+
+        // our story page translations
+        ourStory: "Our Story",
+        ourStoryText: "Short Paragprah about our story",
+
+        // our team page translations
+        aboutUs: "About Us",
+        aboutUsDesc: "Description",
+        ourValues: "Our Values",
+        ourValuesDesc: "Description",
+        meetBoard: "Meet the Board",
+
+
     },
     mn: {
         programs: "Хөтөлбөрүүд",
@@ -60,7 +83,7 @@ const translations = {
         donate: "Хандив",
         events: "Үйл ажиллагаа",
         volunteer: "Сайн Дурын Ажил",
-        internships: 'temp',
+        internships: 'Дадлага',
         connectWithUs: "Бидэнтэй Холбогдох",
         ourStory: "Бидний Түүх",
         ourTeam: "Манай Баг",
@@ -74,6 +97,8 @@ const translations = {
         message: "Мессэж",
         getInTouch: "Бидэнтэй Холбогдох",
         firstName: "Нэр",
+        getInTouch: "Бидэнтэй Холбогдох",
+        firstName: "Нэр",
         lastName: "Овог",
         emailAddress: "Имэйл хаяг",
         emailSubject: "Имэйл гарчиг",
@@ -83,7 +108,29 @@ const translations = {
         fundraising: "Хандив",
         website: "Вэб Хаяг",
         volunteerDesc: "Connect MNG-тэй хамтран ажиллах болон өөрийн оролцоогоороо Вашингтон мужид байгаа Монголчуудад зорилсан хөтөлбөрүүдийг дэмжих хүсэлтэй бол та дараах байдлаар өөрийн оролцоог нэмэх боломжтой юм:",
-        becomeVolunteer: "САЙН ДУРЫН АЖИЛТАН БОЛОХ"
+        becomeVolunteer: "САЙН ДУРЫН АЖИЛТАН БОЛОХ",
+
+        // Donation page translations
+        empowerYoungMongolians: "Залуу Монгол мэргэжилтнүүдийг дэмжих",
+        donateConnectMNG: "Connect MNG-д хандив өгөх",
+        onetimeDonation: "Нэг удаагийн хандив өгөх",
+        customAmount: "Тохируулсан Дүн",
+
+        // support popup translations
+        supportConnect: "Connect MNG-г дэмжих!",
+        yourContributionText: "Таны оролцоо нь Монгол оюутнуудын сонирхол, сургалт, боловсролын ур чадварыг хөгжүүлэх, ур чадваруудыг эзэмших зорилготой болно.",
+
+
+        // our story page translations
+        ourStory: "Бидний түүх",
+        ourStoryText: "Бидний түүхийн товч тайлбар",
+
+        // our team page translations
+        aboutUs: "Бидний тухай",
+        aboutUsDesc: "Тайлбар",
+        ourValues: "Бидний Зорилго",
+        ourValuesDesc: "Тайлбар",
+        meetBoard: "Багийн гишүүд",
     },
 };
 
