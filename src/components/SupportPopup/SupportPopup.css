@@ -85,6 +85,11 @@
         justify-content: center;
         align-items: center;
     }
+
+    .supportPopupTextContainer.closed {
+        width: 2vw;
+    }
+
     .supportPopupTextContainer {
         width: 30vw;
         height: 30vw;
