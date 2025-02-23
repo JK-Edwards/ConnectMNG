@@ -102,6 +102,13 @@
         max-height: 7vw;
     }
 
+    .supportPopupButtonImage {
+        max-width: 4vw;
+    }
+    .supportPopupButtonImage.closed{
+        max-width: 4vw;
+    }
+
     .supportPopupTextContainer.closed {
         max-height: 30vw;
     }
