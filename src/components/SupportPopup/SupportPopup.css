@@ -135,6 +135,10 @@
         max-height: 9vw;
     }
 
+    .supportPopupButton {
+        padding: 1.5vw;
+    }
+
     .supportPopupTextContainer.closed {
         max-height: 40vw;
     }
