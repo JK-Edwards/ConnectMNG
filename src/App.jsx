@@ -22,6 +22,7 @@ import ResumeBoostProgram from "./pages/Programs/ProgramPages/ResumeBoost/Resume
 import SupportPopup from "./components/SupportPopup/SupportPopup.jsx";
 import translations from "./translations.jsx";
 import Volunteer from "./pages/Volunteer/Volunteer.jsx";
+import NewFeature from "./pages/NewFeatures/NewFeatures.jsx";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { IntlProvider } from "react-intl";
@@ -61,6 +62,7 @@ export default function App() {
 							<Route path="/resources" element={<Resources />} />
 							<Route path="/contact-us" element={<Contact />} />
 							<Route path="/get-involved/donate" element={<Donate />} />
+							<Route path="/new-feature" element={<NewFeature />} />
 						</Routes>
 					</div>
 					<div className={"pinnedSupportPopup"}>
