@@ -64,6 +64,12 @@ const translations = {
         ourValuesDesc: "Description",
         meetBoard: "Meet the Board",
 
+        // footer translation
+        engage: "ENGAGE",
+        explore: "EXPLORE",
+        termsOfUse: "Terms of Use",
+        privacyPolicy: "Privacy Policy",
+
 
     },
     mn: {
@@ -84,7 +90,6 @@ const translations = {
         events: "Үйл ажиллагаа",
         volunteer: "Сайн Дурын Ажил",
         internships: 'Дадлага',
-        connectWithUs: "Бидэнтэй Холбогдох",
         ourStory: "Бидний Түүх",
         ourTeam: "Манай Баг",
         time: "Цаг",
@@ -131,6 +136,15 @@ const translations = {
         ourValues: "Бидний Зорилго",
         ourValuesDesc: "Тайлбар",
         meetBoard: "Багийн гишүүд",
+
+        // footer translations
+        connectWithUs: "Бидэнтэй Холбогдох",
+        engage: "Таны Оролцоо",
+        explore: "Зочлох",
+        termsOfUse: "Ашиглалтын Нөхцөл",
+        privacyPolicy: "Нууцлалын Баталгаа",
+
+
     },
 };
 
