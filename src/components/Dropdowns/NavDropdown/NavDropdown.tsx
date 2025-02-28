@@ -9,14 +9,22 @@ interface NavDropdownProps {
 }
 
 const NavDropdown: React.FC<NavDropdownProps> = ({ onSelect, options, links }) => {
+  const handleOptionClick = (index: number) => {
+    const navContainer = document.querySelector<HTMLDivElement>('.mobileNavigationContainer');
+    if (navContainer) {
+      navContainer.style.display = "none"; // Hide the menu
+    }
+    onSelect(index); // Trigger the provided onSelect callback
+  };
+
   return (
-    <div className="resourcesMenu">
+    <div className="subDropdownMenu">
       {options.map((option, index) => (
         <Link 
           key={index}
           to={links[index]}
-          className="resourceOption"
-          onClick={() => onSelect(index)}
+          className="subDropdownOption"
+          onClick={() => handleOptionClick(index)}
         >
           {option}
         </Link>

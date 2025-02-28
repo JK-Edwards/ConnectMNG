@@ -1,0 +1,177 @@
+.mobileNavBarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.menu-button-container {
+    display: flex;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #000;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+.mobileNavLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+#menu-toggle:checked ~ .mobileNavLinks {
+    display: flex;
+}
+
+.mobileNavLink {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 0;
+    width: 100%;
+    text-align: left;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDD;
+    padding-left: 2em;
+    position: relative;
+}
+
+.homeButton {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 0;
+    width: 100%;
+    text-align: left;
+    background-color: #9EC1A3;
+    border-bottom: 1px solid #DDD;
+    padding-left: 2em;
+    position: relative;
+
+}
+
+.mobileSubDropdown {
+    text-decoration: none;
+    color: black;
+    padding: 0.2em 0;
+    width: 100%;
+    text-align: left;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDD;
+    padding-left: 2em;
+    position: relative;
+}
+
+.mobileNavLink:hover {
+    color: #9EC1A3;
+    text-decoration: underline;
+}
+
+.mobileLogo {
+    display: flex;
+    align-self: flex-start;
+    
+
+}
+
+.menuButton {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+}
+
+.menu-button > button{
+    padding: 0;
+    
+
+}
+
+.hamburger-react {
+    height: 20px;
+    width: 20px;
+    
+}
+
+button {
+    border: none;
+    background-color: #c7ddb5;
+}
+
+/*newwww*/
+.resourcesMenu {
+    /* display: flex;
+    flex-direction: column;
+    position: absolute;
+    cursor: pointer;
+    font-size: calc(0.2rem + 1vw);
+    background: #fbfbfb;
+    width: 100%;
+    top: 100%;
+    border-top: 0.2vw solid #043c26; */
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 0;
+    width: 100%;
+    text-align: left;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDD;
+    /* padding-left: 2em;
+    position: relative; */
+}
+
+.resourceOption {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-top: 0.05vw solid #d4d4d4;
+}

@@ -2,12 +2,13 @@
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 20px;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .internshipsContainer h1 {
 	color: #1F363D;
-	font-weight: 900;
 	padding-bottom: 2vw;
 }
 
@@ -55,20 +56,133 @@
 	width: 35vw;
 }
 
-.internshipFormContainer {
+.internshipsFormContainer {
 	padding-top: 2vw;
 	padding-bottom: 2vw;
 }
 
-.internshipTitleContainer h1 {
+.internshipsTitleContainer h1 {
 	font-size: calc(10px + 1.75vw);
+	font-weight: 900;
 }
 
 .internshipsDescriptionContainer p {
-	font-size: calc(1px + 1.75vw);
+    font-size: calc(1px + 1.75vw);
 }
 
-.internshipFormTitleContainer {
+.internshipsFormTitleContainer {
 	font-size: calc(1px + 1.75vw);
 	padding-top: 2vw;
+}
+
+.only-mobile {
+	display: none;
+}
+.only-desktop {
+	display:flex;
+}
+
+@media (max-width: 750px) {
+	.only-mobile {
+		display: flex;
+	}
+	.only-desktop {
+		display:none;
+	}
+	
+	.internshipsContainer {
+		background-image:none;
+		background-color:white;
+    padding-top: 35px;
+	}
+	.internshipsGetInvolved {
+		display: flex;
+		flex-direction: row;
+	}
+	.internshipsGetInvolved h1 {
+		font-size: calc(.7rem + 2vw);
+		color: #033C26;
+		margin-bottom: -.1rem;
+		font-weight: 700;
+	}
+	.internshipsGetInvolved img {
+		height: fit-content;
+	}
+	.internshipsTitleContainer h1 {
+		font-size: calc(.6rem + 2vw);
+		color: #3F798C;
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+	.internshipsDescriptionContainer p {
+		width: 100%;
+		font-size: calc(1.2rem + 1vw);
+		color: black;
+	}
+	.thinSeparator {
+		width: 100%;
+		padding: none;
+		height: 1px;
+		background-color: #ddd;
+	  }
+
+	  .volunteerCardContainerMobile {
+		display:block;
+		width: 100%;
+		align-items: flex-start;
+		gap: 20px;
+	  }
+	
+	  .internshipsContainer p{
+		width: 100%;
+	}
+
+	.internshipsCardContainer {
+		align-items: flex-start;
+		gap: 20px;
+	  }
+	
+	.internshipsCard {
+		width: 100%;
+		height: auto; /* Adjust card height for mobile */
+		flex-direction:column;
+		align-items: start;
+		
+	  }
+	
+	.internshipsCard {
+		width: 100%;
+		padding: 0px,10px;
+	  }
+	
+	.internshipsCard h1 {
+		font-size: calc(1rem + 1.5vw);
+		color: black;
+		padding-top: 2vw;
+	  }
+	
+	.internshipsCardImage {
+		width: 100%;
+		height: auto; /* Adjust image height for aspect ratio */
+		margin-top: 10px;
+	  }
+	
+	.internshipsCardImageStyle {
+		width: 100%;
+		height: auto;
+	  }
+	.internshipsCard p{
+		width: 100%;
+		font-size: calc(1rem + 1.5vw);
+		color: black;
+	  }
+	.internshipsFormTitleContainer {
+		font-size: calc(1rem + 1.5vw);
+		padding: 0px,20px;
+	}
+	.internshipsFormContainer {
+		padding:0px, 20px ;
+	}
+	
+		
 }

@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
 .app {
     font-family: "Inter";
 }
 
 .pageContainer {
-    padding-top: calc(0.05rem + 12vw);
+    padding-top: 125px;
+}
+
+@media screen and (max-width: 500px) {
+    .pageContainer {
+        padding-top: 95px;
+    }
+
 }
 
 .pinnedHeader {
@@ -14,6 +29,8 @@
     z-index: 1000;
 }
 
+/* Support popup style within page */
+
 .pinnedSupportPopup {
     position: fixed;
     top: 30vw;
@@ -21,5 +38,17 @@
     background: #9EC1A3;
     padding: 1vw;
     border-radius: 1.5vw;
-    z-index: 1000;
+    z-index: 900;
+}
+
+@media screen and (max-width: 750px) {
+    .pinnedSupportPopup {
+        top: 55vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pinnedSupportPopup {
+        top: 80vw;
+    }
 }

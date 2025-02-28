@@ -8,10 +8,28 @@
 	cursor: pointer;
 }
 
+.nav-dropdown {
+	border: none;
+	background-color: white;
+	font-size: larger;
+	display: none;
+}
+
+
+.mobile-nav-container .mobile-nav-no-dropdown {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-right: 1vw;
+	padding-left: 1vw;
+}
+
+
 .contact {
-    background: #70A9A1;
+	background: #70A9A1;
 	color: #FFFFFF;
-    height: 3vw;
+	height: 3vw;
 	width: 12vw;
 	border-radius: 1vw;
 	font-size: calc(0.2rem + 1vw);
@@ -26,9 +44,10 @@
 }
 
 .logo {
-	height: 9vw;
-  	width: 15vw;
+	height: 5vw;
+	width: auto;
 }
+
 
 .navigationContainer {
 	display: flex;
@@ -36,11 +55,15 @@
 	justify-content: space-evenly;
 	align-items: center;
 	background: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 3vw;
 	padding-right: 3vw;
 }
 
-.navigationContainer > div {
+
+
+.navigationContainer>div {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -70,3 +93,76 @@
 .subNavButton.isActive {
 	font-weight: bold;
 }
+
+@media (max-width: 768px) {
+	.MobileNavBar {
+		display: block;
+	}
+	.menu-button-container {
+	  display: flex;
+	}
+	.navigationContainer {
+	  position: absolute;
+	  display: flex;
+	  top: 0;
+	  margin-top: 50px;
+	  left: 0;
+	  flex-direction: row; 
+	  width: 100%;
+	  justify-content: space-evenly; 
+	  align-items: center;
+	}
+
+	#menu-toggle ~ .navigationContainer > div > a , #menu-toggle ~ .navigationContainer > div > div.button{
+	  height: 0;
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	#menu-toggle:checked ~ .navigationContainer div > a , #menu-toggle:checked ~ .navigationContainer div > div.button {
+	  height: 2.5em;
+	  padding: 0.5em;
+	  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	.navigationContainer > div > a , div.button {
+	  display: flex;
+	  justify-content: center;
+	  margin: 0;
+	  padding: 0.5em 0;
+	  width: 100%;
+	  color: white;
+	  background-color: #222;
+	}
+	.navigationContainer > div > a:not(:last-child) , div.button:not(:last-child){
+	  border-bottom: 1px solid #444;
+	}
+
+	.overallNavigationContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0em;
+		padding-left: 0em;
+		background-color: #FFFFFF;
+		flex-direction: column;
+		border-bottom: 2px solid #000;
+	}
+
+	.button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		color: blue;
+		font-size: calc(0.2rem + 1vw);
+		cursor: pointer;
+	}
+
+	.logo {
+		height: 12vw;
+		width: auto;
+		padding-left: 4vw;
+	}
+	
+  }
