@@ -70,6 +70,26 @@ const translations = {
         termsOfUse: "Terms of Use",
         privacyPolicy: "Privacy Policy",
 
+        // Event page translations
+        Date: "Monday 29th January 2024",
+        Calendar: "Calendar",
+        Time: "Time",
+        Event: "Event",
+        Location: "Location",
+
+        // Happy hour event translations
+        date_time: "📅 Monday 29th January 2024 | 🕒 4:00 PM",
+        happy_location: "📍 Location: Bangrak",
+        happy_desc1: "Join us for a **fun and relaxing Happy Hour** at Bangrak! 🎉",
+        happy_desc2: "🥂 Meet new people, network, and unwind with refreshing drinks and great conversations.",
+        happy_desc3: "📢 This event is open to all members. Bring your friends!",
+
+        // Resume help event translations
+        resume_date_time: "📅 Monday 29th January 2024 | 🕒 3:00 PM",
+        resume_location: "📍 Location: Capital One Cafe",
+        resume_desc1: "Join us for an interactive **Resume Help Workshop** where industry experts will provide tips on crafting an impressive resume that stands out!",
+        resume_desc2: "📝 Learn best practices, formatting tips, and how to highlight your skills effectively.",
+        resume_desc3: "🎯 Ideal for job seekers and students looking to refine their resumes.",
 
     },
     mn: {
@@ -145,6 +165,28 @@ const translations = {
         privacyPolicy: "Нууцлалын Баталгаа",
 
 
+
+        // Event page translations
+        Date: "2024 оны нэгдүгээр сарын 29-ний даваа",
+        Calendar: "Хуанли",
+        Time: "Цаг хугацаа",
+        Event: "Үйл явдал",
+        Location: "Үйл явдал",
+
+        // Happy hour event translations
+        date_time: "📅 2024 оны 1 сарын 29, Даваа гараг | 🕒 16:00",
+        happy_location: "📍 Байршил: Bangrak",
+        happy_desc1: "Бидэнтэй нэгдэж **хөгжилтэй, тайвширсан Happy Hour**-д хамрагдаарай Bangrak! 🎉",
+        happy_desc2: "🥂 Шинэ хүмүүстэй танилцаж, харилцаа холбоо тогтоож, сэтгэл сэргээсэн ундаа ууж, сайхан яриа өрнүүлээрэй.",
+        happy_desc3: "📢 Энэхүү арга хэмжээнд бүх гишүүд оролцох боломжтой. Найзуудаа авчир!",
+
+        // Resume help event translations
+        resume_date_time: "📅 2024 оны 1 сарын 29 Даваа гараг | 🕒 15:00",
+        resume_location: "📍 Байршил: Capital One Cafe",
+        resume_desc1: "Салбарын мэргэжилтнүүд оролцдог интерактив **Resume Help Workshop**-д бидэнтэй нэгдээрэй гайхалтай анкет бүтээх талаар зөвлөгөө өгөх болно!",
+        resume_desc2: "📝 Шилдэг туршлага, форматлах зөвлөмж, ур чадвараа хэрхэн үр дүнтэй онцлох талаар суралц.",
+        resume_desc3: "🎯 Ажил хайгч болон анкетаа сайжруулах хүсэлтэй оюутнуудад тохиромжтой.",
+        
     },
 };
 

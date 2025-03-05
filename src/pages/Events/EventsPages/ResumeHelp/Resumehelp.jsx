@@ -1,26 +1,26 @@
 import React from "react";
-
+import { useIntl } from "react-intl";
 import { useNavigate } from "react-router-dom";
 import "./Resumehelp.css"; // Create a CSS file for styling
 
 export default function ResumeHelp() {
+    const intl = useIntl();
     const navigate = useNavigate(); // Enables navigation back to the event list
 
     return (
         <div className="event-details-container">
             <h1>Resume Help Workshop</h1>
-            <p className="event-date">📅 Monday 29th January 2024 | 🕒 3:00 PM</p>
-            <p className="event-location">📍 Location: Capital One Cafe</p>
+            <p className="event-date">{intl.formatMessage({ id: "resume_date_time" })}</p>
+            <p className="event-location">{intl.formatMessage({ id: "resume_location" })}</p>
 
             <div className="event-description">
                 <p>
-                    Join us for an interactive **Resume Help Workshop** where industry experts
-                    will provide tips on crafting an impressive resume that stands out!
+                {intl.formatMessage({ id: "resume_desc1" })}
                 </p>
                 <p>
-                    📝 Learn best practices, formatting tips, and how to highlight your skills effectively.
+                {intl.formatMessage({ id: "resume_desc2" })}
                 </p>
-                <p>🎯 Ideal for job seekers and students looking to refine their resumes.</p>
+                <p>{intl.formatMessage({ id: "resume_desc3" })}</p>
             </div>
 
             <button className="back-button" onClick={() => navigate(-1)}>⬅ Back to Events</button>
