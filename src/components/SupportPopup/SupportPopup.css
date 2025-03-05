@@ -85,6 +85,8 @@
         justify-content: center;
         align-items: center;
     }
+
+
     .supportPopupTextContainer {
         width: 30vw;
         height: 30vw;
@@ -98,6 +100,13 @@
     .supportPopupImage {
         max-width: 6vw;
         max-height: 7vw;
+    }
+
+    .supportPopupButtonImage {
+        max-width: 4vw;
+    }
+    .supportPopupButtonImage.closed{
+        max-width: 4vw;
     }
 
     .supportPopupTextContainer.closed {
@@ -124,6 +133,10 @@
     .supportPopupImage {
         max-width: 8vw;
         max-height: 9vw;
+    }
+
+    .supportPopupButton {
+        padding: 1.5vw;
     }
 
     .supportPopupTextContainer.closed {
