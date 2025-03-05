@@ -154,7 +154,7 @@
 		width: 96vw;
 	  }
 
-	  .icon {
+	.icon {
 		transform: scale(1);
   		transform-origin: center;
 		margin: 0;

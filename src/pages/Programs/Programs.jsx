@@ -1,6 +1,8 @@
 import StyledLink from "../../components/StyledLink/StyledLink";
 import ContactUsBox from "../../components/ContactUsBox/ContactUsBox";
 import React from "react";
+import myImage from "../../images/programs/homeIcon.png";
+
 import {
 	MENTORSHIP_PROGRAM_DESC,
 	RESUME_BOOST_PROGRAM_DESC,
@@ -11,8 +13,11 @@ import { useIntl } from "react-intl";
 
 import "./Programs.css";
 
+
+
 function Program({ name, description, pageLink }) {
 	return (
+		
 		<div className={"indivProgramContainer"}>
 			<div className={"indivProgramTextContainer"}>
 				<div className={'programTitleContainer'}>
@@ -31,10 +36,19 @@ function Program({ name, description, pageLink }) {
 
 export default function Programs() {
 	const intl = useIntl();
+	const icon = myImage;
 
 	return (
 		<div className={"programsContainer"}>
 			<div>
+
+			<div className={"homeIconAndPrograms"}>
+				<a href="http://connectmng.org/" rel={"noreferrer"} style={{ display: "inline" }}>
+						<img src={icon} className={"icon mobile-only"} alt={"Home"} />
+				</a>
+				{ <h2 className={'programs-header mobile-only'}>{intl.formatMessage({id: "/ Programs" } )}  </h2> }
+			</div>
+
 				<div className={"programsHeader"}>
 					<h1>
 						Our Programs
