@@ -70,6 +70,15 @@ const translations = {
         termsOfUse: "Terms of Use",
         privacyPolicy: "Privacy Policy",
 
+        // Programs
+        ourPrograms: "Our Programs",
+        ourProgramsDesc: "At Connect MNG, we’re here to support Mongolian students and young professionals as they take the next step in their careers. Through resume reviews and monthly workshops on essential career skills, we provide practical guidance to help you grow with confidence.",
+        resumeBoost: "Resume Boost",
+        getStarted: "Get Started",
+
+
+
+
 
     },
     mn: {
@@ -144,6 +153,14 @@ const translations = {
         termsOfUse: "Ашиглалтын Нөхцөл",
         privacyPolicy: "Нууцлалын Баталгаа",
 
+
+
+        // Programs
+        ourPrograms: "Манай Хөтөлбөрүүд",
+        ourProgramsDesc: "Connect MNG нь Монгол оюутнууд болон залуу мэргэжилтнүүдийг карьераа дараагийн түвшинд ахиулахад нь дэмжлэг үзүүлэхэд зориулагдсан. Бид таныг итгэлтэйгээр өсөн дэвжихэд туслахын тулд хувийн намтар (CV) шалгах үйлчилгээ болон сар бүрийн чухал карьерын ур чадварын сургалтуудыг санал болгодог.",
+        resumeBoost: "Resume Boost",
+        getStarted: "Эхлэх",
+        
 
     },
 };
