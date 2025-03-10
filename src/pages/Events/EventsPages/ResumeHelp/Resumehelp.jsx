@@ -23,7 +23,7 @@ export default function ResumeHelp() {
                 <p>{intl.formatMessage({ id: "resume_desc3" })}</p>
             </div>
 
-            <button className="back-button" onClick={() => navigate(-1)}>⬅ Back to Events</button>
+            <button className="back-button" onClick={() => navigate(-1)}>{intl.formatMessage({ id: "r_back_to_events" })}</button>
         </div>
     );
 }

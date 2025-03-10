@@ -23,7 +23,7 @@ export default function HappyHour() {
                 <p>{intl.formatMessage({ id: "happy_desc3" })}</p>
             </div>
 
-            <button className="back-button" onClick={() => navigate(-1)}>⬅ Back to Events</button>
+            <button className="back-button" onClick={() => navigate(-1)}>{intl.formatMessage({ id: "h_back_to_events" })}</button>
         </div>
     );
 }

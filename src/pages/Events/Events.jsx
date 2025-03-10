@@ -7,10 +7,10 @@ export default function Events() {
 	const intl = useIntl();
     const events = [
         {
-            date: "Monday 29th January 2024",
+            date: intl.formatMessage({ id: "date" }),
             sessions: [
-                { time: "3pm", name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
-                { time: "4pm", name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
+                { time: intl.formatMessage({ id: "time" }), name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
+                { time: intl.formatMessage({ id: "time1" }), name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
             ],
         },
         
