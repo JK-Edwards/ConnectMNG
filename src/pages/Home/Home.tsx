@@ -28,47 +28,45 @@ export default function Home() {
 			</div>
 		</Link>,
 		<Link to={"/resources/podcasts"}>
-		<div className={"carouselSlide"}>
-			<img src={slide2} height={425} width={850} alt={"Slide 2"} />
-		</div>
-	</Link>,
-	<Link to={"/resources/podcasts"}>
-	<div className={"carouselSlide"}>
-		<img src={slide2} height={425} width={850} alt={"Slide 2"} />
-	</div>
-</Link>,
-	  ];
+			<div className={"carouselSlide"}>
+				<img src={slide2} height={425} width={850} alt={"Slide 2"} />
+			</div>
+		</Link>,
+		<Link to={"/resources/podcasts"}>
+			<div className={"carouselSlide"}>
+				<img src={slide2} height={425} width={850} alt={"Slide 2"} />
+			</div>
+		</Link>,
+	];
 
 	return (
 		<div className={"homeContainer"}>
 			<div>
-				<div className={"carouselContainer"}>
-					{/* <ItemCarousel slides={blogSlides} interval={2500}/> */}
-					<SimpleSlider slides={blogSlides}/>
-				</div>
-			</div>
-			<div>
 				<div className={"missionTextContainer"}>
-					<h1>{intl.formatMessage({id: "missionAndImpact"}).toUpperCase()}</h1>
-					<p>{intl.formatMessage({id: "mission"})}</p>
+					<h1>{intl.formatMessage({ id: "missionAndImpact" }).toUpperCase()}</h1>
+					<p>{intl.formatMessage({ id: "mission" })}</p>
 				</div>
 				<div className={"programGalleryContainer"}>
-					<h1>{intl.formatMessage({id: "What We Offer"}).toUpperCase()}</h1>
+					<h1>{intl.formatMessage({ id: "What We Offer" }).toUpperCase()}</h1>
+					<div className={"carouselContainer"}>
+						{/* <ItemCarousel slides={blogSlides} interval={2500}/> */}
+						<SimpleSlider slides={blogSlides} />
+					</div>
 					<div className={"programGallery"}>
 						<div className="program">
 							<img className={"programImage"} src={prog1} alt={"Resources"}></img>
-							<h3>{intl.formatMessage({id: "resources"})}</h3>
-							<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/resources/blogs"}/>
+							<h3>{intl.formatMessage({ id: "resources" })}</h3>
+							<StyledLink text={intl.formatMessage({ id: "learnMore" })} link={"/resources/blogs"} />
 						</div>
 						<div className="program">
 							<img className={"programImage"} src={prog2} alt={"Programs"}></img>
-							<h3>{intl.formatMessage({id: "programs"})}</h3>
-							<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/programs"}/>
+							<h3>{intl.formatMessage({ id: "programs" })}</h3>
+							<StyledLink text={intl.formatMessage({ id: "learnMore" })} link={"/programs"} />
 						</div>
 						<div className="program">
 							<img className={"programImage"} src={prog3} alt={"Events"}></img>
-							<h3>{intl.formatMessage({id: "events"})}</h3>
-							<StyledLink text={intl.formatMessage({id: "learnMore"})} link={"/events"}/>
+							<h3>{intl.formatMessage({ id: "events" })}</h3>
+							<StyledLink text={intl.formatMessage({ id: "learnMore" })} link={"/events"} />
 						</div>
 					</div>
 				</div>

@@ -1,16 +1,15 @@
 // Program page
 export const MENTORSHIP_PROGRAM_DESC = "The Mentorship Program is a dynamic platform designed to guide individuals on their paths to success. "
-                                     + "Our program is founded on the belief that mentorship is a catalyst for personal and professional growth."
-                                     + "We offer three distinct types of mentorships to cater to diverse needs: Career Mentorship, providing"
-                                     + "targeted guidance for professional advancement; Personal Development Mentorship, nurturing holistic"
-                                     + "growth beyond the workplace; and University/Education Mentorship, offering support throughout the "
-                                     + "academic journey. Our community of dedicated mentors is committed to sharing their expertise, insights, "
-                                     + "and experiences, creating a collaborative environment where mentorship becomes a powerful tool for "
-                                     + "unlocking potential."
+    + "Our program is founded on the belief that mentorship is a catalyst for personal and professional growth."
+    + "We offer three distinct types of mentorships to cater to diverse needs: Career Mentorship, providing"
+    + "targeted guidance for professional advancement; Personal Development Mentorship, nurturing holistic"
+    + "growth beyond the workplace; and University/Education Mentorship, offering support throughout the "
+    + "academic journey. Our community of dedicated mentors is committed to sharing their expertise, insights, "
+    + "and experiences, creating a collaborative environment where mentorship becomes a powerful tool for "
+    + "unlocking potential."
 
-export const RESUME_BOOST_PROGRAM_DESC = "The Resume Boost Program by Connect MNG is a two-week initiative designed for early-career professionals and students seeking to boost their resumes. Participants receive personalized feedback and guidance from industry professionals to optimize their resumes for success in today's competitive job market."
-export const CULTURAL_COMPASS_PROGRAM_DESC = "The Cultural Compass program is dedicated to supporting Mongolian and Mongolian American students as they navigate the intricacies of both Mongolian and American educational and cultural landscapes. By providing a space for connection, culturally relevant resources, and opportunities for mutual support, Cultural Compass seeks to empower Mongolian American students to thrive in both their academic and cultural pursuit. We aim to foster a stronger sense of belonging and acceptance among young Mongolian and Mongolian Americans."
-
+export const RESUME_BOOST_PROGRAM_DESC = "Need a resume that stands out? Connect MNG’s Resume Boost is here to help! Submit your resume through our Google Form, and our team will review it and send you personalized feedback within seven days. It’s free, fast, and designed to help Mongolian students and young professionals land their next big opportunity!"
+export const CULTURAL_COMPASS_PROGRAM_DESC = "Join Workshops, our monthly program designed to help Mongolian students and young professionals build career-ready skills! Each session covers a different topic—from resume writing to leadership and networking—giving you the tools to succeed in today’s job market. Stay curious, keep learning, and level up your career with us!"
 // Volunteer page
 export const MENTORSHIP_CARD_TITLE = 'Become a mentor';
 export const MENTORSHIP_CARD_DESC = 'Help students and young professionals with their resume, job search, and more...';

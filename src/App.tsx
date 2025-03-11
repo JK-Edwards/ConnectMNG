@@ -20,6 +20,9 @@ import ResumeBoostProgram from "./pages/Programs/ProgramPages/ResumeBoost/Resume
 import SupportPopup from "./components/SupportPopup/SupportPopup";
 import translations from "./translations";
 import Volunteer from "./pages/Volunteer/Volunteer"
+import ResumeHelp from "./pages/Events/EventsPages/ResumeHelp/Resumehelp";
+import HappyHour from "./pages/Events/EventsPages/HappyHour/HappyHour";
+
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { IntlProvider } from "react-intl";
