@@ -6,7 +6,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .blogCardContainer {
@@ -17,7 +17,7 @@
 	border-radius: 1vw;
 	padding: 1vw;
 	width: 60vw;
-	height: 20vw;
+	height: 17vw;
 }
 
 .blogThumbnail {
@@ -29,8 +29,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-left: 1vw;
-		height: 15vw;
+		padding-left: 0.5vw;
+		padding-top: 0vw;
+		padding-bottom: 0vw;
+		height: auto;
+		max-height: 10vw;
 		width: 45vw;
 }
 
@@ -41,6 +44,7 @@
 
 .blogCardTextContainer p {
 	font-size: calc(1.3vw);
+	line-height: 1.2;
 }
 
 .blogTitleContainer {
