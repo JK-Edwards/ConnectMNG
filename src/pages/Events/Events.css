@@ -50,6 +50,8 @@
 .eventsContainer > h1 {
     font-size: calc(15px + 1.75vw);
     color: black;
+    padding: 20px;
+    font-weight: bold;
 }
 
 /* Event Description */
