@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "title": "First Blog",
+  "thumbnail": "/uploads/1741139526267.webp",
+  "images": [
+    "/uploads/1741139526268.webp"
+  ],
+  "content": "First blog content"
+}
