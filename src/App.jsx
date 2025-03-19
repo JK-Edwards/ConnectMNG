@@ -26,6 +26,7 @@ import { IntlProvider } from "react-intl";
 import { useState } from "react";
 
 import "./App.css";
+import Workshops from "./pages/Blogs/Workshops.jsx";
 
 
 export default function App() {
@@ -57,6 +58,8 @@ export default function App() {
 							<Route path="/resources" element={<Resources />} />
 							<Route path="/contact-us" element={<Contact />} />
 							<Route path="/get-involved/donate" element={<Donate />} />
+							<Route path="/resources/blogs" element={<Blogs />} />
+							<Route path="/resources/blogs/welcome-blog" element={<Workshops />} />
 						</Routes>
 					</div>
 					<div className={"pinnedSupportPopup"}>
