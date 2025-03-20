@@ -7,12 +7,6 @@ import "./Workshops.css";
 export default function Workshops() {
     return (
         <div className="workshopsContainer">
-            {/* Title Section
-            <div className="workshopsTitleContainer">
-                <h1>Welcome to Connect MNG - Where Your Journey is Our Journey</h1>
-            </div> */}
-
-            {/* Introduction Section */}
             <div className="workshopsCardContainer">
                 <div className="workshopsCardTextContainer">
                     <h2>Hello and a warm, heartfelt welcome to Connect MNG!</h2>
@@ -24,7 +18,6 @@ export default function Workshops() {
                 </div>
             </div>
 
-            {/* Team Section */}
             <div className="workshopsCardContainer">
                 <div className="workshopsCardTextContainer">
                     <h3>Our Passionate Team</h3>
@@ -39,7 +32,6 @@ export default function Workshops() {
 
             </div>
 
-            {/* Commitment Section */}
             <div className="workshopsCardContainer">
                 <div className="workshopsCardTextContainer">
                     <h3>We are committed.</h3>
@@ -55,7 +47,6 @@ export default function Workshops() {
                 </div>
             </div>
 
-            {/* Mission Section */}
             <div className="workshopsCardContainer">
                 <div className="workshopsCardTextContainer">
                     <h3>Our Shared Mission</h3>
@@ -72,7 +63,6 @@ export default function Workshops() {
                 </div>
             </div>
 
-            {/* Career Development Section */}
             <div className="workshopsCardContainer">
                 <div className="workshopsCardTextContainer">
                     <h3>Navigating Career Development Together</h3>
@@ -88,7 +78,6 @@ export default function Workshops() {
                 </div>
             </div>
 
-            {/* Closing Section */}
             <div className="workshopsCardContainer">
                 <div className="workshopsCardTextContainer">
                     <h3>In Closing - Let's Thrive Together</h3>
