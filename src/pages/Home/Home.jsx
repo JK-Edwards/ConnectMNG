@@ -41,6 +41,28 @@ export default function Home() {
 			</div>
 		</Link>,
 	];
+	const blogSlidesMobile = [
+		<Link to={"/resources/blogs"}>
+			<div className={"carouselSlide"}>
+				<img src={slide1} height={850} width={850} alt={"Slide 1"} />
+			</div>
+		</Link>,
+		<Link to={"/resources/podcasts"}>
+			<div className={"carouselSlide"}>
+				<img src={slide2} height={850} width={850} alt={"Slide 2"} />
+			</div>
+		</Link>,
+		<Link to={"/resources/podcasts"}>
+			<div className={"carouselSlide"}>
+				<img src={slide2} height={850} width={850} alt={"Slide 2"} />
+			</div>
+		</Link>,
+		<Link to={"/resources/podcasts"}>
+			<div className={"carouselSlide"}>
+				<img src={slide2} height={850} width={850} alt={"Slide 2"} />
+			</div>
+		</Link>,
+	];
 
 	return (
 		<div className={"homeContainer"}>
@@ -75,5 +97,6 @@ export default function Home() {
 				</div>
 			</div>
 		</div>
+		
 	);
 };
