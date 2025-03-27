@@ -1,8 +1,9 @@
 import React from "react";
 import ContactUsBox from "../../../../components/ContactUsBox/ContactUsBox";
 import "./ResumeBoost.css";
-import myImage from "../../../../images/programs/homeIcon.png";
-import myImage2 from "../../../../images/programs/Connectmng.webp";
+import homeIcon from "../../../../images/programs/homeIcon.png";
+import resumeIcon from "../../../../images/programs/Connectmng.webp";
+
 
 export default function ResumeBoostProgram() {
 
@@ -15,15 +16,16 @@ export default function ResumeBoostProgram() {
 
             <div className={"homeIconAndResumeBoost"}>
                 <a href="http://connectmng.org/" rel={"noreferrer"} style={{ display: "inline" }}>
-                    <img src={myImage} className={"icon mobile-only"} alt={"Home"} />
+                    <img src={homeIcon} className={"icon mobile-only"} alt={"Home"} />
                 </a>
 				{ <h2 className={'resumeboost-header mobile-only'}> Resume Boost</h2>}
 			</div>
 
+
                 <div>
                     <div className={"resumeIcon"}>
                         <a>
-                            <img src={myImage2} className={"icon2 mobile-only"}/>
+                            <img src={resumeIcon} className={"icon2 mobile-only"}/>
                         </a>
                     </div>
                     <h1>
@@ -48,24 +50,6 @@ export default function ResumeBoostProgram() {
                             <li> {'\u2705'} Refine your resume and boost your career prospects</li>
                         </ol>
                 </div>
-
-
-                {/* <div>
-                    <h3>
-                        Program Dates
-                    </h3>
-                    <p>
-                        Description
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        Program Schedule
-                    </h3>
-                    <p>
-                        Description
-                    </p>
-                </div> */}
             </div>
 			<div className={"contactUsBoxContainer"}>
 				<ContactUsBox />

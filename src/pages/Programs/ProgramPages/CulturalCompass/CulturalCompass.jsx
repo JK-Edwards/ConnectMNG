@@ -1,9 +1,10 @@
 import React from "react";
 import ContactUsBox from "../../../../components/ContactUsBox/ContactUsBox";
 import "./CulturalCompass.css";
-import myImage from "../../../../images/programs/homeIcon.png";
+import StyledLink from "../../../../components/StyledLink/StyledLink";
 
-export default function CulturalCompassProgram() {
+
+export default function CulturalCompassProgram(link) {
     return (
 
         
@@ -11,11 +12,9 @@ export default function CulturalCompassProgram() {
             <div className={"culturalCompassContentContainer"}>
 
             <div className={"homeIconAndResumeBoost"}>
-                <a href="http://connectmng.org/" rel={"noreferrer"} >
-                    <img src={myImage} className={"icon mobile-only"} alt={"Home"} />
-                </a>
-				{ <h2 className={'resumeboost-header mobile-only'}> Workshops</h2>}
-			</div>
+                    <StyledLink text={"Home"} link={"/"} />
+                    <h2 className={'resumeboost-header mobile-only'}> Workshops</h2>
+                </div>
 
                 <div>
                     <h1>

@@ -6,7 +6,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .blogCardContainer {
@@ -17,7 +17,7 @@
 	border-radius: 1vw;
 	padding: 1vw;
 	width: 60vw;
-	height: 17vw;
+	height: 20vw;
 }
 
 .blogThumbnail {
@@ -29,11 +29,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-left: 0.5vw;
-		padding-top: 0vw;
-		padding-bottom: 0vw;
-		height: auto;
-		max-height: 10vw;
+		padding-left: 1vw;
+		height: 15vw;
 		width: 45vw;
 }
 
@@ -44,7 +41,6 @@
 
 .blogCardTextContainer p {
 	font-size: calc(1.3vw);
-	line-height: 1.2;
 }
 
 .blogTitleContainer {
@@ -158,7 +154,7 @@
 		width: 96vw;
 	  }
 
-	.icon {
+	  .icon {
 		transform: scale(1);
   		transform-origin: center;
 		margin: 0;
@@ -166,8 +162,6 @@
 
 	.homeIconAndResources {
   		width: 102%;
-		margin: 0;
-		padding: 0;
 		gap: 0rem;
 	  }
 	

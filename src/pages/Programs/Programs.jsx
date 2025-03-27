@@ -1,7 +1,7 @@
 import StyledLink from "../../components/StyledLink/StyledLink";
 import ContactUsBox from "../../components/ContactUsBox/ContactUsBox";
 import React from "react";
-import myImage from "../../images/programs/homeIcon.png";
+import homeIcon from "../../images/programs/homeIcon.png";
 
 import {
 	MENTORSHIP_PROGRAM_DESC,
@@ -36,7 +36,7 @@ function Program({ name, description, pageLink }) {
 
 export default function Programs() {
 	const intl = useIntl();
-	const icon = myImage;
+	const icon = homeIcon;
 
 	return (
 		<div className={"programsContainer"}>

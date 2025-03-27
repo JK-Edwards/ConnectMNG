@@ -70,7 +70,6 @@
     }
 }
 
-/* Desktop styles */
 @media (min-width: 1024px) {
     .resumeBlogWrapper {
         max-width: 800px;
