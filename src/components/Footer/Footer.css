@@ -32,6 +32,7 @@
     text-decoration: none;
     color: black;
     padding: 0.2vw;
+    width: 38%;
 }
 
 .footerLinkContainer h3 {
@@ -45,7 +46,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
 }
 
 .footerSocialsBarContainer h3{
