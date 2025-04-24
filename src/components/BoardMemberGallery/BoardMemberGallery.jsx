@@ -28,14 +28,6 @@ export default function BoardMemberGallery() {
     return (
       <div className={"galleryContainer"}>
         <div className={"galleryHeader"}>
-          <h1>About Us</h1>
-          <div>desc</div>
-        </div >
-        <div className={"galleryHeader"}>
-          <h1>Our Values</h1>
-          <div>desc</div>
-        </div>
-        <div className={"galleryHeader"}>
           <h1>Meet the Board</h1>
         </div>
         <div className={"profileContainer"}>

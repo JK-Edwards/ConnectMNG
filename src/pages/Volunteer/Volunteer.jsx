@@ -28,9 +28,25 @@ export default function Volunteer() {
 			<div className={'volunteerTitleContainer'}>
 				<h1>{intl.formatMessage({id: "volunteer"})}</h1>
 			</div>
+
 			<div className={'volunteerDescriptionContainer'}>
 				<p>{intl.formatMessage({id: "volunteerDesc"})}</p>
+
 			</div>
+			
+			<div className={'volunteerTitleContainer'}>
+				<h2>{intl.formatMessage({ id: "whyJoinTitle" })}</h2>
+				<div>{intl.formatMessage({ id: "whyJoinList1" })}</div>
+				<div>{intl.formatMessage({ id: "whyJoinList2" })}</div>
+				<div>{intl.formatMessage({ id: "whyJoinList3" })}</div>
+				<div>{intl.formatMessage({ id: "whyJoinList4" })}</div>
+			</div>
+
+			
+			<div className={'volunteerTitleContainer'}>
+				<h2>{intl.formatMessage({ id: "exploreTitle" })}</h2>
+			</div>
+
 			<div className={'volunteerCardContainer only-desktop'}>
 				<VolunteerCard flip={true} title={intl.formatMessage({id: "fundraising"})} desc={FUNDRAISING_CARD_DESC} link={fundraisingImage}/>
 				<VolunteerCard flip={false} title={intl.formatMessage({id: "events"})} desc={EVENTS_CARD_DESC} link={eventsImage}/>
@@ -47,11 +63,13 @@ export default function Volunteer() {
 			 <div className="thinSeparator only-mobile"></div>
 
 			<div className={'volunteerFormTitleContainer'}>
-				Small paragraph about the volunteer process
+				<h2>{intl.formatMessage({ id: "howToJoinDesc" })}</h2>	
+			
 			</div>
 			<div className={'volunteerFormContainer'}>
 				<StyledFormLink text={intl.formatMessage({id: "becomeVolunteer"})}/>
 			</div>
+
 		</div>
 	);
 };
