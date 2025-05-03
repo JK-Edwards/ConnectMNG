@@ -7,17 +7,26 @@
 	padding-right: 20px;
 }
 
-
-
 .volunteerContainer h1 {
 	color: #1F363D;
 	font-weight: 900;
 	padding-bottom: 2vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+.volunteerContainer h2 {
+	color: #1F363D;
+	font-weight: 900;
+	padding-bottom: 2vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
 }
 
 .volunteerContainer p {
-	padding-bottom: 4vw;
-	width: 40vw;
+	padding-bottom: 2vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	font-size: calc(1px + 1.75vw);
 }
 
 .volunteerCardContainer {
@@ -26,6 +35,9 @@
 	justify-content: center;
 	align-items: center;
 	gap: 5vw;
+
+	padding-left: 10vw;
+	padding-right: 10vw;
 }
 
 .volunteerFormContainer {
@@ -34,7 +46,12 @@
 }
 
 .volunteerTitleContainer h1 {
-	font-size: calc(10px + 1.75vw);
+	font-size: calc(10px + 2vw);
+}
+
+.volunteerTitleContainer h2 {
+	font-size: calc(10px + 2vw);
+	padding-top: 2vw;
 }
 
 .volunteerDescriptionContainer p {
@@ -115,3 +132,5 @@
 	
 		
 }
+
+

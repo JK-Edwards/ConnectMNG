@@ -30,6 +30,8 @@ function BlogCard ({image, title, desc, link}) {
 	);
 }
 
+// <StyledLink text="Workshops" link="/workshops" className="mobile-only" />
+
 export default function Blogs() {
 	const intl = useIntl();
 	const icon = myImage;

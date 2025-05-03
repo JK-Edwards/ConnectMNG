@@ -12,7 +12,7 @@ export default function OurTeam() {
 	return (
         <div className={"aboutContainer"}>
     
-          <div className={"ourStoryAboutUs"}>
+          {/* <div className={"ourStoryAboutUs"}>
             <h2>{intl.formatMessage({ id: "aboutUsTitle" })}</h2>
             <p>{intl.formatMessage({ id: "aboutUsDesc" })}</p>
           </div>
@@ -20,7 +20,7 @@ export default function OurTeam() {
           <div className={"ourStoryValues"}>
             <h2>{intl.formatMessage({ id: "ourValuesTitle" })}</h2>
             <p>{intl.formatMessage({ id: "ourValuesDesc" })}</p>
-          </div>
+          </div> */}
 		  <BoardMemberGallery/>
         </div>
       );
