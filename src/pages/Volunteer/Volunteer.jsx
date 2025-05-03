@@ -36,10 +36,12 @@ export default function Volunteer() {
 			
 			<div className={'volunteerTitleContainer'}>
 				<h2>{intl.formatMessage({ id: "whyJoinTitle" })}</h2>
-				<div>{intl.formatMessage({ id: "whyJoinList1" })}</div>
-				<div>{intl.formatMessage({ id: "whyJoinList2" })}</div>
-				<div>{intl.formatMessage({ id: "whyJoinList3" })}</div>
-				<div>{intl.formatMessage({ id: "whyJoinList4" })}</div>
+				<p> 
+					<div>{intl.formatMessage({ id: "whyJoinList1" })}</div>
+					<div>{intl.formatMessage({ id: "whyJoinList2" })}</div>
+					<div>{intl.formatMessage({ id: "whyJoinList3" })}</div>
+					<div>{intl.formatMessage({ id: "whyJoinList4" })}</div>
+				</p>
 			</div>
 
 			

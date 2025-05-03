@@ -1,14 +1,113 @@
 .aboutContainer {
-	background-image: url("../../../images/background_white.jpg");
-	background-size: cover;
-	background-position: center;
-	padding-top: 95px;
-	padding-left: 20px;
-	padding-right: 20px;
-	display: flex;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../../../images/background_white.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-left: 140px !important;
+    padding-right: 140px !important;
 }
 
+.ourStoryAboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 1vw;
+    padding: 1.5vw;
+    width: 90%;
+    margin: 10px 0;
+}
+
+
+.aboutUsTitle h2 {
+    font-size: calc(16px + 2.5vw);
+    text-align: center;
+    margin-bottom: 1vw;
+    padding-top: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+
+.aboutUsDesc p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vw;
+    width: 100%;
+    text-align: left;
+    color: #4A4A4A;
+    font-size: calc(1rem + 0.3vw);
+}
+
+.ourStoryValues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 1vw;
+    padding: 1.5vw;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.aboutValuesTitle h2 {
+    font-size: calc(16px + 2.5vw);
+    text-align: center;
+    margin-bottom: 1vw;
+    padding-top: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+
+.aboutValuesDesc p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vw;
+    width: 100%;
+    text-align: left;
+    color: #4A4A4A;
+    font-size: calc(1rem + 0.3vw);
+}
+
+.team-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .aboutContainer {
+        padding: 20px;
+    }
+
+    .ourStoryCardContainer {
+        width: 50%;
+        padding: 2vw;
+        margin: 20px 0;
+    }
+
+    .ourStoryCardTextContainer {
+        padding: 2vw;
+        text-align: center;
+    }
+
+    .ourStoryTitleContainer h1 {
+        font-size: calc(20px + 2vw);
+    }
+
+    .team-image {
+        margin: 20px auto;
+    }
+}
+/* 
 .imgContainer {
 	display: flex;
 	justify-content: space-around;
@@ -22,10 +121,4 @@
 .textContainer {
 	display: flex;
 	align-items: center;
-}
-
-@media (max-width: 750px) {
-	.aboutContainer {
-		padding-top: 35px;
-	}
-}
+} */
