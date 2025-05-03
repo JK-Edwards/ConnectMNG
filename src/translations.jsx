@@ -42,6 +42,7 @@ const translations = {
         website: "Website",
         volunteerDesc: "Connect MNG offers various ways for passionate individuals to contribute and make a difference in our community. Whether you're looking to lend a helping hand, raise awareness, or offer your expertise, there's a place for you here. Explore the following avenues to get involved:",
         becomeVolunteer: "Become a volunteer!",
+
         ourValuesDesc: "At Connect MNG, we believe in community, empowerment, and growth. We are dedicated to fostering an inclusive space where Mongolian-American college students and young professionals can connect, learn, and thrive. By promoting cultural identity, career development, and leadership, we aim to equip individuals with the tools and opportunities they need to succeed—both personally and professionally.",
         aboutUsTitle: "About Us",
         aboutUsDesc: "Connect MNG is a nonprofit organization dedicated to empowering Mongolians in Washington state by fostering career development, professional growth, and a strong sense of community. Our team comes from diverse backgrounds, bringing together a wealth of experience and knowledge to support and uplift our members. We provide resources, mentorship, and networking opportunities to help individuals advance in their careers while creating a supportive environment where members can learn from one another. Through collaboration and shared experiences, we strive to build a stronger, more connected community.",
@@ -89,6 +90,59 @@ const translations = {
         howToJoinTitle: "How to Join:",
         howToJoinDesc: "Click our application link and fill it out! Let us know your interests and skills, and we will match you with the right opportunity. Once accepted, you will receive an email from our team!"
 
+        // Donation page translations
+        empowerYoungMongolians: "Empower young Mongolian professionals",
+        donateConnectMNG: "Donate to Connect MNG",
+        onetimeDonation: "Make a one-time gift",
+        customAmount: "Custom Amount",
+
+        // support popup translations
+        supportConnect: "Support Connect MNG!",
+        yourContributionText: "Your contribution will help to inspire, educate, and equip Mongolian students with skills to navigate through today's world and give back to the community.",
+
+        // our story page translations
+        ourStory: "Our Story",
+        ourStoryText: "Short Paragprah about our story",
+
+        // our team page translations
+        aboutUs: "About Us",
+        aboutUsDesc: "Description",
+        ourValues: "Our Values",
+        ourValuesDesc: "Description",
+        meetBoard: "Meet the Board",
+
+        // footer translation
+        engage: "ENGAGE",
+        explore: "EXPLORE",
+        termsOfUse: "Terms of Use",
+        privacyPolicy: "Privacy Policy",
+
+        // Event page translations
+        Date: "Monday 29th January 2024",
+        Calendar: "Calendar",
+        Time: "Time",
+        Event: "Event",
+        Location: "Location",
+        date: "Monday 29th January 2024" ,
+        time: "3pm",
+        time1: "4pm",
+
+        // Happy hour event translations
+        date_time: "📅 Monday 29th January 2024 | 🕒 4:00 PM",
+        happy_location: "📍 Location: Bangrak",
+        happy_desc1: "Join us for a **fun and relaxing Happy Hour** at Bangrak! 🎉",
+        happy_desc2: "🥂 Meet new people, network, and unwind with refreshing drinks and great conversations.",
+        happy_desc3: "📢 This event is open to all members. Bring your friends!",
+        h_back_to_events: "⬅ Back to Events",
+
+        // Resume help event translations
+        resume_date_time: "📅 Monday 29th January 2024 | 🕒 3:00 PM",
+        resume_location: "📍 Location: Capital One Cafe",
+        resume_desc1: "Join us for an interactive **Resume Help Workshop** where industry experts will provide tips on crafting an impressive resume that stands out!",
+        resume_desc2: "📝 Learn best practices, formatting tips, and how to highlight your skills effectively.",
+        resume_desc3: "🎯 Ideal for job seekers and students looking to refine their resumes.",
+        r_back_to_events: "⬅ Back to Events",
+
     },
     mn: {
         programs: "Хөтөлбөрүүд",
@@ -107,8 +161,7 @@ const translations = {
         donate: "Хандив",
         events: "Үйл ажиллагаа",
         volunteer: "Сайн Дурын Ажил",
-        internships: 'temp',
-        connectWithUs: "Бидэнтэй Холбогдох",
+        internships: 'Дадлага',
         ourStory: "Бидний Түүх",
         ourTeam: "Манай Баг",
         time: "Цаг",
@@ -121,6 +174,8 @@ const translations = {
         message: "Мессэж",
         getInTouch: "Бидэнтэй Холбогдох",
         firstName: "Нэр",
+        getInTouch: "Бидэнтэй Холбогдох",
+        firstName: "Нэр",
         lastName: "Овог",
         emailAddress: "Имэйл хаяг",
         emailSubject: "Имэйл гарчиг",
@@ -130,7 +185,64 @@ const translations = {
         fundraising: "Хандив",
         website: "Вэб Хаяг",
         volunteerDesc: "Connect MNG-тэй хамтран ажиллах болон өөрийн оролцоогоороо Вашингтон мужид байгаа Монголчуудад зорилсан хөтөлбөрүүдийг дэмжих хүсэлтэй бол та дараах байдлаар өөрийн оролцоог нэмэх боломжтой юм:",
-        becomeVolunteer: "САЙН ДУРЫН АЖИЛТАН БОЛОХ"
+        becomeVolunteer: "САЙН ДУРЫН АЖИЛТАН БОЛОХ",
+
+        // Donation page translations
+        empowerYoungMongolians: "Залуу Монгол мэргэжилтнүүдийг дэмжих",
+        donateConnectMNG: "Connect MNG-д хандив өгөх",
+        onetimeDonation: "Нэг удаагийн хандив өгөх",
+        customAmount: "Тохируулсан Дүн",
+
+        // support popup translations
+        supportConnect: "Connect MNG-г дэмжих!",
+        yourContributionText: "Таны оролцоо нь Монгол оюутнуудын сонирхол, сургалт, боловсролын ур чадварыг хөгжүүлэх, ур чадваруудыг эзэмших зорилготой болно.",
+
+
+        // our story page translations
+        ourStory: "Бидний түүх",
+        ourStoryText: "Бидний түүхийн товч тайлбар",
+
+        // our team page translations
+        aboutUs: "Бидний тухай",
+        aboutUsDesc: "Тайлбар",
+        ourValues: "Бидний Зорилго",
+        ourValuesDesc: "Тайлбар",
+        meetBoard: "Багийн гишүүд",
+
+        // footer translations
+        connectWithUs: "Бидэнтэй Холбогдох",
+        engage: "Таны Оролцоо",
+        explore: "Зочлох",
+        termsOfUse: "Ашиглалтын Нөхцөл",
+        privacyPolicy: "Нууцлалын Баталгаа",
+
+
+
+        // Event page translations
+        Date: "2024 оны нэгдүгээр сарын 29-ний даваа",
+        Calendar: "Хуанли",
+        Time: "Цаг хугацаа",
+        Event: "Үйл явдал",
+        Location: "Үйл явдал",
+        date: "2024 оны нэгдүгээр сарын 29-ний даваа",
+        time: "15:00",
+        time1: "16:00",
+
+        // Happy hour event translations
+        date_time: "📅 2024 оны 1 сарын 29, Даваа гараг | 🕒 16:00",
+        happy_location: "📍 Байршил: Bangrak",
+        happy_desc1: "Бидэнтэй нэгдэж **хөгжилтэй, тайвширсан Happy Hour**-д хамрагдаарай Bangrak! 🎉",
+        happy_desc2: "🥂 Шинэ хүмүүстэй танилцаж, харилцаа холбоо тогтоож, сэтгэл сэргээсэн ундаа ууж, сайхан яриа өрнүүлээрэй.",
+        happy_desc3: "📢 Энэхүү арга хэмжээнд бүх гишүүд оролцох боломжтой. Найзуудаа авчир!",
+        h_back_to_events: "⬅ Үйл явдал руу буцах",
+
+        // Resume help event translations
+        resume_date_time: "📅 2024 оны 1 сарын 29 Даваа гараг | 🕒 15:00",
+        resume_location: "📍 Байршил: Capital One Cafe",
+        resume_desc1: "Салбарын мэргэжилтнүүд оролцдог интерактив **Resume Help Workshop**-д бидэнтэй нэгдээрэй гайхалтай анкет бүтээх талаар зөвлөгөө өгөх болно!",
+        resume_desc2: "📝 Шилдэг туршлага, форматлах зөвлөмж, ур чадвараа хэрхэн үр дүнтэй онцлох талаар суралц.",
+        resume_desc3: "🎯 Ажил хайгч болон анкетаа сайжруулах хүсэлтэй оюутнуудад тохиромжтой.",
+        r_back_to_events: "⬅ Үйл явдал руу буцах",
     },
 };
 
