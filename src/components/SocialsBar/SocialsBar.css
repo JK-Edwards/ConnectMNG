@@ -9,11 +9,11 @@
 	padding: 0.5vw;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
 
 	.icon {
-		width: 5vw; /* Adjust this value to your preferred size */
-		height: 5vw; /* Adjust this value to your preferred size */
+		width: 9vw; /* Adjust this value to your preferred size */
+		height: 9vw; /* Adjust this value to your preferred size */
 	}
 	
 	

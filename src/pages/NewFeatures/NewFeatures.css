@@ -1,0 +1,69 @@
+.featureRequestContainer {
+    background-image: url("../../images/background_green.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    align-items: center;
+}
+
+.featureRequestContainer h1 {
+    font-weight: 750;
+    font-size: calc(1.5rem + 1vw);
+    text-align: center;
+}
+
+.featureRequestContainer p {
+    width: 40vw;
+    font-size: calc(0.8rem + 0.5vw);
+    text-align: center;
+}
+
+.inputContainer,
+.textArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+}
+
+.inputContainer textarea,
+.textArea textarea {
+    width: 40vw;
+    height: 8vh;
+    font-size: calc(0.7rem + 0.5vw);
+    padding: 0.5vw;
+    border: none;
+    border-radius: 1vw;
+    resize: vertical;
+}
+
+.textArea textarea {
+    height: 20vh;
+}
+
+.submitButton {
+    text-align: center;
+    border-radius: 1vw;
+    background: #f2af60;
+    border: 0.2vw solid #f2af60;
+    font-size: calc(0.3rem + 0.5vw + 0.5vh);
+    width: 8vw;
+    padding: 0.5vw;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.submitButton:hover {
+    background: orange;
+}
+
+input,
+textarea {
+    border: none;
+    border-radius: 1vw;
+    padding-left: 1vw;
+}

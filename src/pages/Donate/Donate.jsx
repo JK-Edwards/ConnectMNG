@@ -18,13 +18,13 @@ export default function Donate() {
 	return (
 		<div className={"donateContainer"}>
 			<h1>
-				EMPOWER YOUNG MONGOLIAN PROFESSIONALS
+                {intl.formatMessage({ id: "empowerYoungMongolians" }).toUpperCase()}
 			</h1>
 			<h2>
-				DONATE TO CONNECT MNG
+                {intl.formatMessage({ id: "donateConnectMNG" }).toUpperCase()}
 			</h2>
 			<h3>
-				MAKE A ONE-TIME GIFT
+                {intl.formatMessage({ id: "onetimeDonation" }).toUpperCase()}
 			</h3>
 			<div className={"moneyButtonContainer"}>
 				{cashAmounts.map((amount, index) =>
@@ -32,7 +32,7 @@ export default function Donate() {
 				)}
 			</div>
 			<input className={"donateInput"}
-				   placeholder={"Custom Amount"}
+				   placeholder={intl.formatMessage({ id: "customAmount" })}
 				   onChange={handleInputChange}
 				   value={donateAmount}
 			/>
