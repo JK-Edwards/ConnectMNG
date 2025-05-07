@@ -1,6 +1,4 @@
 import React from "react";
-import { useIntl } from "react-intl";
-import StyledLink from "../../components/StyledLink/StyledLink.jsx";
 import teamPhoto from "../../images/blogs/teamPhoto.png";
 import "./Workshops.css";
 
@@ -86,7 +84,7 @@ export default function Workshops() {
                         As Mongolians in America, let's support each other!
                     </p>
                     <p><strong>Join us, and let's connect!</strong></p>
-                    <p><strong>Anuujin Ider</strong><br/>President, Connect MNG</p>
+                    <p><strong>Anuujin Ider</strong><br />President, Connect MNG</p>
                 </div>
             </div>
         </div>

@@ -4,9 +4,9 @@
 	background-position: center;
 	padding: calc(1.5rem + 2vw) 20px 15px 20px;
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .internshipsContainer h1 {
@@ -16,6 +16,7 @@
 	padding-left: 75px;
 	padding-right: 75px;
 }
+
 .internshipsContainer h2 {
 	color: #1F363D;
 	font-weight: 900;
@@ -67,6 +68,7 @@
 .only-mobile {
 	display: none;
 }
+
 .only-desktop {
 	display: flex;
 }
@@ -75,8 +77,9 @@
 	.only-mobile {
 		display: flex;
 	}
+
 	.only-desktop {
-		display:none;
+		display: none;
 	}
 
 	/* Reset inner paddings to 20px gutters on mobile */
@@ -84,63 +87,71 @@
 	.internshipsContainer h2,
 	.internshipsContainer p,
 	.internshipsCardContainer {
-	  padding-left: 20px !important;
-	  padding-right: 20px !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
 	}
-	
+
 	.internshipsContainer {
 		padding: 30px 20px;
-		background-image:none;
-		background-color:white;
+		background-image: none;
+		background-color: white;
 	}
+
 	.internshipsGetInvolved h1 {
 		font-weight: 700;
 		font-size: calc(.7rem + 2vw);
 		color: #033C26;
 		margin-bottom: -.1rem;
 	}
+
 	.internshipsGetInvolved h1 {
 		display: flex;
 	}
+
 	.internshipsGetInvolved img {
 		height: fit-content;
 	}
+
 	.internshipsTitleContainer h1 {
 		font-weight: 700;
 		font-size: calc(.6rem + 2vw);
 		color: #3F798C;
 		margin-bottom: 1rem;
 	}
+
 	.internshipsDescriptionContainer p {
 		width: 100%;
 		font-size: calc(1.2rem + 1vw);
 		color: black;
 	}
+
 	.thinSeparator {
 		padding: none;
 		width: 100%;
 		height: 1px;
 		background-color: #ddd;
-	  }
+	}
+
 	.internshipsContainer p {
 		width: 100%;
 	}
-	.internshipsCardContainerMobile h1{
+
+	.internshipsCardContainerMobile h1 {
 		font-weight: bold;
 	}
-	.internshipsCardContainerMobile{
-		display:block;
+
+	.internshipsCardContainerMobile {
+		display: block;
 	}
 
 	.internshipsFormTitleContainer {
 		font-size: calc(1rem + 1.5vw);
-		padding: 0px,20px;
+		padding: 0px, 20px;
 	}
+
 	.internshipsFormContainer {
-		padding:0px, 20px ;
+		padding: 0px, 20px;
 	}
-	
-		
+
+
 }
-
-

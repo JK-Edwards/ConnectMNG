@@ -123,7 +123,7 @@ const translations = {
         Time: "Time",
         Event: "Event",
         Location: "Location",
-        date: "Monday 29th January 2024" ,
+        date: "Monday 29th January 2024",
         time: "3pm",
         time1: "4pm",
 

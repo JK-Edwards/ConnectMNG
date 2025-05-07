@@ -1,13 +1,13 @@
 .linkedInLink {
   text-decoration: none;
-	color: black;
-	font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 .profileContainer {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
-	justify-content: space-evenly;
+  justify-content: space-evenly;
   width: 75vw;
 }
 

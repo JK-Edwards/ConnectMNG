@@ -13,7 +13,7 @@
 }
 
 .contactContainer p {
-    width: 575px; 
+    width: 575px;
     font-size: 20px;
 }
 
@@ -35,7 +35,8 @@
     background: orange
 }
 
-input, textarea{
+input,
+textarea {
     border: none;
     border-radius: 10px;
     padding-left: 10px;
@@ -46,10 +47,10 @@ textarea {
     width: 390px;
 }
 
-@media screen and (max-width: 768px){
-    
-    input{
-        width: 100%;  
+@media screen and (max-width: 768px) {
+
+    input {
+        width: 100%;
         gap: 10px;
     }
 
@@ -72,7 +73,7 @@ textarea {
 
 
     .submitButton {
-        width: 141px; 
+        width: 141px;
         height: 41px;
         border-radius: 10px;
         font-size: 18px;

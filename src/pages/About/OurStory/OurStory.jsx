@@ -1,7 +1,6 @@
 import React from "react";
 import { useIntl } from "react-intl";
 import "./OurStory.css";
-import { use } from "react";
 
 export default function OurStory() {
 	const intl = useIntl();
@@ -35,14 +34,14 @@ export default function OurStory() {
 				<p><strong>{intl.formatMessage({ id: "ourStoryText6b" })}</strong></p>
 				<p><strong>{intl.formatMessage({ id: "ourStorySignOff" })}</strong></p>
 			</div>
-		<div className={"ourStoryPage"}>
-            <div className={"ourStoryTitle"}>
-                {intl.formatMessage({ id: "ourStory" }).toUpperCase()}
-            </div>
-            <div className={"ourStoryDesc"}>
-                {intl.formatMessage({ id: "ourStoryText" })}
-            </div>
-		</div>
+			<div className={"ourStoryPage"}>
+				<div className={"ourStoryTitle"}>
+					{intl.formatMessage({ id: "ourStory" }).toUpperCase()}
+				</div>
+				<div className={"ourStoryDesc"}>
+					{intl.formatMessage({ id: "ourStoryText" })}
+				</div>
+			</div>
 		</div>
 	);
 }

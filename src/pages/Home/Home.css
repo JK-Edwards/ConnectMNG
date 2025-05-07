@@ -94,7 +94,8 @@
 .only-mobile {
 	display: none;
 }
-.only-desktop{
+
+.only-desktop {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -105,54 +106,67 @@
 	.only-mobile {
 		display: flex;
 	}
+
 	.only-desktop {
-		display:none;
+		display: none;
 	}
+
 	.homeContainer {
 		padding: 30px 20px;
 	}
+
 	.missionTextContainer {
 		text-align: initial;
 	}
-	.missionTextContainer h1{
+
+	.missionTextContainer h1 {
 		font-size: calc(0.5rem + 2.5vw);
 		color: #033C26;
 	}
-	.missionTextContainer p{
+
+	.missionTextContainer p {
 		font-size: medium;
 		width: 100%;
 	}
-	.programGalleryContainer{
-		width:100%;
+
+	.programGalleryContainer {
+		width: 100%;
 		display: flex;
 		justify-content: flex-start;
 		margin-bottom: 3vw;
 	}
-	.programGalleryContainer h1{
+
+	.programGalleryContainer h1 {
 		display: flex;
 		font-size: calc(0.5rem + 2.5vw);
 		color: #033C26;
 		justify-content: flex-start;
 	}
+
 	.programImage {
 		max-width: 18vw;
 		max-height: 18vw;
 	}
-	.program h3{
+
+	.program h3 {
 		font-size: calc(0.25rem + 4vw);
 	}
-	.program link{
+
+	.program link {
 		font-size: calc(0.25rem + 4vw);
 	}
+
 	.carouselSlide {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
+
 	.carouselSlide img {
 		border-radius: 10px 10px 0 0
 	}
+
 	.carouselContainer {
 		width: 90vw;
 		margin-bottom: 0px;

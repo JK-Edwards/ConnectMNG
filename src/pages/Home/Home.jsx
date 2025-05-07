@@ -74,7 +74,6 @@ export default function Home() {
 				<div className={"programGalleryContainer"}>
 					<h1>{intl.formatMessage({ id: "What We Offer" }).toUpperCase()}</h1>
 					<div className={"carouselContainer"}>
-						{/* <ItemCarousel slides={blogSlides} interval={2500}/> */}
 						<SimpleSlider slides={blogSlides} />
 					</div>
 					<div className={"programGallery"}>
@@ -97,6 +96,6 @@ export default function Home() {
 				</div>
 			</div>
 		</div>
-		
+
 	);
 };
