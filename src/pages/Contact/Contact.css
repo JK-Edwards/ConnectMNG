@@ -2,7 +2,7 @@
     background-image: url("../../images/background_green.jpg");
     background-size: cover;
     background-position: center;
-    padding: 2vw;
+    padding: calc(1.5rem + 2vw) 20px 15px 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -10,11 +10,30 @@
 
 .contactContainer h1 {
     font-weight: 750;
+    margin: 0;          
+    font-size: calc(1.375rem + 1.5vw);
+    padding-left: 75px;
+    padding-right: 20px;
 }
 
 .contactContainer p {
-    width: 575px;
+    /* width: 575px; */
+    width: 100%;
+    max-width: 600px;      
+    margin: 0;
     font-size: 20px;
+    padding-left: 75px;
+    padding-right: 20px;
+}
+
+.contactContainer h3 {
+    /* width: 575px; */
+    width: 100%;
+    max-width: 600px;      
+    margin: 0;
+    font-size: 20px;
+    padding-left: 75px;
+    padding-right: 20px;
 }
 
 .inputContainer {
@@ -29,6 +48,8 @@
     border: 0.2vw solid #f2af60;
     font-size: calc(0.3rem + 0.5vw + 0.5vh);
     width: 8vw;
+    padding-left: 75px;
+    padding-right: 20px;
 }
 
 .submitButton:hover {

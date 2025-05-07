@@ -2,7 +2,6 @@ import React from "react";
 import { useIntl } from "react-intl";
 import "./OurStory.css";
 import { use } from "react";
-import { useIntl } from "react-intl";
 
 export default function OurStory() {
 	const intl = useIntl();
@@ -43,6 +42,7 @@ export default function OurStory() {
             <div className={"ourStoryDesc"}>
                 {intl.formatMessage({ id: "ourStoryText" })}
             </div>
+		</div>
 		</div>
 	);
 }
