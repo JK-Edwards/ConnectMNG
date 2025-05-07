@@ -18,9 +18,8 @@
 }
 
 .inputContainer {
-    border: 0.2vw solid #f2af60;
-    font-size: calc(0.3rem + 0.5vw + 0.5vh);
-    width: 8vw;
+    display: flex;
+    gap: 20px;
 }
 
 .submitButton {
@@ -30,8 +29,6 @@
     border: 0.2vw solid #f2af60;
     font-size: calc(0.3rem + 0.5vw + 0.5vh);
     width: 8vw;
-    padding-left: 75px;
-    padding-right: 20px;
 }
 
 .submitButton:hover {
