@@ -6,7 +6,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 95px;
+	padding-top: calc(1rem + 2vw);
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -31,7 +31,7 @@
 
 .missionTextContainer {
 	padding-top: 1vw;
-	padding-bottom: 5vw;
+	padding-bottom: calc(0.5rem + 1.5vw);
 	width: 90vw;
 	text-align: justify;
 }
@@ -101,7 +101,7 @@
 	align-items: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 	.only-mobile {
 		display: flex;
 	}
@@ -109,7 +109,7 @@
 		display:none;
 	}
 	.homeContainer {
-		padding-top: 30px;
+		padding: 30px 20px;
 	}
 	.missionTextContainer {
 		text-align: initial;

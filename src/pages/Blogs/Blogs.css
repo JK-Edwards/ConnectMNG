@@ -2,7 +2,7 @@
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 20px;
+	padding: calc(1.5rem + 2vw) 20px 15px 75px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
