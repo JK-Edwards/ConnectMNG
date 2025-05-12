@@ -91,42 +91,64 @@ export default function Contact() {
 
     
             return (
-                <div className={"contactContainer"}>
+                <div className="contactContainer">
                     <h1>Contact Us</h1>
                     <p>
                         Have questions about our programs or Connect MNG in general? Please submit the form below and we'll be in touch shortly!
                     </p>
+        
                     <h3>YOUR NAME</h3>
-                    <div className={"inputContainer"}>
-                        <input value={firstName} placeholder={"First name"} onChange={(event) => setFirstName(event.target.value)}/>
-                        <input value={lastName} placeholder={"Last name"} onChange={(event) => setLastName(event.target.value)}/>
+                    <div className="contactinputContainer">
+                        <input
+                            className="contactinput"
+                            type="text"
+                            placeholder="First name"
+                            value={firstName}
+                            onChange={(e) => setFirstName(e.target.value)}
+                        />
+                        <input
+                            className="contactinput"
+                            type="text"
+                            placeholder="Last name"
+                            value={lastName}
+                            onChange={(e) => setLastName(e.target.value)}
+                        />
                     </div>
-                    <div className={"inputContainer"}>
-                        <div>
-                            <h3>EMAIL</h3>
-                            <input 
-                                value={email} 
-                                placeholder="Email address" 
-                                onChange={handleEmailChange} 
-                            />
-                            
-                        </div>
-                        <div>
-                            <h3>SUBJECT</h3>
-                            <input value={subject} placeholder={"Email subject"} onChange={(event) => setSubject(event.target.value)}/>
-                        </div>
+        
+                    <h3>EMAIL &  SUBJECT</h3>
+                    <div className="contactinputContainer">
+                        <input
+                            className="contactinput"
+                            type="email"
+                            placeholder="Email address"
+                            value={email}
+                            onChange={handleEmailChange}
+                        />
+                        <input
+                            className="contactinput"
+                            type="text"
+                            placeholder="Email subject"
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
+                        />
                     </div>
-                    <div>
-                        <h3>MESSAGE</h3>
-                        <div className={"textArea"}>
-                            <textarea value={message} placeholder={"Your message"} onChange={(event) => setMessage(event.target.value)}/>
-                        </div>
+                    {emailError && <div style={{ color: "red", paddingLeft: "20px" }}>{emailError}</div>}
+        
+                    <h3>MESSAGE</h3>
+                    <div className="contacttextARea">
+                    <textarea
+                        className="contacttextArea"
+                        value={message}
+                        placeholder="Your message"
+                        onChange={(e) => setMessage(e.target.value)}
+                    />
                     </div>
-                    <div>
-                        <button className={"submitButton"} type="button" onClick={handleSubmit}>
-                            {intl.formatMessage({ id: "getInTouch" })}
-                        </button>
+                    <div className="contactsubmit">
+                    <button className="submitButton" type="button" onClick={handleSubmit}>
+                        {intl.formatMessage({ id: "getInTouch", defaultMessage: "Get in Touch!" })}
+                    </button>
                     </div>
                 </div>
             );
-        };
+        }
+        
