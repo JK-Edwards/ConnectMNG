@@ -72,7 +72,7 @@ export default function Home() {
 					<p>{intl.formatMessage({ id: "mission" })}</p>
 				</div>
 				<div className={"programGalleryContainer"}>
-					<h1>{intl.formatMessage({ id: "What We Offer" }).toUpperCase()}</h1>
+					<h1>{intl.formatMessage({ id: "whatWeOffer" }).toUpperCase()}</h1>
 					<div className={"carouselContainer"}>
 						{/* <ItemCarousel slides={blogSlides} interval={2500}/> */}
 						<SimpleSlider slides={blogSlides} />

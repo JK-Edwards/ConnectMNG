@@ -20,7 +20,7 @@ export default function ContactUsBox() {
                     connectmongol.mng@gmail.com
                 </p>
                 <div>
-                    Phone
+                    {intl.formatMessage({ id: "phone" })}
                 </div>
                 <p>
                     206.123.4567
