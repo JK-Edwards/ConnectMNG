@@ -1,4 +1,3 @@
-import logo from "../../images/logo.png";
 import React, { useState } from "react";
 
 import { useIntl } from "react-intl";
@@ -52,7 +51,7 @@ export default function Contact() {
 
         // Sending email using EmailJS
         const templateParams = {
-            to_name:"ConnectMNG",
+            to_name: "ConnectMNG",
             from_name: `${firstName} ${lastName}`,
             from_email: email,
             subject: subject,
@@ -67,29 +66,28 @@ export default function Contact() {
                 "O6pJDJsUT4I2tB8Xs" // EmailJS Public Key
             )
             .then(() => {
-                    Swal.fire({
-                        icon: "success",
-                        title: intl.formatMessage({ id: "Email Sent Success"}),
-                        text: intl.formatMessage({ id: "We Will Get In Touch" }),
-                    });
-                    // Reset form fields
-                    setFirstName("");
-                    setLastName("");
-                    setEmail("");
-                    setSubject("");
-                    setMessage("");
-                })
-                .catch(() => {
-                    Swal.fire({
-                        icon: "error",
-                        title: intl.formatMessage({ id: "Email Sent Error"}),
-                        text: intl.formatMessage({ id: "Please Try Again" }),
-                    });
+                Swal.fire({
+                    icon: "success",
+                    title: intl.formatMessage({ id: "Email Sent Success" }),
+                    text: intl.formatMessage({ id: "We Will Get In Touch" }),
                 });
-            };
-    
+                // Reset form fields
+                setFirstName("");
+                setLastName("");
+                setEmail("");
+                setSubject("");
+                setMessage("");
+            })
+            .catch(() => {
+                Swal.fire({
+                    icon: "error",
+                    title: intl.formatMessage({ id: "Email Sent Error" }),
+                    text: intl.formatMessage({ id: "Please Try Again" }),
+                });
+            });
+    };
 
-    
+   
             return (
                 <div className="contactContainer">
                     <h1>Contact Us</h1>
@@ -151,4 +149,3 @@ export default function Contact() {
                 </div>
             );
         }
-        

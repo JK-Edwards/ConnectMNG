@@ -50,61 +50,61 @@ export default function MobileDropdown() {
 
     return (
         <div className="mobileNavBarContainer">
-            <div className="mobileNavLinks"> 
-                    <NavLink text={intl.formatMessage({ id: "home" })} homeButton={true} to="/" className="homeButton" >Home</NavLink>
-                    <Link to="/programs" className="mobileNavLink">{intl.formatMessage({ id: "programs" })}</Link>
-                    <Link to="/events" className="mobileNavLink">{intl.formatMessage({ id: "events" })}</Link>
-                    <div className={"mobileNavLink"} onClick={handleAboutSelect}>
-						{intl.formatMessage({ id: "about" })}
-                        <GoTriangleDown />
-					</div>
-                    {showAbout ? (
-                        <MobileNavDropdown 
-							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-							options={[
-								intl.formatMessage({ id: "ourStory" }),
-								intl.formatMessage({ id: "ourTeam" }),
-							]}
-							links={["/about-us/our-story", "/about-us/our-team"]}
-                            
-					    />
-                    ) : null}
-                    
-                    <div className={"mobileNavLink"} onClick={handleResourcesSelect}>
-						{intl.formatMessage({ id: "resources" })}
-                        <GoTriangleDown />
-					</div>
-                    {showResources ? (
-                        <MobileNavDropdown 
-							onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-							options={[
-								intl.formatMessage({ id: "blogs" }),
-							]}
-							links={["/resources/blogs"]}
-					    />
-                    ) : null}
-                    
-                    <div className={"mobileNavLink"} onClick={handleVolunteerSelect}>
-                        {intl.formatMessage({ id: "getInvolved" })}
-                        <GoTriangleDown />
-                    </div>
-                    {showActivities ? (
-                        <MobileNavDropdown
-                            onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
-                            options={[
-                                intl.formatMessage({ id: "donate" }),
-                                intl.formatMessage({ id: "internships" }),
-                                intl.formatMessage({ id: "volunteer" }),
-                            ]}
-                            links={[
-                                "/get-involved/donate",
-                                "/get-involved/internships",
-                                "/get-involved/volunteer",
-                            ]}
-                        />
-                    ) : null}
-					
-                    <Link to="/contact-us" className="mobileNavLink">{intl.formatMessage({ id: "contactUs" }).toUpperCase()}</Link>
+            <div className="mobileNavLinks">
+                <NavLink text={intl.formatMessage({ id: "home" })} homeButton={true} to="/" className="homeButton" >Home</NavLink>
+                <Link to="/programs" className="mobileNavLink">{intl.formatMessage({ id: "programs" })}</Link>
+                <Link to="/events" className="mobileNavLink">{intl.formatMessage({ id: "events" })}</Link>
+                <div className={"mobileNavLink"} onClick={handleAboutSelect}>
+                    {intl.formatMessage({ id: "about" })}
+                    <GoTriangleDown />
+                </div>
+                {showAbout ? (
+                    <MobileNavDropdown
+                        onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+                        options={[
+                            intl.formatMessage({ id: "ourStory" }),
+                            intl.formatMessage({ id: "ourTeam" }),
+                        ]}
+                        links={["/about-us/our-story", "/about-us/our-team"]}
+
+                    />
+                ) : null}
+
+                <div className={"mobileNavLink"} onClick={handleResourcesSelect}>
+                    {intl.formatMessage({ id: "resources" })}
+                    <GoTriangleDown />
+                </div>
+                {showResources ? (
+                    <MobileNavDropdown
+                        onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+                        options={[
+                            intl.formatMessage({ id: "blogs" }),
+                        ]}
+                        links={["/resources/blogs"]}
+                    />
+                ) : null}
+
+                <div className={"mobileNavLink"} onClick={handleVolunteerSelect}>
+                    {intl.formatMessage({ id: "getInvolved" })}
+                    <GoTriangleDown />
+                </div>
+                {showActivities ? (
+                    <MobileNavDropdown
+                        onSelect={(selectedIndex) => handleDropdownSelect(selectedIndex)}
+                        options={[
+                            intl.formatMessage({ id: "donate" }),
+                            intl.formatMessage({ id: "internships" }),
+                            intl.formatMessage({ id: "volunteer" }),
+                        ]}
+                        links={[
+                            "/get-involved/donate",
+                            "/get-involved/internships",
+                            "/get-involved/volunteer",
+                        ]}
+                    />
+                ) : null}
+
+                <Link to="/contact-us" className="mobileNavLink">{intl.formatMessage({ id: "contactUs" }).toUpperCase()}</Link>
             </div>
         </div>
     )

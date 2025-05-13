@@ -17,7 +17,7 @@
 	font-size: calc(0.25rem + 2vw);
 	padding-top: 1rem;
 	color: #10885a;
-	
+
 }
 
 .donateContainer h2 {
@@ -96,14 +96,14 @@
 		font-size: calc(0.25rem + 6vw);
 		padding-top: 1rem;
 		color: #10885a;
-		
+
 	}
-	
+
 	.donateContainer h2 {
 		font-size: calc(0.15rem + 4vw);
 		margin-top: 2vw;
 	}
-	
+
 	.donateContainer h3 {
 		font-size: calc(0.25rem + 4vw);
 		margin-top: 5vw;
@@ -116,6 +116,7 @@
 		width: 100vw;
 		height: 20vw;
 	}
+
 	.moneyButton {
 		width: 30vw;
 		height: 8vw;

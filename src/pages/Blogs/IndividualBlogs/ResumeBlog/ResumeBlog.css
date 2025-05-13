@@ -15,13 +15,16 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%; /* Fit the container to the screen width */
-    max-width: 390px; /* Ensure it fits iPhone screen width */
+    width: 100%;
+    /* Fit the container to the screen width */
+    max-width: 390px;
+    /* Ensure it fits iPhone screen width */
     margin: 0 auto;
 }
 
 .resumeBlogContainer h1 {
-    font-size: 1.5rem; /* Scaled for smaller screens */
+    font-size: 1.5rem;
+    /* Scaled for smaller screens */
     padding: 8px 0;
     font-weight: bold;
     text-align: center;
@@ -38,7 +41,8 @@
     padding-top: 12px;
     padding-left: 8px;
     padding-right: 8px;
-    font-size: 0.9rem; /* Reduced for mobile screens */
+    font-size: 0.9rem;
+    /* Reduced for mobile screens */
     line-height: 1.5;
     text-align: justify;
 }
@@ -70,7 +74,6 @@
     }
 }
 
-/* Desktop styles */
 @media (min-width: 1024px) {
     .resumeBlogWrapper {
         max-width: 800px;

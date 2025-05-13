@@ -5,9 +5,10 @@
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding-top: 95px;
-	padding-left: 20px;
+	padding-top: calc(1rem + 2vw);
+	padding-left: 75px;
 	padding-right: 20px;
+	overflow-x: hidden;
 }
 
 .indivProgramTextContainer {
@@ -61,8 +62,143 @@
 	padding-bottom: 10px;
 }
 
-@media (max-width: 750px) {
+.mobile-only {
+	display: none
+}
+
+.mobile-desktop {
+	display: flex
+}
+
+@media only screen and (max-width: 768px) {
+	.mobile-only {
+		display: flex
+	}
+
+	.mobile-desktop {
+		display: none
+	}
+
 	.programsContainer {
-		padding-top: 35px;
+		background-image: url("../../images/background_white.jpg");
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-size: cover;
+		background-position: center;
+		padding: 30px 20px;
+		background-color: white;
+	}
+
+	.indivProgramTextContainer {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.indivProgramContainer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex: 1;
+		padding-top: 15px;
+		width: 50vw;
+	}
+
+	.indivProgramContainer h1 {
+		font-size: calc(8px + 1.75vw);
+		font-weight: bold;
+		margin: 0;
+	}
+
+	.indivProgramContainer p {
+		font-size: calc(1px + 1.2vw);
+		width: 90vw;
+	}
+
+	.programsHeader h1 {
+		font-size: calc(8px + 1.75vw);
+		font-weight: bold;
+		padding-top: 4vw;
+	}
+
+	.programsHeader p {
+		font-size: calc(7px + 1.2vw);
+		padding-left: 1.3vw;
+		padding-top: 2vw;
+		text-align: left;
+		width: 96vw;
+	}
+
+	.contactUsBoxContainer {
+		padding-right: 10px;
+	}
+
+	.programDescription {
+		width: 80vw;
+		text-align: justify;
+		font-size: calc(7px + 1.2vw) !important;
+	}
+
+	.contactUsBoxContainer {
+		padding-right: 10px;
+		gap: 10px;
+		flex-direction: column;
+	}
+
+	.programsContainer {
+		padding-top: 15px;
+	}
+
+	.programTitleContainer {
+		font-size: calc(5px + 1.75vw);
+		font-weight: bold;
+	}
+
+	.programTitleContainer h1 {
+		/* font-size: calc(5px + 1.75vw); */
+		font-weight: bold;
+		width: 100%;
+
+	}
+
+	.programTitleContainer p {
+		font-size: calc(5px + 1.75vw);
+		font-weight: bold;
+	}
+
+	.programs-header {
+		font-size: calc(7px + 2.5vw);
+		/* color: #033C26; */
+		font-weight: 700;
+		padding-bottom: 0vw;
+		padding-left: 1.3vw;
+		padding-top: 4vw;
+		text-align: left;
+		width: 96vw;
+	}
+
+
+	.homeIconAndPrograms {
+		display: flex;
+		align-items: center;
+	}
+
+	.icon {
+		transform: scale(1);
+		transform-origin: center;
+		margin: 0;
+	}
+
+	.homeIconAndPrograms {
+		width: 102%;
+		margin: 0;
+		padding: 0;
+		gap: 0rem;
 	}
 }

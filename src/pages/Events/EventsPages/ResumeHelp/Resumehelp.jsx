@@ -15,10 +15,10 @@ export default function ResumeHelp() {
 
             <div className="event-description">
                 <p>
-                {intl.formatMessage({ id: "resume_desc1" })}
+                    {intl.formatMessage({ id: "resume_desc1" })}
                 </p>
                 <p>
-                {intl.formatMessage({ id: "resume_desc2" })}
+                    {intl.formatMessage({ id: "resume_desc2" })}
                 </p>
                 <p>{intl.formatMessage({ id: "resume_desc3" })}</p>
             </div>
