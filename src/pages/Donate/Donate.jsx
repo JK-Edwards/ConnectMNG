@@ -36,7 +36,7 @@ export default function Donate() {
 				onChange={handleInputChange}
 				value={donateAmount}
 			/>
-			{donateAmount !== "" && <PaypalButton donateAmount={donateAmount} />}
+			{<PaypalButton donateAmount={donateAmount} />}
 		</div>
 	);
 };
