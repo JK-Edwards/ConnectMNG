@@ -57,6 +57,10 @@
 	font-size: calc(1px + 1.75vw);
 }
 
+.internshipsDescriptionContainer {
+	width: 90vw;
+}
+
 .internshipsFormTitleContainer {
 	font-size: calc(1px + 1.75vw);
 	padding-top: 2vw;
@@ -141,14 +145,6 @@
 		display: flex;
 		align-items: center;
 	}
-	/*
-	.homeIcon {
-		transform: scale(1);
-  		transform-origin: center;
-		margin: 0;
-  		width: 102%;
-		gap: 0rem;
-	} */
 }
 
 
