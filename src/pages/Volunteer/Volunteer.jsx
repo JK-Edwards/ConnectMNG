@@ -37,6 +37,14 @@ export default function Volunteer() {
 			</div>
 
 			<div className={'volunteerTitleContainer'}>
+				{/* <h2>{intl.formatMessage({ id: "whyJoinTitle" })}</h2>
+					<p>
+						{intl.formatMessage({ id: "whyJoinList1" })}<br/>
+						{intl.formatMessage({ id: "whyJoinList2" })}<br/>
+						{intl.formatMessage({ id: "whyJoinList3" })}<br/>
+						{intl.formatMessage({ id: "whyJoinList4" })}<br/>
+					</p> */}
+				<div className={'volunteerTitleContainer'}>
 				<h2>{intl.formatMessage({ id: "whyJoinTitle" })}</h2>
 					<p>
 						{intl.formatMessage({ id: "whyJoinList1" })}<br/>
@@ -44,6 +52,8 @@ export default function Volunteer() {
 						{intl.formatMessage({ id: "whyJoinList3" })}<br/>
 						{intl.formatMessage({ id: "whyJoinList4" })}<br/>
 					</p>
+				</div>
+
 			</div>
 
 
