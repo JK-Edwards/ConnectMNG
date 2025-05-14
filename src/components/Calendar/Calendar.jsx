@@ -3,32 +3,32 @@ import { useIntl } from "react-intl";
 
 import "./Calendar.css";
 
-export default function Calendar({events}) {
+export default function Calendar({ events }) {
     return (
         <div className={"calendarContainer"}>
             {events.map((event, index) =>
                 <EventDay key={index}
-                            date={event.date}
-                            events={event.events} />
+                    date={event.date}
+                    events={event.events} />
             )}
         </div>
     );
 };
 
-function EventDay({date, events}) {
+function EventDay({ date, events }) {
     const intl = useIntl();
     return (
         <div className={"eventDayContainer"}>
             <h1>{date}</h1>
             <div className={'eventDayTitleContainer'}>
                 <div className={"eventDayTitle"}>
-                {intl.formatMessage({id: "time"})}
+                    {intl.formatMessage({ id: "time" })}
                 </div>
                 <div className={"eventDayTitle"}>
-                {intl.formatMessage({id: "event"})}
+                    {intl.formatMessage({ id: "event" })}
                 </div>
                 <div className={"eventDayTitle"}>
-                {intl.formatMessage({id: "location"})}
+                    {intl.formatMessage({ id: "location" })}
                 </div>
             </div>
             <div className={"eventTable"}>

@@ -41,6 +41,28 @@ export default function Home() {
 			</div>
 		</Link>,
 	];
+	const blogSlidesMobile = [
+		<Link to={"/resources/blogs"}>
+			<div className={"carouselSlide"}>
+				<img src={slide1} height={850} width={850} alt={"Slide 1"} />
+			</div>
+		</Link>,
+		<Link to={"/resources/podcasts"}>
+			<div className={"carouselSlide"}>
+				<img src={slide2} height={850} width={850} alt={"Slide 2"} />
+			</div>
+		</Link>,
+		<Link to={"/resources/podcasts"}>
+			<div className={"carouselSlide"}>
+				<img src={slide2} height={850} width={850} alt={"Slide 2"} />
+			</div>
+		</Link>,
+		<Link to={"/resources/podcasts"}>
+			<div className={"carouselSlide"}>
+				<img src={slide2} height={850} width={850} alt={"Slide 2"} />
+			</div>
+		</Link>,
+	];
 
 	return (
 		<div className={"homeContainer"}>
@@ -52,7 +74,6 @@ export default function Home() {
 				<div className={"programGalleryContainer"}>
 					<h1>{intl.formatMessage({ id: "What We Offer" }).toUpperCase()}</h1>
 					<div className={"carouselContainer"}>
-						{/* <ItemCarousel slides={blogSlides} interval={2500}/> */}
 						<SimpleSlider slides={blogSlides} />
 					</div>
 					<div className={"programGallery"}>
@@ -75,5 +96,6 @@ export default function Home() {
 				</div>
 			</div>
 		</div>
+
 	);
 };

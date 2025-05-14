@@ -26,11 +26,16 @@ export default function Volunteer() {
 				<h1>&nbsp;/&nbsp;Volunteer</h1>
 			</div>
 
-			<div className={'volunteerDescriptionContainer'}>
-				<p>{intl.formatMessage({id: "volunteerDesc"})}</p>
+			<div className={'volunteerTitleContainer'}>
+				<h1>{intl.formatMessage({ id: "volunteer" })}</h1>
 
 			</div>
-			
+
+			<div className={'volunteerDescriptionContainer'}>
+				<p>{intl.formatMessage({ id: "volunteerDesc" })}</p>
+
+			</div>
+
 			<div className={'volunteerTitleContainer'}>
 				<h2>{intl.formatMessage({ id: "whyJoinTitle" })}</h2>
 					<p>
@@ -41,32 +46,32 @@ export default function Volunteer() {
 					</p>
 			</div>
 
-			
+
 			<div className={'volunteerTitleContainer'}>
 				<h2>{intl.formatMessage({ id: "exploreTitle" })}</h2>
 			</div>
 
 			<div className={'volunteerCardContainer only-desktop'}>
-				<VolunteerCard flip={true} title={intl.formatMessage({id: "fundraising"})} desc={FUNDRAISING_CARD_DESC} link={fundraisingImage}/>
-				<VolunteerCard flip={false} title={intl.formatMessage({id: "events"})} desc={EVENTS_CARD_DESC} link={eventsImage}/>
+				<VolunteerCard flip={true} title={intl.formatMessage({ id: "fundraising" })} desc={FUNDRAISING_CARD_DESC} link={fundraisingImage} />
+				<VolunteerCard flip={false} title={intl.formatMessage({ id: "events" })} desc={EVENTS_CARD_DESC} link={eventsImage} />
 			</div>
 
 			<div className="thinSeparator only-mobile"></div>
 
 			<div className={'volunteerCardContainerMobile only-mobile'}>
-				 <VolunteerCardMobile flip={true} title={"Fundraising"} desc={"Help us with fundrasing..."} link={fundraisingImage}/>
-				 <div className="thinSeparator only-mobile"></div>
-				 <VolunteerCardMobile flip={true} title={"Events"} desc={"Help us with organizing events..."} link={eventsImage}/>
- 			</div>
+				<VolunteerCardMobile flip={true} title={"Fundraising"} desc={"Help us with fundrasing..."} link={fundraisingImage} />
+				<div className="thinSeparator only-mobile"></div>
+				<VolunteerCardMobile flip={true} title={"Events"} desc={"Help us with organizing events..."} link={eventsImage} />
+			</div>
 
-			 <div className="thinSeparator only-mobile"></div>
+			<div className="thinSeparator only-mobile"></div>
 
 			<div className={'volunteerFormTitleContainer'}>
-				<h2>{intl.formatMessage({ id: "howToJoinDesc" })}</h2>	
-			
+				<h2>{intl.formatMessage({ id: "howToJoinDesc" })}</h2>
+
 			</div>
 			<div className={'volunteerFormContainer'}>
-				<StyledFormLink text={intl.formatMessage({id: "becomeVolunteer"})}/>
+				<StyledFormLink text={intl.formatMessage({ id: "becomeVolunteer" })} />
 			</div>
 
 		</div>

@@ -141,14 +141,4 @@
 		display: flex;
 		align-items: center;
 	}
-	/*
-	.homeIcon {
-		transform: scale(1);
-  		transform-origin: center;
-		margin: 0;
-  		width: 102%;
-		gap: 0rem;
-	} */
 }
-
-

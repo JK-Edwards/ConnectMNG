@@ -17,8 +17,7 @@ export default function SupportPopup() {
         setIsOpen(!isOpen);
     };
 
-    const text = "Your contribution will help to inspire, educate, and equip Mongolian students with skills to navigate through today's world."
-               + " and give back to the communnity.";
+    const text = intl.formatMessage({ id: "yourContributionText" });
 
     return (
         <div className={"supportPopupContainer"}>
@@ -31,17 +30,17 @@ export default function SupportPopup() {
             </button>
             <div className={"supportPopupTextContainer" + (!isOpen ? " closed" : "")}>
                 <div className={"supportPopupTextTitleContainer"}>
-                    <img className={"supportPopupImage"} src={hand} alt={"Helping Hand"}/>
+                    <img className={"supportPopupImage"} src={hand} alt={"Helping Hand"} />
                     <h3>
-                        Support Connect MNG!
+                        {intl.formatMessage({ id: "supportConnect" })}
                     </h3>
                 </div>
                 <p>{text}</p>
                 <Link className={"supportPopupDonateLink"} to="/get-involved/donate">
                     <p>
-                        {intl.formatMessage({id: "donate"})}
+                        {intl.formatMessage({ id: "donate" })}
                     </p>
-                    <img className={"supportPopupDonateLinkArrow"} src={donateArrow} alt={"Donation link arrow"}/>
+                    <img className={"supportPopupDonateLinkArrow"} src={donateArrow} alt={"Donation link arrow"} />
                 </Link>
             </div>
         </div>

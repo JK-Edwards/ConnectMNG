@@ -3,3 +3,23 @@
 	padding: 0.7vw;
 	font-size: calc(0.2rem + 1vw);
 }
+
+@media screen and (max-width: 750px) {
+	.dropdown div {
+		font-size: calc(0.4rem + 1vw);
+	}
+
+	.dropdown {
+		position: absolute !important;
+		top: 100%;
+		/* Ensures dropdown appears below */
+		left: 0;
+		background: white;
+		border: 1px solid #ccc;
+		z-index: 1000;
+		/* Ensures it appears above other elements */
+		min-width: 100px;
+		display: flex;
+		flex-direction: column;
+	}
+}
