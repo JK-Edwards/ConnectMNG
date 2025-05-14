@@ -6,6 +6,7 @@ import myImage from "../../images/blogs/Iconhome.png";
 
 import { useIntl } from "react-intl";
 
+
 import "./Blogs.css";
 
 const desc1 = <i>"This blog is more than just a virtual space; it's a cozy coerner where we can come together as Mongolian American college "
@@ -30,7 +31,6 @@ function BlogCard ({image, title, desc, link}) {
 	);
 }
 
-// <StyledLink text="Workshops" link="/workshops" className="mobile-only" />
 
 export default function Blogs() {
 	const intl = useIntl();
