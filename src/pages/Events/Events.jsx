@@ -1,22 +1,24 @@
 import React from "react";
+import { useIntl } from "react-intl";
 import { Link } from "react-router-dom";
 import "./Events.css";
 
 export default function Events() {
+    const intl = useIntl();
     const events = [
         {
-            date: "Monday 29th January 2024",
+            date: intl.formatMessage({ id: "date" }),
             sessions: [
-                { time: "3pm", name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
-                { time: "4pm", name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
+                { time: intl.formatMessage({ id: "time" }), name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
+                { time: intl.formatMessage({ id: "time1" }), name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
             ],
         },
-        
+
     ];
 
     return (
         <div className="eventsContainer">
-            <h1>Calendar</h1>
+            <h1> {intl.formatMessage({ id: "Calendar" })}</h1>
 
             {events.map((event, index) => (
                 <div key={index} className="event-section">
@@ -24,9 +26,9 @@ export default function Events() {
                     <table className="event-table">
                         <thead>
                             <tr>
-                                <th>Time</th>
-                                <th>Event</th>
-                                <th>Location</th>
+                                <th>{intl.formatMessage({ id: "Time" })}</th>
+                                <th>{intl.formatMessage({ id: "Event" })}</th>
+                                <th>{intl.formatMessage({ id: "Location" })}</th>
                             </tr>
                         </thead>
                         <tbody>

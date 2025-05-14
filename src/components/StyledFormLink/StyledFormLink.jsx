@@ -1,4 +1,3 @@
-import arrow from '../../images/greenArrow.png';
 import React from 'react';
 
 import { Link } from 'react-router-dom';

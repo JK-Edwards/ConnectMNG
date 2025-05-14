@@ -43,6 +43,53 @@ const translations = {
         volunteerDesc: "Connect MNG offers various ways for passionate individuals to contribute and make a difference in our community. Whether you're looking to lend a helping hand, raise awareness, or offer your expertise, there's a place for you here. Explore the following avenues to get involved:",
         becomeVolunteer: "Become a volunteer!",
 
+        ourValuesDesc: "At Connect MNG, we believe in community, empowerment, and growth. We are dedicated to fostering an inclusive space where Mongolian-American college students and young professionals can connect, learn, and thrive. By promoting cultural identity, career development, and leadership, we aim to equip individuals with the tools and opportunities they need to succeed—both personally and professionally.",
+        aboutUsTitle: "About Us",
+        aboutUsDesc: "Connect MNG is a nonprofit organization dedicated to empowering Mongolians in Washington state by fostering career development, professional growth, and a strong sense of community. Our team comes from diverse backgrounds, bringing together a wealth of experience and knowledge to support and uplift our members. We provide resources, mentorship, and networking opportunities to help individuals advance in their careers while creating a supportive environment where members can learn from one another. Through collaboration and shared experiences, we strive to build a stronger, more connected community.",
+        ourValuesTitle: "Our Values",
+        ourStoryHeading: "Hello and a warm, heartfelt welcome to Connect MNG!",
+        ourStorySub1: "A Community Rooted in Connection",
+        ourStoryText1: "Connect MNG is a cozy corner where Mongolian American college students and young professionals can unite and support each other's growth through resources, programs, and events.",
+        ourStorySub2: "Our Passionate Team",
+        ourStoryText2: "At Connect MNG, our strength lies in our diverse and passionate team of Mongolians in Seattle. Each member brings a unique set of skills, experiences, and a deep commitment to empowering the Mongolian American community. We come from different backgrounds, united by our dedication to supporting our community in America.",
+        ourStorySub3: "We are committed.",
+        ourStoryText3: "We have board members, chair members, and interns working hard to build Connect MNG from the ground up—whether by developing our website, planning programs, writing resourceful blogs, or creating a space where Mongolians can connect. Our interns dedicate countless hours on weekdays and weekends, before and after school, coding our website and making it the central hub for resources. For the past two years, our chair members and board members have commuted every Friday after work to meet in person, collaborating on the website, developing programs and projects, and planning community events.",
+        ourStorySub4: "Our Shared Mission",
+        ourStoryText4a: "We created Connect MNG because each of us once faced these struggles alone—the search for connection and the desire to thrive personally and professionally in a foreign space so full of growth and opportunities.",
+        ourStoryText4b: "We don't want the next generation of Mongolian college students and young professionals to go through this journey alone. We don't want them to feel the stress and pressure of figuring everything out by themselves. Instead, we want them to feel supported, connected, and empowered to thrive.",
+        ourStorySub5: "Navigating Career Development Together",
+        ourStoryText5a: "Embarking on your career journey? Feeling a bit lost? Connect MNG is here to guide you.",
+        ourStoryText5b: "Whether you're a college student applying for internships or a young professional navigating career development, we're here to help. We will help you in building and tailoring your resume to increase your chances in the professional world. We'll help you navigate networking and interviews. But most importantly, we'll help you find a community and friends. You are not alone.",
+        ourStorySub6: "In Closing - Let's Thrive Together",
+        ourStoryText6a: "Connect MNG isn't just a nonprofit—it's a community of friends, each with a unique story to tell. As Mongolians in America, let's support each other!",
+        ourStoryText6b: "Join us, and let's connect!",
+        ourStorySignOff: "Anuujin Ider\nPresident, Connect MNG",
+        internshipsDescription: "At Connect MNG, we offer dynamic internship opportunities for students and young professionals looking to gain real-world experience while contributing to the Mongolian community. Our internships are designed to provide hands-on learning, mentorship, and professional development in a collaborative and impactful environment.",
+        internshipsWhyJoin: "Why Join?",
+        internshipsWhyJoinBody: "Gain Practical Experience in web development, project management, marketing, event coordination, and more. Enhance Your Resume with meaningful, community-driven work. Expand Your Network by connecting with professionals and leaders in the Mongolian community. Make a Difference while developing valuable skills for your future career.",
+        internshipsAreas: "Internship Areas:",
+        internshipsList1: "Web Development",
+        internshipsList2: "Marketing & Communications - Help us promote initiatives and engage the community.",
+        internshipsList3: "Event/Workshop Planning - Assist in organizing impactful events and gatherings.",
+        internshipsList4: "Fundraising & Outreach - Support efforts to sustain and grow our programs.",
+        internshipsList5: "Project Management - Work on meaningful initiatives that drive community impact.",
+        internshipsHowToJoin: "How to Join:",
+        internshipsStep1: "1. Fill out our application - Let us know about your background, skills, and interests.",
+        internshipsStep2: "2. Interview with our team - If selected, you'll have a short conversation to ensure a great fit.",
+        internshipsStep3: "3. Once accepted, you will receive an email from our team! Apply Today!",
+        volunteer: "Volunteer",
+        volunteerDesc: "Connect MNG offers meaningful ways for passionate individuals to contribute and make a difference in our community. Joining us as a volunteer is a simple and rewarding process! Whether you're looking to lend a helping hand, raise awareness, or share your expertise, we welcome passionate individuals eager to give back to the community.",
+        whyJoinTitle: "Why Join?",
+        whyJoinList1: "Gain hands-on experience in project management, marketing, event planning, and more.",
+        whyJoinList2: "Build your resume with impactful, community-driven work.",
+        whyJoinList3: "Expand your network and connect with inspiring Mongolian professionals.",
+        whyJoinList4: "Make a real difference while learning and growing.",
+        exploreTitle: "Explore the following avenues to get involved:",
+        fundraising: "Fundraising",
+        events: "Events",
+        howToJoinTitle: "How to Join:",
+        howToJoinDesc: "Click our application link and fill it out! Let us know your interests and skills, and we will match you with the right opportunity. Once accepted, you will receive an email from our team!",
+
         // Donation page translations
         empowerYoungMongolians: "Empower young Mongolian professionals",
         donateConnectMNG: "Donate to Connect MNG",
@@ -70,6 +117,31 @@ const translations = {
         termsOfUse: "Terms of Use",
         privacyPolicy: "Privacy Policy",
 
+        // Event page translations
+        Date: "Monday 29th January 2024",
+        Calendar: "Calendar",
+        Time: "Time",
+        Event: "Event",
+        Location: "Location",
+        date: "Monday 29th January 2024",
+        time: "3pm",
+        time1: "4pm",
+
+        // Happy hour event translations
+        date_time: "📅 Monday 29th January 2024 | 🕒 4:00 PM",
+        happy_location: "📍 Location: Bangrak",
+        happy_desc1: "Join us for a **fun and relaxing Happy Hour** at Bangrak! 🎉",
+        happy_desc2: "🥂 Meet new people, network, and unwind with refreshing drinks and great conversations.",
+        happy_desc3: "📢 This event is open to all members. Bring your friends!",
+        h_back_to_events: "⬅ Back to Events",
+
+        // Resume help event translations
+        resume_date_time: "📅 Monday 29th January 2024 | 🕒 3:00 PM",
+        resume_location: "📍 Location: Capital One Cafe",
+        resume_desc1: "Join us for an interactive **Resume Help Workshop** where industry experts will provide tips on crafting an impressive resume that stands out!",
+        resume_desc2: "📝 Learn best practices, formatting tips, and how to highlight your skills effectively.",
+        resume_desc3: "🎯 Ideal for job seekers and students looking to refine their resumes.",
+        r_back_to_events: "⬅ Back to Events",
         // Programs
         ourPrograms: "Our Programs",
         ourProgramsDesc: "At Connect MNG, we’re here to support Mongolian students and young professionals as they take the next step in their careers. Through resume reviews and monthly workshops on essential career skills, we provide practical guidance to help you grow with confidence.",
@@ -162,6 +234,40 @@ const translations = {
         getStarted: "Эхлэх",
         
 
+
+        // Programs
+        ourPrograms: "Манай Хөтөлбөрүүд",
+        ourProgramsDesc: "Connect MNG нь Монгол оюутнууд болон залуу мэргэжилтнүүдийг карьераа дараагийн түвшинд ахиулахад нь дэмжлэг үзүүлэхэд зориулагдсан. Бид таныг итгэлтэйгээр өсөн дэвжихэд туслахын тулд хувийн намтар (CV) шалгах үйлчилгээ болон сар бүрийн чухал карьерын ур чадварын сургалтуудыг санал болгодог.",
+        resumeBoost: "Resume Boost",
+        getStarted: "Эхлэх",
+        
+
+
+        // Event page translations
+        Date: "2024 оны нэгдүгээр сарын 29-ний даваа",
+        Calendar: "Хуанли",
+        Time: "Цаг хугацаа",
+        Event: "Үйл явдал",
+        Location: "Үйл явдал",
+        date: "2024 оны нэгдүгээр сарын 29-ний даваа",
+        time: "15:00",
+        time1: "16:00",
+
+        // Happy hour event translations
+        date_time: "📅 2024 оны 1 сарын 29, Даваа гараг | 🕒 16:00",
+        happy_location: "📍 Байршил: Bangrak",
+        happy_desc1: "Бидэнтэй нэгдэж **хөгжилтэй, тайвширсан Happy Hour**-д хамрагдаарай Bangrak! 🎉",
+        happy_desc2: "🥂 Шинэ хүмүүстэй танилцаж, харилцаа холбоо тогтоож, сэтгэл сэргээсэн ундаа ууж, сайхан яриа өрнүүлээрэй.",
+        happy_desc3: "📢 Энэхүү арга хэмжээнд бүх гишүүд оролцох боломжтой. Найзуудаа авчир!",
+        h_back_to_events: "⬅ Үйл явдал руу буцах",
+
+        // Resume help event translations
+        resume_date_time: "📅 2024 оны 1 сарын 29 Даваа гараг | 🕒 15:00",
+        resume_location: "📍 Байршил: Capital One Cafe",
+        resume_desc1: "Салбарын мэргэжилтнүүд оролцдог интерактив **Resume Help Workshop**-д бидэнтэй нэгдээрэй гайхалтай анкет бүтээх талаар зөвлөгөө өгөх болно!",
+        resume_desc2: "📝 Шилдэг туршлага, форматлах зөвлөмж, ур чадвараа хэрхэн үр дүнтэй онцлох талаар суралц.",
+        resume_desc3: "🎯 Ажил хайгч болон анкетаа сайжруулах хүсэлтэй оюутнуудад тохиромжтой.",
+        r_back_to_events: "⬅ Үйл явдал руу буцах",
     },
 };
 
