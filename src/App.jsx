@@ -45,7 +45,6 @@ export default function App() {
 					</div>
 					<div className={"pageContainer"}>
 						<Routes>
-							<Route path="*" element={<Home />} />
 							<Route path="/programs" element={<Programs />} />
 							<Route path="/programs/cultural-compass-program" element={<CulturalCompassProgram />} />
 							<Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
@@ -65,6 +64,7 @@ export default function App() {
 							<Route path="/get-involved/donate" element={<Donate />} />
 							<Route path="/resources/blogs" element={<Blogs />} />
 							<Route path="/resources/blogs/welcome-blog" element={<Workshops />} />
+							<Route path="*" element={<Home />} />
 							<Route path="/new-feature" element={<NewFeature />} />
 
 						</Routes>
