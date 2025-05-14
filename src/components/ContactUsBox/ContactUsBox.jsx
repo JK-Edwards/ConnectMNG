@@ -12,7 +12,7 @@ export default function ContactUsBox() {
                     {intl.formatMessage({ id: "contactUs" }).toUpperCase()}
                 </div>
             </div>
-            <div className={"contactInfo"}>
+           <div className={"contactInfo"}>
                 <div>
                     {intl.formatMessage({ id: "email" })}
                 </div>
@@ -21,14 +21,14 @@ export default function ContactUsBox() {
                 </p>
                 {/*
                 <div>
-                    Phone
+                  Phone 
                 </div>
                 <p>
                     206.123.4567
                 </p>
                 */}
-            </div>
-            
+
         </div>
+        </div>  
     )
 };
