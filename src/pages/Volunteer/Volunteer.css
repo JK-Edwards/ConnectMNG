@@ -116,6 +116,12 @@
 		color: black;
 		padding-top: 4vw;
 	}
+	.volunteerTitleContainer p {
+		width: 100%;
+		font-size: calc(1.2rem + 1vw);
+		color: black;
+		padding-top: 4vw;
+	}
 	.thinSeparator {
 		padding: none;
 		width: 100%;
