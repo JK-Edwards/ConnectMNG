@@ -19,13 +19,16 @@ export default function ContactUsBox() {
                 <p>
                     connectmongol.mng@gmail.com
                 </p>
+                {/*
                 <div>
                     Phone
                 </div>
                 <p>
                     206.123.4567
                 </p>
+                */}
             </div>
+            
         </div>
     )
 };
