@@ -17,3 +17,9 @@
     font-size: calc(0.25rem + 1.25vw);
     font-weight: bold;
 }
+
+@media (max-width: 750px) {
+    .learnMoreLink p {
+        font-size: calc(0.25rem + 2.25vw);
+    }
+}

@@ -14,7 +14,6 @@
     border: 0.2vw solid #f2af60;
     color: #FFFFFF;
     font-size: calc(0.3rem + 0.5vw + 0.5vh);
-    width: 6vw;
 }
 
 .subscribeButton:hover {
@@ -23,4 +22,5 @@
 
 .subscriptionContainer {
     overflow: hidden;
+    display: flex;
 }

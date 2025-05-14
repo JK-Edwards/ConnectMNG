@@ -7,6 +7,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	text-align: center;
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
@@ -16,6 +17,7 @@
 	font-size: calc(0.25rem + 2vw);
 	padding-top: 1rem;
 	color: #10885a;
+
 }
 
 .donateContainer h2 {
@@ -88,5 +90,42 @@
 @media (max-width: 750px) {
 	.donateContainer {
 		padding-top: 35px;
+	}
+
+	.donateContainer h1 {
+		font-size: calc(0.25rem + 6vw);
+		padding-top: 1rem;
+		color: #10885a;
+
+	}
+
+	.donateContainer h2 {
+		font-size: calc(0.15rem + 4vw);
+		margin-top: 2vw;
+	}
+
+	.donateContainer h3 {
+		font-size: calc(0.25rem + 4vw);
+		margin-top: 5vw;
+		margin-bottom: 3vw;
+		color: #10885a;
+	}
+
+
+	.moneyButtonContainer {
+		width: 100vw;
+		height: 20vw;
+	}
+
+	.moneyButton {
+		width: 30vw;
+		height: 8vw;
+		font-size: 5vw;
+	}
+
+	.donateInput {
+		height: 7vw;
+		font-size: 5vw;
+		width: 75vw;
 	}
 }

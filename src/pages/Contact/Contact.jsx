@@ -1,4 +1,3 @@
-import logo from "../../images/logo.png";
 import React, { useState } from "react";
 
 import { useIntl } from "react-intl";
@@ -52,7 +51,7 @@ export default function Contact() {
 
         // Sending email using EmailJS
         const templateParams = {
-            to_name:"ConnectMNG",
+            to_name: "ConnectMNG",
             from_name: `${firstName} ${lastName}`,
             from_email: email,
             subject: subject,
@@ -67,100 +66,86 @@ export default function Contact() {
                 "O6pJDJsUT4I2tB8Xs" // EmailJS Public Key
             )
             .then(() => {
-                    Swal.fire({
-                        icon: "success",
-                        title: intl.formatMessage({ id: "Email Sent Success"}),
-                        text: intl.formatMessage({ id: "We Will Get In Touch" }),
-                    });
-                    // Reset form fields
-                    setFirstName("");
-                    setLastName("");
-                    setEmail("");
-                    setSubject("");
-                    setMessage("");
-                })
-                .catch(() => {
-                    Swal.fire({
-                        icon: "error",
-                        title: intl.formatMessage({ id: "Email Sent Error"}),
-                        text: intl.formatMessage({ id: "Please Try Again" }),
-                    });
+                Swal.fire({
+                    icon: "success",
+                    title: intl.formatMessage({ id: "Email Sent Success" }),
+                    text: intl.formatMessage({ id: "We Will Get In Touch" }),
                 });
-            };
-    
+                // Reset form fields
+                setFirstName("");
+                setLastName("");
+                setEmail("");
+                setSubject("");
+                setMessage("");
+            })
+            .catch(() => {
+                Swal.fire({
+                    icon: "error",
+                    title: intl.formatMessage({ id: "Email Sent Error" }),
+                    text: intl.formatMessage({ id: "Please Try Again" }),
+                });
+            });
+    };
 
-    
-return (
-    <form className="formContainer" onSubmit={handleSubmit}>
-        <h1>{intl.formatMessage({ id: "contactUs" })}</h1>
-        <p>{intl.formatMessage({ id: "contactDesc" })}</p>
-            {/* First Name Input */}
-            <div className="inputContainer">
-                <label htmlFor="firstName">First Name</label>
-                <input
-                    id="firstName"
-                    type="text"
-                    value={firstName}
-                    placeholder="First Name"
-                    onChange={(e) => setFirstName(e.target.value)}
-                />
-            </div>
-
-            {/* Last Name Input */}
-            <div className="inputContainer">
-                <label htmlFor="lastName">Last Name</label>
-                <input
-                    id="lastName"
-                    type="text"
-                    value={lastName}
-                    placeholder="Last Name"
-                    onChange={(e) => setLastName(e.target.value)}
-                />
-            </div>
-
-            {/* Email Input */}
-            <div className="inputContainer">
-                <label htmlFor="email">Email</label>
-                <input
-                    id="email"
-                    type="email"
-                    value={email}
-                    placeholder="Email Address"
-                    onChange={handleEmailChange}
-                />
-                {emailError && <p className="errorText">{emailError}</p>}
-            </div>
-
-            {/* Subject Input */}
-            <div className="inputContainer">
-                <label htmlFor="subject">Subject</label>
-                <input
-                    id="subject"
-                    type="text"
-                    value={subject}
-                    placeholder="Subject"
-                    onChange={(e) => setSubject(e.target.value)}
-                />
-            </div>
-
-            {/* Message Text Container (Textarea) */}
-            <div className="inputContainer">
-                <label htmlFor="message">Message</label>
-                <textarea
-                    id="message"
-                    value={message}
-                    placeholder="Your Message"
-                    onChange={(e) => setMessage(e.target.value)}
-                />
-            </div>
-
-            {/* Submit Button */}
-            <div className="buttonContainer">
-            <button className="submitButton" type="button" onClick={handleSubmit}>
-            {intl.formatMessage({ id: "getInTouch" })}
-            </button>
-            </div>
-        </form>
-    );
-};
-
+   
+            return (
+                <div className="contactContainer">
+                    <h1>Contact Us</h1>
+                    <p>
+                        Have questions about our programs or Connect MNG in general? Please submit the form below and we'll be in touch shortly!
+                    </p>
+        
+                    <h3>YOUR NAME</h3>
+                    <div className="contactinputContainer">
+                        <input
+                            className="contactinput"
+                            type="text"
+                            placeholder="First name"
+                            value={firstName}
+                            onChange={(e) => setFirstName(e.target.value)}
+                        />
+                        <input
+                            className="contactinput"
+                            type="text"
+                            placeholder="Last name"
+                            value={lastName}
+                            onChange={(e) => setLastName(e.target.value)}
+                        />
+                    </div>
+        
+                    <h3>EMAIL &  SUBJECT</h3>
+                    <div className="contactinputContainer">
+                        <input
+                            className="contactinput"
+                            type="email"
+                            placeholder="Email address"
+                            value={email}
+                            onChange={handleEmailChange}
+                        />
+                        <input
+                            className="contactinput"
+                            type="text"
+                            placeholder="Email subject"
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
+                        />
+                    </div>
+                    {emailError && <div style={{ color: "red", paddingLeft: "20px" }}>{emailError}</div>}
+        
+                    <h3>MESSAGE</h3>
+                    <div className="contacttextARea">
+                    <textarea
+                        className="contacttextArea"
+                        value={message}
+                        placeholder="Your message"
+                        onChange={(e) => setMessage(e.target.value)}
+                    />
+                    </div>
+                    <div className="contactsubmit">
+                    <button className="submitButton" type="button" onClick={handleSubmit}>
+                        {intl.formatMessage({ id: "getInTouch", defaultMessage: "Get in Touch!" })}
+                    </button>
+                    </div>
+                </div>
+            );
+        }

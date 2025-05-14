@@ -57,11 +57,11 @@
 }
 
 
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 768px) {
 	.mobile-only {
 		display: flex
 	}
-	
+
 	.mobile-desktop {
 		display: none
 	}
@@ -71,7 +71,7 @@
 		margin: 0;
 		padding-bottom: 3vw;
 	}
-	
+
 	.resumeBoostContainer {
 		padding-top: 5px;
 		display: flex;
@@ -83,11 +83,11 @@
 		width: 100%;
 		background-size: cover;
 		background-position: center;
-		min-height: 50vh; 
+		min-height: 50vh;
 	}
 
 
-	.resumeBoostContainer h1{
+	.resumeBoostContainer h1 {
 		font-size: calc(7px + 1.75vw);
 		font-weight: 900;
 		padding-top: 10px;
@@ -97,7 +97,7 @@
 		width: 100%;
 	}
 
-	.resumeBoostContainer h3{
+	.resumeBoostContainer h3 {
 		font-size: calc(7px + 1.75vw);
 		padding-top: 10px;
 		font-weight: 900;
@@ -107,7 +107,7 @@
 		width: 100%;
 	}
 
-	.resumeBoostContainer h2{
+	.resumeBoostContainer h2 {
 		font-size: calc(7px + 1.75vw);
 		padding-top: 10px;
 		color: #033C26;
@@ -117,14 +117,14 @@
 		width: 100%;
 	}
 
-	.resumeBoostContainer p{
+	.resumeBoostContainer p {
 		font-size: calc(5px + 1.75vw);
 		padding-top: 5px;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 	}
-	
+
 	.resumeBoostContentContainer {
 		font-size: calc(5px + 1.75vw);
 		font-weight: bold;
@@ -132,7 +132,7 @@
 	}
 
 	.resumeboost-header {
-		font-size: calc(7px + 2.5vw); 
+		font-size: calc(7px + 2.5vw);
 		font-weight: 700;
 		padding-bottom: 0vw;
 		padding-left: 1.3vw;
@@ -152,7 +152,7 @@
 
 	.icon {
 		transform: scale(1);
-  		transform-origin: center;
+		transform-origin: center;
 		margin: 0;
 	}
 
@@ -167,5 +167,5 @@
 		max-width: 100%;
 	}
 
-	
+
 }
