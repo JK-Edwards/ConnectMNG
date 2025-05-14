@@ -7,7 +7,7 @@ import { useState } from "react";
 
 import "./Header.css";
 
-export default function Header({isEnglish, setIsEnglish}) {
+export default function Header({ isEnglish, setIsEnglish }) {
   const [showMenu, setShowMenu] = useState(false); // State for language menu
   const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu toggle
 
@@ -21,39 +21,39 @@ export default function Header({isEnglish, setIsEnglish}) {
       {menuOpen && (
         <nav className="mobileMenu">
           <div>
-          <div className="languageContainer">
-            <div className={"languageButton"} onClick={() => setShowMenu(!showMenu)}>
-              {isEnglish ? <div className="engIcon">ENG</div> : <div className="mngIcon">MNG</div>}
-              <img src={arrow} className={"arrow"} alt={"Language Menu"} />
+            <div className="languageContainer">
+              <div className={"languageButton"} onClick={() => setShowMenu(!showMenu)}>
+                {isEnglish ? <div className="engIcon">ENG</div> : <div className="mngIcon">MNG</div>}
+                <img src={arrow} className={"arrow"} alt={"Language Menu"} />
+              </div>
+              {showMenu ? <LanguageMenu isEnglish={isEnglish} onSelect={handleLanguageSelect} /> : null}
             </div>
-            {showMenu ? <LanguageMenu isEnglish={isEnglish} onSelect={handleLanguageSelect} /> : null}
-          </div>
-          <SocialsBar isInHeader={true}/>
+            <SocialsBar isInHeader={true} />
           </div>
         </nav>
-  )}
+      )}
 
-   {/* Desktop layout */}
-   <div className="languageContainer">
-      <div
+      {/* Desktop layout */}
+      <div className="languageContainer">
+        <div
           className="languageButton"
           onClick={() => setShowMenu(!showMenu)}
-      >
+        >
           {isEnglish ? (
-              <div className="engIcon">ENG</div>
+            <div className="engIcon">ENG</div>
           ) : (
-              <div className="mngIcon">MNG</div>
+            <div className="mngIcon">MNG</div>
           )}
           <img src={arrow} className="arrow" alt="Language Menu" />
-      </div>
-      {showMenu ? (
+        </div>
+        {showMenu ? (
           <LanguageMenu
-              isEnglish={isEnglish}
-              onSelect={handleLanguageSelect}
+            isEnglish={isEnglish}
+            onSelect={handleLanguageSelect}
           />
-      ) : null}
-  </div>
-  <SocialsBar isInHeader={true} />
-</div>
-    );
+        ) : null}
+      </div>
+      <SocialsBar isInHeader={true} />
+    </div>
+  );
 }

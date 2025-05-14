@@ -48,7 +48,7 @@
     align-items: center;
 }
 
-.footerSocialsBarContainer h3{
+.footerSocialsBarContainer h3 {
     font-size: 2.2vw;
     margin: 0;
     text-align: center;
@@ -105,7 +105,8 @@
     .footerContainer {
         display: flex;
         flex-direction: column-reverse;
-    } 
+    }
+
     .footerPageLinksContainer {
         width: 100%;
         margin-bottom: 20px;
@@ -113,16 +114,19 @@
         justify-content: start;
 
     }
+
     .footerLinkContainer {
         padding-right: 120px;
     }
+
     .footerPageLinksContainer .footerLinkContainer h3 {
         font-size: 3vw;
     }
+
     .footerPageLinksContainer .footerLinkContainer a {
         font-size: 2vw;
     }
-    
+
 
 
     /* Footer socials link for newsletter start from here :) */
@@ -131,40 +135,48 @@
         padding: 0px;
         align-items: flex-start;
         margin-left: 25px;
-        margin-top:25px
+        margin-top: 25px
     }
+
     .footerSocialsLinksContainer div {
         padding-bottom: 8px;
         padding-right: 5px;
     }
+
     .footerSocialsBarContainer h3 {
         font-size: 5vw;
     }
+
     .subscriptionContainer .emailInput {
         height: 6vw;
         font-size: calc(0.2rem + 1.5vw) !important;
         width: 50vw;
     }
+
     .subscriptionContainer button {
         height: 6vw;
         font-size: calc(0.2rem + 1.5vw) !important;
         width: 15vw;
     }
+
     .officialLinksContainer {
         width: 80%;
         margin-top: 10px;
         padding: 0px;
         display: none;
     }
+
     .officialLinksContainer div {
         font-size: calc(0.2rem + 2vw) !important;
         justify-content: center;
         margin-right: 15px;
     }
+
     .officialLinksContainer a {
         font-size: calc(0.2rem + 2vw) !important;
         padding-right: 25px
     }
+
     .mobile-officialLinksContainer {
         display: flex;
         flex-direction: row;
@@ -172,10 +184,12 @@
         width: 100%;
         justify-content: start;
     }
+
     .mobile-officialLinksContainer a {
         font-size: calc(0.2rem + 2vw) !important;
         padding-right: 25px;
     }
+
     .mobile-officialLinksContainer div {
         font-size: calc(0.2rem + 2vw) !important;
     }

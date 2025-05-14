@@ -18,7 +18,7 @@ import "./Programs.css";
 function Program({ name, description, pageLink }) {
 	const intl = useIntl();
 	return (
-		
+
 		<div className={"indivProgramContainer"}>
 			<div className={"indivProgramTextContainer"}>
 				<div className={'programTitleContainer'}>
@@ -43,12 +43,12 @@ export default function Programs() {
 		<div className={"programsContainer"}>
 			<div>
 
-			<div className={"homeIconAndPrograms"}>
-				<a href="http://connectmng.org/" rel={"noreferrer"} style={{ display: "inline" }}>
+				<div className={"homeIconAndPrograms"}>
+					<a href="http://connectmng.org/" rel={"noreferrer"} style={{ display: "inline" }}>
 						<img src={icon} className={"icon mobile-only"} alt={"Home"} />
-				</a>
-				{ <h2 className={'programs-header mobile-only'}>{intl.formatMessage({id: "/ Programs" } )}  </h2> }
-			</div>
+					</a>
+					{<h2 className={'programs-header mobile-only'}>{intl.formatMessage({ id: "/ Programs" })}  </h2>}
+				</div>
 
 				<div className={"programsHeader"}>
 					<div>
