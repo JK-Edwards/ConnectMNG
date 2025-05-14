@@ -6,6 +6,7 @@ import myImage from "../../images/blogs/Iconhome.png";
 
 import { useIntl } from "react-intl";
 
+
 import "./Blogs.css";
 
 const desc1 = <i>"This blog is more than just a virtual space; it's a cozy coerner where we can come together as Mongolian American college "
@@ -30,6 +31,7 @@ function BlogCard({ image, title, desc, link }) {
 	);
 }
 
+
 export default function Blogs() {
 	const intl = useIntl();
 	const icon = myImage;
@@ -37,8 +39,8 @@ export default function Blogs() {
 	return (
 		<div className={"blogContainer"}>
 
-			<div className={"homeIconAndResources"}>
-				<a href="http://connectmng.org/" target={"_blank"} rel={"noreferrer"} style={{ display: "inline" }}>
+		<div className={"homeIconAndResources"}>
+			<a href="/Home" style={{ display: "inline" }}>
 					<img src={icon} className={"icon mobile-only"} alt={"Home"} />
 				</a>
 				{<h2 className={'resources-header mobile-only'}>{intl.formatMessage({ id: "/ Resources" })}</h2>}

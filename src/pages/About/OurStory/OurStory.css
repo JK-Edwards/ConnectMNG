@@ -6,9 +6,10 @@
     background-image: url("../../../images/background_white.jpg");
     background-size: cover;
     background-position: center;
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+    padding-top: 4vw;
     padding: calc(1.5rem + 2vw) 20px 15px 20px;
-    /* padding-left: 140px !important;
-    padding-right: 140px !important; */
 }
 
 .ourStoryTitleContainer h1 {
