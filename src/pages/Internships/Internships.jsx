@@ -15,28 +15,25 @@ export default function Internships() {
 		<div className={"internshipsContainer"}>
 			<div className={"internshipsGetInvolved only-mobile"}>
 				<img className={"homeIcon"} src={homeIcon} alt="Home icon"/>
-				<h1>&nbsp;/&nbsp;Get involved</h1>
+				<h1>&nbsp;/&nbsp;Internships</h1>
 			</div>
-			<div className={'internshipsTitleContainer'}>
-				<h1>{intl.formatMessage({id: "internships"})}</h1>
-			</div>
-			<div className={'internshipsDescriptionContainer'}>
-				<p>{intl.formatMessage({ id: "internshipsDescription" })}</p>
-				<h2>{intl.formatMessage({ id: "internshipsWhyJoin" })}</h2>
-				<p>{intl.formatMessage({ id: "internshipsWhyJoinBody" })}</p>
-				<h2>{intl.formatMessage({ id: "internshipsAreas" })}</h2>
-				
-				<p>{intl.formatMessage({ id: "internshipsList1" })}</p>
-				<p>{intl.formatMessage({ id: "internshipsList2" })}</p>
-				<p>{intl.formatMessage({ id: "internshipsList3" })}</p>
-				<p>{intl.formatMessage({ id: "internshipsList4" })}</p>
-				<p>{intl.formatMessage({ id: "internshipsList5" })}</p>
-				
-				<h2>{intl.formatMessage({ id: "internshipsHowToJoin" })}</h2>
-				<p>{intl.formatMessage({ id: "internshipsStep1" })}</p>
-				<p>{intl.formatMessage({ id: "internshipsStep2" })}</p>
-				<p>{intl.formatMessage({ id: "internshipsStep3" })}</p>
-			</div>
+				<div className={'internshipsDescriptionContainer'}>
+					<p>{intl.formatMessage({ id: "internshipsDescription" })}</p>
+					<h2>{intl.formatMessage({ id: "internshipsWhyJoin" })}</h2>
+					<p>{intl.formatMessage({ id: "internshipsWhyJoinBody" })}</p>
+					<h2>{intl.formatMessage({ id: "internshipsAreas" })}</h2>
+					
+					<p>{intl.formatMessage({ id: "internshipsList1" })}</p>
+					<p>{intl.formatMessage({ id: "internshipsList2" })}</p>
+					<p>{intl.formatMessage({ id: "internshipsList3" })}</p>
+					<p>{intl.formatMessage({ id: "internshipsList4" })}</p>
+					<p>{intl.formatMessage({ id: "internshipsList5" })}</p>
+					
+					<h2>{intl.formatMessage({ id: "internshipsHowToJoin" })}</h2>
+					<p>{intl.formatMessage({ id: "internshipsStep1" })}</p>
+					<p>{intl.formatMessage({ id: "internshipsStep2" })}</p>
+					<p>{intl.formatMessage({ id: "internshipsStep3" })}</p>
+				</div>
 
 			<div className="thinSeparator only-mobile"></div>
 
