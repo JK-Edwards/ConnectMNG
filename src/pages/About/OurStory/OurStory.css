@@ -6,19 +6,21 @@
     background-image: url("../../../images/background_white.jpg");
     background-size: cover;
     background-position: center;
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+    padding-top: 4vw;
     padding: calc(1.5rem + 2vw) 20px 15px 20px;
-    /* padding-left: 140px !important;
-    padding-right: 140px !important; */
 }
 
 .ourStoryTitleContainer h1 {
     font-size: calc(16px + 2.5vw);
     text-align: center;
     margin-bottom: 1vw;
-    padding: 0;
-    /* padding-top: 3vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
     padding-left: 5vw;
-    padding-right: 5vw; */
+    padding-right: 5vw;
+    width: 80vw;
 }
 
 .ourStoryCardContainer {
@@ -49,6 +51,10 @@
     max-width: 600px;
     margin: 20px auto;
     border-radius: 10px;
+}
+
+.ourStoryDesc {
+        width: 80vw;
 }
 
 @media (min-width: 768px) {

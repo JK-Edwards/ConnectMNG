@@ -58,6 +58,8 @@
 	padding-top: 2vw;
 }
 
+
+
 .volunteerDescriptionContainer p {
 	font-size: calc(1px + 1.75vw);
 }
@@ -99,6 +101,13 @@
 
 	.volunteerGetInvolved h1 {
 		display: flex;
+		font-size: calc(7px + 2.5vw); 
+		color: #033C26;
+		font-weight: 700;
+		padding-bottom: 0vw;
+		padding-left: 1.3vw;
+		text-align: left;
+		width: 96vw;
 	}
 
 	.volunteerGetInvolved img {
@@ -116,6 +125,14 @@
 		width: 100%;
 		font-size: calc(1.2rem + 1vw);
 		color: black;
+		padding-top: 4vw;
+	}
+
+  .volunteerTitleContainer p {
+		width: 100%;
+		font-size: calc(1.2rem + 1vw);
+		color: black;
+		padding-top: 4vw;
 	}
 
 	.thinSeparator {

@@ -22,11 +22,13 @@ export default function Volunteer() {
 	return (
 		<div className={"volunteerContainer"}>
 			<div className={"volunteerGetInvolved only-mobile"}>
-				<img className={"homeIcon"} src={homeIcon} alt="home icon" />
-				<h1>&nbsp;/&nbsp;Get involved</h1>
+				<img className={"homeIcon"} src={homeIcon} alt="home icon"/>
+				<h1>&nbsp;/&nbsp;Volunteer</h1>
 			</div>
+
 			<div className={'volunteerTitleContainer'}>
 				<h1>{intl.formatMessage({ id: "volunteer" })}</h1>
+
 			</div>
 
 			<div className={'volunteerDescriptionContainer'}>
@@ -35,13 +37,23 @@ export default function Volunteer() {
 			</div>
 
 			<div className={'volunteerTitleContainer'}>
+				{/* <h2>{intl.formatMessage({ id: "whyJoinTitle" })}</h2>
+					<p>
+						{intl.formatMessage({ id: "whyJoinList1" })}<br/>
+						{intl.formatMessage({ id: "whyJoinList2" })}<br/>
+						{intl.formatMessage({ id: "whyJoinList3" })}<br/>
+						{intl.formatMessage({ id: "whyJoinList4" })}<br/>
+					</p> */}
+				<div className={'volunteerTitleContainer'}>
 				<h2>{intl.formatMessage({ id: "whyJoinTitle" })}</h2>
-				<p>
-					<div>{intl.formatMessage({ id: "whyJoinList1" })}</div>
-					<div>{intl.formatMessage({ id: "whyJoinList2" })}</div>
-					<div>{intl.formatMessage({ id: "whyJoinList3" })}</div>
-					<div>{intl.formatMessage({ id: "whyJoinList4" })}</div>
-				</p>
+					<p>
+						{intl.formatMessage({ id: "whyJoinList1" })}<br/>
+						{intl.formatMessage({ id: "whyJoinList2" })}<br/>
+						{intl.formatMessage({ id: "whyJoinList3" })}<br/>
+						{intl.formatMessage({ id: "whyJoinList4" })}<br/>
+					</p>
+				</div>
+
 			</div>
 
 
