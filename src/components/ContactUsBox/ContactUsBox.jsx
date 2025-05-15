@@ -9,12 +9,12 @@ export default function ContactUsBox() {
         <div className={"contactUsBox"}>
             <div className={"header"}>
                 <div>
-                    {intl.formatMessage({id: "contactUs"}).toUpperCase()}
+                    {intl.formatMessage({ id: "contactUs" }).toUpperCase()}
                 </div>
             </div>
             <div className={"contactInfo"}>
                 <div>
-                    {intl.formatMessage({id: "email"})}
+                    {intl.formatMessage({ id: "email" })}
                 </div>
                 <p>
                     connectmongol.mng@gmail.com

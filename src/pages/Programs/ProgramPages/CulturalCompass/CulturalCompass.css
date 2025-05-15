@@ -34,11 +34,11 @@
 }
 
 
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 768px) {
 	.mobile-only {
 		display: flex
 	}
-	
+
 	.mobile-desktop {
 		display: none
 	}
@@ -53,7 +53,7 @@
 		background-image: none !important;
 	}
 
-	.culturalCompassContainer h1{
+	.culturalCompassContainer h1 {
 		font-size: calc(5px + 1.75vw);
 		padding-top: 5px;
 		display: flex;
@@ -61,7 +61,7 @@
 		width: 100%;
 	}
 
-	.culturalCompassContainer h3{
+	.culturalCompassContainer h3 {
 		font-size: calc(5px + 1.75vw);
 		padding-top: 10px;
 		display: flex;
@@ -69,14 +69,14 @@
 		width: 100%;
 	}
 
-	.culturalCompassContainer p{
+	.culturalCompassContainer p {
 		font-size: calc(1px + 1.75vw);
 		padding-top: 5px;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 	}
-	
+
 	.culturalCompassContainer {
 		padding-top: 5px;
 		display: flex;
@@ -86,13 +86,13 @@
 		width: 100%;
 		background-size: cover;
 		background-position: center;
-		min-height: 50vh; 
+		min-height: 50vh;
 	}
-	
+
 	.culturalCompassContentContainer {
 		font-size: calc(5px + 1.75vw);
 		font-weight: bold;
 		width: 100%;
 	}
-	
+
 }

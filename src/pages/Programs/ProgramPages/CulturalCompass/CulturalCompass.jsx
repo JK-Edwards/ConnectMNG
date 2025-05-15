@@ -7,11 +7,11 @@ import StyledLink from "../../../../components/StyledLink/StyledLink";
 export default function CulturalCompassProgram(link) {
     return (
 
-        
+
         <div className={"culturalCompassContainer"}>
             <div className={"culturalCompassContentContainer"}>
 
-            <div className={"homeIconAndResumeBoost"}>
+                <div className={"homeIconAndResumeBoost"}>
                     <StyledLink text={"Home"} link={"/"} />
                     <h2 className={'resumeboost-header mobile-only'}> Workshops</h2>
                 </div>
@@ -41,9 +41,9 @@ export default function CulturalCompassProgram(link) {
                     </p>
                 </div>
             </div>
-			<div className={"contactUsBoxContainer"}>
-				<ContactUsBox />
-			</div>
+            <div className={"contactUsBoxContainer"}>
+                <ContactUsBox />
+            </div>
         </div>
     )
 }

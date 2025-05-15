@@ -1,4 +1,3 @@
-import logo from "../../images/logo.png";
 import React, { useState } from "react";
 
 import { useIntl } from "react-intl";
@@ -52,7 +51,7 @@ export default function Contact() {
 
         // Sending email using EmailJS
         const templateParams = {
-            to_name:"ConnectMNG",
+            to_name: "ConnectMNG",
             from_name: `${firstName} ${lastName}`,
             from_email: email,
             subject: subject,
@@ -67,29 +66,26 @@ export default function Contact() {
                 "O6pJDJsUT4I2tB8Xs" // EmailJS Public Key
             )
             .then(() => {
-                    Swal.fire({
-                        icon: "success",
-                        title: intl.formatMessage({ id: "Email Sent Success"}),
-                        text: intl.formatMessage({ id: "We Will Get In Touch" }),
-                    });
-                    // Reset form fields
-                    setFirstName("");
-                    setLastName("");
-                    setEmail("");
-                    setSubject("");
-                    setMessage("");
-                })
-                .catch(() => {
-                    Swal.fire({
-                        icon: "error",
-                        title: intl.formatMessage({ id: "Email Sent Error"}),
-                        text: intl.formatMessage({ id: "Please Try Again" }),
-                    });
+                Swal.fire({
+                    icon: "success",
+                    title: intl.formatMessage({ id: "Email Sent Success" }),
+                    text: intl.formatMessage({ id: "We Will Get In Touch" }),
                 });
-            };
-    
-
-    
+                // Reset form fields
+                setFirstName("");
+                setLastName("");
+                setEmail("");
+                setSubject("");
+                setMessage("");
+            })
+            .catch(() => {
+                Swal.fire({
+                    icon: "error",
+                    title: intl.formatMessage({ id: "Email Sent Error" }),
+                    text: intl.formatMessage({ id: "Please Try Again" }),
+                });
+            });
+    };
             return (
                 <div className={"contactContainer"}>
                     <h1>{intl.formatMessage({ id: "contactUsTitle" })}</h1>
@@ -119,12 +115,12 @@ export default function Contact() {
                         <div className={"textArea"}>
                             <textarea value={message} placeholder={intl.formatMessage({ id: "messagePlaceholder" })} onChange={(event) => setMessage(event.target.value)}/>
                         </div>
-                    </div>
-                    <div>
-                        <button className={"submitButton"} type="button" onClick={handleSubmit}>
-                            {intl.formatMessage({ id: "getInTouch" })}
-                        </button>
-                    </div>
-                </div>
-            );
-        };
+            </div>
+            <div>
+                <button className={"submitButton"} type="button" onClick={handleSubmit}>
+                    {intl.formatMessage({ id: "getInTouch" })}
+                </button>
+            </div>
+        </div>
+    );
+};

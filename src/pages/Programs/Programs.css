@@ -5,8 +5,8 @@
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding-top: 25px;
-	padding-left: 20px;
+	padding-top: calc(1rem + 2vw);
+	padding-left: 75px;
 	padding-right: 20px;
 	overflow-x: hidden;
 }
@@ -70,14 +70,15 @@
 	display: flex
 }
 
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 768px) {
 	.mobile-only {
 		display: flex
 	}
-	
+
 	.mobile-desktop {
 		display: none
 	}
+
 	.programsContainer {
 		background-image: url("../../images/background_white.jpg");
 		display: flex;
@@ -85,9 +86,7 @@
 		justify-content: space-between;
 		background-size: cover;
 		background-position: center;
-		padding-top: 95px;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding: 30px 20px;
 		background-color: white;
 	}
 
@@ -101,7 +100,7 @@
 		background-size: cover;
 		background-position: center;
 	}
-	
+
 	.indivProgramContainer {
 		display: flex;
 		flex-direction: row;
@@ -110,26 +109,26 @@
 		padding-top: 15px;
 		width: 50vw;
 	}
-	
+
 	.indivProgramContainer h1 {
 		font-size: calc(8px + 1.75vw);
 		font-weight: bold;
 		margin: 0;
 	}
-	
+
 	.indivProgramContainer p {
 		font-size: calc(1px + 1.2vw);
 		width: 90vw;
 	}
-	
+
 	.programsHeader h1 {
 		font-size: calc(8px + 1.75vw);
 		font-weight: bold;
 		padding-top: 4vw;
 	}
-	
+
 	.programsHeader p {
-		font-size: calc(7px + 1.2vw); 
+		font-size: calc(7px + 1.2vw);
 		padding-left: 1.3vw;
 		padding-top: 2vw;
 		text-align: left;
@@ -139,7 +138,7 @@
 	.contactUsBoxContainer {
 		padding-right: 10px;
 	}
-	
+
 	.programDescription {
 		width: 80vw;
 		text-align: justify;
@@ -172,9 +171,9 @@
 		font-size: calc(5px + 1.75vw);
 		font-weight: bold;
 	}
-	
+
 	.programs-header {
-		font-size: calc(7px + 2.5vw); 
+		font-size: calc(7px + 2.5vw);
 		/* color: #033C26; */
 		font-weight: 700;
 		padding-bottom: 0vw;
@@ -184,7 +183,7 @@
 		width: 96vw;
 	}
 
-	  
+
 	.homeIconAndPrograms {
 		display: flex;
 		align-items: center;
@@ -192,12 +191,12 @@
 
 	.icon {
 		transform: scale(1);
-  		transform-origin: center;
+		transform-origin: center;
 		margin: 0;
 	}
 
 	.homeIconAndPrograms {
-  		width: 102%;
+		width: 102%;
 		margin: 0;
 		padding: 0;
 		gap: 0rem;

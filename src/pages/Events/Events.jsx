@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Events.css";
 
 export default function Events() {
-	const intl = useIntl();
+    const intl = useIntl();
     const events = [
         {
             date: intl.formatMessage({ id: "date" }),
@@ -13,7 +13,7 @@ export default function Events() {
                 { time: intl.formatMessage({ id: "time1" }), name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
             ],
         },
-        
+
     ];
 
     return (
@@ -27,8 +27,8 @@ export default function Events() {
                         <thead>
                             <tr>
                                 <th>{intl.formatMessage({ id: "Time" })}</th>
-                                <th>{intl.formatMessage({id: "Event"})}</th>
-                                <th>{intl.formatMessage({id: "Location"})}</th>
+                                <th>{intl.formatMessage({ id: "Event" })}</th>
+                                <th>{intl.formatMessage({ id: "Location" })}</th>
                             </tr>
                         </thead>
                         <tbody>
