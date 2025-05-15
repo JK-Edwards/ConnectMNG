@@ -12,7 +12,7 @@ export default function OurStory() {
 	return (
 		<div className={"ourStoryPage"}>
             <div className={"ourStoryTitle"}>
-                {intl.formatMessage({ id: "ourStory" }).toUpperCase()}
+                {intl.formatMessage({ id: "ourStoryTitle" }).toUpperCase()}
             </div>
             <div className={"ourStoryDesc"}>
                 {intl.formatMessage({ id: "ourStoryText" })}

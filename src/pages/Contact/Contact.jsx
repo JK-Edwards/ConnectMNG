@@ -94,7 +94,7 @@ export default function Contact() {
                 <div className={"contactContainer"}>
                     <h1>{intl.formatMessage({ id: "contactUsTitle" })}</h1>
                     <p>{intl.formatMessage({ id: "contactUsDesc" })}</p>
-                    <h3>{intl.formatMessage({ id: "yourName" })}</h3>
+                    <h3>{intl.formatMessage({ id: "yourNameTitle" })}</h3>
                     <div className={"inputContainer"}>
                         <input value={firstName} placeholder={intl.formatMessage({ id: "firstNamePlaceholder" })} onChange={(event) => setFirstName(event.target.value)}/>
                         <input value={lastName} placeholder={intl.formatMessage({ id: "lastNamePlaceholder" })} onChange={(event) => setLastName(event.target.value)}/>
