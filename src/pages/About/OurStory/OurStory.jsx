@@ -34,6 +34,14 @@ export default function OurStory() {
 				<p><strong>{intl.formatMessage({ id: "ourStoryText6b" })}</strong></p>
 				<p><strong>{intl.formatMessage({ id: "ourStorySignOff" })}</strong></p>
 			</div>
+			<div className={"ourStoryPage"}>
+				<div className={"ourStoryTitle"}>
+					{intl.formatMessage({ id: "ourStory" }).toUpperCase()}
+				</div>
+				<div className={"ourStoryDesc"}>
+					{intl.formatMessage({ id: "ourStoryText" })}
+				</div>
+			</div>
 		</div>
 	);
 }

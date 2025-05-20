@@ -10,12 +10,12 @@ import { useIntl } from "react-intl";
 import "./Blogs.css";
 
 const desc1 = <i>"This blog is more than just a virtual space; it's a cozy coerner where we can come together as Mongolian American college "
-			+ "students and young professionals, share our stories, and support each other on  this incredible journey..."</i>;
+	+ "students and young professionals, share our stories, and support each other on  this incredible journey..."</i>;
 
 const desc2 = <i>"As the first impression is always important, your resume is the first impression you can make at the companies when appying "
-			+ "for a job. According to the Ladders study, on average, recruiters spend 7.4 seconds on the initial screeming of a resume..."</i>;
+	+ "for a job. According to the Ladders study, on average, recruiters spend 7.4 seconds on the initial screeming of a resume..."</i>;
 
-function BlogCard ({image, title, desc, link}) {
+function BlogCard({ image, title, desc, link }) {
 	const intl = useIntl();
 
 	return (
@@ -26,7 +26,7 @@ function BlogCard ({image, title, desc, link}) {
 				<p>{desc}</p>
 				<StyledLink text={intl.formatMessage({id: "readMore"})} link={link} />
 			</div>
-			<img className={"blogThumbnail"} src={image} alt={title}/>
+			<img className={"blogThumbnail"} src={image} alt={title} />
 		</div>
 	);
 }
@@ -42,16 +42,16 @@ export default function Blogs() {
 		<div className={"homeIconAndResources"}>
 			<a href="/Home" style={{ display: "inline" }}>
 					<img src={icon} className={"icon mobile-only"} alt={"Home"} />
-			</a>
-			{ <h2 className={'resources-header mobile-only'}>{intl.formatMessage({id: "/ Resources" } )}</h2> }
-		</div>
-		
-			<h1 className={'blogTitleContainer'}>{intl.formatMessage({id: "blogs"})}</h1>
+				</a>
+				{<h2 className={'resources-header mobile-only'}>{intl.formatMessage({ id: "/ Resources" })}</h2>}
+			</div>
+
+			<h1 className={'blogTitleContainer'}>{intl.formatMessage({ id: "blogs" })}</h1>
 			<div className={'blogCardsContainer'}>
 				<BlogCard image={welcomeBlogThumbnail}
-							title={"Connect MNG - Where Your Journey is Our Journey"}
-							desc={desc1}
-							link={"/resources/blogs/welcome-blog"}/>
+					title={"Connect MNG - Where Your Journey is Our Journey"}
+					desc={desc1}
+					link={"/resources/blogs/welcome-blog"} />
 				<BlogCard image={resumeBlogThumbnail}
 							title={"Resume 101"}
 							desc={desc2}

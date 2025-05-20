@@ -13,21 +13,21 @@ export default function Footer() {
         <div className={"footerContainer"}>
             <div className={"mobile-officialLinksContainer"}>
                 <div>
-                    <Link>Terms of Use</Link>
+                    <Link>{intl.formatMessage({ id: "termsOfUse" })}</Link>
                 </div>
                 <div>
-                    <Link>Privacy Policy</Link>
+                    <Link>{intl.formatMessage({ id: "privacyPolicy" })}</Link>
                 </div>
                 <div>©2024 Connect MNG</div>
             </div>
             <div className={"footerPageLinksContainer"}>
                 <div className={"footerLinkContainer"}>
-                    <h3>EXPLORE</h3>
+                    <h3>{intl.formatMessage({ id: "explore" }).toUpperCase()}</h3>
                     <Link to={"/"}>{intl.formatMessage({ id: "home" }).toUpperCase()}</Link>
                     <Link to={"/resources/blogs"}>{intl.formatMessage({ id: "blogs" }).toUpperCase()}</Link>
                 </div>
                 <div className={"footerLinkContainer"}>
-                    <h3>ENGAGE</h3>
+                    <h3>{intl.formatMessage({ id: "engage" }).toUpperCase()}</h3>
                     <Link to={"/get-involved/donate"}>{intl.formatMessage({ id: "donate" }).toUpperCase()}</Link>
                     <Link to={"/get-involved/internships"}>{intl.formatMessage({ id: "internships" }).toUpperCase()}</Link>
                     <Link to={"/get-involved/volunteer"}>{intl.formatMessage({ id: "volunteer" }).toUpperCase()}</Link>
@@ -41,17 +41,17 @@ export default function Footer() {
             <div className={"footerSocialsLinksContainer"}>
                 <div className={"footerSocialsBarContainer"}>
                     <h3>
-                        CONNECT WITH US
+                        {intl.formatMessage({ id: "connectWithUs" })}
                     </h3>
                     <SocialsBar isInHeader={false} />
                 </div>
                 <NewsletterSubscribe />
                 <div className={"officialLinksContainer"}>
                     <div>
-                        <Link>Terms of Use</Link>
+                        <Link>{intl.formatMessage({ id: "termsOfUse" })}</Link>
                     </div>
                     <div>
-                        <Link>Privacy Policy</Link>
+                        <Link>{intl.formatMessage({ id: "privacyPolicy" })}</Link>
                     </div>
                     <div>©2024 Connect MNG</div>
                 </div>

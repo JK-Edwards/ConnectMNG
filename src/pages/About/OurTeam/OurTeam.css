@@ -107,4 +107,18 @@
     .team-image {
         margin: 20px auto;
     }
+  
+.imgContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.infoContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.textContainer {
+	display: flex;
+	align-items: center;
 }

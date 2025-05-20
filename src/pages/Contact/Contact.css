@@ -1,148 +1,132 @@
-/* General Form Container */
-.formContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center aligns all inputContainers */
-    width: 100%;
-    max-width: 800px;
-    /* Limit form width */
-    margin: 0 auto;
-    padding-top: 95px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: #ffffff;
-    border-radius: 10px;
+.contactContainer {
+	background-image: url("../../images/background_green.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 2vw;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
-/* Input Containers */
-.inputContainer {
-    display: flex;
-    flex-direction: column;
-    /* Stack label and input */
-    gap: 10px;
-    width: 100%;
-    max-width: 500px;
-    /* Restricts width for consistency */
-}
-
-/* Input Fields */
-.inputContainer input,
-.inputContainer textarea {
-    width: 100%;
-    /* Ensures uniform width */
-    height: 45px;
-    /* Standard height for text inputs */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-/* Message Text Container (Textarea) */
-.inputContainer textarea {
-    height: 150px;
-    /* Adjust height for textarea */
-    resize: vertical;
-    /* Allow user resizing */
-    padding: 12px;
-    /* Consistent padding */
-    line-height: 1.5;
-    /* Improves text readability */
-    font-size: 16px;
-    width: 100%;
-    /* Ensure it aligns properly */
-}
-
-/* Error Text */
-.errorText {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
+.contactContainer h1 {
+    font-size: 50px;
+	font-weight: bolder;
+    padding: 0 20px;
     text-align: left;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: rgba(31, 54, 61, 1);
 }
 
-/* Submit Button */
-.buttonContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 30px;
+.contactContainer h3 {
+    font-size: 20px;
+    padding: 0 20px;
+    margin-bottom: 5px;
+}
+
+.contactContainer p {
+	width: 575px;
+	font-size: 20px;
+    text-align: left;
+    padding: 0 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contactinputContainer {
+	display: flex;
+	gap: 20px;
+    padding: 0 20px;
 }
 
 .submitButton {
+	text-align: center;
     border-radius: 10px;
     background: #f2af60;
-    border: 2px solid #f2af60;
-    font-size: 16px;
-    width: 200px;
-    padding: 12px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
+    
+    font-size: calc(0.3rem + 0.5vw + 0.5vh);
+    width: fit-content;
+    margin-top: 20px;
+    padding: 0 20px;
 }
 
 .submitButton:hover {
-    background: orange;
-    transform: scale(1.05);
+	background: orange;
 }
+
+.contacttextArea {
+	height: 120px;
+	width: 530px;
+    max-width: 575px; /* Match the paragraph/input width */
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: none; /* Optional: disable resizing */
+}
+
+.contacttextARea {
+    padding: 0 20px;
+}
+
+.contactsubmit {
+    padding: 0 20px;
+}
+
 
 @media screen and (max-width: 768px) {
-    .formContainer {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .formContainer {
-        width: 90%;
-    }
-}
-
-/* Responsive Design for Tablets (Below 768px) */
-@media screen and (max-width: 768px) {
-    .formContainer {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    form {
-        width: 90%;
-        /* Adjust form width for smaller screens */
+    .contactContainer {
+        background-image: url("../../images/background_white.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
-    .inputContainer {
-        max-width: 90%;
+    input {
+        width: 141px;  
+        gap: 10px;
+        background-color: #f1efefbc;
+    }
+
+    .contactContainer h1 {
+        width: 222px;
+        height: 20px;
+        top: 194px;
+        left: 24px;
+        font-size: 20px;
+        color: #033C26;
+    }
+
+    .contactContainer p {
+        width: 350px;
+        height: 96px;
+        top: 3349px;
+        left: -3863px;
+        font-size: 18px;
     }
 
     .submitButton {
-        width: 100%;
-        /* Full-width button for better usability */
-        font-size: 14px;
+        height: 40px;
+        width: 80%;
+        max-width: 300px;
+        font-size: 40px;
     }
 
-    .supportPopupButtonImage {
-        max-width: 4vw !important;
-    }
-}
-
-/* Responsive Design for Mobile (Below 480px) */
-@media screen and (max-width: 750px) {
-    .formContainer {
-        padding-top: 35px;
+    .contactContainer h3 {
+        margin-bottom: 5px;
+        font-size: 18px;
     }
 
-    .inputContainer {
-        width: 100%;
+    .contacttextArea{
+        width: 300px;
+        background-color: #f1efefbc;
     }
 
-    .inputContainer input,
-    .inputContainer textarea {
-        font-size: 14px;
-    }
-
-    .submitButton {
-        font-size: 14px;
+    .contactsubmit button{
+        width: 100px;
+        font-size: 15px;
     }
 }

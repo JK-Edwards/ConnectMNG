@@ -9,6 +9,7 @@
     padding-left: 140px !important;
     padding-right: 140px !important;
     padding-top: 4vw;
+    padding: calc(1.5rem + 2vw) 20px 15px 20px;
 }
 
 .ourStoryTitleContainer h1 {
@@ -79,4 +80,56 @@
     .team-image {
         margin: 20px auto;
     }
+}
+
+/*Mobile responsive our story*/
+@media screen and (max-width: 750px) {
+    .aboutContainer {
+        padding: 30px 40px !important;
+        align-items: stretch;    
+    }
+
+    .ourStoryTitleContainer {
+        width: 100%;
+        padding: 0;              
+        margin: 0 0 1rem 0;
+    }
+    .ourStoryTitleContainer h1 {
+        font-size: calc(5px + 8vw);
+        margin: 0;
+        text-align: left;
+    }
+
+    .ourStoryDesc {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 1rem 0;
+        font-size: calc(5px + 2vw);
+        text-align: left;
+    }
+
+    .ourStoryCardContainer {
+        width: 100%;
+        padding: 0;           
+        margin: 1rem 0;
+    }
+    .ourStoryCardTextContainer {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 1rem 0;
+        font-size: calc(5px + 2vw);
+        text-align: left;
+    }
+
+    .team-image {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    /* .ourStoryTitle {
+        font-size: calc(5px + 8vw);
+    }
+
+    .ourStoryDesc {
+        font-size: calc(5px + 2vw);
+    } */
 }
