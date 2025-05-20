@@ -3,6 +3,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const path = require('path');
 const multer = require('multer');
+const cors = require('cors');
 
 const file_path = 'blogs.json';
 
@@ -25,6 +26,7 @@ const upload = multer({ storage });
 const app = express();
 const port = 3000;
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads')); // Serve uploaded images

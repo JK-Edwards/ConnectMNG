@@ -1,11 +1,41 @@
 [
   {
     "id": "1",
-    "title": "First blog",
-    "thumbnail": "/uploads/1747175813984.jpg",
+    "title": "Connect MNG - Where Your Journey is Our Journey",
+    "thumbnail": "/images/blogs/welcomeBlog/welcomeBlogThumbnail.jpg",
     "images": [
-      "/uploads/1747175813985.jpg"
+      "/images/blogs/welcomeBlog/welcomeBlogThumbnail.jpg"
     ],
+    "content": "This blog is more than just a virtual space; it's a cozy coerner where we can come together as Mongolian American college + students and young professionals, share our stories, and support each other on this incredible journey..."
+  },
+  {
+    "id": "2",
+    "title": "All the basics you need to know about resume",
+    "thumbnail": "/images/blogs/resumeBlog/resumeBlogThumbnail.jpg",
+    "images": [
+      "/images/blogs/resumeBlog/resumeBlogThumbnail.jpg"
+    ],
+    "content": "As the first impression is always important, your resume is the first impression you can make at the companies when appying for a job. According to the Ladders study, on average, recruiters spend 7.4 seconds on the initial screeming of a resume..."
+  },
+  {
+    "id": "3",
+    "title": "First blog",
+    "thumbnail": "/uploads/1747750177169.png",
+    "images": [],
+    "content": "This is a test blog"
+  },
+  {
+    "id": "3",
+    "title": "First blog",
+    "thumbnail": "/uploads/1747750180009.png",
+    "images": [],
+    "content": "This is a test blog"
+  },
+  {
+    "id": "3",
+    "title": "First blog",
+    "thumbnail": "/uploads/1747750224792.png",
+    "images": [],
     "content": "This is a test blog"
   }
 ]
