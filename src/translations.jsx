@@ -4,7 +4,7 @@ const translations = {
     en: {
         programs: "Programs",
         getInvolved: "Get Involved",
-        blogs: "Blogs",
+        blogs: "BLOGS",
         podcasts: "Podcast",
         about: "About Us",
         resources: "Resources",
@@ -118,6 +118,7 @@ const translations = {
         events: "Events",
         howToJoinTitle: "How to Join:",
         howToJoinDesc: "Click our application link and fill it out! Let us know your interests and skills, and we will match you with the right opportunity. Once accepted, you will receive an email from our team!",
+        readMore: "Read More"
 
         // Donation page translations
         empowerYoungMongolians: "Empower young Mongolian professionals",

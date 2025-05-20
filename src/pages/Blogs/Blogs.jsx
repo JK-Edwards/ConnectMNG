@@ -24,7 +24,7 @@ function BlogCard({ image, title, desc, link }) {
 			<div className={"blogCardTextContainer"}>
 				<h3>{title}</h3>
 				<p>{desc}</p>
-				<StyledLink text={intl.formatMessage({ id: "learnMore" })} link={link} />
+				<StyledLink text={intl.formatMessage({id: "readMore"})} link={link} />
 			</div>
 			<img className={"blogThumbnail"} src={image} alt={title} />
 		</div>
@@ -53,9 +53,9 @@ export default function Blogs() {
 					desc={desc1}
 					link={"/resources/blogs/welcome-blog"} />
 				<BlogCard image={resumeBlogThumbnail}
-					title={"All the basics you need to know about resume"}
-					desc={desc2}
-					link={"/resources/blogs/resume-blog"} />
+							title={"Resume 101"}
+							desc={desc2}
+							link={"/resources/blogs/resume-blog"}/>
 			</div>
 		</div>
 	);
