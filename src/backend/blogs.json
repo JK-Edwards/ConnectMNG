@@ -16,26 +16,5 @@
       "/images/blogs/resumeBlog/resumeBlogThumbnail.jpg"
     ],
     "content": "As the first impression is always important, your resume is the first impression you can make at the companies when appying for a job. According to the Ladders study, on average, recruiters spend 7.4 seconds on the initial screeming of a resume..."
-  },
-  {
-    "id": "3",
-    "title": "First blog",
-    "thumbnail": "/uploads/1747750177169.png",
-    "images": [],
-    "content": "This is a test blog"
-  },
-  {
-    "id": "3",
-    "title": "First blog",
-    "thumbnail": "/uploads/1747750180009.png",
-    "images": [],
-    "content": "This is a test blog"
-  },
-  {
-    "id": "3",
-    "title": "First blog",
-    "thumbnail": "/uploads/1747750224792.png",
-    "images": [],
-    "content": "This is a test blog"
   }
 ]

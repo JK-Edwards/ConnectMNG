@@ -8,23 +8,28 @@ const cors = require('cors');
 const file_path = 'blogs.json';
 
 const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-      const uploadDir = 'uploads/';
+  destination: (req, file, cb) => {
+      // Set the upload directory to 'public/images/uploads'
+      const uploadDir = path.join(__dirname, '../../public/images/uploads');
       if (!fs.existsSync(uploadDir)) {
-        fs.mkdirSync(uploadDir);
+          fs.mkdirSync(uploadDir, { recursive: true }); // Create the directory if it doesn't exist
       }
       cb(null, uploadDir);
-    },
-    filename: (req, file, cb) => {
-      cb(null, Date.now() + path.extname(file.originalname)); // Unique filename
-    }
-  });
+  },
+  filename: (req, file, cb) => {
+      cb(null, Date.now() + path.extname(file.originalname)); // Generate a unique filename
+  }
+});
 
 const upload = multer({ storage });
 
-
 const app = express();
 const port = 3000;
+// Serve uploaded images from the public directory
+app.use('/images/uploads', express.static(path.join(__dirname, '../../public/images/uploads')));
+
+
+
 
 app.use(cors());
 app.use(express.json());
@@ -54,7 +59,7 @@ app.post('/createBlog', upload.fields([
 ]), (req, res) => {
   const { id, title, content } = req.body;
 
-  const thumbnail = req.files['thumbnail'] ? `/uploads/${req.files['thumbnail'][0].filename}` : null;
+  const thumbnail = req.files['thumbnail'] ? `/images/uploads/${req.files['thumbnail'][0].filename}` : null;
   const images = req.files['images'] ? req.files['images'].map(file => `/uploads/${file.filename}`) : [];
 
   const newBlog = {

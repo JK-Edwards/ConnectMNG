@@ -6,13 +6,7 @@ import { useIntl } from "react-intl";
 
 import "./Blogs.css";
 
-// const desc1 = <i>"This blog is more than just a virtual space; it's a cozy coerner where we can come together as Mongolian American college "
-// 			+ "students and young professionals, share our stories, and support each other on  this incredible journey..."</i>;
-
-// const desc2 = <i>"As the first impression is always important, your resume is the first impression you can make at the companies when appying "
-// 			+ "for a job. According to the Ladders study, on average, recruiters spend 7.4 seconds on the initial screeming of a resume..."</i>;
-
-function BlogCard ({image, title, desc, link}) {
+function BlogCard({ image, title, desc, link }) {
 	const intl = useIntl();
 
 	return (
@@ -21,9 +15,9 @@ function BlogCard ({image, title, desc, link}) {
 			<div className={"blogCardTextContainer"}>
 				<h3>{title}</h3>
 				<p>{desc}</p>
-				<StyledLink text={intl.formatMessage({id: "learnMore"})} link={link} />
+				<StyledLink text={intl.formatMessage({ id: "learnMore" })} link={link} />
 			</div>
-			<img className={"blogThumbnail"} src={image} alt={title}/>
+			<img className={"blogThumbnail"} src={image} alt={title} />
 		</div>
 	);
 }
@@ -52,23 +46,24 @@ export default function Blogs() {
 	return (
 		<div className={"blogContainer"}>
 
-		<div className={"homeIconAndResources"}>
-			<a href="http://connectmng.org/" target={"_blank"} rel={"noreferrer"} style={{ display: "inline" }}>
+			<div className={"homeIconAndResources"}>
+				<a href="http://connectmng.org/" target={"_blank"} rel={"noreferrer"} style={{ display: "inline" }}>
 					<img src={icon} className={"icon mobile-only"} alt={"Home"} />
-			</a>
-			{ <h2 className={'resources-header mobile-only'}>{intl.formatMessage({id: "/ Resources" } )}</h2> }
-		</div>
-		
-			<h1 className={'blogTitleContainer'}>{intl.formatMessage({id: "blogs"})}</h1>
+				</a>
+				{<h2 className={'resources-header mobile-only'}>{intl.formatMessage({ id: "/ Resources" })}</h2>}
+			</div>
+
+			<h1 className={'blogTitleContainer'}>{intl.formatMessage({ id: "blogs" })}</h1>
 			<div className={'blogCardsContainer'}>
-				<BlogCard image={blogs[0]?.thumbnail}
-							title={blogs[0]?.title}
-							desc={blogs[0]?.content}
-							link={"/resources/blogs/welcome-blog"}/>
-				<BlogCard image={blogs[1]?.thumbnail}
-							title={blogs[1]?.title}
-							desc={blogs[1]?.content}
-							link={"/resources/blogs/resume-blog"}/>
+				{blogs.map((blog, index) => (
+					<BlogCard
+						key={index} // Use a unique key for each blog card
+						image={blog.thumbnail}
+						title={blog.title}
+						desc={blog.content}
+						link={`/resources/blogs/${blog.title.replace(/\s+/g, '-').toLowerCase()}`} // Generate a dynamic link
+					/>
+				))}
 			</div>
 		</div>
 	);
