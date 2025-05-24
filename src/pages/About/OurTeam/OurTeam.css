@@ -73,7 +73,7 @@
     text-align: left;
     color: #4A4A4A;
     font-size: calc(1rem + 0.3vw);
-    
+
 }
 
 .team-image {
@@ -107,18 +107,19 @@
     .team-image {
         margin: 20px auto;
     }
-  
-.imgContainer {
-	display: flex;
-	justify-content: space-around;
-}
 
-.infoContainer {
-	display: flex;
-	justify-content: space-around;
-}
+    .imgContainer {
+        display: flex;
+        justify-content: space-around;
+    }
 
-.textContainer {
-	display: flex;
-	align-items: center;
+    .infoContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .textContainer {
+        display: flex;
+        align-items: center;
+    }
 }
