@@ -44,6 +44,7 @@ export default function Volunteer() {
 						{intl.formatMessage({ id: "whyJoinList3" })}<br/>
 						{intl.formatMessage({ id: "whyJoinList4" })}<br/>
 					</p>
+
 			</div>
 
 
@@ -52,17 +53,19 @@ export default function Volunteer() {
 			</div>
 
 			<div className={'volunteerCardContainer only-desktop'}>
-				<VolunteerCard flip={true} title={intl.formatMessage({ id: "fundraising" })} desc={FUNDRAISING_CARD_DESC} link={fundraisingImage} />
-				<VolunteerCard flip={false} title={intl.formatMessage({ id: "events" })} desc={EVENTS_CARD_DESC} link={eventsImage} />
+				<VolunteerCard flip={true} title={intl.formatMessage({id: "fundraising"})} desc={intl.formatMessage({ id: "fundraisingDesc" })} link={fundraisingImage}/>
+				<VolunteerCard flip={false} title={intl.formatMessage({id: "events"})} desc={intl.formatMessage({ id: "eventsDesc" }).split('\n').map((line, index) => (
+				<span key={index}>{line}<br /></span>))} link={eventsImage}/>
 			</div>
 
 			<div className="thinSeparator only-mobile"></div>
 
 			<div className={'volunteerCardContainerMobile only-mobile'}>
-				<VolunteerCardMobile flip={true} title={"Fundraising"} desc={"Help us with fundrasing..."} link={fundraisingImage} />
-				<div className="thinSeparator only-mobile"></div>
-				<VolunteerCardMobile flip={true} title={"Events"} desc={"Help us with organizing events..."} link={eventsImage} />
-			</div>
+
+				 <VolunteerCardMobile flip={true} title={"Fundraising"} desc={intl.formatMessage({ id: "fundraisingDesc" })} link={fundraisingImage}/>
+				 <div className="thinSeparator only-mobile"></div>
+				 <VolunteerCardMobile flip={true} title={"Events"} desc={intl.formatMessage({ id: "eventsDesc" })} link={eventsImage}/>
+ 			</div>
 
 			<div className="thinSeparator only-mobile"></div>
 

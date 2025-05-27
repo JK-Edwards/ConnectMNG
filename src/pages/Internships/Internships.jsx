@@ -70,10 +70,7 @@ export default function Internships() {
 			</div>
 
 			<div className="thinSeparator only-mobile"></div>
-
-			<div className={'internshipsFormTitleContainer'}>
-				Small paragraph about the internship process
-			</div>
+			
 			<div className={'internshipsFormContainer'}>
 				<StyledFormLink text={'Become an intern!'} />
 			</div>

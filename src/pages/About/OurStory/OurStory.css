@@ -53,6 +53,10 @@
     border-radius: 10px;
 }
 
+.ourStoryDesc {
+        width: 80vw;
+}
+
 @media (min-width: 768px) {
     .aboutContainer {
         padding: 20px;

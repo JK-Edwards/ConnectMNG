@@ -25,7 +25,7 @@ export default function Blogs() {
 
 	return (
 		<div className={"podcastContainer"}>
-			<h1>{intl.formatMessage({ id: "Podcasts" })}</h1>
+			<h1>{intl.formatMessage({id: "podcasts"})}</h1>
 			<PodcastCard image={''}
 				title={"Connect MNG - Where Your Journey is Our Journey"}
 				desc={"desc"}

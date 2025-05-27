@@ -30,7 +30,7 @@
 	padding-bottom: 2vw;
 	padding-left: 75px;
 	padding-right: 75px;
-	font-size: calc(1px + 1.75vw);
+	font-size: calc(1px + 1.2vw);
 }
 
 .volunteerCardContainer {
@@ -50,18 +50,18 @@
 }
 
 .volunteerTitleContainer h1 {
-	font-size: calc(10px + 2vw);
+	font-size: calc(10px + 1.5vw);
 }
 
 .volunteerTitleContainer h2 {
-	font-size: calc(10px + 2vw);
+	font-size: calc(10px + 1.5vw);
 	padding-top: 2vw;
 }
 
 
 
 .volunteerDescriptionContainer p {
-	font-size: calc(1px + 1.75vw);
+	font-size: calc(1px + 1.2vw);
 }
 
 .volunteerFormTitleContainer {
@@ -122,6 +122,13 @@
 	}
 
 	.volunteerDescriptionContainer p {
+		width: 100%;
+		font-size: calc(1.2rem + 1vw);
+		color: black;
+		padding-top: 4vw;
+	}
+
+  .volunteerTitleContainer p {
 		width: 100%;
 		font-size: calc(1.2rem + 1vw);
 		color: black;

@@ -16,6 +16,7 @@ import "./Programs.css";
 
 
 function Program({ name, description, pageLink }) {
+	const intl = useIntl();
 	return (
 
 		<div className={"indivProgramContainer"}>
@@ -24,7 +25,7 @@ function Program({ name, description, pageLink }) {
 					<h1>
 						{name}
 					</h1>
-					<StyledLink text={"Get Started"} link={pageLink} />
+					<StyledLink text={intl.formatMessage({ id: "getStarted" })} link={pageLink} />
 				</div>
 				<p className={'programDescription'}>
 					{description}
@@ -50,12 +51,10 @@ export default function Programs() {
 				</div>
 
 				<div className={"programsHeader"}>
-					<h1>
-						Our Programs
-					</h1>
-					<p>
-						At Connect MNG, we’re here to support Mongolian students and young professionals as they take the next step in their careers. Through resume reviews and monthly workshops on essential career skills, we provide practical guidance to help you grow with confidence.
-					</p>
+					<div>
+						<h1>{intl.formatMessage({ id: "ourProgramsTitle" })}</h1>
+						<p>{intl.formatMessage({ id: "ourProgramsDesc" })}</p>
+					</div>
 				</div>
 				<Program name={"Resume Boost"} description={intl.formatMessage({ id: "resumeBoostDesc" })} pageLink={"/programs/resume-boost-program"} />
 				<Program name={"Workshop"} description={intl.formatMessage({ id: "workshopDesc" })} pageLink={"/programs/cultural-compass-program"} />
