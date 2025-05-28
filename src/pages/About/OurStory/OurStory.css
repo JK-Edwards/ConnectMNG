@@ -19,11 +19,11 @@
     font-size: calc(16px + 2.5vw);
     text-align: center;
     margin-bottom: 1vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    padding: 0;
+    margin-top: 40px;
+    /* padding-top: 3vw;
     padding-left: 5vw;
-    padding-right: 5vw;
-    width: 80vw;
+    padding-right: 5vw; */
 }
 
 .ourStoryCardContainer {
