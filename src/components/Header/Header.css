@@ -4,6 +4,7 @@
 }
 
 .dropdown {
+	position: absolute;
 	background-color: white;
 }
 
@@ -39,6 +40,7 @@
 
 .languageContainer {
 	position: relative;
+	z-index: 1100;
 	height: 3vw;
 }
 

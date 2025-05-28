@@ -26,7 +26,7 @@ const translations = {
         newsletterPlaceholder: "Enter your email to receive our newsletters!",
         subscribe: "Subscribe",
         ourStory: "Our story",
-        ourTeam: "Our team",
+        ourTeam: "Our Team",
         time: "Time",
         event: "Event",
         location: "Location",
@@ -118,7 +118,7 @@ const translations = {
         events: "Events",
         howToJoinTitle: "How to Join:",
         howToJoinDesc: "Click our application link and fill it out! Let us know your interests and skills, and we will match you with the right opportunity. Once accepted, you will receive an email from our team!",
-        readMore: "Read More"
+        readMore: "Read More",
 
         // Donation page translations
         empowerYoungMongolians: "Empower young Mongolian professionals",
@@ -189,7 +189,7 @@ const translations = {
         learnMore: "Дэлгэрэнгүй",
         mission: "Америк дахь Монгол оюутан залуус болон залуу мэргэжилтнүүдийг хувийн болон мэргэжлийн хөгжилд зориулсан мэдээллийн нөөцөөр хангаж, хувь хүмүүс хоорондоо холбогдож, суралцаж, хамтдаа хөгжих боломжтой орчныг бүрдүүлэх.",
         missionAndImpact: "Зорилго & Нөлөө",
-        whatWeOffer: "Бидний санал болгох",
+        whatWeOffer: "Бидний санал болгох зүйлс",
         donate: "Хандив",
         events: "Үйл ажиллагаа",
         eventsDesc: "Үйл ажиллагаа зохион байгуулахад\nбидэнд туслах...",

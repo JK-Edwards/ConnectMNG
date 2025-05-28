@@ -1,0 +1,113 @@
+import React from "react";
+import { useState } from "react";
+
+function RegistrationForm() {
+   // TODO: Create state variables here
+   // Step 1: controlled inputs
+   const [username, setUsername] = useState("");
+   const [password, setPassword] = useState("");
+
+   // flags for which username rules passed
+   const [usernameReqs, setUsernameReqs] = useState({
+      longEnough: true,
+      onlyLettersDigits: true,
+   });
+   // flags for which password rules passed
+   const [passwordReqs, setPasswordReqs] = useState({
+      longEnough: true,
+      upperCaseChar: true,
+      specialChar: true,
+   });
+
+   
+   function handleSubmit(event) {
+      // TODO: Complete this function
+      // --- username checks ---
+      const longEnough = username.length >= 4;
+      // note: no '|' inside the char-class!
+      const onlyLettersDigits = /^[a-z0-9]+$/.test(username);
+
+      setUsernameReqs({ longEnough, onlyLettersDigits });
+
+      // --- password checks ---
+      const pwLongEnough = password.length >= 6;
+      const upperCaseChar = /[A-Z]/.test(password);
+      const specialChar = /[!@#$]/.test(password);
+
+      setPasswordReqs({
+         longEnough: pwLongEnough,
+         upperCaseChar,
+         specialChar,
+      });
+      // if *any* requirement fails, block the real submit
+      if (
+         !longEnough ||
+         !onlyLettersDigits ||
+         !pwLongEnough ||
+         !upperCaseChar ||
+         !specialChar
+      ) {
+         event.preventDefault();
+      }
+  
+   }
+  
+   return (
+      <form onSubmit={handleSubmit} target="_blank" method="post" 
+         action="https://wp.zybooks.com/form-viewer.php">
+         <p>
+            <label htmlFor="username">Username:</label>
+            <input type="text"            
+               id="username"
+               name="username"
+            />
+
+            { /* TODO: Add username error messages */ }
+            { /* only one of these can ever show */}
+            {!usernameReqs.longEnough && (
+               <span className="error">Must be at least four characters.</span>
+            )}
+            {usernameReqs.longEnough && !usernameReqs.onlyLettersDigits && (
+               <span className="error">
+                  Only lowercase letters and digits acceptable.
+               </span>
+            )}
+
+         </p>
+         <p>
+            <label htmlFor="password">Password:</label>
+            <input
+               id="password"
+               name="password"
+               type="text"
+               value={password}
+               onChange={e => setPassword(e.target.value)}
+            />
+
+            { /* TODO: Add password error messages */ }
+            { /* and similarly, only one of these */}
+            {!passwordReqs.longEnough && (
+               <span className="error">Must be at least six characters.</span>
+            )}
+            {passwordReqs.longEnough && !passwordReqs.upperCaseChar && (
+               <span className="error">
+                  Must contain an uppercase character.
+               </span>
+            )}
+            {passwordReqs.longEnough &&
+               passwordReqs.upperCaseChar &&
+               !passwordReqs.specialChar && (
+                  <span className="error">
+                     Must contain one of: ! @ # $
+                  </span>
+               )}
+
+         </p>
+         <p>
+            <button>Register</button>
+         </p>
+      </form>
+   );
+}
+
+export default RegistrationForm;

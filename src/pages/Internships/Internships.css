@@ -2,8 +2,9 @@
 	background-image: url("../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding-top: 95px;
-	padding-left: 20px;
+	padding-top: calc(1rem + 2vw);;
+	padding-bottom: calc(1.5rem + 2vw);
+	padding-left: 75px;
 	padding-right: 20px;
 }
 
@@ -11,21 +12,15 @@
 	color: #1F363D;
 	font-weight: 900;
 	padding-bottom: 2vw;
-	padding-left: 10vw;
-	padding-right: 10vw;
 }
 .internshipsContainer h2 {
 	color: #1F363D;
 	font-weight: 900;
 	padding-bottom: 2vw;
-	padding-left: 10vw;
-	padding-right: 10vw;
 }
 
 .internshipsContainer p {
 	padding-bottom: 1vw;
-	padding-left: 10vw;
-	padding-right: 10vw;
 	font-size: calc(1px + 1.75vw);
 }
 
