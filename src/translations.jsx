@@ -76,7 +76,8 @@ const translations = {
         aboutUsTitle: "About Us",
         aboutUsDesc: "Connect MNG is a nonprofit organization dedicated to empowering Mongolians in Washington state by fostering career development, professional growth, and a strong sense of community. Our team comes from diverse backgrounds, bringing together a wealth of experience and knowledge to support and uplift our members. We provide resources, mentorship, and networking opportunities to help individuals advance in their careers while creating a supportive environment where members can learn from one another. Through collaboration and shared experiences, we strive to build a stronger, more connected community.",
         ourValuesTitle: "Our Values",
-        ourStoryHeading: "Hello and a warm, heartfelt welcome to Connect MNG!",
+        ourStoryHeading1: "Hello and a warm, heartfelt welcome to",
+        ourStoryHeading2: "Connect MNG!",
         ourStorySub1: "A Community Rooted in Connection",
         ourStoryText1: "Connect MNG is a cozy corner where Mongolian American college students and young professionals can unite and support each other's growth through resources, programs, and events.",
         ourStorySub2: "Our Passionate Team",
@@ -278,12 +279,12 @@ const translations = {
 
 
         // Event page translations
-        Date: "2024 оны нэгдүгээр сарын 29-ний даваа",
-        Calendar: "Хуанли",
-        Time: "Цаг хугацаа",
-        Event: "Үйл явдал",
-        Location: "Байршил",
-        date: "2024 оны нэгдүгээр сарын 29-ний даваа",
+        Date: "1-р сарын 24, Даваа гариг, 2024",
+        Calendar: "Календарь",
+        Time: "цаг",
+        Event: "үйл явдал",
+        Location: "байршил",
+        date: "1-р сарын 24, Даваа гариг, 2024",
         time: "15:00",
         time1: "16:00",
 

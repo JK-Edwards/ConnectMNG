@@ -8,7 +8,8 @@ export default function OurStory() {
 	return (
 		<div className="aboutContainer">
 			<div className="ourStoryTitleContainer">
-				<h1>{intl.formatMessage({ id: "ourStoryHeading" })}</h1>
+				<h1>{intl.formatMessage({ id: "ourStoryHeading1" })}</h1>
+				<h1>{intl.formatMessage({ id: "ourStoryHeading2"})}</h1>
 			</div>
 
 			<div className="ourStoryDesc">
