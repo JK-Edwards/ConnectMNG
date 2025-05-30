@@ -84,6 +84,26 @@
     border-radius: 10px;
 }
 
+.aboutHeader div {
+    font-family: Inter;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.aboutHeader h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-bottom: 20px;
+}
+
+.aboutHeader {
+    padding-bottom: 50px;
+}
+
 @media (min-width: 768px) {
     .aboutContainer {
         padding: 20px;
