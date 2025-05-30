@@ -4,7 +4,7 @@ const translations = {
     en: {
         programs: "Programs",
         getInvolved: "Get Involved",
-        blogs: "BLOGS",
+        blogs: "Blogs",
         podcasts: "Podcast",
         about: "About Us",
         resources: "Resources",
