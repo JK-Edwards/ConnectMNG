@@ -5,6 +5,7 @@
     align-items: center;
     background-size: cover;
     background-position: center;
+    background-image: url("../../images/background_white.jpg");
 }
 
 .workshopsCardContainer {
