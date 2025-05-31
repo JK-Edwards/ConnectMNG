@@ -90,54 +90,54 @@ export default function Contact() {
    
             return (
                 <div className="contactContainer">
-                    <h1>Contact Us</h1>
+                    <h1>{intl.formatMessage({ id: "contactUsTitle" })}</h1>
                     <p>
-                        Have questions about our programs or Connect MNG in general? Please submit the form below and we'll be in touch shortly!
+                    {intl.formatMessage({ id: "contactUsDesc" })}
                     </p>
         
-                    <h3>YOUR NAME</h3>
+                    <h3>{intl.formatMessage({ id: "yourNameTitle" })}</h3>
                     <div className="contactinputContainer">
                         <input
                             className="contactinput"
                             type="text"
-                            placeholder="First name"
+                            placeholder={intl.formatMessage({ id: "firstNamePlaceholder" })}
                             value={firstName}
                             onChange={(e) => setFirstName(e.target.value)}
                         />
                         <input
                             className="contactinput"
                             type="text"
-                            placeholder="Last name"
+                            placeholder={intl.formatMessage({ id: "lastNamePlaceholder" })}
                             value={lastName}
                             onChange={(e) => setLastName(e.target.value)}
                         />
                     </div>
         
-                    <h3>EMAIL &  SUBJECT</h3>
+                    <h3>{intl.formatMessage({ id: "email_subject_Label" })}</h3>
                     <div className="contactinputContainer">
                         <input
                             className="contactinput"
                             type="email"
-                            placeholder="Email address"
+                            placeholder={intl.formatMessage({ id: "emailPlaceholder" })}
                             value={email}
                             onChange={handleEmailChange}
                         />
                         <input
                             className="contactinput"
                             type="text"
-                            placeholder="Email subject"
+                            placeholder={intl.formatMessage({ id: "subjectPlaceholder" })}
                             value={subject}
                             onChange={(e) => setSubject(e.target.value)}
                         />
                     </div>
                     {emailError && <div style={{ color: "red", paddingLeft: "20px" }}>{emailError}</div>}
         
-                    <h3>MESSAGE</h3>
+                    <h3>{intl.formatMessage({ id: "messageLabel" })}</h3>
                     <div className="contacttextARea">
                     <textarea
                         className="contacttextArea"
                         value={message}
-                        placeholder="Your message"
+                        placeholder={intl.formatMessage({ id: "messagePlaceholder" })}
                         onChange={(e) => setMessage(e.target.value)}
                     />
                     </div>
