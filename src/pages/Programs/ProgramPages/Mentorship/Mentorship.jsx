@@ -31,9 +31,9 @@ export default function MentorshipProgram() {
                     </p>
                 </div>
             </div>
-			<div className={"contactUsBoxContainer"}>
-				<ContactUsBox />
-			</div>
+            <div className={"contactUsBoxContainer"}>
+                <ContactUsBox />
+            </div>
         </div>
     )
 }

@@ -4,6 +4,7 @@ import myImage from "../../images/blogs/Iconhome.png";
 
 import { useIntl } from "react-intl";
 
+
 import "./Blogs.css";
 
 function BlogCard({ image, title, desc, link }) {
@@ -21,6 +22,7 @@ function BlogCard({ image, title, desc, link }) {
 		</div>
 	);
 }
+
 
 export default function Blogs() {
 	const intl = useIntl();
@@ -47,7 +49,7 @@ export default function Blogs() {
 		<div className={"blogContainer"}>
 
 			<div className={"homeIconAndResources"}>
-				<a href="http://connectmng.org/" target={"_blank"} rel={"noreferrer"} style={{ display: "inline" }}>
+				<a href="/Home" style={{ display: "inline" }}>
 					<img src={icon} className={"icon mobile-only"} alt={"Home"} />
 				</a>
 				{<h2 className={'resources-header mobile-only'}>{intl.formatMessage({ id: "/ Resources" })}</h2>}
@@ -61,8 +63,14 @@ export default function Blogs() {
 						image={blog.thumbnail}
 						title={blog.title}
 						desc={blog.content}
-						link={`/resources/blogs/${blog.title.replace(/\s+/g, '-').toLowerCase()}`} // Generate a dynamic link
+						link={"/resources/blogs/welcome-blog"} // Generate a dynamic link
 					/>
+
+					// <BlogCard image={resumeBlogThumbnail}
+					// title={"Resume 101"}
+					// desc={desc2}
+					// link={"/resources/blogs/resume-blog"} />
+					// Fix this later. Mix it with the backend logic to generate dynamic links
 				))}
 			</div>
 		</div>

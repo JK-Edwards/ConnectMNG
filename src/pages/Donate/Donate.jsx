@@ -18,13 +18,13 @@ export default function Donate() {
 	return (
 		<div className={"donateContainer"}>
 			<h1>
-                {intl.formatMessage({ id: "empowerYoungMongolians" }).toUpperCase()}
+				{intl.formatMessage({ id: "empowerYoungMongolians" }).toUpperCase()}
 			</h1>
 			<h2>
-                {intl.formatMessage({ id: "donateConnectMNG" }).toUpperCase()}
+				{intl.formatMessage({ id: "donateConnectMNG" }).toUpperCase()}
 			</h2>
 			<h3>
-                {intl.formatMessage({ id: "onetimeDonation" }).toUpperCase()}
+				{intl.formatMessage({ id: "onetimeDonation" }).toUpperCase()}
 			</h3>
 			<div className={"moneyButtonContainer"}>
 				{cashAmounts.map((amount, index) =>
@@ -32,16 +32,16 @@ export default function Donate() {
 				)}
 			</div>
 			<input className={"donateInput"}
-				   placeholder={intl.formatMessage({ id: "customAmount" })}
-				   onChange={handleInputChange}
-				   value={donateAmount}
+				placeholder={intl.formatMessage({ id: "customAmount" })}
+				onChange={handleInputChange}
+				value={donateAmount}
 			/>
-			{donateAmount !== "" && <PaypalButton donateAmount={donateAmount} />}
+			{<PaypalButton donateAmount={donateAmount} />}
 		</div>
 	);
 };
 
-function MoneyButton({text, onClick}) {
+function MoneyButton({ text, onClick }) {
 	return (
 		<button className={"moneyButton"} onClick={onClick}>
 			{text}

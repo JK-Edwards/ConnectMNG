@@ -16,7 +16,7 @@ export default function Resources() {
 				</div>
 				<div className={"textContainer"}>
 					<h1>
-						{intl.formatMessage({id: "resources"})}
+						{intl.formatMessage({ id: "resources" })}
 					</h1>
 				</div>
 			</div>

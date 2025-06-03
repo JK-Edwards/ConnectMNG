@@ -17,7 +17,7 @@ export default function SupportPopup() {
         setIsOpen(!isOpen);
     };
 
-    const text = intl.formatMessage({id: "yourContributionText"});
+    const text = intl.formatMessage({ id: "yourContributionText" });
 
     return (
         <div className={"supportPopupContainer"}>
@@ -30,17 +30,17 @@ export default function SupportPopup() {
             </button>
             <div className={"supportPopupTextContainer" + (!isOpen ? " closed" : "")}>
                 <div className={"supportPopupTextTitleContainer"}>
-                    <img className={"supportPopupImage"} src={hand} alt={"Helping Hand"}/>
+                    <img className={"supportPopupImage"} src={hand} alt={"Helping Hand"} />
                     <h3>
-                        {intl.formatMessage({id: "supportConnect"})}
+                        {intl.formatMessage({ id: "supportConnect" })}
                     </h3>
                 </div>
                 <p>{text}</p>
                 <Link className={"supportPopupDonateLink"} to="/get-involved/donate">
                     <p>
-                        {intl.formatMessage({id: "donate"})}
+                        {intl.formatMessage({ id: "donate" })}
                     </p>
-                    <img className={"supportPopupDonateLinkArrow"} src={donateArrow} alt={"Donation link arrow"}/>
+                    <img className={"supportPopupDonateLinkArrow"} src={donateArrow} alt={"Donation link arrow"} />
                 </Link>
             </div>
         </div>

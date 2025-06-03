@@ -44,16 +44,16 @@
     display: none;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+#menu-toggle:checked+.menu-button-container .menu-button::before {
     margin-top: 0px;
     transform: rotate(405deg);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
+#menu-toggle:checked+.menu-button-container .menu-button {
     background: rgba(255, 255, 255, 0);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
+#menu-toggle:checked+.menu-button-container .menu-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
 }
@@ -68,7 +68,7 @@
 
 
 
-#menu-toggle:checked ~ .mobileNavLinks {
+#menu-toggle:checked~.mobileNavLinks {
     display: flex;
 }
 
@@ -117,7 +117,7 @@
 .mobileLogo {
     display: flex;
     align-self: flex-start;
-    
+
 
 }
 
@@ -126,20 +126,20 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    
-    
+
+
 }
 
-.menu-button > button{
+.menu-button>button {
     padding: 0;
-    
+
 
 }
 
 .hamburger-react {
     height: 20px;
     width: 20px;
-    
+
 }
 
 button {
