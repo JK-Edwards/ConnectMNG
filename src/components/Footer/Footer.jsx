@@ -9,6 +9,7 @@ import "./Footer.css";
 
 export default function Footer() {
     const intl = useIntl();
+    const isEnglish = intl.locale === "en";
     return (
         <div className={"footerContainer"}>
             <div className={"mobile-officialLinksContainer"}>
@@ -26,7 +27,7 @@ export default function Footer() {
                     <Link to={"/"}>{intl.formatMessage({ id: "home" }).toUpperCase()}</Link>
                     <Link to={"/resources/blogs"}>{intl.formatMessage({ id: "blogs" }).toUpperCase()}</Link>
                 </div>
-                <div className={"footerLinkContainer"}>
+                <div className={isEnglish ? "footerLinkContainer" : "footerLinkContainer extraPadding"}>
                     <h3>{intl.formatMessage({ id: "engage" }).toUpperCase()}</h3>
                     <Link to={"/get-involved/donate"}>{intl.formatMessage({ id: "donate" }).toUpperCase()}</Link>
                     <Link to={"/get-involved/internships"}>{intl.formatMessage({ id: "internships" }).toUpperCase()}</Link>

@@ -11,6 +11,8 @@
     justify-content: space-evenly;
     width: 65vw;
     padding: 1vw;
+    padding-top: 2vw;
+    padding-right: 2vw;
 }
 
 .footerSocialsLinksContainer {
@@ -23,8 +25,6 @@
 
 .footerLinkContainer {
     display: flex;
-    flex: 0 0 auto;
-    margin: 0;
     flex-direction: column;
     width: 16.66vw;
 }
@@ -38,7 +38,7 @@
 }
 
 .footerLinkContainer h3 {
-    font-size: 1.6rem;
+    font-size: calc(2vw);
     padding-bottom: 0.5vw;
     padding-top: 7px;
     white-space: nowrap;
@@ -103,9 +103,12 @@
     min-width: 10.5vw;
 }
 
-.footerPageLinksContainer > .footerLinkContainer:nth-child(2) {
-  margin-left: -5vw;
+.footerLinkContainer.extraPadding {
+  /* give the middle column more “room” on the right side */
+  margin-left: -2vw;
+  padding-right: 22vw !important; 
 }
+
 
 @media (max-width: 750px) {
     .footerContainer {
