@@ -136,7 +136,9 @@
         font-size: 2vw;
     }
 
-
+    .footerPageLinksContainer .footerLinkContainer.extraShiftMobile {
+        margin-left: 4vw; /* push “БИДНИЙ ТУХАЙ” right by 4vw on mobile */
+    }
 
     /* Footer socials link for newsletter start from here :) */
     .footerSocialsLinksContainer {

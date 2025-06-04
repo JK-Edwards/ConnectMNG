@@ -33,7 +33,7 @@ export default function Footer() {
                     <Link to={"/get-involved/internships"}>{intl.formatMessage({ id: "internships" }).toUpperCase()}</Link>
                     <Link to={"/get-involved/volunteer"}>{intl.formatMessage({ id: "volunteer" }).toUpperCase()}</Link>
                 </div>
-                <div className={"footerLinkContainer"}>
+                <div className={isEnglish ? "footerLinkContainer" : "footerLinkContainer extraShiftMobile"}>
                     <h3>{intl.formatMessage({ id: "about" }).toUpperCase()}</h3>
                     <Link to={"about-us/our-story"}>{intl.formatMessage({ id: "ourStory" }).toUpperCase()}</Link>
                     <Link to={"about-us/our-team"}>{intl.formatMessage({ id: "ourTeam" }).toUpperCase()}</Link>
