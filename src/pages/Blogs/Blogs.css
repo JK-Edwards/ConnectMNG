@@ -3,6 +3,7 @@
 	background-size: cover;
 	background-position: center;
 	padding: calc(1.5rem + 2vw) 20px 15px 75px;
+	padding-bottom: calc(1.5rem + 2vw);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

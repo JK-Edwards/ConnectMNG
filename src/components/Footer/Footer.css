@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw
+    width: 100vw;
 }
 
 .footerPageLinksContainer {
@@ -11,6 +11,8 @@
     justify-content: space-evenly;
     width: 65vw;
     padding: 1vw;
+    padding-top: 2vw;
+    padding-right: 2vw;
 }
 
 .footerSocialsLinksContainer {
@@ -101,6 +103,13 @@
     min-width: 10.5vw;
 }
 
+.footerLinkContainer.extraPadding {
+  /* give the middle column more “room” on the right side */
+  margin-left: -2vw;
+  padding-right: 22vw !important; 
+}
+
+
 @media (max-width: 750px) {
     .footerContainer {
         display: flex;
@@ -127,7 +136,9 @@
         font-size: 2vw;
     }
 
-
+    .footerPageLinksContainer .footerLinkContainer.extraShiftMobile {
+        margin-left: 4vw; /* push “БИДНИЙ ТУХАЙ” right by 4vw on mobile */
+    }
 
     /* Footer socials link for newsletter start from here :) */
     .footerSocialsLinksContainer {
