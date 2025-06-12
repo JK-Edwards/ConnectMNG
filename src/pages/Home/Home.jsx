@@ -35,11 +35,6 @@ export default function Home() {
 				<img src={slide2} height={425} width={850} alt={"Slide 2"} />
 			</div>
 		</Link>,
-		<Link to={""}>
-			<div className={"carouselSlide"}>
-				<img src={slide2} height={425} width={850} alt={"Slide 2"} />
-			</div>
-		</Link>,
 	];
 
 	return (
