@@ -18,14 +18,13 @@ const translations = {
         missionAndImpact: "Mission & Impact",
         whatWeOffer: "What We Offer",
         donate: "Donate",
-        events: "Events",
         eventsDesc: "Help us with organizing events...",
         volunteer: "Volunteer",
         internships: "Internships",
+        mentors: "Mentors",
         connectWithUs: "Connect with us",
         newsletterPlaceholder: "Enter your email to receive our newsletters!",
         subscribe: "Subscribe",
-        ourStory: "Our story",
         ourTeam: "Our Team",
         time: "Time",
         event: "Event",
@@ -114,7 +113,6 @@ const translations = {
         whyJoinList3: "Expand your network and connect with inspiring Mongolian professionals.",
         whyJoinList4: "Make a real difference while learning and growing.",
         exploreTitle: "Explore the following avenues to get involved:",
-        fundraising: "Fundraising",
         events: "Events",
         howToJoinTitle: "How to Join:",
         howToJoinDesc: "Click our application link and fill it out! Let us know your interests and skills, and we will match you with the right opportunity. Once accepted, you will receive an email from our team!",
@@ -135,14 +133,15 @@ const translations = {
 
         // our team page translations
         aboutUs: "About Us",
-        aboutUsDesc: "Description",
+        aboutUsDesc1: "Description",
         ourValues: "Our Values",
-        ourValuesDesc: "Description",
+        ourValuesDesc1: "Description",
         meetBoard: "Meet the Board",
 
         // footer translation
         engage: "ENGAGE",
         explore: "EXPLORE",
+        admin: "Admin",
         termsOfUse: "Terms of Use",
         privacyPolicy: "Privacy Policy",
 
@@ -153,8 +152,8 @@ const translations = {
         Event: "Event",
         Location: "Location",
         date: "Monday 29th January 2024",
-        time: "3pm",
-        time1: "4pm",
+        time1: "3pm",
+        time2: "4pm",
 
         // Happy hour event translations
         date_time: "📅 Monday 29th January 2024 | 🕒 4:00 PM",
@@ -193,10 +192,10 @@ const translations = {
         events: "Үйл ажиллагаа",
         eventsDesc: "Үйл ажиллагаа зохион байгуулахад\nбидэнд туслах...",
         volunteer: "Сайн Дурын Ажил",
-        internships: 'Дадлага',
+        internships: "Дадлага",
+        mentors: "Ментор",
         newsletterPlaceholder: "Манай мэдээллийг хүлээн авах имэйлээ оруулна уу.",
         subscribe: "Бүртгүүлэх",
-        ourStory: "Бидний Түүх",
         ourTeam: "Манай Баг",
         time: "Цаг",
         event: "Эвент",
@@ -207,8 +206,6 @@ const translations = {
         phone: "Утас",
         subject: "Гарчиг",
         message: "Мессэж",
-        getInTouch: "Бидэнтэй Холбогдох",
-        firstName: "Нэр",
         getInTouch: "Бидэнтэй Холбогдох",
         firstName: "Нэр",
         lastName: "Овог",
@@ -262,15 +259,16 @@ const translations = {
 
         // our team page translations
         aboutUs: "Бидний тухай",
-        aboutUsDesc: "Тайлбар",
+        aboutUsDesc1: "Тайлбар",
         ourValues: "Бидний Зорилго",
-        ourValuesDesc: "Тайлбар",
+        ourValuesDesc1: "Тайлбар",
         meetBoard: "Багийн гишүүд",
 
         // footer translations
         connectWithUs: "Бидэнтэй Холбогдох",
         engage: "Таны Оролцоо",
         explore: "Зочлох",
+        admin: "Админ",
         termsOfUse: "Ашиглалтын Нөхцөл",
         privacyPolicy: "Нууцлалын Баталгаа",
 
@@ -283,8 +281,8 @@ const translations = {
         Event: "Үйл явдал",
         Location: "Байршил",
         date: "2024 оны нэгдүгээр сарын 29-ний даваа",
-        time: "15:00",
-        time1: "16:00",
+        time1: "15:00",
+        time2: "16:00",
 
         // Happy hour event translations
         date_time: "📅 2024 оны 1 сарын 29, Даваа гараг | 🕒 16:00",

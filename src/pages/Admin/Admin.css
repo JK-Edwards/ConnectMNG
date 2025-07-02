@@ -1,0 +1,18 @@
+.adminDashboardWrapper {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #CFE0C5, #BBE3C3, #A7D1CB);
+}
+
+.sidebarMenu {
+  width: 250px;
+  background-color: #70A9A2;
+  padding: 1vw 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.adminContent {
+  flex-grow: 1;
+  padding: 3vw;
+}
