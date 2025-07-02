@@ -86,41 +86,66 @@ export default function Contact() {
                 });
             });
     };
-            return (
-                <div className={"contactContainer"}>
-                    <h1>{intl.formatMessage({ id: "contactUsTitle" })}</h1>
-                    <p>{intl.formatMessage({ id: "contactUsDesc" })}</p>
-                    <h3>{intl.formatMessage({ id: "yourNameTitle" })}</h3>
-                    <div className={"inputContainer"}>
-                        <input value={firstName} placeholder={intl.formatMessage({ id: "firstNamePlaceholder" })} onChange={(event) => setFirstName(event.target.value)}/>
-                        <input value={lastName} placeholder={intl.formatMessage({ id: "lastNamePlaceholder" })} onChange={(event) => setLastName(event.target.value)}/>
-                    </div>
-                    <div className={"inputContainer"}>
-                        <div>
-                            <h3>{intl.formatMessage({ id: "emailLabel" })}</h3>
-                            <input 
-                                value={email} 
-                                placeholder={intl.formatMessage({ id: "emailPlaceholder" })}
-                                onChange={handleEmailChange} 
-                            />
-                            
-                        </div>
-                        <div>
-                            <h3>{intl.formatMessage({ id: "subjectLabel" })}</h3>
-                            <input value={subject} placeholder={intl.formatMessage({ id: "subjectPlaceholder" })} onChange={(event) => setSubject(event.target.value)}/>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>{intl.formatMessage({ id: "messageLabel" })}</h3>
-                        <div className={"textArea"}>
-                            <textarea value={message} placeholder={intl.formatMessage({ id: "messagePlaceholder" })} onChange={(event) => setMessage(event.target.value)}/>
-                        </div>
+
+
+    return (
+        <div className="contactContainer">
+            <h1>{intl.formatMessage({ id: "contactUsTitle" })}</h1>
+            <p>
+                {intl.formatMessage({ id: "contactUsDesc" })}
+            </p>
+
+            <h3>{intl.formatMessage({ id: "yourNameTitle" })}</h3>
+            <div className="contactinputContainer">
+                <input
+                    className="contactinput"
+                    type="text"
+                    placeholder={intl.formatMessage({ id: "firstNamePlaceholder" })}
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                />
+                <input
+                    className="contactinput"
+                    type="text"
+                    placeholder={intl.formatMessage({ id: "lastNamePlaceholder" })}
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                />
             </div>
-            <div>
-                <button className={"submitButton"} type="button" onClick={handleSubmit}>
-                    {intl.formatMessage({ id: "getInTouch" })}
+
+            <h3>{intl.formatMessage({ id: "email" }).toUpperCase()}</h3>
+            <div className="contactinputContainer">
+                <input
+                    className="contactinput"
+                    type="email"
+                    placeholder={intl.formatMessage({ id: "emailPlaceholder" })}
+                    value={email}
+                    onChange={handleEmailChange}
+                />
+                <input
+                    className="contactinput"
+                    type="text"
+                    placeholder={intl.formatMessage({ id: "subjectPlaceholder" })}
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                />
+            </div>
+            {emailError && <div style={{ color: "red", paddingLeft: "20px" }}>{emailError}</div>}
+
+            <h3>{intl.formatMessage({ id: "messageLabel" })}</h3>
+            <div className="contacttextARea">
+                <textarea
+                    className="contacttextArea"
+                    value={message}
+                    placeholder={intl.formatMessage({ id: "messagePlaceholder" })}
+                    onChange={(e) => setMessage(e.target.value)}
+                />
+            </div>
+            <div className="contactsubmit">
+                <button className="submitButton" type="button" onClick={handleSubmit}>
+                    {intl.formatMessage({ id: "getInTouch", defaultMessage: "Get in Touch!" })}
                 </button>
             </div>
         </div>
     );
-};
+}

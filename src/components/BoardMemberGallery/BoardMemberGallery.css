@@ -40,12 +40,20 @@
 }
 
 .galleryHeader h1 {
-  padding-top: 2vw;
-  font-size: calc(10px + 1.75vw);
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 20px;
 }
 
 .galleryHeader div {
   font-size: calc(1px + 1.75vw);
+}
+
+.galleryContainer {
+  width: 100%
 }
 
 /* Adjustments for smaller screens */
@@ -65,17 +73,11 @@
   }
 
   .profile div {
-    font-size: calc(0.1rem + 2.4vw);
-  }
-
-  .galleryHeader h1 {
-    text-align: center;
-    font-size: calc(10px + 3.4vw);
+    font-size: calc(0.25rem + 2.4vw);
   }
 
   .galleryHeader div {
     text-align: center;
     font-size: calc(10px + 1.75vw);
-
   }
 }
