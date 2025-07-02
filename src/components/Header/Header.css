@@ -4,10 +4,11 @@
 }
 
 .dropdown {
-	background-color: white;
+	background-color: #f8f8f8;
 	position: absolute;
 	z-index: 9999;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border: none;
+	border-bottom: 1.2px solid #ccc;
 }	
 
 .dropdown div {

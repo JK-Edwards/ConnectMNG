@@ -39,23 +39,6 @@ export default function Internships() {
 				<p>{intl.formatMessage({ id: "internshipsStep2" })}</p>
 				<p>{intl.formatMessage({ id: "internshipsStep3" })}</p>
 			</div>
-				<div className={'internshipsDescriptionContainer'}>
-					<p>{intl.formatMessage({ id: "internshipsDescription" })}</p>
-					<h2>{intl.formatMessage({ id: "internshipsWhyJoin" })}</h2>
-					<p>{intl.formatMessage({ id: "internshipsWhyJoinBody" })}</p>
-					<h2>{intl.formatMessage({ id: "internshipsAreas" })}</h2>
-					
-					<p>{intl.formatMessage({ id: "internshipsList1" })}</p>
-					<p>{intl.formatMessage({ id: "internshipsList2" })}</p>
-					<p>{intl.formatMessage({ id: "internshipsList3" })}</p>
-					<p>{intl.formatMessage({ id: "internshipsList4" })}</p>
-					<p>{intl.formatMessage({ id: "internshipsList5" })}</p>
-					
-					<h2>{intl.formatMessage({ id: "internshipsHowToJoin" })}</h2>
-					<p>{intl.formatMessage({ id: "internshipsStep1" })}</p>
-					<p>{intl.formatMessage({ id: "internshipsStep2" })}</p>
-					<p>{intl.formatMessage({ id: "internshipsStep3" })}</p>
-				</div>
 
 			<div className="thinSeparator only-mobile"></div>
 

@@ -1,43 +1,23 @@
 .internshipsContainer {
-	background-image: url("../../images/background_green.jpg");
-	background-size: cover;
-	background-position: center;
-	padding-top: 95px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-.internshipsContainer h1 {
-	color: #1F363D;
-	font-weight: 900;
-	padding-bottom: 2vw;
-	padding-left: 10vw;
-	padding-right: 10vw;
-}
-.internshipsContainer h2 {
-	color: #1F363D;
-	font-weight: 900;
-	padding-bottom: 2vw;
-	padding-left: 10vw;
-	padding-right: 10vw;
-}
-
-.internshipsContainer p {
-	padding-bottom: 1vw;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	font-size: calc(1px + 1.75vw);
-}
-
-.internshipsCardContainer {
+	background: linear-gradient(110deg, #CFE0C5, #BBE3C3, #A7D1CB);
+	padding: calc(1.5rem + 2vw) 5vw 15px 5vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	gap: 5vw;
+	align-items: flex-start;
+}
 
-	padding-left: 10vw;
-	padding-right: 10vw;
+.internshipsContainer h1,
+.internshipsContainer h2 {
+	color: #1F363D;
+	font-weight: 900;
+	padding-bottom: 1vw;
+	font-size: calc(10px + 1.5vw);
+}
+
+.internshipsContainer p {
+	padding-bottom: 1.5vw;
+	font-size: calc(1px + 1.75vw);
 }
 
 .internshipsFormContainer {
@@ -45,16 +25,13 @@
 	padding-bottom: 2vw;
 }
 
-.internshipsTitleContainer h1 {
-	font-size: calc(10px + 2vw);
-}
-
+.internshipsTitleContainer h1,
 .internshipsTitleContainer h2 {
-	font-size: calc(10px + 2vw);
+	font-size: calc(5px + 1.75vw);
 }
 
 .internshipsDescriptionContainer p {
-	font-size: calc(1px + 1.75vw);
+	font-size: calc(1px + 1.2vw);
 }
 
 .internshipsFormTitleContainer {
@@ -80,14 +57,9 @@
 	.internshipsContainer {
 		background-image:none;
 		background-color:white;
-    padding-top: 35px;
+		padding-top: 35px;
 	}
-	.internshipsGetInvolved h1 {
-		font-weight: 700;
-		font-size: calc(.7rem + 2vw);
-		color: #033C26;
-		margin-bottom: -.1rem;
-	}
+	
 	.internshipsGetInvolved h1 {
 		display: flex;
 		font-size: calc(7px + 2.5vw); 
@@ -103,13 +75,13 @@
 	}
 	.internshipsTitleContainer h1 {
 		font-weight: 700;
-		font-size: calc(.6rem + 2vw);
+		font-size: calc(15px + 1.5vw);
 		color: #3F798C;
 		margin-bottom: 1rem;
 	}
 	.internshipsDescriptionContainer p {
 		width: 100%;
-		font-size: calc(1.2rem + 1vw);
+		font-size: calc(10px + 1.5vw);
 		color: black;
 		padding-top: 4vw;
 	}
@@ -119,6 +91,10 @@
 		height: 1px;
 		background-color: #ddd;
 	  }
+
+	.internshipsContainer h2 {
+		font-size: calc(15px + 1.5vw);
+	}
 	.internshipsContainer p {
 		width: 100%;
 	}

@@ -1,5 +1,5 @@
 .donateContainer {
-	padding-top: 95px;
+	padding-top: 50px;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 50px;
@@ -8,9 +8,7 @@
 	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
-	background-image: url("../../images/background_green.jpg");
-	background-size: cover;
-	background-position: center;
+	background: linear-gradient(110deg, #CFE0C5, #BBE3C3, #A7D1CB);
 }
 
 .donateContainer h1 {
@@ -22,13 +20,13 @@
 
 .donateContainer h2 {
 	font-size: calc(0.15rem + 1.5vw);
-	margin-top: 2vw;
+	margin-top: 1vw;
 }
 
 .donateContainer h3 {
 	font-size: calc(0.25rem + 2vw);
-	margin-top: 5vw;
-	margin-bottom: 3vw;
+	margin-top: 3vw;
+	margin-bottom: 2vw;
 	color: #10885a;
 }
 
@@ -93,19 +91,19 @@
 	}
 
 	.donateContainer h1 {
-		font-size: calc(0.25rem + 6vw);
+		font-size: calc(15px + 1.5vw);
 		padding-top: 1rem;
 		color: #10885a;
 
 	}
 
 	.donateContainer h2 {
-		font-size: calc(0.15rem + 4vw);
+		font-size: calc(10px + 1.5vw);
 		margin-top: 2vw;
 	}
 
 	.donateContainer h3 {
-		font-size: calc(0.25rem + 4vw);
+		font-size: calc(15px + 1.5vw);
 		margin-top: 5vw;
 		margin-bottom: 3vw;
 		color: #10885a;
@@ -125,7 +123,7 @@
 
 	.donateInput {
 		height: 7vw;
-		font-size: 5vw;
+		font-size: 3vw;
 		width: 75vw;
 	}
 }

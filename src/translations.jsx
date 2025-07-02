@@ -18,14 +18,13 @@ const translations = {
         missionAndImpact: "Mission & Impact",
         whatWeOffer: "What We Offer",
         donate: "Donate",
-        events: "Events",
         eventsDesc: "Help us with organizing events...",
         volunteer: "Volunteer",
         internships: "Internships",
+        mentors: "Mentors",
         connectWithUs: "Connect with us",
         newsletterPlaceholder: "Enter your email to receive our newsletters!",
         subscribe: "Subscribe",
-        ourStory: "Our story",
         ourTeam: "Our Team",
         time: "Time",
         event: "Event",
@@ -112,7 +111,6 @@ const translations = {
         whyJoinList3: "Expand your network and connect with inspiring Mongolian professionals.",
         whyJoinList4: "Make a real difference while learning and growing.",
         exploreTitle: "Explore the following avenues to get involved:",
-        fundraising: "Fundraising",
         events: "Events",
         howToJoinTitle: "How to Join:",
         howToJoinDesc: "Click our application link and fill it out! Let us know your interests and skills, and we will match you with the right opportunity. Once accepted, you will receive an email from our team!",
@@ -134,14 +132,15 @@ const translations = {
 
         // our team page translations
         aboutUs: "About Us",
-        aboutUsDesc: "Connect MNG is a nonprofit organization dedicated to empowering Mongolians in Washington state by fostering career development, professional growth, and a strong sense of community. Our team comes from diverse backgrounds, bringing together a wealth of experience and knowledge to support and uplift our members. We provide resources, mentorship, and networking opportunities to help individuals advance in their careers while creating a supportive environment where members can learn from one another. Through collaboration and shared experiences, we strive to build a stronger, more connected community.",
+        aboutUsDesc1: "Connect MNG is a nonprofit organization dedicated to empowering Mongolians in Washington state by fostering career development, professional growth, and a strong sense of community. Our team comes from diverse backgrounds, bringing together a wealth of experience and knowledge to support and uplift our members. We provide resources, mentorship, and networking opportunities to help individuals advance in their careers while creating a supportive environment where members can learn from one another. Through collaboration and shared experiences, we strive to build a stronger, more connected community.",
         ourValues: "Our Values",
-        ourValuesDesc: "At Connect MNG, we believe in community, empowerment, and growth. We are dedicated to fostering an inclusive space where Mongolian-American college students and young professionals can connect, learn, and thrive. By promoting cultural identity, career development, and leadership, we aim to equip individuals with the tools and opportunities they need to succeed—both personally and professionally.",
+        ourValuesDesc1: "At Connect MNG, we believe in community, empowerment, and growth. We are dedicated to fostering an inclusive space where Mongolian-American college students and young professionals can connect, learn, and thrive. By promoting cultural identity, career development, and leadership, we aim to equip individuals with the tools and opportunities they need to succeed—both personally and professionally.",
         meetBoard: "Meet the Board",
 
         // footer translation
         engage: "ENGAGE",
         explore: "EXPLORE",
+        admin: "Admin",
         termsOfUse: "Terms of Use",
         privacyPolicy: "Privacy Policy",
 
@@ -152,8 +151,8 @@ const translations = {
         Event: "Event",
         Location: "Location",
         date: "Monday 29th January 2024",
-        time: "3pm",
-        time1: "4pm",
+        time1: "3pm",
+        time2: "4pm",
 
         // Happy hour event translations
         date_time: "📅 Monday 29th January 2024 | 🕒 4:00 PM",
@@ -192,10 +191,10 @@ const translations = {
         events: "Үйл ажиллагаа",
         eventsDesc: "Үйл ажиллагаа зохион байгуулахад\nбидэнд туслах...",
         volunteer: "Сайн Дурын Ажил",
-        internships: 'Дадлага',
+        internships: "Дадлага",
+        mentors: "Ментор",
         newsletterPlaceholder: "Манай мэдээллийг хүлээн авах имэйлээ оруулна уу.",
         subscribe: "Бүртгүүлэх",
-        ourStory: "Бидний Түүх",
         ourTeam: "Манай Баг",
         time: "Цаг",
         event: "Эвент",
@@ -206,8 +205,6 @@ const translations = {
         phone: "Утас",
         subject: "Гарчиг",
         message: "Мессэж",
-        getInTouch: "Бидэнтэй Холбогдох",
-        firstName: "Нэр",
         getInTouch: "Бидэнтэй Холбогдох",
         firstName: "Нэр",
         lastName: "Овог",
@@ -261,15 +258,16 @@ const translations = {
 
         // our team page translations
         aboutUs: "Бидний тухай",
-        aboutUsDesc: "Connect MNG is a nonprofit organization dedicated to empowering Mongolians in Washington state by fostering career development, professional growth, and a strong sense of community. Our team comes from diverse backgrounds, bringing together a wealth of experience and knowledge to support and uplift our members. We provide resources, mentorship, and networking opportunities to help individuals advance in their careers while creating a supportive environment where members can learn from one another. Through collaboration and shared experiences, we strive to build a stronger, more connected community.",
+        aboutUsDesc1: "Connect MNG is a nonprofit organization dedicated to empowering Mongolians in Washington state by fostering career development, professional growth, and a strong sense of community. Our team comes from diverse backgrounds, bringing together a wealth of experience and knowledge to support and uplift our members. We provide resources, mentorship, and networking opportunities to help individuals advance in their careers while creating a supportive environment where members can learn from one another. Through collaboration and shared experiences, we strive to build a stronger, more connected community.",
         ourValues: "Бидний Зорилго",
-        ourValuesDesc: "At Connect MNG, we believe in community, empowerment, and growth. We are dedicated to fostering an inclusive space where Mongolian-American college students and young professionals can connect, learn, and thrive. By promoting cultural identity, career development, and leadership, we aim to equip individuals with the tools and opportunities they need to succeed—both personally and professionally.",
+        ourValuesDesc1: "At Connect MNG, we believe in community, empowerment, and growth. We are dedicated to fostering an inclusive space where Mongolian-American college students and young professionals can connect, learn, and thrive. By promoting cultural identity, career development, and leadership, we aim to equip individuals with the tools and opportunities they need to succeed—both personally and professionally.",
         meetBoard: "Багийн гишүүд",
 
         // footer translations
         connectWithUs: "Бидэнтэй Холбогдох",
         engage: "Таны Оролцоо",
         explore: "Зочлох",
+        admin: "Админ",
         termsOfUse: "Ашиглалтын Нөхцөл",
         privacyPolicy: "Нууцлалын Баталгаа",
 
@@ -278,12 +276,12 @@ const translations = {
         // Event page translations
         Date: "1-р сарын 24, Даваа гариг, 2024",
         Calendar: "Календарь",
-        Time: "цаг",
-        Event: "үйл явдал",
+        Time: "Цаг",
+        Event: "Үйл явдал",
         Location: "байршил",
         date: "1-р сарын 24, Даваа гариг, 2024",
-        time: "15:00",
-        time1: "16:00",
+        time1: "15:00",
+        time2: "16:00",
 
         // Happy hour event translations
         date_time: "📅 2024 оны 1 сарын 29, Даваа гараг | 🕒 16:00",

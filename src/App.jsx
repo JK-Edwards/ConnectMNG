@@ -1,5 +1,6 @@
 import OurTeam from "./pages/About/OurTeam/OurTeam.jsx";
 import OurStory from "./pages/About/OurStory/OurStory.jsx";
+import Admin from "./pages/Admin/Admin.jsx";
 import Blogs from "./pages/Blogs/Blogs.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import CulturalCompassProgram from "./pages/Programs/ProgramPages/CulturalCompass/CulturalCompass.jsx";
@@ -11,6 +12,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Internships from "./pages/Internships/Internships.jsx";
+import Mentors from "./pages/Mentors/Mentors.jsx";
 import MentorshipProgram from "./pages/Programs/ProgramPages/Mentorship/Mentorship.jsx";
 import Navigation from "./components/Navigation/Navigation.jsx";
 import Podcasts from "./pages/Podcasts/Podcasts.jsx";
@@ -59,9 +61,11 @@ export default function App() {
 							<Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
 							<Route path="/about-us/our-team" element={<OurTeam />} />
 							<Route path="/about-us/our-story" element={<OurStory />} />
+							<Route path="/admin" element={<Admin />} />
 							<Route path="/resources" element={<Resources />} />
 							<Route path="/contact-us" element={<Contact />} />
 							<Route path="/get-involved/donate" element={<Donate />} />
+							<Route path="/get-involved/mentors" element={<Mentors />} />
 							<Route path="/resources/blogs" element={<Blogs />} />
 							<Route path="/resources/blogs/welcome-blog" element={<Workshops />} />
 							<Route path="*" element={<Home />} />

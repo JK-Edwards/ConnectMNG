@@ -137,11 +137,13 @@ export default function Navigation() {
 									intl.formatMessage({ id: "donate" }),
 									intl.formatMessage({ id: "internships" }),
 									intl.formatMessage({ id: "volunteer" }),
+									intl.formatMessage({ id: "mentors" }),
 								]}
 								links={[
 									"/get-involved/donate",
 									"/get-involved/internships",
 									"/get-involved/volunteer",
+									"/get-involved/mentors"
 								]}
 							/>
 						) : null}
