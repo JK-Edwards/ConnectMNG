@@ -1,124 +1,101 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import NavLink from "../Navigation/NavLink";
-import MobileNavDropdown from "./MobileNavDropdown";
-import { GoTriangleDown } from "react-icons/go";
-import IconWrapper from "../IconWrapper";
 import { useIntl } from "react-intl";
+import MobileNavDropdown from "./MobileNavDropdown";
+
+// inline triangle icon (avoids react-icons type issues)
+const TriangleDown = (props: React.SVGProps<SVGSVGElement>): JSX.Element => (
+  <svg
+    viewBox="0 0 24 24"
+    width={16}
+    height={16}
+    aria-hidden="true"
+    focusable="false"
+    {...props}
+  >
+    <path d="M7 10l5 5 5-5H7z" />
+  </svg>
+);
 
 const MobileDropdown: React.FC = () => {
   const intl = useIntl();
 
-  const [activeIndex, setActiveIndex] = useState<number>(0);
-  const [showResources, setShowResources] = useState<boolean>(false);
-  const [showActivities, setShowActivities] = useState<boolean>(false);
-  const [showAbout, setShowAbout] = useState<boolean>(false);
-
-  const handleNavLinkSelect = (index: number) => {
-    setActiveIndex(index);
-    setShowActivities(false);
-    setShowResources(false);
-    setShowAbout(false);
-  };
-
-  const handleVolunteerSelect = () => {
-    setShowActivities(!showActivities);
-    setShowResources(false);
-    setShowAbout(false);
-  };
+  const [showAbout, setShowAbout] = useState(false);
+  const [showResources, setShowResources] = useState(false);
+  const [showActivities, setShowActivities] = useState(false);
 
   const handleAboutSelect = () => {
-    setShowAbout(!showAbout);
-    setShowActivities(false);
+    setShowAbout((prev) => !prev);
     setShowResources(false);
+    setShowActivities(false);
   };
 
   const handleResourcesSelect = () => {
-    setShowResources(!showResources);
-    setShowActivities(false);
+    setShowResources((prev) => !prev);
     setShowAbout(false);
+    setShowActivities(false);
   };
 
-  const handleDropdownSelect = (selectedIndex: number) => {
-    setShowActivities(false);
-    setShowResources(false);
+  const handleVolunteerSelect = () => {
+    setShowActivities((prev) => !prev);
     setShowAbout(false);
-    setActiveIndex(selectedIndex + 6);
+    setShowResources(false);
   };
 
   return (
-    <div className="mobileNavBarContainer">
-      <div className="mobileNavLinks">
-        <NavLink
-          text={intl.formatMessage({ id: "home" })}
-          homeButton={true}
-          to="/"
-          className="homeButton"
-        >
-          Home
-        </NavLink>
-
-        <Link to="/programs" className="mobileNavLink">
-          {intl.formatMessage({ id: "programs" })}
-        </Link>
-
-        <Link to="/events" className="mobileNavLink">
-          {intl.formatMessage({ id: "events" })}
-        </Link>
-
-        <div className="mobileNavLink" onClick={handleAboutSelect}>
-          {intl.formatMessage({ id: "about" })}
-          <IconWrapper icon={GoTriangleDown} />
-        </div>
-        {showAbout && (
-          <MobileNavDropdown
-            onSelect={handleDropdownSelect}
-            options={[
-              intl.formatMessage({ id: "ourStory" }),
-              intl.formatMessage({ id: "ourTeam" }),
-            ]}
-            links={["/about-us/our-story", "/about-us/our-team"]}
-          />
-        )}
-
-        <div className="mobileNavLink" onClick={handleResourcesSelect}>
-          {intl.formatMessage({ id: "resources" })}
-          <IconWrapper icon={GoTriangleDown} />
-        </div>
-        {showResources && (
-          <MobileNavDropdown
-            onSelect={handleDropdownSelect}
-            options={[intl.formatMessage({ id: "blogs" })]}
-            links={["/resources/blogs"]}
-          />
-        )}
-
-        <div className="mobileNavLink" onClick={handleVolunteerSelect}>
-          {intl.formatMessage({ id: "getInvolved" })}
-          <IconWrapper icon={GoTriangleDown} />
-        </div>
-        {showActivities && (
-          <MobileNavDropdown
-            onSelect={handleDropdownSelect}
-            options={[
-              intl.formatMessage({ id: "donate" }),
-              intl.formatMessage({ id: "internships" }),
-              intl.formatMessage({ id: "volunteer" }),
-            ]}
-            links={[
-              "/get-involved/donate",
-              "/get-involved/internships",
-              "/get-involved/volunteer",
-            ]}
-          />
-        )}
-
-        <Link to="/contact-us" className="mobileNavLink">
-          {intl.formatMessage({ id: "contactUs" }).toUpperCase()}
-        </Link>
+    <div className="mobileDropdown">
+      <div className="mobileNavLink" onClick={handleAboutSelect}>
+        {intl.formatMessage({ id: "about" })}
+        <TriangleDown style={{ marginLeft: 6 }} />
       </div>
+      {showAbout && (
+       <MobileNavDropdown
+          section="about" // unique identifier for the dropdown
+          onSelect={(i) => console.log("about selected", i)}
+          options={[
+          intl.formatMessage({ id: "ourStory" }),
+          intl.formatMessage({ id: "ourTeam" }),
+  ]}
+        links={["/about-us/our-story", "/about-us/our-team"]}
+/>
+
+      )}
+
+      <div className="mobileNavLink" onClick={handleResourcesSelect}>
+        {intl.formatMessage({ id: "resources" })}
+        <TriangleDown style={{ marginLeft: 6 }} />
+      </div>
+      {showResources && (
+       <MobileNavDropdown
+          section="about" // unique identifier for the dropdown
+          onSelect={(i) => console.log("about selected", i)}
+          options={[
+           intl.formatMessage({ id: "ourStory" }),
+           intl.formatMessage({ id: "ourTeam" }),
+  ]}
+            links={["/about-us/our-story", "/about-us/our-team"]}
+/>
+
+      )}
+
+      <div className="mobileNavLink" onClick={handleVolunteerSelect}>
+        {intl.formatMessage({ id: "getInvolved" })}
+        <TriangleDown style={{ marginLeft: 6 }} />
+      </div>
+      {showActivities && (
+       <MobileNavDropdown
+          section="about" // unique identifier for the dropdown
+          onSelect={(i) => console.log("about selected", i)}
+          options={[
+          intl.formatMessage({ id: "ourStory" }),
+        intl.formatMessage({ id: "ourTeam" }),
+        ]}
+          links={["/about-us/our-story", "/about-us/our-team"]}
+/>
+
+      )}
     </div>
   );
 };
 
 export default MobileDropdown;
+

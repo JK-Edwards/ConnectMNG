@@ -46,7 +46,7 @@ export default function Programs(): JSX.Element {
             <img src={icon} className={"icon mobile-only"} alt={"Home"} />
           </a>
           <h2 className={"programs-header mobile-only"}>
-            {intl.formatMessage({ id: "/ Programs" })}
+            {intl.formatMessage({ id: "programs" })}
           </h2>
         </div>
 

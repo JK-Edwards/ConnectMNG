@@ -9,8 +9,8 @@ export default function Events() {
         {
             date: intl.formatMessage({ id: "date" }),
             sessions: [
-                { time: intl.formatMessage({ id: "time" }), name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
-                { time: intl.formatMessage({ id: "time1" }), name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
+                { time: intl.formatMessage({ id: "Time" }), name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
+                { time: intl.formatMessage({ id: "Time" }), name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
             ],
         },
 

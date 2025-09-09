@@ -7,6 +7,8 @@ interface MobileNavDropdownProps {
   onSelect: (index: number) => void;
   options: string[];
   links: string[];
+  section: string;
+  onClose?: () => void;
 }
 
 const MobileNavDropdown: React.FC<MobileNavDropdownProps> = ({

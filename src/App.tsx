@@ -1,10 +1,3 @@
-import '@formatjs/intl-numberformat/polyfill';
-import '@formatjs/intl-numberformat/locale-data/mn';
-
-import '@formatjs/intl-numberformat/locale-data/mn';
-import '@formatjs/intl-datetimeformat/locale-data/mn';
-import '@formatjs/intl-relativetimeformat/locale-data/mn';
-
 import OurTeam from "./pages/About/OurTeam/OurTeam";
 import OurStory from "./pages/About/OurStory/OurStory";
 import Blogs from "./pages/Blogs/Blogs";
@@ -30,62 +23,55 @@ import SupportPopup from "./components/SupportPopup/SupportPopup";
 import translations from "./translations";
 import Volunteer from "./pages/Volunteer/Volunteer";
 import NewFeature from "./pages/NewFeatures/NewFeatures";
-
+import Workshops from "./pages/Blogs/Workshops";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { IntlProvider } from "react-intl";
 import { useState } from "react";
 
 import "./App.css";
-import Workshops from "./pages/Blogs/Workshops";
-
-
-
-
-
 
 export default function App() {
-	const [isEnglish, setIsEnglish] = useState(true);
+  const [isEnglish, setIsEnglish] = useState(true);
 
-	return (
-		<div className={"app"}>
-			<IntlProvider locale={isEnglish ? "en" : "mn"} messages={translations[isEnglish ? "en" : "mn"]}>
-				<Router>
-					<div className={"pinnedHeader"}>
-						<Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
-						<Navigation />
-					</div>
-					<div className={"pageContainer"}>
-						<Routes>
-							<Route path="/programs" element={<Programs />} />
-							<Route path="/programs/cultural-compass-program" element={<CulturalCompassProgram />} />
-							<Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
-							<Route path="/programs/resume-boost-program" element={<ResumeBoostProgram />} />
-							<Route path="/get-involved/volunteer" element={<Volunteer />} />
-							<Route path="/get-involved/internships" element={<Internships />} />
-							<Route path="/resources/podcasts" element={<Podcasts />} />
-							<Route path="/events" element={<Events />} />
-							<Route path="/events/resume-help" element={<ResumeHelp />} />
-							<Route path="/events/happy-hour" element={<HappyHour />} />
-							<Route path="/resources/blogs" element={<Blogs />} />
-							<Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
-							<Route path="/about-us/our-team" element={<OurTeam />} />
-							<Route path="/about-us/our-story" element={<OurStory />} />
-							<Route path="/resources" element={<Resources />} />
-							<Route path="/contact-us" element={<Contact />} />
-							<Route path="/get-involved/donate" element={<Donate />} />
-							<Route path="/resources/blogs" element={<Blogs />} />
-							<Route path="/resources/blogs/welcome-blog" element={<Workshops />} />
-							<Route path="*" element={<Home />} />
-							<Route path="/new-feature" element={<NewFeature />} />
-
-						</Routes>
-					</div>
-					<div className={"pinnedSupportPopup"}>
-						<SupportPopup />
-					</div>
-					<Footer />
-				</Router>
-			</IntlProvider>
-		</div>
-	);
-};
+  return (
+    <div className={"app"}>
+      <IntlProvider locale={isEnglish ? "en" : "mn"} messages={translations[isEnglish ? "en" : "mn"]}>
+        <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+          <div className={"pinnedHeader"}>
+            <Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+            <Navigation />
+          </div>
+          <div className={"pageContainer"}>
+            <Routes>
+              <Route path="/programs" element={<Programs />} />
+              <Route path="/programs/cultural-compass-program" element={<CulturalCompassProgram />} />
+              <Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
+              <Route path="/programs/resume-boost-program" element={<ResumeBoostProgram />} />
+              <Route path="/get-involved/volunteer" element={<Volunteer />} />
+              <Route path="/get-involved/internships" element={<Internships />} />
+              <Route path="/resources/podcasts" element={<Podcasts />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/events/resume-help" element={<ResumeHelp />} />
+              <Route path="/events/happy-hour" element={<HappyHour />} />
+              <Route path="/resources/blogs" element={<Blogs />} />
+              <Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
+              <Route path="/about-us/our-team" element={<OurTeam />} />
+              <Route path="/about-us/our-story" element={<OurStory />} />
+              <Route path="/resources" element={<Resources />} />
+              <Route path="/contact-us" element={<Contact />} />
+              <Route path="/get-involved/donate" element={<Donate />} />
+              <Route path="/resources/blogs" element={<Blogs />} />
+              <Route path="/resources/blogs/welcome-blog" element={<Workshops />} />
+              <Route path="*" element={<Home />} />
+              <Route path="/new-feature" element={<NewFeature />} />
+            </Routes>
+          </div>
+          <div className={"pinnedSupportPopup"}>
+            <SupportPopup />
+          </div>
+          <Footer />
+        </Router>
+      </IntlProvider>
+    </div>
+  );
+}
