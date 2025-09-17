@@ -14,7 +14,7 @@ const docClient = new AWS.DynamoDB.DocumentClient(); // for items
 // Function to list all tables
 async function createEvent() {
     try {
-        const data = await dynamoDB.createItem().promise();
+        const data = await dynamoDB.listTables().promise();
         console.log('DynamoDB tables in this account/region:');
         console.log(data.TableNames);
 
