@@ -95,4 +95,4 @@ async function deleteItem(tableName, primaryKey, keyValue) {
 }
 
 // Run the script
-listTables();
+createEvent();
