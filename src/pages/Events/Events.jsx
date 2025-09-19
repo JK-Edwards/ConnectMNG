@@ -6,11 +6,17 @@ import "./Events.css";
 export default function Events() {
     const intl = useIntl();
     const events = [
+        // {
+        //     date: intl.formatMessage({ id: "date" }),
+        //     sessions: [
+        //         { time: intl.formatMessage({ id: "time" }), name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
+        //         { time: intl.formatMessage({ id: "time1" }), name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
+        //     ],
+        // },
         {
-            date: intl.formatMessage({ id: "date" }),
+            date: "September 27th, 2025",
             sessions: [
-                { time: intl.formatMessage({ id: "time" }), name: "Resume help", location: "Capital One Cafe", link: "/events/resume-help" },
-                { time: intl.formatMessage({ id: "time1" }), name: "Happy hour", location: "Bangrak", link: "/events/happy-hour" },
+                { time: "12:00 PM - 2:00 PM", name: "Resume Building", location: "Capital One Cafe SLU", link: "/events/resume-building" },
             ],
         },
 
