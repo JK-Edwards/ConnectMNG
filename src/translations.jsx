@@ -171,6 +171,14 @@ const translations = {
         resume_desc3: "🎯 Ideal for job seekers and students looking to refine their resumes.",
         r_back_to_events: "⬅ Back to Events",
 
+        // Resume building event translations
+        resume_building_date_time: "📅 Saturday 27th September 2025 | 🕒 12:00 PM - 2:00 PM",
+        resume_building_location: "📍 Location: Capital One Cafe SLU",
+        resume_building_desc1: "Join us for an interactive Resume Help Workshop where industry experts will provide tips on crafting an impressive resume that stands out! Limited spots available!",
+        resume_building_desc2: "📝 Learn best practices, formatting tips, and how to highlight your skills effectively.",
+        resume_building_desc3: "🎯Ideal for job seekers and students looking to refine their resumes.",
+        rb_back_to_events: "⬅ Back to Events",
+
     },
     mn: {
         programs: "Хөтөлбөрүүд",
