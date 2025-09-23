@@ -8,7 +8,8 @@ export default function OurStory() {
 	return (
 		<div className="aboutContainer">
 			<div className="ourStoryTitleContainer">
-				<h1>{intl.formatMessage({ id: "ourStoryHeading" })}</h1>
+				<h1>{intl.formatMessage({ id: "ourStoryHeading1" })}</h1>
+				<h1>{intl.formatMessage({ id: "ourStoryHeading2"})}</h1>
 			</div>
 
 			<div className="ourStoryDesc">
@@ -33,14 +34,6 @@ export default function OurStory() {
 				<p>{intl.formatMessage({ id: "ourStoryText6a" })}</p>
 				<p><strong>{intl.formatMessage({ id: "ourStoryText6b" })}</strong></p>
 				<p><strong>{intl.formatMessage({ id: "ourStorySignOff" })}</strong></p>
-			</div>
-			<div className={"ourStoryPage"}>
-				<div className={"ourStoryTitle"}>
-					{intl.formatMessage({ id: "ourStory" }).toUpperCase()}
-				</div>
-				<div className={"ourStoryDesc"}>
-					{intl.formatMessage({ id: "ourStoryText" })}
-				</div>
 			</div>
 		</div>
 	);
