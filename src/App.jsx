@@ -1,6 +1,9 @@
 import OurTeam from "./pages/About/OurTeam/OurTeam.jsx";
 import OurStory from "./pages/About/OurStory/OurStory.jsx";
 import Admin from "./pages/Admin/Admin.jsx";
+import ManageBlogs from "./pages/Admin/ManageBlogs.jsx";
+import ManageEvents from "./pages/Admin/ManageEvents.jsx";
+import ManageMentors from "./pages/Admin/ManageMentors.jsx";
 import Blogs from "./pages/Blogs/Blogs.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import CulturalCompassProgram from "./pages/Programs/ProgramPages/CulturalCompass/CulturalCompass.jsx";
@@ -62,6 +65,9 @@ export default function App() {
 							<Route path="/about-us/our-team" element={<OurTeam />} />
 							<Route path="/about-us/our-story" element={<OurStory />} />
 							<Route path="/admin" element={<Admin />} />
+							<Route path="/manage-blogs" element={<ManageBlogs />} />
+        					<Route path="/manage-events" element={<ManageEvents />} />
+        					<Route path="/manage-mentors" element={<ManageMentors />} />
 							<Route path="/resources" element={<Resources />} />
 							<Route path="/contact-us" element={<Contact />} />
 							<Route path="/get-involved/donate" element={<Donate />} />

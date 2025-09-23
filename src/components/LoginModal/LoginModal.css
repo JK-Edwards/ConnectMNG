@@ -1,4 +1,4 @@
-.modalOverlay {
+.modalOverlay.loginModal {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,23 +11,24 @@
   z-index: 1000;
 }
 
-.modalContent {
+.modalOverlay.loginModal .modalContent {
   background: white;
   padding: 2vw;
   border-radius: 10px;
-  width: 280px;
+  width: 280px; 
+  max-width: 280px;
   text-align: center;
   position: relative;
 }
 
-.modalContent h2 {
+.modalOverlay.loginModal .modalContent h2 {
   font-weight: 600;
   margin-bottom: 1vw;
   font-size: calc(10px + 1.5vw);
   padding-top: 1vw;
 }
 
-.closeButton {
+.modalOverlay.loginModal .closeButton {
   position: absolute;
   top: 0.5vw;
   right: 1vw;
@@ -38,15 +39,16 @@
   color: #969696;
 }
 
-.modalContent input {
+.modalOverlay.loginModal .modalContent input {
   width: 100%;
   padding: 0.5vw;
   margin: 0.5vw 0;
   border-radius: 6px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.loginButton {
+.modalOverlay.loginModal .loginButton {
   background: #70A9A2;
   color: white;
   border: none;

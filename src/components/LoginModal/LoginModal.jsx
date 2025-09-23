@@ -10,14 +10,14 @@ export default function LoginModal({ onClose }) {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // login logic
+    // Your login logic here
 
-      onClose();
-      navigate("/admin");
+    onClose();
+    navigate("/admin");
   };
 
   return (
-    <div className="modalOverlay" onClick={onClose}>
+    <div className="modalOverlay loginModal" onClick={onClose}>
       <div className="modalContent" onClick={(e) => e.stopPropagation()}>
         <button className="closeButton" onClick={onClose}>
           &times;
@@ -38,9 +38,12 @@ export default function LoginModal({ onClose }) {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button type="submit" className="loginButton">Login</button>
+          <button type="submit" className="loginButton">
+            Login
+          </button>
         </form>
       </div>
     </div>
   );
 }
+

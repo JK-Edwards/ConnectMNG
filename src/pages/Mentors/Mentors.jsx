@@ -9,7 +9,7 @@ const mentors = [
     title: "Biochemist",
     photo: AnunuImage,
     description: "Description",
-    link: "",
+    link: "https://calendly.com/anuujin-ider",
     industry: "non-tech"
   },
   {
@@ -17,7 +17,7 @@ const mentors = [
     title: "Marketing Manager",
     photo: AnunuImage,
     description: "Description",
-    link: "",
+    link: "https://calendly.com/anuujin-ider",
     industry: "non-tech"
   },
   {
@@ -25,7 +25,7 @@ const mentors = [
     title: "Program Director",
     photo: AnunuImage,
     description: "Description",
-    link: "",
+    link: "https://calendly.com/anuujin-ider",
     industry: "non-tech"
   },
   {
@@ -33,7 +33,7 @@ const mentors = [
     title: "Marketing Director",
     photo: AnunuImage,
     description: "Description",
-    link: "",
+    link: "https://calendly.com/anuujin-ider",
     industry: "tech"
   },
   {
@@ -41,7 +41,7 @@ const mentors = [
     title: "Product Manager",
     photo: AnunuImage,
     description: "Description",
-    link: "",
+    link: "https://calendly.com/anuujin-ider",
     industry: "non-tech"
   },
   {
@@ -49,7 +49,7 @@ const mentors = [
     title: "Web Developer",
     photo: AnunuImage,
     description: "Description",
-    link: "",
+    link: "https://calendly.com/anuujin-ider",
     industry: "tech"
   }
 ];
