@@ -1,0 +1,102 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalOverlay .modalContent {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 50vw;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+.closeButton:hover { color: #000; }
+
+.modalContent h2 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+  color: #2f3e46;
+}
+
+.modalRow {
+  display: flex;
+  gap: 20px;
+}
+.modalField {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.modalField.fullWidth { flex: 1 1 100%; }
+
+.modalField label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-align: left;
+}
+.modalField input,
+.modalField textarea {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.modalField textarea {
+  resize: vertical;
+  height: 140px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+.cancelBtn {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.cancelBtn:hover { background-color: #aaa; }
+.saveBtn {
+  background-color: #70a9a2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.saveBtn:hover { background-color: #4e807b; }

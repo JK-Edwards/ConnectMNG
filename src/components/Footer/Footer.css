@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw
+    padding-left: 3vw;
+    width: 100vw;
 }
 
 .footerPageLinksContainer {
@@ -59,10 +60,10 @@
 
 .officialLinksContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    gap: 2.5vw;
     align-items: center;
-    width: 37vw;
+    flex-wrap: wrap;
+    padding-left: 2vh;
 }
 
 .officialLinksContainer a {
@@ -76,7 +77,6 @@
     font-size: calc(0.2rem + 0.8vw);
     text-decoration: none;
     color: black;
-    min-width: 10.5vw;
 }
 
 .mobile-officialLinksContainer {
@@ -105,6 +105,9 @@
     .footerContainer {
         display: flex;
         flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 1vw;
+        gap: 1.5vw;
     }
 
     .footerPageLinksContainer {

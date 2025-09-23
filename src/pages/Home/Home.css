@@ -13,7 +13,6 @@
 
 .carouselContainer {
 	width: 90vw;
-	margin-bottom: 55px;
 }
 
 .carouselSlide {
@@ -72,6 +71,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	padding-bottom: 3vw;
 }
 
 .programGalleryContainer {
