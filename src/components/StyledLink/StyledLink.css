@@ -1,0 +1,25 @@
+.learnMoreLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #40798C;
+    height: 1vw;
+}
+
+.learnMoreLink img {
+    height: 1.5vw;
+    width: 2.25vw;
+}
+
+.learnMoreLink p {
+    margin: 0;
+    padding-right: 0.5vw;
+    font-size: calc(0.25rem + 1.25vw);
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .learnMoreLink p {
+        font-size: calc(0.25rem + 2.25vw);
+    }
+}

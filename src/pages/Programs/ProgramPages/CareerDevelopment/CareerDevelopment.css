@@ -1,0 +1,17 @@
+.careerDevContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-image: url("../../../../images/background_green.jpg");
+	background-size: cover;
+	background-position: center;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+@media (max-width: 750px) {
+	.careerDevContainer {
+		padding-top: 35px;
+	}
+}

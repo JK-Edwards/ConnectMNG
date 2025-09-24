@@ -1,0 +1,153 @@
+.supportPopupContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.supportPopupTextContainer {
+    color: #FFFFFF;
+    padding-left: 1vw;
+    height: 14vw;
+    width: 18vw;
+    opacity: 1;
+    transition: width 0.1s linear, opacity 0.4s linear;
+    font-weight: bold;
+}
+
+.supportPopupTextContainer p {
+    font-size: 0.95vw;
+    margin: 0.75vw;
+}
+
+.supportPopupTextContainer h3 {
+    font-weight: bold;
+    font-size: 1.25vw;
+}
+
+.supportPopupTextContainer.closed {
+    padding: 0;
+    width: 0;
+    opacity: 0;
+    max-height: 14vw;
+    transition: width 0.1s linear, opacity 0s linear;
+}
+
+.supportPopupButton {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 0.5vw;
+}
+
+.supportPopupButtonImage {
+    max-width: 2vw;
+}
+
+.supportPopupButtonImage.closed {
+    max-width: 2vw;
+    transform: rotate(180deg);
+}
+
+.supportPopupTextTitleContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.supportPopupImage {
+    max-height: 5vw;
+    max-width: 4vw;
+}
+
+.supportPopupDonateLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    height: 1vw;
+    width: 1vw;
+}
+
+.supportPopupDonateLinkArrow {
+    height: 3vw;
+    width: 3vw;
+}
+
+.supportPopupDonateLink p {
+    margin: 0;
+    margin-left: 0.8vw;
+    padding-right: 0.5vw;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 750px) {
+    .supportPopupContainer {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .supportPopupTextContainer {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .supportPopupTextContainer p {
+        font-size: 2vw;
+    }
+
+    .supportPopupTextContainer h3 {
+        font-size: 2vw;
+    }
+
+    .supportPopupImage {
+        max-width: 6vw;
+        max-height: 7vw;
+    }
+
+    .supportPopupButtonImage {
+        max-width: 4vw;
+    }
+
+    .supportPopupButtonImage.closed {
+        max-width: 4vw;
+    }
+
+    .supportPopupTextContainer.closed {
+        max-height: 30vw;
+    }
+}
+
+/*For mobile screens*/
+@media screen and (max-width: 500px) {
+    .supportPopupContainer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .supportPopupTextContainer {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .supportPopupTextContainer p {
+        font-size: 2.7vw;
+    }
+
+    .supportPopupTextContainer h3 {
+        font-size: 2.7vw;
+    }
+
+    .supportPopupImage {
+        max-width: 8vw;
+        max-height: 9vw;
+    }
+
+    .supportPopupButton {
+        padding: 1.5vw;
+    }
+
+    .supportPopupTextContainer.closed {
+        max-height: 40vw;
+    }
+}

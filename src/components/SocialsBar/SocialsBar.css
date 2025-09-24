@@ -1,0 +1,20 @@
+.socialsBarContainer {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.icon {
+	height: 3vw;
+	width: 3vw;
+	padding: 0.5vw;
+}
+
+@media screen and (max-width: 768px) {
+
+	.icon {
+		width: 9vw;
+		/* Adjust this value to your preferred size */
+		height: 9vw;
+		/* Adjust this value to your preferred size */
+	}
+}

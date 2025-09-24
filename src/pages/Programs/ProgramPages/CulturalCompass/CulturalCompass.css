@@ -1,0 +1,98 @@
+.culturalCompassContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-image: url("../../../../images/background_green.jpg");
+	background-size: cover;
+	background-position: center;
+	padding-top: 95px;
+	padding-left: 20px;
+	padding-right: 20px;
+	overflow-x: hidden;
+}
+
+.culturalCompassContentContainer h1 {
+	font-size: calc(5px + 1.75vw);
+	font-weight: bold;
+	margin: 0;
+	padding-bottom: 1.5vw;
+}
+
+.culturalCompassContentContainer h3 {
+	font-size: calc(2.5px + 1.2vw);
+	margin: 0;
+	padding-bottom: 1.5vw;
+}
+
+.culturalCompassContentContainer p {
+	font-size: calc(1px + 1.2vw);
+	margin: 0;
+}
+
+.culturalCompassContentContainer div {
+	padding-bottom: 1.5vw
+}
+
+
+@media only screen and (max-width: 768px) {
+	.mobile-only {
+		display: flex
+	}
+
+	.mobile-desktop {
+		display: none
+	}
+
+	.culturalCompassContainer {
+		padding-top: 5px;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: white !important;
+		background-image: none !important;
+	}
+
+	.culturalCompassContainer h1 {
+		font-size: calc(5px + 1.75vw);
+		padding-top: 5px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.culturalCompassContainer h3 {
+		font-size: calc(5px + 1.75vw);
+		padding-top: 10px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.culturalCompassContainer p {
+		font-size: calc(1px + 1.75vw);
+		padding-top: 5px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.culturalCompassContainer {
+		padding-top: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: white;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		min-height: 50vh;
+	}
+
+	.culturalCompassContentContainer {
+		font-size: calc(5px + 1.75vw);
+		font-weight: bold;
+		width: 100%;
+	}
+
+}

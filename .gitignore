@@ -1,0 +1,7 @@
+node_modules
+build/
+
+# Environment variables
+.env
+server/.env
+*.env

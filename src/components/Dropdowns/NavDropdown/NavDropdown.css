@@ -1,0 +1,19 @@
+.subDropdownMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    cursor: pointer;
+    font-size: calc(0.2rem + 1vw);
+    background: #fbfbfb;
+    width: 100%;
+    top: 100%;
+    border-top: 0.2vw solid #043c26;
+    z-index: 900;
+}
+
+.subDropdownOption {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-top: 0.05vw solid #d4d4d4;
+}

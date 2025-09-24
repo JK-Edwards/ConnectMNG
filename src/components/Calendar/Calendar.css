@@ -1,0 +1,53 @@
+.eventDayContainer {
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+}
+
+.eventTable {
+    display: flex;
+    background-color: white;
+    border-radius: 0px 0px 1vw 1vw;
+}
+
+.columnContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventDayContentContainer {
+    padding-left: 0.5vw;
+    height: 3vw;
+    font-size: calc(1vw);
+    display: flex;
+    align-items: center;
+}
+
+.eventDayContentContainer:not(:first-child) {
+    border-top: 0.1vw solid #d4d4d4;
+}
+
+.eventDayTitleContainer {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 1vw 1vw 0px 0px;
+    background-color: #70A9A1;
+}
+
+.eventDayTitle {
+    flex: 1;
+    text-align: left;
+    padding-left: 0.5vw;
+    font-size: calc(5px + 1.5vw);
+}
+
+.calendarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    padding-bottom: 40px;
+}
+
+.eventDayContainer h1 {
+    font-size: calc(5px + 1.75vw);
+}

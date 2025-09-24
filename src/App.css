@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.app {
+    font-family: "Inter";
+}
+
+.pageContainer {
+    padding-top: 125px;
+}
+
+@media screen and (max-width: 768px) {
+    .pageContainer {
+        padding-top: calc(1rem + 20vw);
+    }
+
+}
+
+.pinnedHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Support popup style within page */
+
+.pinnedSupportPopup {
+    position: fixed;
+    top: 30vw;
+    right: 1vw;
+    background: #9EC1A3;
+    padding: 1vw;
+    border-radius: 1.5vw;
+    z-index: 900;
+}
+
+@media screen and (max-width: 750px) {
+    .pinnedSupportPopup {
+        top: 55vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pinnedSupportPopup {
+        top: 80vw;
+    }
+}

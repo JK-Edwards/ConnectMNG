@@ -1,0 +1,83 @@
+.linkedInLink {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.profileContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75vw;
+}
+
+.profile {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 calc(25vw - 10px);
+  margin: 5px;
+  margin-bottom: 5vw;
+}
+
+.profile div {
+  font-size: calc(0.1rem + 1.1vw);
+}
+
+.profile a {
+  font-size: calc(0.1rem + 1.25vw);
+}
+
+.profileImage {
+  height: calc(14vw);
+  width: calc(14vw);
+  margin-bottom: 1vw;
+}
+
+.galleryHeader {
+  padding-bottom: 2vw;
+}
+
+.galleryHeader h1 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 20px;
+}
+
+.galleryHeader div {
+  font-size: calc(1px + 1.75vw);
+}
+
+.galleryContainer {
+  width: 100%
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 750px) {
+  .profile {
+    flex: 1 1 calc(100% - 10px);
+  }
+
+  .profileImage {
+    height: calc(30vw);
+    width: calc(30vw);
+    margin-bottom: 1vw;
+  }
+
+  .profile a {
+    font-size: calc(0.1rem + 4vw)
+  }
+
+  .profile div {
+    font-size: calc(0.25rem + 2.4vw);
+  }
+
+  .galleryHeader div {
+    text-align: center;
+    font-size: calc(10px + 1.75vw);
+  }
+}
