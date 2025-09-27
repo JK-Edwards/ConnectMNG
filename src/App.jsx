@@ -30,6 +30,7 @@ import { useState } from "react";
 
 import "./App.css";
 import Workshops from "./pages/Blogs/Workshops.jsx";
+import ResumeBuilding from "./pages/Events/EventsPages/ResumeBuilding/ResumeBuilding.jsx";
 
 
 export default function App() {
@@ -55,6 +56,7 @@ export default function App() {
 							<Route path="/events" element={<Events />} />
 							<Route path="/events/resume-help" element={<ResumeHelp />} />
 							<Route path="/events/happy-hour" element={<HappyHour />} />
+							<Route path="/events/resume-building" element={<ResumeBuilding />} />
 							<Route path="/resources/blogs" element={<Blogs />} />
 							<Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
 							<Route path="/about-us/our-team" element={<OurTeam />} />
