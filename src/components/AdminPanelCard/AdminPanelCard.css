@@ -1,0 +1,23 @@
+.adminPanelCard {
+  padding: 1vw 1.5vw;
+  color: white;
+  background-color: #70A9A2;
+  border-bottom: 1.2px solid #4f7c77;
+  cursor: pointer;
+  font-size: 1vw;
+}
+
+.adminPanelCard h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: calc(.5px + 1.2vw);
+}
+
+.adminPanelCard:hover h2 {
+  text-decoration: underline;
+}
+
+
+
+
+

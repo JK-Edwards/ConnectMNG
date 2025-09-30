@@ -34,6 +34,21 @@ export default function BoardMemberGallery() {
   return (
     <div className={"galleryContainer"}>
       <div className={"galleryHeader"}>
+        <h1>
+          {intl.formatMessage({ id: "About Us" }).toUpperCase()}
+        </h1>
+        <div>
+          {intl.formatMessage({ id: "aboutUsDesc1" })}
+        </div>
+      </div >
+      <div className={"galleryHeader"}>
+        <h1>
+          {intl.formatMessage({ id: "Our Values" })}
+        </h1>
+        <div>{intl.formatMessage({ id: "ourValuesDesc1" })}</div>
+      </div>
+      <div className={"galleryHeader"}>
+        <h1>{intl.formatMessage({ id: "Meet The Board" })}</h1>
         <h1>{intl.formatMessage({ id: "meetBoard" })}</h1>
       </div>
       <div className={"profileContainer"}>

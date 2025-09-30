@@ -1,7 +1,8 @@
 import NewsletterSubscribe from "../NewsletterSubscribe/NewsletterSubscribe.jsx";
 import SocialsBar from "../SocialsBar/SocialsBar.jsx";
-import React from "react";
+import React, { useState } from "react";
 import { useIntl } from "react-intl";
+import LoginModal from "../LoginModal/LoginModal";
 
 import { Link } from "react-router-dom";
 
@@ -9,6 +10,7 @@ import "./Footer.css";
 
 export default function Footer() {
     const intl = useIntl();
+    const [showLogin, setShowLogin] = useState(false);
     return (
         <div className={"footerContainer"}>
             <div className={"mobile-officialLinksContainer"}>
@@ -47,6 +49,12 @@ export default function Footer() {
                 </div>
                 <NewsletterSubscribe />
                 <div className={"officialLinksContainer"}>
+                    {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
+                    <div>
+                        <span onClick={() => setShowLogin(true)} style={{ cursor: "pointer"}}>
+                            {intl.formatMessage({ id: "admin" })} 
+                        </span>
+                    </div>
                     <div>
                         <Link>{intl.formatMessage({ id: "termsOfUse" })}</Link>
                     </div>
