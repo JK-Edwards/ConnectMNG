@@ -43,12 +43,12 @@ export default function Programs() {
 		<div className={"programsContainer"}>
 			<div>
 
-				<div className={"homeIconAndPrograms"}>
+				{/* <div className={"homeIconAndPrograms"}>
 					<a href="http://connectmng.org/" rel={"noreferrer"} style={{ display: "inline" }}>
 						<img src={icon} className={"icon mobile-only"} alt={"Home"} />
 					</a>
 					{<h2 className={'programs-header mobile-only'}>{intl.formatMessage({ id: "/ Programs" })}  </h2>}
-				</div>
+				</div> */} {/* Commented out per design team request */}
 
 				<div className={"programsHeader"}>
 					<div>
