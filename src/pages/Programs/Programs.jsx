@@ -59,9 +59,9 @@ export default function Programs() {
 				<Program name={"Resume Boost"} description={intl.formatMessage({ id: "resumeBoostDesc" })} pageLink={"/programs/resume-boost-program"} />
 				<Program name={"Workshop"} description={intl.formatMessage({ id: "workshopDesc" })} pageLink={"/programs/cultural-compass-program"} />
 			</div>
-			<div className={"contactUsBoxContainer"}>
+			{/* <div className={"contactUsBoxContainer"}>
 				<ContactUsBox />
-			</div>
+			</div> */}
 		</div>
 	);
 };

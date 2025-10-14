@@ -51,9 +51,9 @@ export default function ResumeBoostProgram() {
                     </ol>
                 </div>
             </div>
-            <div className={"contactUsBoxContainer"}>
+            {/* <div className={"contactUsBoxContainer"}>
                 <ContactUsBox />
-            </div>
+            </div> */}
         </div>
     )
 }
