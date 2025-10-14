@@ -29,7 +29,7 @@ export default function ResumeBoostProgram() {
                         </a>
                     </div>
                     <h1>
-                        ResumeBoost
+                        Resume Boost
                     </h1>
                     <p>
                         Elevate Your Career Prospects
