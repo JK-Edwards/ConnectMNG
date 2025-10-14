@@ -13,7 +13,7 @@ html {
 }
 
 .pageContainer {
-    padding-top: 125px;
+    padding-top: calc(1rem + 10vw);
 }
 
 @media screen and (max-width: 768px) {
