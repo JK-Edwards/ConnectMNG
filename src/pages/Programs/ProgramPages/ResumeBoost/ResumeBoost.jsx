@@ -36,7 +36,7 @@ export default function ResumeBoostProgram() {
                         Resume Boost is a career development program designed to help Mongolian college students and young professionals strengthen their resumes with expert feedback. Participants will have the opportunity to receive personalized resume reviews from industry professionals, ensuring their skills and experiences are effectively highlighted for potential employers.
                     </p>
 
-                    <h2> Why Join?</h2>
+                    {/* <h2> Why Join?</h2>
                     <ul>
                         <li>✔ Professional Insights - Get feedback from experienced professionals across various industries.</li>
                         <li>✔ Tailored Recommendations - Receive actionable advice to enhance your resume's impact.</li>
@@ -48,7 +48,7 @@ export default function ResumeBoostProgram() {
                         <li> {'\u2705'}  Fill out the Google Form</li>
                         <li> {'\u2705'} Receive expert feedback within 7 days</li>
                         <li> {'\u2705'} Refine your resume and boost your career prospects</li>
-                    </ol>
+                    </ol> */}
                 </div>
             </div>
             {/* <div className={"contactUsBoxContainer"}>
