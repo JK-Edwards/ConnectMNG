@@ -3,6 +3,9 @@ import saruul from "../../images/BoardMembers/Saruul-Erdene.JPEG";
 import badmaarag from "../../images/BoardMembers/Badmaarag.JPG";
 import james from "../../images/BoardMembers/James.JPG";
 import matthew from "../../images/BoardMembers/Matthew.jpg";
+import tsogo from "../../images/BoardMembers/Bayartsogt.jpg";
+import batsuuri from "../../images/BoardMembers/Batsuuri.png";
+import bilguun from "../../images/BoardMembers/Bilguun.png";
 import React from "react";
 import { useIntl } from "react-intl";
 
@@ -71,6 +74,34 @@ export default function BoardMemberGallery() {
           position: "Web Developer",
           description: "",
           linkedIn: "https://www.linkedin.com/in/matthewbalgan/"
+        }} />
+        <Profile person={{
+          name: "Bayartsogt Yadamsuren",
+          imageId: tsogo,
+          position: "Web Developer",
+          description: "",
+          linkedIn: "https://www.linkedin.com/in/bayartsogt-yadamsuren/"
+        }} />
+        <Profile person={{
+          name: "Batsuuri Baatarchuluun",
+          imageId: batsuuri,
+          position: "Treasurer",
+          description: "",
+          linkedIn: "https://www.linkedin.com/in/batsuuri7/"
+        }} />
+        <Profile person={{
+          name: "Bilguun Enkhbileg",
+          imageId: bilguun,
+          position: "Events Manager",
+          description: "",
+          linkedIn: "https://www.linkedin.com/in/bilguunenkhb03/"
+        }} />
+        <Profile person={{
+          name: "Anuujin Chadraa",
+          imageId: "",
+          position: "Public Relations Manager",
+          description: "",
+          linkedIn: "https://www.linkedin.com/in/anuujinc/"
         }} />
       </div>
     </div>

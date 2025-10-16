@@ -54,7 +54,7 @@
 }
 
 .ourStoryDesc {
-        width: 80vw;
+    width: 80vw;
 }
 
 @media (min-width: 768px) {
@@ -86,14 +86,15 @@
 @media screen and (max-width: 750px) {
     .aboutContainer {
         padding: 30px 40px !important;
-        align-items: stretch;    
+        align-items: stretch;
     }
 
     .ourStoryTitleContainer {
         width: 100%;
-        padding: 0;              
+        padding: 0;
         margin: 0 0 1rem 0;
     }
+
     .ourStoryTitleContainer h1 {
         font-size: calc(5px + 8vw);
         margin: 0;
@@ -110,9 +111,10 @@
 
     .ourStoryCardContainer {
         width: 100%;
-        padding: 0;           
+        padding: 0;
         margin: 1rem 0;
     }
+
     .ourStoryCardTextContainer {
         width: 100%;
         padding: 0;
@@ -125,6 +127,7 @@
         width: 100%;
         margin: 1rem 0;
     }
+
     /* .ourStoryTitle {
         font-size: calc(5px + 8vw);
     }
