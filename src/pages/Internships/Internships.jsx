@@ -72,7 +72,7 @@ export default function Internships() {
 			<div className="thinSeparator only-mobile"></div>
 			
 			<div className={'internshipsFormContainer'}>
-				<StyledFormLink text={'Become an intern!'} />
++				<StyledFormLink text={'Become an intern!'} link={'https://forms.gle/GvFwGSEzUjU2Zg756'} />
 			</div>
 		</div>
 	);
