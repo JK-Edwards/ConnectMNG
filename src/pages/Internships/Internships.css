@@ -20,6 +20,7 @@
 	padding-bottom: 2vw;
 	padding-left: 10vw;
 	padding-right: 10vw;
+	font-size: calc(10px + 1.2vw);
 }
 
 .internshipsContainer p {
@@ -46,15 +47,15 @@
 }
 
 .internshipsTitleContainer h1 {
-	font-size: calc(10px + 2vw);
+	font-size: calc(10px + 1.2vw);
 }
 
 .internshipsTitleContainer h2 {
-	font-size: calc(10px + 2vw);
+	font-size: calc(10px + 1.2vw);
 }
 
 .internshipsDescriptionContainer p {
-	font-size: calc(1px + 1.75vw);
+	font-size: calc(1px + 1.2vw);
 }
 
 .internshipsFormTitleContainer {
