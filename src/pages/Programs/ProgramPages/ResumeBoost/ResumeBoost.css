@@ -5,167 +5,110 @@
 	background-image: url("../../../../images/background_green.jpg");
 	background-size: cover;
 	background-position: center;
-	padding-top: 10px;
-	padding-left: 20px;
+	padding-top: calc(1rem + 2vw);
+	padding-left: 75px;
 	padding-right: 20px;
-}
-
-.resumeBoostContentContainer h1 {
+	overflow-x: hidden;
+  }
+  
+  /* Header — matches Programs page style */
+  .resumeBoostHeader h1 {
 	font-size: calc(5px + 1.75vw);
 	font-weight: bold;
-	margin: 0;
-	padding-bottom: 1.5vw;
-}
-
-.resumeBoostContentContainer h2 {
-	font-size: calc(5px + 1.5vw);
-	font-weight: bold;
-	margin: 0;
-	padding-bottom: 1.5vw;
-}
-
-.resumeBoostContentContainer h3 {
-	font-size: calc(2.5px + 1.2vw);
-	margin: 0;
-	padding-bottom: 1.5vw;
-}
-
-.resumeBoostContentContainer p {
-	font-size: calc(5.59px + 1.2vw);
-	margin: 0;
-	padding-bottom: 3vw;
-}
-
-
-
-.resumeBoostContentContainer ul {
-	font-size: calc(5.59px + 1.2vw);
-	margin: 0;
-	padding-bottom: 3vw;
-}
-
-.resumeBoostContentContainer div {
-	padding-bottom: 1.5vw
-}
-
-.mobile-only {
-	display: none
-}
-
-.mobile-desktop {
-	display: flex
-}
-
-
-@media only screen and (max-width: 768px) {
+  }
+  
+  .resumeBoostHeader p {
+	font-size: calc(1px + 1.2vw);
+	width: 50vw;
+  }
+  
+  /* Body content */
+  .indivProgramContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 1;
+	padding-top: 35px;
+	width: 50vw;
+  }
+  
+  .indivProgramTextContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+  }
+  
+  .programDescription {
+	width: 50vw;
+	text-align: justify;
+	font-size: calc(1px + 1.2vw);
+  }
+  
+  /* Optional image styling */
+  .resumeIconBlock {
+	margin-top: 10px;
+  }
+  
+  .programImage {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 6px;
+  }
+  
+  /* Utilities */
+  .mobile-only {
+	display: none;
+  }
+  .mobile-desktop {
+	display: flex;
+  }
+  
+  /* --- Mobile --- */
+  @media only screen and (max-width: 768px) {
 	.mobile-only {
-		display: flex
+	  display: flex;
 	}
-
+  
 	.mobile-desktop {
-		display: none
+	  display: none;
 	}
-
-	.resumeBoostContentContainer ul {
-		font-size: calc(5px + 1.75vw);
-		margin: 0;
-		padding-bottom: 3vw;
-	}
-
+  
 	.resumeBoostContainer {
-		padding-top: 5px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		background-color: white !important;
-		background-image: none !important;
-		background-size: cover;
-		width: 100%;
-		background-size: cover;
-		background-position: center;
-		min-height: 50vh;
+	  background-image: url("../../../../images/background_white.jpg");
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  background-size: cover;
+	  background-position: center;
+	  padding: 30px 20px;
+	  background-color: white;
+	  padding-top: 15px;
 	}
-
-
-	.resumeBoostContainer h1 {
-		font-size: calc(7px + 1.75vw);
-		font-weight: 900;
-		padding-top: 10px;
-		color: #033C26;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
+  
+	.resumeBoostHeader h1 {
+	  font-size: calc(8px + 1.75vw);
+	  font-weight: bold;
+	  padding-top: 4vw;
 	}
-
-	.resumeBoostContainer h3 {
-		font-size: calc(7px + 1.75vw);
-		padding-top: 10px;
-		font-weight: 900;
-		display: flex;
-		flex-direction: column;
-		color: #033C26;
-		width: 100%;
+  
+	.resumeBoostHeader p {
+	  font-size: calc(7px + 1.2vw);
+	  padding-left: 1.3vw;
+	  padding-top: 2vw;
+	  text-align: left;
+	  width: 96vw;
 	}
-
-	.resumeBoostContainer h2 {
-		font-size: calc(7px + 1.75vw);
-		padding-top: 10px;
-		color: #033C26;
-		font-weight: 900;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
+  
+	.indivProgramContainer {
+	  padding-top: 15px;
+	  width: 100%;
 	}
-
-	.resumeBoostContainer p {
-		font-size: calc(5px + 1.75vw);
-		padding-top: 5px;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
+  
+	.programDescription {
+	  width: 90vw;
+	  text-align: justify;
+	  font-size: calc(7px + 1.2vw);
 	}
-
-	.resumeBoostContentContainer {
-		font-size: calc(5px + 1.75vw);
-		font-weight: bold;
-		width: 100%;
-	}
-
-	.resumeboost-header {
-		font-size: calc(7px + 2.5vw);
-		font-weight: 700;
-		padding-bottom: 0vw;
-		padding-left: 1.3vw;
-		padding-top: 4vw;
-		text-align: left;
-		width: 96vw;
-	}
-
-	.homeIconAndResumeBoost {
-		display: flex;
-		align-items: center;
-		width: 102%;
-		margin: 0;
-		padding: 0;
-		gap: 0rem;
-	}
-
-	.icon {
-		transform: scale(1);
-		transform-origin: center;
-		margin: 0;
-	}
-
-	.resumeIcon {
-		display: flex;
-		max-width: 100%;
-	}
-
-	.icon2 {
-		transform: scale(1);
-		transform-origin: left;
-		max-width: 100%;
-	}
-
-
-}
+  }
+  
