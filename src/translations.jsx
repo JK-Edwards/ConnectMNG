@@ -251,6 +251,7 @@ const translations = {
         volunteerDesc: "Connect MNG-тэй хамтран ажиллах болон өөрийн оролцоогоороо Вашингтон мужид байгаа Монголчуудад зорилсан хөтөлбөрүүдийг дэмжих хүсэлтэй бол та дараах байдлаар өөрийн оролцоог нэмэх боломжтой юм:",
         becomeVolunteer: "САЙН ДУРЫН АЖИЛТАН БОЛОХ",
         getStarted: "Эхлэх",
+        readMore: "Дэлгэрэнгүй",
 
         // Donation page translations
         empowerYoungMongolians: "Залуу Монгол мэргэжилтнүүдийг дэмжих",

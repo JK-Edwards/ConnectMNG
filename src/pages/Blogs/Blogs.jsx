@@ -13,7 +13,7 @@ const desc1 = <i>"This blog is more than just a virtual space; it's a cozy coern
 	+ "students and young professionals, share our stories, and support each other on  this incredible journey..."</i>;
 
 const desc2 = <i>"As the first impression is always important, your resume is the first impression you can make at the companies when appying "
-	+ "for a job. According to the Ladders study, on average, recruiters spend 7.4 seconds on the initial screeming of a resume..."</i>;
+	+ "for a job. According to the Ladders study, on average, recruiters spend 7.4 seconds on the initial screening of a resume..."</i>;
 
 function BlogCard({ image, title, desc, link }) {
 	const intl = useIntl();
