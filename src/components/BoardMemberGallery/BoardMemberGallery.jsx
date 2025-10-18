@@ -6,6 +6,7 @@ import matthew from "../../images/BoardMembers/Matthew.jpg";
 import tsogo from "../../images/BoardMembers/Bayartsogt.jpg";
 import batsuuri from "../../images/BoardMembers/Batsuuri.png";
 import bilguun from "../../images/BoardMembers/Bilguun.png";
+import anuujinC from "../../images/BoardMembers/AnuujinC.jpg";
 import React from "react";
 import { useIntl } from "react-intl";
 
@@ -98,7 +99,7 @@ export default function BoardMemberGallery() {
         }} />
         <Profile person={{
           name: "Anuujin Chadraa",
-          imageId: "",
+          imageId: anuujinC,
           position: "Public Relations Manager",
           description: "",
           linkedIn: "https://www.linkedin.com/in/anuujinc/"
