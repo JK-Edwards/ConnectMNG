@@ -66,7 +66,6 @@ export default function Internships() {
 			<div className={'volunteerCardContainerMobile only-mobile'}>
 				<VolunteerCardMobile flip={true} title={"Website"} desc={"Help us with our website..."} link={websiteImage} />
 				<div className="thinSeparator only-mobile"></div>
-				<VolunteerCardMobile flip={true} title={"Program"} desc={"Inten role description and responsibilities"} link={websiteImage} />
 			</div>
 
 			<div className="thinSeparator only-mobile"></div>
