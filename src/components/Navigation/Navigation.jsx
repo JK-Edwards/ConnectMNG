@@ -200,6 +200,25 @@ export default function Navigation() {
 						: null}
 				</div>
 				<div>
+				<NavLink
+					to={"/login"}
+					text={intl.formatMessage({ id: "login" }) || "Login"}
+					className={"button login"}
+					isActive={activeIndex === 7} // pick a unique index
+					onClick={() => handleNavLinkSelect(7)}
+				/>
+				</div>
+
+				<div>
+				<NavLink
+					to={"/signup"}
+					text={intl.formatMessage({ id: "signup" }) || "Sign Up"}
+					className={"button signup"}
+					isActive={activeIndex === 8} // pick a unique index
+					onClick={() => handleNavLinkSelect(8)}
+				/>
+				</div>
+				<div>
 					<NavLink to={"/contact-us"}
 						text={intl.formatMessage({ id: "contactUs" }).toUpperCase()}
 						className={"button contact"}
@@ -207,6 +226,8 @@ export default function Navigation() {
 						onClick={() => handleNavLinkSelect(6)}
 					/>
 				</div>
+
+				
 			</div>
 		</div>
 	);

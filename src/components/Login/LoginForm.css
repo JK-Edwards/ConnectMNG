@@ -1,0 +1,34 @@
+.formContainer {
+  background-image: url("../../images/background_green.jpg"); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh; /* fill full viewport */
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.8); /* optional overlay */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+    .h1, h1 {
+        font-size: 2.5rem;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .formContainer {
+    background-image: url("../../images/background_white.jpg");
+  }
+}

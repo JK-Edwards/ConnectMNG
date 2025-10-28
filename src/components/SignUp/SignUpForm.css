@@ -1,0 +1,49 @@
+.formContainer {
+  background-image: url("../../images/background_green.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 95px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 100vh; /* full viewport */
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent overlay */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.formContainer input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formContainer button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff; /* Login blue */
+  color: white;
+  cursor: pointer;
+}
+
+.formContainer button:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 768px) {
+  .formContainer {
+    background-image: url("../../images/background_white.jpg");
+  }
+}

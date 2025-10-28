@@ -20,55 +20,64 @@ import ResumeBoostProgram from "./pages/Programs/ProgramPages/ResumeBoost/Resume
 import SupportPopup from "./components/SupportPopup/SupportPopup.jsx";
 import translations from "./translations.jsx";
 import Volunteer from "./pages/Volunteer/Volunteer.jsx";
+import SignUp from "./pages/SignUp/SignUp.jsx";
+import LoginForm from "./pages/Login/Login.jsx";
+
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { IntlProvider } from "react-intl";
 import { useState } from "react";
+import DummyPostTester from "./components/DummyPostTester.jsx";
 
 import "./App.css";
 import Workshops from "./pages/Blogs/Workshops.jsx";
-
+require('dotenv').config();
 
 export default function App() {
 	const [isEnglish, setIsEnglish] = useState(true);
 
 	return (
-		<div className={"app"}>
-			<IntlProvider locale={isEnglish ? "en" : "mn"} messages={translations[isEnglish ? "en" : "mn"]}>
-				<Router>
-					<div className={"pinnedHeader"}>
-						<Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
-						<Navigation />
-					</div>
-					<div className={"pageContainer"}>
-						<Routes>
-							<Route path="/programs" element={<Programs />} />
-							<Route path="/programs/cultural-compass-program" element={<CulturalCompassProgram />} />
-							<Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
-							<Route path="/programs/resume-boost-program" element={<ResumeBoostProgram />} />
-							<Route path="/get-involved/volunteer" element={<Volunteer />} />
-							<Route path="/get-involved/internships" element={<Internships />} />
-							<Route path="/resources/podcasts" element={<Podcasts />} />
-							<Route path="/events" element={<Events />} />
-							<Route path="/resources/blogs" element={<Blogs />} />
-							<Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
-							<Route path="/about-us/our-team" element={<OurTeam />} />
-							<Route path="/about-us/our-story" element={<OurStory />} />
-							<Route path="/resources" element={<Resources />} />
-							<Route path="/contact-us" element={<Contact />} />
-							<Route path="/get-involved/donate" element={<Donate />} />
-							<Route path="/resources/blogs" element={<Blogs />} />
-							<Route path="/resources/blogs/welcome-blog" element={<Workshops />} />
-							<Route path="*" element={<Home />} />
-
-						</Routes>
-					</div>
-					<div className={"pinnedSupportPopup"}>
-						<SupportPopup />
-					</div>
-					<Footer />
-				</Router>
-			</IntlProvider>
-		</div>
+		<GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+			<div className={"app"}>
+				<IntlProvider locale={isEnglish ? "en" : "mn"} messages={translations[isEnglish ? "en" : "mn"]}>
+					<Router>
+						<div className={"pinnedHeader"}>
+							<Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+							<Navigation />
+						</div>
+						<div className={"pageContainer"}>
+							<Routes>
+								<Route path="/programs" element={<Programs />} />
+								<Route path="/programs/cultural-compass-program" element={<CulturalCompassProgram />} />
+								<Route path="/programs/mentorship-program" element={<MentorshipProgram />} />
+								<Route path="/programs/resume-boost-program" element={<ResumeBoostProgram />} />
+								<Route path="/get-involved/volunteer" element={<Volunteer />} />
+								<Route path="/get-involved/internships" element={<Internships />} />
+								<Route path="/resources/podcasts" element={<Podcasts />} />
+								<Route path="/events" element={<Events />} />
+								<Route path="/resources/blogs" element={<Blogs />} />
+								<Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
+								<Route path="/about-us/our-team" element={<OurTeam />} />
+								<Route path="/about-us/our-story" element={<OurStory />} />
+								<Route path="/resources" element={<Resources />} />
+								<Route path="/contact-us" element={<Contact />} />
+								<Route path="/get-involved/donate" element={<Donate />} />
+								<Route path="/resources/blogs" element={<Blogs />} />
+								<Route path="/resources/blogs/welcome-blog" element={<Workshops />} />
+								<Route path="*" element={<Home />} />
+								<Route path="/test-posts" element={<DummyPostTester />} />
+								<Route path="/login" element={<LoginForm />} />
+								<Route path="/signup" element={<SignUp />} />
+							</Routes>
+						</div>
+						<div className={"pinnedSupportPopup"}>
+							<SupportPopup />
+						</div>
+						<Footer />
+					</Router>
+				</IntlProvider>
+			</div>
+		</GoogleOAuthProvider>
 	);
 };

@@ -29,7 +29,7 @@ export default function BoardMemberGallery() {
   const intl = useIntl();
     return (
       <div className={"galleryContainer"}>
-        <div className={"galleryHeader"}>
+        {/* <div className={"galleryHeader"}>
           <h1>         
             {intl.formatMessage({ id: "About Us" }).toUpperCase()}
           </h1>
@@ -42,7 +42,7 @@ export default function BoardMemberGallery() {
             {intl.formatMessage({id: "Our Values"})}
           </h1>
           <div>{intl.formatMessage({id: "ourValuesDesc"})}</div>
-        </div>
+        </div> */}
         <div className={"galleryHeader"}>
           <h1>{intl.formatMessage({id: "Meet The Board"})}</h1>
         </div>
