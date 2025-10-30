@@ -6,8 +6,7 @@
     background-image: url("../../../images/background_white.jpg");
     background-size: cover;
     background-position: center;
-    padding-left: 140px !important;
-    padding-right: 140px !important;
+    padding: 0 5vw;
 }
 
 .ourStoryAboutUs {
@@ -22,25 +21,24 @@
 }
 
 
-.aboutUsTitle h2 {
-    font-size: calc(16px + 2.5vw);
+div h2 {
+    font-size: calc(1.4rem + 2.5vw);
     text-align: center;
-    margin-bottom: 1vw;
-    padding-top: 3vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    margin-bottom: 4px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-
-.aboutUsDesc p {
+div p {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1vw;
     width: 100%;
     text-align: left;
-    color: #4A4A4A;
-    font-size: calc(1rem + 0.3vw);
+    color: black;
+    font-size: calc(1.4rem + 0.3vw);
 }
 
 .ourStoryValues {
@@ -54,16 +52,6 @@
     margin: 10px 0;
 }
 
-.aboutValuesTitle h2 {
-    font-size: calc(16px + 2.5vw);
-    text-align: center;
-    margin-bottom: 1vw;
-    padding-top: 3vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-
 .aboutValuesDesc p {
     display: flex;
     flex-direction: column;
@@ -73,7 +61,6 @@
     text-align: left;
     color: #4A4A4A;
     font-size: calc(1rem + 0.3vw);
-    
 }
 
 .team-image {
@@ -86,7 +73,7 @@
 
 @media (min-width: 768px) {
     .aboutContainer {
-        padding: 20px;
+        padding: 0 140px;
     }
 
     .ourStoryCardContainer {

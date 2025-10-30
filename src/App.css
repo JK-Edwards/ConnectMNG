@@ -21,8 +21,6 @@
     z-index: 1000;
 }
 
-/* Support popup style within page */
-
 .pinnedSupportPopup {
     position: fixed;
     top: 30vw;
