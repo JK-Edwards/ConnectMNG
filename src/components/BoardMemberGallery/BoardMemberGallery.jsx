@@ -104,6 +104,13 @@ export default function BoardMemberGallery() {
           description: "",
           linkedIn: "https://www.linkedin.com/in/anuujinc/"
         }} />
+        <Profile person={{
+          name: "Sisi",
+          imageId: anuujinC,
+          position: "Public Relations Manager",
+          description: "",
+          linkedIn: "https://www.linkedin.com/in/anuujinc/"
+        }} />
       </div>
     </div>
   );

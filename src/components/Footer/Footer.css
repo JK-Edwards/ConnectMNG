@@ -32,7 +32,6 @@
     text-decoration: none;
     color: black;
     padding: 0.2vw;
-    width: 38%;
 }
 
 .footerLinkContainer h3 {
@@ -112,7 +111,7 @@
         margin-bottom: 20px;
         padding-left: 25px;
         justify-content: start;
-
+        gap: 15%;
     }
 
     .footerLinkContainer {
