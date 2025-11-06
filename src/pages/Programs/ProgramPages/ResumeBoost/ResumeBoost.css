@@ -1,114 +1,131 @@
 .resumeBoostContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	background-image: url("../../../../images/background_green.jpg");
-	background-size: cover;
-	background-position: center;
-	padding-top: calc(1rem + 2vw);
-	padding-left: 75px;
-	padding-right: 20px;
-	overflow-x: hidden;
-  }
-  
-  /* Header — matches Programs page style */
-  .resumeBoostHeader h1 {
-	font-size: calc(5px + 1.75vw);
-	font-weight: bold;
-  }
-  
-  .resumeBoostHeader p {
-	font-size: calc(1px + 1.2vw);
-	width: 50vw;
-  }
-  
-  /* Body content */
-  .indivProgramContainer {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	flex: 1;
-	padding-top: 35px;
-	width: 50vw;
-  }
-  
-  .indivProgramTextContainer {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
-  }
-  
-  .programDescription {
-	width: 50vw;
-	text-align: justify;
-	font-size: calc(1px + 1.2vw);
-  }
-  
-  /* Optional image styling */
-  .resumeIconBlock {
-	margin-top: 10px;
-  }
-  
-  .programImage {
-	max-width: 100%;
-	height: auto;
-	display: block;
-	border-radius: 6px;
-  }
-  
-  /* Utilities */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url("../../../../images/background_green.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: calc(1rem + 2vw);
+  padding-left: 75px;
+  padding-right: 20px;
+  overflow-x: hidden;
+}
+
+/* Header — matches Programs page style */
+.resumeBoostHeader h1 {
+  font-size: calc(5px + 1.75vw);
+  font-weight: bold;
+}
+
+.resumeBoostHeader p {
+  font-size: calc(1px + 1.2vw);
+  width: 50vw;
+}
+
+/* Body content */
+.indivProgramContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 35px;
+  width: 100%;
+  gap: 30px;
+}
+
+.indivProgramTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+
+.programDescription {
+  width: 100%;
+  text-align: justify;
+  font-size: calc(1px + 1.2vw);
+}
+
+/* Image styling with hover zoom */
+.resumeIconBlock {
+  flex: 0 0 clamp(440px, 22vw, 700px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  margin: 0;
+}
+
+.programImage {
+  width: 400px;
+  height: 350px !important;
+  max-width: 700px;
+  max-height: 700px;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 🔥 smooth hover effect */
+}
+
+.programImage:hover {
+  transform: scale(1.08); /* ✅ enlarge slightly on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35); /* deeper shadow */
+}
+
+/* Utilities */
+.mobile-only {
+  display: none;
+}
+
+.mobile-desktop {
+  display: flex;
+}
+
+/* --- Mobile --- */
+@media only screen and (max-width: 768px) {
   .mobile-only {
-	display: none;
+    display: flex;
   }
+
   .mobile-desktop {
-	display: flex;
+    display: none;
   }
-  
-  /* --- Mobile --- */
-  @media only screen and (max-width: 768px) {
-	.mobile-only {
-	  display: flex;
-	}
-  
-	.mobile-desktop {
-	  display: none;
-	}
-  
-	.resumeBoostContainer {
-	  background-image: url("../../../../images/background_white.jpg");
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: space-between;
-	  background-size: cover;
-	  background-position: center;
-	  padding: 30px 20px;
-	  background-color: white;
-	  padding-top: 15px;
-	}
-  
-	.resumeBoostHeader h1 {
-	  font-size: calc(8px + 1.75vw);
-	  font-weight: bold;
-	  padding-top: 4vw;
-	}
-  
-	.resumeBoostHeader p {
-	  font-size: calc(7px + 1.2vw);
-	  padding-left: 1.3vw;
-	  padding-top: 2vw;
-	  text-align: left;
-	  width: 96vw;
-	}
-  
-	.indivProgramContainer {
-	  padding-top: 15px;
-	  width: 100%;
-	}
-  
-	.programDescription {
-	  width: 90vw;
-	  text-align: justify;
-	  font-size: calc(7px + 1.2vw);
-	}
+
+  .resumeBoostContainer {
+    background-image: url("../../../../images/background_white.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px;
+    background-color: white;
+    padding-top: 15px;
   }
-  
+
+  .resumeBoostHeader h1 {
+    font-size: calc(8px + 1.75vw);
+    font-weight: bold;
+    padding-top: 4vw;
+  }
+
+  .resumeBoostHeader p {
+    font-size: calc(7px + 1.2vw);
+    padding-left: 1.3vw;
+    padding-top: 2vw;
+    text-align: left;
+    width: 96vw;
+  }
+
+  .indivProgramContainer {
+    padding-top: 15px;
+    width: 100%;
+  }
+
+  .programDescription {
+    width: 90vw;
+    text-align: justify;
+    font-size: calc(7px + 1.2vw);
+  }
+}
