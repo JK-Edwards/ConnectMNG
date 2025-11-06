@@ -1,22 +1,65 @@
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .header div {
     font-weight: bolder;
     text-decoration: solid underline #3e798c 0.75vw;
-    font-size: calc(5px + 1.75vw);
-    margin: 0;
+    font-size: calc(18px + 2.5vw);
+    text-align: center;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .contactInfo div {
     font-weight: bolder;
-    font-size: calc(2.5px + 1.2vw);
-    padding-bottom: 1vw;
-    padding-top: 1vw;
+    font-size: calc(14px + 2vw);
+    padding: 1.5vw 0;
 }
 
 .contactInfo p {
-    font-size: calc(1px + 1.2vw);
+    font-size: calc(12px + 1.8vw);
     margin: 0;
 }
 
-.contactInfo {
-    padding-top: 10px;
+.contactInfo input,
+.contactInfo textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 1rem;
+    font-size: calc(10px + 1vw);
+    border-radius: 8px;
+    border: 2px solid #3e798c;
+    margin-bottom: 15px;
+}
+
+.contactinput, .contactinputContainer,
+.contactTextArea {
+    width: 50%;
+    box-sizing: border-box;
+    min-height: 8vh;
+    justify-content: center;
+}
+
+.contactContainer h3 {
+    /* font-size: calc(.02rem + 1.8vw); */
+    padding-top: 40px;
+    margin-bottom: 10px;
+}
+.contactContainer h1 {
+    font-size: calc(3rem + 2vw);
+    margin-bottom: 10px;
+}
+
+.contactContainer p {
+    font-size: calc(.8rem + 1vw);
+    margin-bottom: 20px;
 }
