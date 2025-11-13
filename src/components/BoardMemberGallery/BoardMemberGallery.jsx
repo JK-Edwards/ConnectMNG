@@ -110,7 +110,7 @@ export default function BoardMemberGallery() {
           imageId: selenge,
           position: "Creative Director",
           description: "",
-          linkedIn: "https://www.linkedin.com/in/anuujinc/"
+          linkedIn: "https://www.linkedin.com/in/selengeuo/"
         }} />
       </div>
     </div>
