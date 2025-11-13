@@ -7,6 +7,7 @@ import tsogo from "../../images/BoardMembers/Bayartsogt.jpg";
 import batsuuri from "../../images/BoardMembers/Batsuuri.png";
 import bilguun from "../../images/BoardMembers/Bilguun.png";
 import anuujinC from "../../images/BoardMembers/AnuujinC.jpg";
+import selenge from "../../images/BoardMembers/sissi.jpg";
 import React from "react";
 import { useIntl } from "react-intl";
 
@@ -105,11 +106,11 @@ export default function BoardMemberGallery() {
           linkedIn: "https://www.linkedin.com/in/anuujinc/"
         }} />
         <Profile person={{
-          name: "Sisi",
-          imageId: anuujinC,
-          position: "Public Relations Manager",
+          name: "Selenge Ulam-Urnukh",
+          imageId: selenge,
+          position: "Creative Director",
           description: "",
-          linkedIn: "https://www.linkedin.com/in/anuujinc/"
+          linkedIn: "https://www.linkedin.com/in/selengeuo/"
         }} />
       </div>
     </div>
