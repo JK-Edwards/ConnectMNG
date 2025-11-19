@@ -11,23 +11,31 @@
 }
 
 .volunteerContainer h1 {
-	color: #1F363D;
-	font-weight: 900;
-	padding-bottom: 2vw;
+	color: #033C26;
+	font-size: calc(5px + 1.75vw);
+	font-weight: bold;
+
 	padding-left: 75px;
 	padding-right: 75px;
+
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 10px;
 }
 
 .volunteerContainer h2 {
-	color: #1F363D;
-	font-weight: 900;
-	padding-bottom: 2vw;
+	color: #033C26;
+	font-size: calc(5px + 1.75vw);
+	font-weight: bold;
+	padding-bottom: 10px;
 	padding-left: 75px;
 	padding-right: 75px;
 }
 
 .volunteerContainer p {
-	padding-bottom: 2vw;
+	padding-bottom: 0.5px;
 	padding-left: 75px;
 	padding-right: 75px;
 	font-size: calc(1px + 1.2vw);
