@@ -31,6 +31,8 @@ import { useState } from "react";
 import "./App.css";
 import Workshops from "./pages/Blogs/Workshops.jsx";
 import ResumeBuilding from "./pages/Events/EventsPages/ResumeBuilding/ResumeBuilding.jsx";
+import SpookyInterview from "./pages/Events/EventsPages/SpookyInterview/SpookyInterview.jsx";
+import GratitudePotluck from "./pages/Events/EventsPages/GratitudePotluck/GratitudePotluck.jsx";
 
 
 export default function App() {
@@ -57,6 +59,8 @@ export default function App() {
 							<Route path="/events/resume-help" element={<ResumeHelp />} />
 							<Route path="/events/happy-hour" element={<HappyHour />} />
 							<Route path="/events/resume-building" element={<ResumeBuilding />} />
+							<Route path="/events/spooky-interview" element={<SpookyInterview />} />
+    						<Route path="/events/gratitude-potluck" element={<GratitudePotluck />} />
 							<Route path="/resources/blogs" element={<Blogs />} />
 							<Route path="/resources/blogs/resume-blog" element={<ResumeBlog />} />
 							<Route path="/about-us/our-team" element={<OurTeam />} />

@@ -7,34 +7,45 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
     font-size: 2rem;
     color: #033C26;
+    text-align: center;
 }
 
 .event-date,
 .event-location {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #555;
-    margin: 10px 0;
+    text-align: center;
+    margin: 8px 0;
 }
 
 .event-description {
-    text-align: left;
+    margin: 25px auto;
     font-size: 1rem;
     line-height: 1.6;
-    margin: 25px auto;
     max-width: 600px;   
-    padding: 0 10px;    
+    padding: 0 10px;
     color: #333;
 }
 
-.back-button {
+.event-description h3 {
     margin-top: 20px;
+    color: #033C26;
+}
+
+.event-description ul {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.back-button {
+    margin-top: 25px;
     padding: 10px 15px;
     font-size: 1rem;
     color: white;
@@ -42,8 +53,11 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .back-button:hover {
-    background: #5b8c85;
+    background-color: #5b8c85;
 }

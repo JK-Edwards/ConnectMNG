@@ -7,7 +7,7 @@ import tsogo from "../../images/BoardMembers/Bayartsogt.jpg";
 import batsuuri from "../../images/BoardMembers/Batsuuri.png";
 import bilguun from "../../images/BoardMembers/Bilguun.png";
 import anuujinC from "../../images/BoardMembers/AnuujinC.jpg";
-import selenge from "../../images/BoardMembers/sissi.jpg";
+import selenge from "../../images/BoardMembers/Sissi.jpg";
 import React from "react";
 import { useIntl } from "react-intl";
 

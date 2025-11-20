@@ -20,6 +20,30 @@ export default function Events() {
             ],
         },
 
+        {
+            date: "October 25th, 2025",
+            sessions: [
+                {
+                    time: "3:45 PM - 5:00 PM",
+                    name: "Spooky Interview Workshop",
+                    location: "Capital One Cafe SLU",
+                    link: "/events/spooky-interview" // you can update this when you make the page
+                },
+            ],
+        },
+
+        {
+            date: "November 29th, 2025",
+            sessions: [
+                {
+                    time: "3:00 PM - 5:00 PM",
+                    name: "Gratitude & Career Potluck",
+                    location: "TBD",
+                    link: "/events/gratitude-potluck" // placeholder until page is made
+                },
+            ],
+        },
+
     ];
 
     return (
