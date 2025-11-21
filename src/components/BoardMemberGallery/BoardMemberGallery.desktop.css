@@ -55,29 +55,3 @@
 .galleryContainer {
   width: 100%
 }
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 750px) {
-  .profile {
-    flex: 1 1 calc(100% - 10px);
-  }
-
-  .profileImage {
-    height: calc(30vw);
-    width: calc(30vw);
-    margin-bottom: 1vw;
-  }
-
-  .profile a {
-    font-size: calc(0.1rem + 4vw)
-  }
-
-  .profile div {
-    font-size: calc(0.25rem + 2.4vw);
-  }
-
-  .galleryHeader div {
-    text-align: center;
-    font-size: calc(10px + 1.75vw);
-  }
-}

@@ -1,3 +1,4 @@
+import React from "react";
 import anuujin from "../../images/BoardMembers/Anuujin.jpg";
 import saruul from "../../images/BoardMembers/Saruul-Erdene.JPEG";
 import badmaarag from "../../images/BoardMembers/Badmaarag.JPG";
@@ -8,10 +9,10 @@ import batsuuri from "../../images/BoardMembers/Batsuuri.png";
 import bilguun from "../../images/BoardMembers/Bilguun.png";
 import anuujinC from "../../images/BoardMembers/AnuujinC.jpg";
 import selenge from "../../images/BoardMembers/Sissi.jpg";
-import React from "react";
 import { useIntl } from "react-intl";
 
-import "./BoardMemberGallery.css";
+import "./BoardMemberGallery.desktop.css";
+import "./BoardMemberGallery.mobile.css";
 
 function Profile({ person }) {
   return (
