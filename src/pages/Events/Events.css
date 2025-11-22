@@ -107,3 +107,19 @@
         text-align: left;
     }
 }
+
+/* Consistent column widths across all event tables */
+.event-table th:nth-child(1),
+.event-table td:nth-child(1) {
+    width: 25%;   /* Time column */
+}
+
+.event-table th:nth-child(2),
+.event-table td:nth-child(2) {
+    width: 40%;   /* Event column */
+}
+
+.event-table th:nth-child(3),
+.event-table td:nth-child(3) {
+    width: 35%;   /* Location column */
+}
