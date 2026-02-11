@@ -1,6 +1,6 @@
 import React from "react";
-import "./TimelineCard.css";
-
+import "./TimelineCard.desktop.css";
+import "./TimelineCard.mobile.css";
 export interface TimelineCardProps {
   year: string;
   title: string;

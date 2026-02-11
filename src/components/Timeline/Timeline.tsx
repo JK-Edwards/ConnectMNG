@@ -1,6 +1,6 @@
 import React from "react";
 import { useIntl } from "react-intl";
-import "./Timeline.css";
+import "./Timeline.desktop.css";
 import "./Timeline.mobile.css";
 import TimelineCard from "./TimelineCard";
 import { timelineItems } from "./constants";
