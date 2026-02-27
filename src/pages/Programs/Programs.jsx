@@ -7,7 +7,7 @@ import {
 	MENTORSHIP_PROGRAM_DESC,
 	RESUME_BOOST_PROGRAM_DESC,
 	CULTURAL_COMPASS_PROGRAM_DESC
-} from "../../constants";
+} from "../../common/constants";
 
 import { useIntl } from "react-intl";
 

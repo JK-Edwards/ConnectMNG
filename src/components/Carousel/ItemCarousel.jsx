@@ -2,7 +2,7 @@ import Carousel from "react-bootstrap/Carousel";
 import React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import { CULTURAL_COMPASS_PROGRAM_DESC, RESUME_BOOST_PROGRAM_DESC } from "../../constants";
+import { CULTURAL_COMPASS_PROGRAM_DESC, RESUME_BOOST_PROGRAM_DESC } from "../../common/constants";
 
 export default function ItemCarousel({ slides, interval }) {
   return (

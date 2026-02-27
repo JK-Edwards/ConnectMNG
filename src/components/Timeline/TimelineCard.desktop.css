@@ -1,0 +1,40 @@
+.timeline-card {
+  width: 460px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 0px 4px 6px -4px #0000001a,
+              0px 10px 15px -3px #0000001a;
+}
+.timeline-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.timeline-card.left {
+  text-align: left;
+}
+.timeline-card.right {
+  text-align: right;
+}
+.timeline-year {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.4px;
+  color: #8fb369;
+  font-weight: 400;
+}
+.timeline-title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.31px;
+  color: #1e3a5f;
+  font-weight: 400;
+  margin: 0;
+}
+.timeline-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4a5565;
+  margin: 0;
+}

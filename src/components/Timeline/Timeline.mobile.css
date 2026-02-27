@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 16px;
+  }
+
+  .timeline-card-wrapper {
+    justify-content: flex-start !important;
+    padding: 0 0 0 48px !important;
+  }
+
+  .timeline-dot {
+    left: 16px;
+  }
+}

@@ -54,6 +54,13 @@
     width: 80vw;
 }
 
+.timelineSection {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
     .aboutContainer {
         padding: 20px;
@@ -77,6 +84,7 @@
     .team-image {
         margin: 20px auto;
     }
+    
 }
 
 /*Mobile responsive our story*/
@@ -125,11 +133,20 @@
         margin: 1rem 0;
     }
 
-    /* .ourStoryTitle {
-        font-size: calc(5px + 8vw);
-    }
+     .timelineContainer {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }           
 
-    .ourStoryDesc {
-        font-size: calc(5px + 2vw);
-    } */
+    .timelineLine {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #ccc;
+        transform: translateX(-50%);
+    }
 }

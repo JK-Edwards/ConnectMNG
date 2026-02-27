@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .timeline-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .timeline-card.right {
+    text-align: left;
+  }
+}

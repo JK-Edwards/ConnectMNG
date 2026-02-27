@@ -6,7 +6,7 @@ import {
 	EVENTS_CARD_DESC,
 	FUNDRAISING_CARD_TITLE,
 	FUNDRAISING_CARD_DESC
-} from "../../constants";
+} from "../../common/constants";
 
 import eventsImage from "../../images/volunteer/Events.jpg"
 import fundraisingImage from "../../images/volunteer/Fundraising.jpg"
@@ -22,7 +22,7 @@ export default function Volunteer() {
 	return (
 		<div className={"volunteerContainer"}>
 			<div className={"volunteerGetInvolved only-mobile"}>
-				<img className={"homeIcon"} src={homeIcon} alt="home icon"/>
+				<img className={"homeIcon"} src={homeIcon} alt="home icon" />
 				<h1>&nbsp;/&nbsp;Volunteer</h1>
 			</div>
 
@@ -38,12 +38,12 @@ export default function Volunteer() {
 
 			<div className={'volunteerTitleContainer'}>
 				<h2>{intl.formatMessage({ id: "whyJoinTitle" })}</h2>
-					<p>
-						{intl.formatMessage({ id: "whyJoinList1" })}<br/>
-						{intl.formatMessage({ id: "whyJoinList2" })}<br/>
-						{intl.formatMessage({ id: "whyJoinList3" })}<br/>
-						{intl.formatMessage({ id: "whyJoinList4" })}<br/>
-					</p>
+				<p>
+					{intl.formatMessage({ id: "whyJoinList1" })}<br />
+					{intl.formatMessage({ id: "whyJoinList2" })}<br />
+					{intl.formatMessage({ id: "whyJoinList3" })}<br />
+					{intl.formatMessage({ id: "whyJoinList4" })}<br />
+				</p>
 
 			</div>
 
@@ -53,19 +53,19 @@ export default function Volunteer() {
 			</div>
 
 			<div className={'volunteerCardContainer only-desktop'}>
-				<VolunteerCard flip={true} title={intl.formatMessage({id: "fundraising"})} desc={intl.formatMessage({ id: "fundraisingDesc" })} link={fundraisingImage}/>
-				<VolunteerCard flip={false} title={intl.formatMessage({id: "events"})} desc={intl.formatMessage({ id: "eventsDesc" }).split('\n').map((line, index) => (
-				<span key={index}>{line}<br /></span>))} link={eventsImage}/>
+				<VolunteerCard flip={true} title={intl.formatMessage({ id: "fundraising" })} desc={intl.formatMessage({ id: "fundraisingDesc" })} link={fundraisingImage} />
+				<VolunteerCard flip={false} title={intl.formatMessage({ id: "events" })} desc={intl.formatMessage({ id: "eventsDesc" }).split('\n').map((line, index) => (
+					<span key={index}>{line}<br /></span>))} link={eventsImage} />
 			</div>
 
 			<div className="thinSeparator only-mobile"></div>
 
 			<div className={'volunteerCardContainerMobile only-mobile'}>
 
-				 <VolunteerCardMobile flip={true} title={"Fundraising"} desc={intl.formatMessage({ id: "fundraisingDesc" })} link={fundraisingImage}/>
-				 <div className="thinSeparator only-mobile"></div>
-				 <VolunteerCardMobile flip={true} title={"Events"} desc={intl.formatMessage({ id: "eventsDesc" })} link={eventsImage}/>
- 			</div>
+				<VolunteerCardMobile flip={true} title={"Fundraising"} desc={intl.formatMessage({ id: "fundraisingDesc" })} link={fundraisingImage} />
+				<div className="thinSeparator only-mobile"></div>
+				<VolunteerCardMobile flip={true} title={"Events"} desc={intl.formatMessage({ id: "eventsDesc" })} link={eventsImage} />
+			</div>
 
 			<div className="thinSeparator only-mobile"></div>
 

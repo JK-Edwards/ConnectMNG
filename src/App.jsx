@@ -20,7 +20,7 @@ import Resources from "./pages/Resources/Resources.jsx";
 import ResumeBlog from "./pages/Blogs/IndividualBlogs/ResumeBlog/ResumeBlog.jsx";
 import ResumeBoostProgram from "./pages/Programs/ProgramPages/ResumeBoost/ResumeBoost.jsx";
 import SupportPopup from "./components/SupportPopup/SupportPopup.jsx";
-import translations from "./translations.jsx";
+import translations from "./common/translations.jsx";
 import Volunteer from "./pages/Volunteer/Volunteer.jsx";
 import NewFeature from "./pages/NewFeatures/NewFeatures.jsx";
 
